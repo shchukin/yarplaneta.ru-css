@@ -9,9 +9,10 @@
             const height = $this.outerHeight();
             const angleWidth = 19;
             const angleHeight = 24;
-            const stroke = 2;
+            const stroke = 1;
             const offset = stroke / 2; /* Делаем stroke чтобы был inside */
             const radius = 8 - stroke;
+            const id = 'contur-' + (Math.random() + 1).toString(36).substring(7);
 
             /*
             * Черновик оригинального path со скруглёнными углами вокруг среза.
@@ -39,9 +40,9 @@
 
 
             $this.prepend(
-                `<svg class="polygon__background" width="${width}" height="${height}"> +
+                `<svg class="polygon__background" width="${width}" height="${height}">
                     <defs>
-                        <path id="contur" d="
+                        <path id="${id}" d="
                             M ${0 + offset} ${radius + offset} 
                             C ${0 + offset} ${radius / 2 + offset}   ${radius / 2 + offset} ${0 + offset}   ${radius + offset} ${0 + offset} 
                             L ${width - angleWidth - offset} ${0 + offset} 
@@ -54,11 +55,11 @@
                             Z
                         ">
                         <clipPath>
-                            <use xlink:href="#contur"/>
+                            <use xlink:href="${id}"/>
                         </clipPath>
                     </defs>
                     <g>
-                        <use id="polygon__body" xlink:href="#contur" stroke-width="${stroke}"/>
+                        <use id="polygon__body" xlink:href="#${id}" stroke-width="${stroke}"/>
                     </g>
                 </svg>`
             );
