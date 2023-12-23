@@ -6,3 +6,18 @@
         left: 0;
         top: 0;
     }
+
+    .polygon #hover {
+        transition: fill 500ms ease,
+                    stroke 500ms ease;
+    }
+
+    .polygon:hover #hover {
+        fill: purple;
+        stroke: purple;
+    }
+
+
+    .polygon__content {
+        position: relative;
+    }
