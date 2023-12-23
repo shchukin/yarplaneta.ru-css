@@ -6,6 +6,6 @@ body {
     color-scheme: dark;
     font-family: var(--font);
     font-size: var(--body-font-size);
-    line-height: var(--body-line-heigth);
+    line-height: var(--body-line-height);
     color: #FFFFFF;
 }
