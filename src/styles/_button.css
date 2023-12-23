@@ -1,13 +1,14 @@
 .button {
-    position: relative;
     display: inline-block;
     vertical-align: top;
     border: none;
-    padding: 0;
-    background-color: pink;
-    border-radius: 0;
-    font-family: inherit;
-    font-size: 16px;
+    padding: 15px 16px;
+    min-width: 100px;
+    background-color: #4B40B5;
+    /*background-image: linear-gradient(261deg, #190482 20.75%, #8E8FFA 84.56%);*/
+    border-radius: 8px;
+    font-family: var(--font-headings);
+    font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
@@ -17,16 +18,19 @@
     user-select: none;
     transition: background-color var(--transition-hover);
 }
+    .button #hover {
+        transition: fill var(--transition-hover);
+    }
 
-.button:hover {
-    background-color: #2FA5ED;
+    .button__label {
+        position: relative;
+    }
+
+
+.button.polygon--applied:hover #hover {
+    fill: red;
 }
 
-
-.button:active {
-    translate: 0 1px;
-    transition: none;
-}
 
 .button:disabled,
 .button:disabled:hover,
@@ -47,14 +51,5 @@
     background-color: #F3F9FF;
 }
 
-    .button__background {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
 
-    .button svg {
-        vertical-align: top;
-    }
+
