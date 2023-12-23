@@ -2,24 +2,24 @@
     display: inline-block;
     vertical-align: top;
     border: none;
-    padding: 15px 16px;
+    padding: 15px 24px 15px 16px;
     min-width: 100px;
-    background-color: #4B40B5;
-    /*background-image: linear-gradient(261deg, #190482 20.75%, #8E8FFA 84.56%);*/
+    background-color: transparent;
     border-radius: 8px;
     font-family: var(--font-headings);
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
-    transition: background-color var(--transition-hover);
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
 }
-    .button #hover {
-        transition: fill var(--transition-hover);
+    .button #polygon__body {
+        transition: fill var(--transition-hover),
+                    stroke var(--transition-hover);
     }
 
     .button__label {
@@ -27,29 +27,78 @@
     }
 
 
-.button.polygon--applied:hover #hover {
-    fill: red;
+.button:hover {
+
 }
+    .button:hover #polygon__body {
+
+    }
 
 
-.button:disabled,
-.button:disabled:hover,
-.button:disabled:active {
-    background-color: #F6F6F6;
-    color: var(--disabled-color);
-    translate: none;
-    cursor: default;
+.button:active {
+    transition: none;
 }
+    .button:active #polygon__body {
+        transition: none;
+    }
+
+
+
 
 .button--secondary {
-    box-shadow: inset 0 0 0 2px #0D7FC5;
-    background-color: transparent;
-    color: #0D7FC5;
+    background-color: #FFFFFF;
+    color: var(--black);
 }
 
 .button--secondary:hover {
-    background-color: #F3F9FF;
+    background-color: #190482;
+    color: #FFFFFF;
 }
+
+.button--secondary:active {
+    background-color: #8E8FFA;
+    color: #FFFFFF;
+}
+
+
+.button--secondary.polygon--applied {
+    background-color: transparent;
+}
+
+.button--secondary #polygon__body {
+    fill: #FFFFFF;
+}
+
+.button--secondary:hover #polygon__body {
+    fill: #190482;
+}
+
+.button--secondary:active #polygon__body {
+    fill: #8E8FFA;
+}
+
+
+
+
+
+/*.button:disabled,*/
+/*.button:disabled:hover,*/
+/*.button:disabled:active {*/
+/*    background-color: #F6F6F6;*/
+/*    color: var(--disabled-color);*/
+/*    translate: none;*/
+/*    cursor: default;*/
+/*}*/
+
+/*.button--secondary {*/
+/*    box-shadow: inset 0 0 0 2px #0D7FC5;*/
+/*    background-color: transparent;*/
+/*    color: #0D7FC5;*/
+/*}*/
+
+/*.button--secondary:hover {*/
+/*    background-color: #F3F9FF;*/
+/*}*/
 
 
 

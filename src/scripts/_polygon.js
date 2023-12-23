@@ -13,7 +13,6 @@
             const offset = stroke / 2; /* Делаем stroke чтобы был inside */
             const radius = 8 - stroke;
 
-
             /*
             * Черновик оригинального path со скруглёнными углами вокруг среза.
               offset ещё не установлен. Захардкоженные числа слишком сложно обобщить:
@@ -38,10 +37,11 @@
             ">
             */
 
+
             $this.prepend(
                 `<svg class="polygon__background" width="${width}" height="${height}"> +
                     <defs>
-                        <path id="ld2" d="
+                        <path id="contur" d="
                             M ${0 + offset} ${radius + offset} 
                             C ${0 + offset} ${radius / 2 + offset}   ${radius / 2 + offset} ${0 + offset}   ${radius + offset} ${0 + offset} 
                             L ${width - angleWidth - offset} ${0 + offset} 
@@ -53,15 +53,17 @@
                             L ${0 + offset} ${radius + offset} 
                             Z
                         ">
-                        <clipPath id="clip">
-                            <use xlink:href="#ld2"/>
+                        <clipPath>
+                            <use xlink:href="#contur"/>
                         </clipPath>
                     </defs>
                     <g>
-                        <use id="hover" xlink:href="#ld2" stroke="red" stroke-width="${stroke}" fill="blue" clip-path="url(#clip2)"/>
+                        <use id="polygon__body" xlink:href="#contur" stroke-width="${stroke}"/>
                     </g>
                 </svg>`
-            )
+            );
+
+            $this.addClass('polygon--applied');
         });
     });
 
