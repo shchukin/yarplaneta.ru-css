@@ -1,3 +1,29 @@
+.sharp-polygon {
+    position: relative;
+}
+    .sharp-polygon__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .sharp-polygon #hover {
+        transition: fill 500ms ease,
+                    stroke 500ms ease;
+    }
+
+    .sharp-polygon:hover #hover {
+        fill: purple;
+        stroke: purple;
+    }
+
+
+    .sharp-polygon__content {
+        position: relative;
+    }
+
+
+
 .polygon {
     position: relative;
 }
