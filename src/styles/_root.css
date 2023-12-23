@@ -7,7 +7,7 @@
     --transition-hover: 100ms ease;
     --transition-show: 1200ms var(--ease-out-quint);
     --image-fallback: #CCCDFD;
-    /*--container-padding: 40px;*/
+    --container-padding: 40px;
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
     /*--placeholder-color: #999999;*/
