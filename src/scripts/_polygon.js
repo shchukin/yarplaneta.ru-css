@@ -42,30 +42,43 @@
             const stroke = 10;
             const radius = 50;
 
-            const path = `<path d="
-                M0,50 
-                C0,22 22,0 50,0 
-                L533,0 
-                C550,0 566,8.49753818 575,22.6107982 
-                L631.745255,109.076705 
-                C637.130039,117.264245 640,127 640,137 
-                L640,502 
-                C640,530 618,552 590,552 
-                L50,552 C22,552 0,530 0,502 
-                L0,50 
-                Z
-            "> 
-            </path>
-            <path id="ld2" d="
-                M ${stroke} ${stroke}
-                L ${width - angleWidth} ${stroke}
-                L ${width - stroke} ${angleHeight}
-                L ${width - stroke} ${height - stroke}
-                L 10  ${height - stroke}
-                Z
-            ">
-            `;
 
+/*
+* Черновик оригинального path со скруглёнными углами вокруг среза.
+* Захардкоденные числа не обобщены:
+* <path id="ld2" d="
+    M ${0} ${radius}
+    C ${0} ${radius/2} ${radius/2} ${0} ${radius} ${0}
+    L ${width - angleWidth - radius/2} ${0}
+    C${width - angleWidth} ${0}
+
+      566 8.5
+      575 22.61
+    L 631.75 109.076705
+    C 637.130039 117.264245
+
+    ${width} ${angleHeight + radius / 2} ${width} ${angleHeight + radius}
+    L ${width} ${height - radius}
+    C ${width} ${height - radius/2} ${width - radius/2} ${height} ${width - radius} ${height}
+    L ${radius} ${height}
+    C ${radius / 2} ${height} ${0} ${height - radius/2} ${0} ${height - radius}
+    L ${0} ${radius}
+    Z
+">
+* */
+
+
+            /*
+                M0,50
+                C0,25 25,-0.00494678126 50,-0.00494678126
+                L533,-0.00494678126
+                L640,92.3109734
+                L640,502
+                C640,527 615,552 590,552
+                L50,552
+                C25,552 0,527 0,502
+                L0,50 Z
+             */
 
             $this.prepend(
                 `<svg class="polygon__background" width="${width}" height="${height}"> +
@@ -73,16 +86,8 @@
                         <path id="ld2" d="
                             M ${0} ${radius} 
                             C ${0} ${radius/2} ${radius/2} ${0} ${radius} ${0} 
-                            L ${width - angleWidth - radius/2} ${0} 
-                            C${width - angleWidth} ${0} 
-                            
-                            
-                              566 8.5 
-                              575 22.61
-                            L 631.75 109.076705 
-                            C 637.130039 117.264245
-
-${width} ${angleHeight + radius / 2} ${width} ${angleHeight + radius}
+                            L ${width - angleWidth} ${0} 
+                            L ${width} ${angleHeight}
                             L ${width} ${height - radius}
                             C ${width} ${height - radius/2} ${width - radius/2} ${height} ${width - radius} ${height}
                             L ${radius} ${height}
