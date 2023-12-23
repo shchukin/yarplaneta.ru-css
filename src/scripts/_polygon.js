@@ -74,9 +74,15 @@
                             M ${0} ${radius} 
                             C ${0} ${radius/2} ${radius/2} ${0} ${radius} ${0} 
                             L ${width - angleWidth - radius/2} ${0} 
-                            C${width - angleWidth} ${0} 566 8.5 575 22.61
+                            C${width - angleWidth} ${0} 
+                            
+                            
+                              566 8.5 
+                              575 22.61
                             L 631.75 109.076705 
-                            C 637.130039 117.264245 ${width} ${angleHeight + radius / 2} ${width} ${angleHeight + radius}
+                            C 637.130039 117.264245
+
+${width} ${angleHeight + radius / 2} ${width} ${angleHeight + radius}
                             L ${width} ${height - radius}
                             C ${width} ${height - radius/2} ${width - radius/2} ${height} ${width - radius} ${height}
                             L ${radius} ${height}
