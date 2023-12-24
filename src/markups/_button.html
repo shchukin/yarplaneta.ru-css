@@ -81,12 +81,61 @@
             </button>
 
 
+            <br>
+            <br>
+            <br>
+            <h2>Иконки</h2>
+
+            <button class="button button--outline polygon" type="button">
+                <span class="button__label">
+                    Скачать КП
+                </span>
+                <svg class="button__icon" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5965 5.64706H9.83176V0H4.18471V5.64706H0.42L7.00824 12.2353L13.5965 5.64706ZM0.42 14.1176V16H13.5965V14.1176H0.42Z"/>
+                </svg>
+            </button>
+
+            <button class="button button--primary polygon" type="button">
+                <span class="button__label">
+                    Подробнее
+                </span>
+                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                </svg>
+            </button>
+
+            <button class="button button--link-alike polygon" type="button">
+                <span class="button__label">
+                    К программам
+                </span>
+                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                </svg>
+            </button>
+
+            <ul>
+                <li>
+                    Иконки вставляем прямо в HTML-код. Таким образом их можно раскрашивать стилями.
+                </li>
+                <li>
+                    Иконки для кнопок нарезаются отдельно. Смотри <b>assets.fig</b> в корне проекта.
+                    Оттуда можно их копировать командой <b class="nobr">Copy/Paste as → copy as svg</b>.
+                </li>
+                <li>
+                    Фишка таких иконок, что у них произвольная ширина от иконки к иконке. Стрелка -- длинная,
+                    кнопка загрузки -- узкая. Высота иконок не более 24xp (не более чем <b>line-height</b>)
+                </li>
+                <li>
+                    При вставке иконок удаляем все <b>fill="#123456"</b>, чтобы в коде она осталась бесцветной.
+                </li>
+            </ul>
+
 
             <br>
             <br>
             <br>
             <br>
-            <h2>Теги</h2>
+            <h2>Тест тегов</h2>
 
             <div class="button button--primary" tabindex="0">
                 <span class="button__label">div.button</span>

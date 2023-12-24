@@ -1,5 +1,7 @@
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
     vertical-align: top;
     border: none;
     padding: 15px 24px 15px 16px;
@@ -24,6 +26,11 @@
 
     .button__label {
         position: relative;
+    }
+
+    .button__icon {
+        position: relative;
+        fill: currentColor;
     }
 
 
@@ -221,6 +228,10 @@
 .button--link-alike:disabled:active {
     color: #8E8E8E;
 }
+    .button--link-alike #polygon__body {
+        fill: none;
+        stroke: none;
+    }
 
 
 
