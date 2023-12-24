@@ -10,8 +10,8 @@
 .wysiwyg hr,
 .wysiwyg figure,
 .wysiwyg blockquote {
-    margin-top: var(--body-line-height);
-    margin-bottom: var(--body-line-height);
+    margin-top: calc(var(--body-line-height) / 2);
+    margin-bottom: calc(var(--body-line-height) / 2);
 }
 
 .wysiwyg p:first-child,
@@ -34,15 +34,22 @@
 
 
 .wysiwyg h2 {
-
+    margin-top: 40px;
+    margin-bottom: var(--body-line-height);
+    font-family: var(--font-headings);
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .wysiwyg h3 {
-
+    font-family: var(--font-headings);
+    font-size: 18px; /* В дизайне не было, но проставляем значение меньшее чем у <h2> */
+    line-height: 20px; /* В дизайне не было, но проставляем значение меньшее чем у <h2> */
 }
 
 .wysiwyg h4 {
-
+    font-size: 16px; /* В дизайне не было, но проставляем значение меньшее чем у <h3> */
+    line-height: 18px; /* В дизайне не было, но проставляем значение меньшее чем у <h3> */
 }
 
 .wysiwyg h2:first-child,

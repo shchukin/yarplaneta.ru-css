@@ -5,13 +5,24 @@
         $('.polygon').each(function () {
             const $this = $(this);
 
+            /* Ширина/высота всегда по размерам родителя */
             const width = $this.outerWidth();
             const height = $this.outerHeight();
-            const angleWidth = 19;
-            const angleHeight = 24;
-            const stroke = 1;
+
+            /* Значения по умолчанию -- подходит для кнопок */
+            let angleWidth = 17;
+            let angleHeight = 24;
+            let stroke = 1;
+
+            /* Значения для .subnav */
+            if ( $this.hasClass('subnav__link') ) {
+                angleWidth = 13;
+                angleHeight = 13;
+                stroke = 2;
+            }
+
             const offset = stroke / 2; /* Делаем stroke чтобы был inside */
-            const radius = 8 - stroke;
+            const radius = parseInt($this.css('border-top-left-radius')) - offset;
             const id = 'contur-' + (Math.random() + 1).toString(36).substring(7);
 
             /*

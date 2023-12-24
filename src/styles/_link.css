@@ -8,7 +8,7 @@
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    color: #1B73E8;
+    color: #8E8FFA;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.25em;
@@ -27,9 +27,18 @@
     transition: none;
 }
 
-
 .link--text-alike {
     color: inherit;
+}
+
+
+.link--white {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link--white:hover {
+    color: #8E8FFA;
 }
 
 
