@@ -54,7 +54,6 @@
             ">
             */
 
-
             function generatePath(offset) {
                 return `
                     M ${0 + offset} ${radius + offset} 
@@ -67,7 +66,7 @@
                     C ${radius / 2 + offset} ${height - offset}    ${0 + offset} ${height - radius / 2 - offset}    ${0 + offset} ${height - radius - offset}
                     L ${0 + offset} ${radius + offset} 
                     Z
-                `.replace(/\s\s+/g, ' ');
+                `.replace(/\s\s+/g, ' '); /* Удаляем форматирование (переносы строки и табуляции) */
             }
 
             const innerPath = generatePath(stroke / 2);
