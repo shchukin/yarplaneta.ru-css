@@ -1,7 +1,7 @@
 .article {
     display: grid;
     gap: 53px;
-    grid-template-columns: 304px 1fr;
+    grid-template-columns: 304fr 925fr;
     padding-bottom: 176px;
 }
     .article__sidebar {
