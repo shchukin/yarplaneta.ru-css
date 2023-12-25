@@ -1,6 +1,15 @@
 .polygon {
 
 }
+
+.polygon--card {
+
+}
+
+.polygon--trapezoid {
+
+}
+
     .polygon__border {
         position: absolute;
         left: 0;

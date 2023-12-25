@@ -60,8 +60,8 @@
 
 
             if ($this.hasClass('announcement__background')) {
-                angleWidth = 186;
-                angleHeight = 62;
+                angleWidth = parseInt($this.parents('.announcement').find('.announcement__details').outerWidth(), 10) + 10;
+                angleHeight = parseInt($this.parents('.announcement').find('.announcement__details').outerHeight(), 10) + 8;
                 stroke = 2;
             }
 

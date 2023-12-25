@@ -17,3 +17,9 @@
         .announcement #polygon__path {
             stroke: #9698FB;
         }
+
+    .announcement__details {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
