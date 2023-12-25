@@ -1,49 +1,52 @@
 .subnav {
 
 }
-    .subnav__link {
-        display: block;
-        margin-top: 24px;
-        padding: 20px 24px;
-        box-shadow: inset 0 0 0 2px #8E8FFA;
-        background-color: rgb(142 143 250 / 35%);
-        backdrop-filter: blur(7.5px);
-        border: none;
-        border-radius: 5px;
-        position: relative; /* Позиционирование абсолютного .polygon__border здесь */
-        font-family: inherit;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color var(--transition-hover);
-    }
+    .subnav__list {
 
-    .subnav__link:first-child {
-        margin-top: 0;
     }
-
-    .subnav__link:hover {
-        background-color: #8E8FFA;
-    }
-
-    .subnav__link--current {
-        background-color: #8E8FFA;
-    }
-
-
-    .subnav__link.polygon--applied {
-        box-shadow: none;
-    }
-
-    .subnav__link #polygon__path {
-        stroke: #8E8FFA; /* Аналогично box-shadow */
-    }
-        .subnav__label {
-            position: relative; /* Выше .polygon__border */
+        .subnav__link {
+            display: block;
+            margin-top: 24px;
+            padding: 20px 24px;
+            box-shadow: inset 0 0 0 2px #8E8FFA;
+            background-color: rgb(142 143 250 / 35%);
+            backdrop-filter: blur(7.5px);
+            border: none;
+            border-radius: 5px;
+            position: relative; /* Позиционирование абсолютного .polygon__border здесь */
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color var(--transition-hover);
         }
+
+        .subnav__link:first-child {
+            margin-top: 0;
+        }
+
+        .subnav__link:hover {
+            background-color: #8E8FFA;
+        }
+
+        .subnav__link--current {
+            background-color: #8E8FFA;
+        }
+
+
+        .subnav__link.polygon--applied {
+            box-shadow: none;
+        }
+
+        .subnav__link #polygon__path {
+            stroke: #8E8FFA; /* Аналогично box-shadow */
+        }
+            .subnav__label {
+                position: relative; /* Выше .polygon__border */
+            }
 
 
 @media (width < 1500px) {
@@ -55,3 +58,73 @@
     }
 }
 
+
+
+@media (width < 740px) {
+
+    .subnav {
+
+    }
+        .subnav__handler {
+            position: relative;
+            width: 100%;
+            padding: 15px 40px 15px 15px;
+            border: 1px solid #FFFFFF;
+            background-color: transparent;
+            border-radius: 4px;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: left;
+            cursor: pointer;
+        }
+            .subnav__handler::after {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                margin-top: -5px;
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 10px solid #FFFFFF;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                transform: translateY(1px);
+                transition: transform 100ms ease;
+            }
+
+            .subnav--expanded .subnav__handler::after {
+                transform: translateY(-1px) scaleY(-1);
+            }
+
+        .subnav__list {
+            margin-top: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: 1px solid #FFFFFF;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .subnav--expanded .subnav__list {
+            display: block;
+        }
+            .subnav__link {
+                margin-top: 0;
+                background-color: transparent;
+                backdrop-filter: none;
+                border-radius: 0;
+                clip-path: none !important;
+            }
+
+            .subnav__link--current {
+                background-color: transparent;
+                color: #C3D3FE;
+            }
+                .subnav__link .polygon__border {
+                    display: none;
+                }
+
+}
