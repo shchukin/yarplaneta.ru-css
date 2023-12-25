@@ -143,23 +143,23 @@
 }
 
 .button--outline #polygon__path {
-    stroke: #FFFFFF;
+    stroke: #FFFFFF; /* Аналогично box-shadow */
     transition: stroke var(--transition-hover);
 }
 
 .button--outline:hover #polygon__path {
-    stroke: transparent;
+    stroke: transparent; /* Аналогично box-shadow */
 }
 
 .button--outline:active #polygon__path {
-    stroke: transparent;
+    stroke: transparent; /* Аналогично box-shadow */
     transition: none;
 }
 
 .button--outline:disabled #polygon__path,
 .button--outline:disabled:hover #polygon__path,
 .button--outline:disabled:active #polygon__path {
-    stroke: transparent;
+    stroke: transparent; /* Аналогично box-shadow */
 }
 
 

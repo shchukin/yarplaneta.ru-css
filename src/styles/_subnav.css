@@ -39,7 +39,7 @@
     }
 
     .subnav__link #polygon__path {
-        stroke: #8E8FFA;
+        stroke: #8E8FFA; /* Аналогично box-shadow */
     }
         .subnav__label {
             position: relative; /* Выше .polygon__border */
