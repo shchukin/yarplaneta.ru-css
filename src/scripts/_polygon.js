@@ -96,17 +96,17 @@
             // 500 503 506
 
             // heights:
-            // 246 249 252 255 258
+            // 246 249 height - angleHeight 255 258
 
             if ($this.hasClass('polygon--card')) {
                 path = `
                     M ${radius} ${0} 
                     L ${width - radius} ${0} 
                     C ${width - radius/2} ${0}   ${width} ${radius/2}     ${width} ${radius}  
-                    L ${width} 246 
-                    C ${width} 249    ${width - radius / 2} 252    ${width - radius} 252 
-                    L 506 252 
-                    C 503 252    500 255    500 258 
+                    L ${width} ${height - angleHeight - radius} 
+                    C ${width} ${height - angleHeight - radius/2}    ${width - radius / 2} ${height - angleHeight}    ${width - radius} ${height - angleHeight} 
+                    L 506 ${height - angleHeight} 
+                    C 503 ${height - angleHeight}    500 ${height - angleHeight + radius/2}    500 ${height - angleHeight + radius} 
                     L 500 ${height - radius} 
                     C 500 ${height - radius/2}   497 ${height}   494 ${height} 
                     L ${radius} ${height} 
