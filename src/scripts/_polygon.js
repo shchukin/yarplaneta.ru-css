@@ -59,7 +59,7 @@
             }
 
 
-            if ($this.hasClass('announcement')) {
+            if ($this.hasClass('announcement__background')) {
                 angleWidth = 100;
                 angleHeight = 200;
                 stroke = 2;
@@ -70,7 +70,7 @@
 
             let path = '';
 
-            if ($this.has('polygon--trapezoid')) {
+            if ($this.hasClass('polygon--trapezoid')) {
                 path = `
                     M ${0} ${radius} 
                     C ${0} ${radius / 2}   ${radius / 2} ${0}   ${radius} ${0} 
@@ -89,13 +89,13 @@
             // h = 315
             // r = 5
 
-            if ($this.has('polygon--card')) {
+            if ($this.hasClass('polygon--card')) {
                 path = `
                     M ${radius} ${0} 
                     L ${width - radius} ${0} 
                     C ${width - radius/2} ${0}   ${width} ${radius/2}   ${width} ${radius} 
                     L ${width} ${height - angleHeight - radius} 
-                    C ${width} ${height - angleHeight - radius/2}    ${width - radius/2} ${height - angleHeight - radius}   681 252
+                    C 686 250   684 252   681 252
                     L 506 252
                     C 503 252   501 254   501 257 
                     L 501 310 
