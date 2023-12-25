@@ -14,7 +14,17 @@
             const height = $this.outerHeight();
 
 
-            /* 2) Параметрические значения -- для каждой фигуры свои.
+            /* 2) Оригинальный, стилевой border-radius нужен на кнопке, чтобы задать фон. Он там остаётся.
+             * SVG рисующая контур внутри напрямую зависит от этого border-radius, забираем его.
+             */
+            const radius = parseInt($this.css('border-bottom-left-radius'));
+            /* Возможно правильным вариантом будет:
+             * const radius = parseInt($this.css('border-bottom-left-radius')) - stroke / 2;
+             * но зависит от ситуации. Если, например, stroke будет как inner в фигме, но сейчас не так.
+             */
+
+
+            /* 3) Параметрические значения -- для каждой фигуры свои.
              * stroke (толщина бордюра), по-идее, надо бы извелкать из box-shadow в стилях,
              * но парсить его сложно и ненадёжно. Теоретически там может быть несколько box-shadow.
              */
@@ -22,6 +32,7 @@
             let angleWidth = 0;
             let angleHeight = 0;
             let stroke = 0;
+
 
             if ($this.hasClass('subnav__link')) {
                 angleWidth = 13;
@@ -47,35 +58,64 @@
                 stroke = 1;
             }
 
-            /* 3) Оригинальный, стилевой border-radius нужен на кнопке, чтобы задать фон. Он там остаётся.
-             * SVG рисующая контур внутри напрямую зависит от этого border-radius, забираем его.
-             */
-            const radius = parseInt($this.css('border-bottom-left-radius'));
 
-            /* Возможно правильным вариантом будет:
-             * const radius = parseInt($this.css('border-bottom-left-radius')) - stroke / 2;
-             * но зависит от ситуации. Если, например, stroke будет как inner в фигме, но сейчас не так.
-             */
+            if ($this.hasClass('announcement')) {
+                angleWidth = 100;
+                angleHeight = 200;
+                stroke = 2;
+            }
+
 
             /* Линия, по которой будет обрезаться полигон и рисоваться бордюр */
-            const path = `
-                M ${0} ${radius} 
-                C ${0} ${radius / 2}   ${radius / 2} ${0}   ${radius} ${0} 
-                L ${width - angleWidth} ${0} 
-                L ${width} ${angleHeight}
-                L ${width} ${height - radius}
-                C ${width} ${height - radius / 2}   ${width - radius / 2} ${height}   ${width - radius} ${height}
-                L ${radius} ${height}
-                C ${radius / 2} ${height}    ${0} ${height - radius / 2}    ${0} ${height - radius}
-                L ${0} ${radius} 
-                Z
-            `.replace(/\s\s+/g, ' '); /* Удаляем форматирование (переносы строки и табуляции) */
+
+            let path = '';
+
+            if ($this.has('polygon--trapezoid')) {
+                path = `
+                    M ${0} ${radius} 
+                    C ${0} ${radius / 2}   ${radius / 2} ${0}   ${radius} ${0} 
+                    L ${width - angleWidth} ${0} 
+                    L ${width} ${angleHeight}
+                    L ${width} ${height - radius}
+                    C ${width} ${height - radius / 2}   ${width - radius / 2} ${height}   ${width - radius} ${height}
+                    L ${radius} ${height}
+                    C ${radius / 2} ${height}    ${0} ${height - radius / 2}    ${0} ${height - radius}
+                    L ${0} ${radius} 
+                    Z
+                `;
+            }
+
+            // w = 686
+            // h = 315
+            // r = 5
+
+            if ($this.has('polygon--card')) {
+                path = `
+                    M ${radius} ${0} 
+                    L ${width - radius} ${0} 
+                    C ${width - radius/2} ${0}   ${width} ${radius/2}   ${width} ${radius} 
+                    L ${width} ${height - angleHeight - radius} 
+                    C ${width} ${height - angleHeight - radius/2}    ${width - radius/2} ${height - angleHeight - radius}   681 252
+                    L 506 252
+                    C 503 252   501 254   501 257 
+                    L 501 310 
+                    C 501 313   499 315   496 315 
+                    L 5 315 
+                    C 2 315 0   313 0   310 
+                    L 0 5 
+                    C 0 2   2 0   5 0 
+                    Z
+                `;
+            }
+
+            /* Удаляем форматирование (переносы строки и табуляции) */
+            path = path.replace(/\s\s+/g, ' ')
 
             /* Вырезаем нужную форму: */
             $this.attr('style', `clip-path: path('${path}')`)
 
             /* Опциональный контур в виде такой же формы: */
-            if(stroke) {
+            if (stroke) {
 
                 $this.find('.polygon__border').remove(); /* Если с прошлого раза остался .polygon__border (например при перерисовки, при ресайзе) */
 
