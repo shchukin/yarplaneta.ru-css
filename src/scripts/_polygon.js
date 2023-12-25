@@ -49,9 +49,13 @@
 
             /* 3) Оригинальный, стилевой border-radius нужен на кнопке, чтобы задать фон. Он там остаётся.
              * SVG рисующая контур внутри напрямую зависит от этого border-radius, забираем его.
-             * Важно что скругление внутри svg обсчитывает не так как в стилях. По-этому вычитаем "stroke/2".
              */
-            const radius = parseInt($this.css('border-bottom-left-radius')) - stroke / 2;
+            const radius = parseInt($this.css('border-bottom-left-radius'));
+
+            /* Возможно правильным вариантом будет:
+             * const radius = parseInt($this.css('border-bottom-left-radius')) - stroke / 2;
+             * но зависит от ситуации. Если, например, stroke будет как inner в фигме, но сейчас не так.
+             */
 
             /* Линия, по которой будет обрезаться полигон и рисоваться бордюр */
             const path = `
