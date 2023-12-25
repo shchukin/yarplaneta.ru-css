@@ -60,8 +60,8 @@
 
 
             if ($this.hasClass('announcement__background')) {
-                angleWidth = 100;
-                angleHeight = 200;
+                angleWidth = 200;
+                angleHeight = 100;
                 stroke = 2;
             }
 
@@ -91,19 +91,19 @@
 
             if ($this.hasClass('polygon--card')) {
                 path = `
-                    M ${radius} ${0} 
-                    L ${width - radius} ${0} 
-                    C ${width - radius/2} ${0}   ${width} ${radius/2}   ${width} ${radius} 
-                    L ${width} ${height - angleHeight - radius} 
-                    C 686 250   684 252   681 252
-                    L 506 252
-                    C 503 252   501 254   501 257 
-                    L 501 310 
-                    C 501 313   499 315   496 315 
-                    L 5 315 
-                    C 2 315 0   313 0   310 
-                    L 0 5 
-                    C 0 2   2 0   5 0 
+                    M 6,0 
+                    L 680,0 
+                    C 683,0   686,3    686,6 
+                    L 686,247 
+                    C 686,250    683,253    680,253 
+                    L 506,252 
+                    C 503,252    500,255    500,258 
+                    L 500,309 
+                    C 500,312   497,315   494,315 
+                    L 6,315 
+                    C 3,315     0,312     0,309 
+                    L 0,6 
+                    C 0,3    3,0    6,0
                     Z
                 `;
             }
