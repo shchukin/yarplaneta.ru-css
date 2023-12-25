@@ -27,8 +27,7 @@
                 stroke = 2;
             }
 
-            const offset = stroke / 2; /* Делаем stroke чтобы был inside */
-            const radius = parseInt($this.css('border-top-left-radius')) - offset;
+            const radius = parseInt($this.css('border-top-left-radius')) - stroke / 2; /* "stroke / 2" потому что в SVG скругление считается иначе */
             const id = 'contur-' + (Math.random() + 1).toString(36).substring(7);
 
             /*
@@ -56,21 +55,28 @@
             */
 
 
+            function generatePath(offset) {
+                return `
+                    M ${0 + offset} ${radius + offset} 
+                    C ${0 + offset} ${radius / 2 + offset}   ${radius / 2 + offset} ${0 + offset}   ${radius + offset} ${0 + offset} 
+                    L ${width - angleWidth - offset} ${0 + offset} 
+                    L ${width - offset} ${angleHeight + offset}
+                    L ${width - offset} ${height - radius - offset}
+                    C ${width - offset} ${height - radius / 2 - offset}   ${width - radius / 2 - offset} ${height - offset}   ${width - radius - offset} ${height - offset}
+                    L ${radius + offset} ${height - offset}
+                    C ${radius / 2 + offset} ${height - offset}    ${0 + offset} ${height - radius / 2 - offset}    ${0 + offset} ${height - radius - offset}
+                    L ${0 + offset} ${radius + offset} 
+                    Z
+                `.replace(/\s\s+/g, ' ');
+            }
+
+            const innerPath = generatePath(stroke / 2);
+            const outerPath = generatePath(0);
+
             $this.prepend(
                 `<svg class="polygon__background" width="${width}" height="${height}">
                     <defs>
-                        <path id="${id}" d="
-                            M ${0 + offset} ${radius + offset} 
-                            C ${0 + offset} ${radius / 2 + offset}   ${radius / 2 + offset} ${0 + offset}   ${radius + offset} ${0 + offset} 
-                            L ${width - angleWidth - offset} ${0 + offset} 
-                            L ${width - offset} ${angleHeight + offset}
-                            L ${width - offset} ${height - radius - offset}
-                            C ${width - offset} ${height - radius / 2 - offset}   ${width - radius / 2 - offset} ${height - offset}   ${width - radius - offset} ${height - offset}
-                            L ${radius + offset} ${height - offset}
-                            C ${radius / 2 + offset} ${height - offset}    ${0 + offset} ${height - radius / 2 - offset}    ${0 + offset} ${height - radius - offset}
-                            L ${0 + offset} ${radius + offset} 
-                            Z
-                        ">
+                        <path id="${id}" d="${innerPath}">
                         <clipPath>
                             <use xlink:href="${id}"/>
                         </clipPath>
@@ -82,6 +88,8 @@
             );
 
             $this.addClass('polygon--applied');
+
+            $this.attr('style', `clip-path: path('${outerPath}')`)
         });
     }
 
