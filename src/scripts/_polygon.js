@@ -9,8 +9,6 @@
 
             const $this = $(this);
 
-            $this.find('.polygon__border').remove();
-
             /* Ширина/высота всегда по размерам родителя */
             const width = $this.outerWidth();
             const height = $this.outerHeight();
@@ -18,17 +16,20 @@
             /* Значения по умолчанию -- подходит для кнопок */
             let angleWidth = 17;
             let angleHeight = 24;
-            let stroke = 1;
+            let stroke = 0;
 
             /* Значения для .subnav */
+            if ( $this.hasClass('button--outline') ) {
+                stroke = 1;
+            }
+
             if ( $this.hasClass('subnav__link') ) {
                 angleWidth = 13;
                 angleHeight = 13;
                 stroke = 2;
             }
 
-            const radius = parseInt($this.css('border-top-left-radius')) - stroke / 2; /* "stroke / 2" потому что в SVG скругление считается иначе */
-            const id = 'contur-' + (Math.random() + 1).toString(36).substring(7);
+            const radius = parseInt($this.css('border-bottom-left-radius')) - stroke / 2; /* "stroke / 2" потому что в SVG скругление считается иначе */
 
             const path = `
                 M ${0} ${radius} 
@@ -47,11 +48,17 @@
             $this.attr('style', `clip-path: path('${path}')`)
 
             /* Бордюр в виде такой же формы: */
-            $this.prepend(
-                `<svg class="polygon__border" width="${width}" height="${height}">
-                    <path id="polygon__body" stroke-width="${stroke * 2}" d="${path}"/>
-                </svg>`
-            );
+
+            if(stroke) {
+
+                $this.find('.polygon__border').remove(); /* Если с прошлого раза остался .polygon__border (например при перерисовки, при ресайзе) */
+
+                $this.prepend(`
+                    <svg class="polygon__border" width="${width}" height="${height}">
+                        <path id="polygon__path" stroke-width="${stroke * 2}" d="${path}" fill="none"/>
+                    </svg>
+                `);
+            }
 
             $this.addClass('polygon--applied');
 
