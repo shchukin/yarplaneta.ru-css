@@ -11,7 +11,7 @@
         border: none;
         border-radius: 5px;
         /*backdrop-filter: blur(5px);*/
-        position: relative; /* Позиционирование абсолютного .polygon__background здесь */
+        position: relative; /* Позиционирование абсолютного .polygon__border здесь */
         font-family: inherit;
         font-weight: 600;
         font-size: 18px;
@@ -55,7 +55,7 @@
 
 
         .subnav__label {
-            position: relative; /* Выше .polygon__background */
+            position: relative; /* Выше .polygon__border */
         }
 
 

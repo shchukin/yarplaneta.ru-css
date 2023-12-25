@@ -26,7 +26,7 @@
     }
 
     .button__label {
-        position: relative; /* Выше .polygon__background */
+        position: relative; /* Выше .polygon__border */
     }
 
     .button__icon {
