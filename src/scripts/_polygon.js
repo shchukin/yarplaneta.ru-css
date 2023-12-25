@@ -98,10 +98,10 @@
                     C ${width} 250    ${width - radius / 2} 253    ${width - radius} 253 
                     L 506 252 
                     C 503 252    500 255    500 258 
-                    L 500 309 
-                    C 500 312   497 315   494 315 
-                    L ${radius} 315 
-                    C ${radius/2}  315     ${0} 312     ${0} 309 
+                    L 500 ${height - radius} 
+                    C 500 ${height - radius/2}   497 ${height}   494 ${height} 
+                    L ${radius} ${height} 
+                    C ${radius/2}  ${height}     ${0} ${height - radius/2}     ${0} ${height-radius} 
                     L ${0} ${radius} 
                     C ${0} ${radius/2}    ${radius/2} ${0}    ${radius} ${0}
                     Z
