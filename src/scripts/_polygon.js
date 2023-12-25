@@ -80,7 +80,7 @@
                 $this.find('.polygon__border').remove(); /* Если с прошлого раза остался .polygon__border (например при перерисовки, при ресайзе) */
 
                 $this.prepend(`
-                    <svg class="polygon__border" width="${width}" height="${height}">
+                    <svg class="polygon__border" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
                         <path id="polygon__path" stroke-width="${stroke * 2}" d="${path}" fill="none"/>
                     </svg>
                 `);
