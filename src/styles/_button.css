@@ -144,6 +144,7 @@
 
 .button--outline #polygon__path {
     stroke: #FFFFFF;
+    transition: stroke var(--transition-hover);
 }
 
 .button--outline:hover #polygon__path {
@@ -152,6 +153,7 @@
 
 .button--outline:active #polygon__path {
     stroke: transparent;
+    transition: none;
 }
 
 .button--outline:disabled #polygon__path,
