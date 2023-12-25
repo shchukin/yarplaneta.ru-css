@@ -1,9 +1,15 @@
 (function ($) {
 
-    $(window).on('load', function () {
+    $(window).on('load', drawPolygons);
+    $(window).on('resize', drawPolygons);
+
+    function drawPolygons() {
 
         $('.polygon').each(function () {
+
             const $this = $(this);
+
+            $this.find('.polygon__background').remove();
 
             /* Ширина/высота всегда по размерам родителя */
             const width = $this.outerWidth();
@@ -77,6 +83,6 @@
 
             $this.addClass('polygon--applied');
         });
-    });
+    }
 
 })(jQuery);
