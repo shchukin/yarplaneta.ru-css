@@ -42,5 +42,6 @@
 
     .container {
         width: auto;
+        max-width: 400px;
     }
 }
