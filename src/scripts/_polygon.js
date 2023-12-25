@@ -92,10 +92,10 @@
             if ($this.hasClass('polygon--card')) {
                 path = `
                     M ${radius} ${0} 
-                    L 680 ${0} 
-                    C 683 ${0}   686 ${radius/2}     686 ${radius}  
-                    L 686 247 
-                    C 686 250    683 253    680 253 
+                    L ${width - radius} ${0} 
+                    C ${width - radius/2} ${0}   ${width} ${radius/2}     ${width} ${radius}  
+                    L ${width} 247 
+                    C ${width} 250    ${width - radius / 2} 253    ${width - radius} 253 
                     L 506 252 
                     C 503 252    500 255    500 258 
                     L 500 309 
