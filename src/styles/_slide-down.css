@@ -1,0 +1,10 @@
+@keyframes slide-down {
+    from {
+        opacity: 50%;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}

@@ -1,6 +1,16 @@
 .subnav {
 
 }
+    .subnav__handler {
+
+    }
+
+    @media (740px <= width) {
+        .subnav__handler {
+            display: none;
+        }
+    }
+
     .subnav__list {
 
     }
@@ -68,7 +78,7 @@
         .subnav__handler {
             position: relative;
             width: 100%;
-            padding: 15px 40px 15px 15px;
+            padding: 15px calc(var(--container-padding) + 24px) 15px var(--container-padding);
             border: 1px solid #FFFFFF;
             background-color: transparent;
             border-radius: 4px;
@@ -101,11 +111,10 @@
 
         .subnav__list {
             margin-top: 12px;
-            padding-top: 8px;
-            padding-bottom: 8px;
             border: 1px solid #FFFFFF;
             border-radius: 4px;
             display: none;
+            animation: slide-down 300ms ease;
         }
 
         .subnav--expanded .subnav__list {
@@ -113,10 +122,19 @@
         }
             .subnav__link {
                 margin-top: 0;
-                background-color: transparent;
+                padding: 8px var(--container-padding);
+                background-color: transparent !important;
                 backdrop-filter: none;
                 border-radius: 0;
                 clip-path: none !important;
+            }
+
+            .subnav__link:first-child {
+                border-top: 8px solid transparent;
+            }
+
+            .subnav__link:last-child {
+                border-bottom: 8px solid transparent;
             }
 
             .subnav__link--current {
