@@ -60,8 +60,8 @@
 
 
             if ($this.hasClass('announcement__background')) {
-                angleWidth = 200;
-                angleHeight = 100;
+                angleWidth = 186;
+                angleHeight = 62;
                 stroke = 2;
             }
 
@@ -88,6 +88,8 @@
             // w = 686
             // h = 315
             // r = 6
+            // angleWidth 186
+            // angleHeight 62
 
 
             // width:
