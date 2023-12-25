@@ -85,34 +85,21 @@
                 `;
             }
 
-            // w = 686
-            // h = 315
-            // r = 6
-            // angleWidth 186
-            // angleHeight 62
-
-
-            // width:
-            // 500 503 506
-
-            // heights:
-            // 246 249 height - angleHeight 255 258
-
             if ($this.hasClass('polygon--card')) {
                 path = `
                     M ${radius} ${0} 
                     L ${width - radius} ${0} 
-                    C ${width - radius/2} ${0}   ${width} ${radius/2}     ${width} ${radius}  
+                    C ${width - radius / 2} ${0}   ${width} ${radius / 2}     ${width} ${radius}  
                     L ${width} ${height - angleHeight - radius} 
-                    C ${width} ${height - angleHeight - radius/2}    ${width - radius / 2} ${height - angleHeight}    ${width - radius} ${height - angleHeight} 
-                    L 506 ${height - angleHeight} 
-                    C 503 ${height - angleHeight}    500 ${height - angleHeight + radius/2}    500 ${height - angleHeight + radius} 
-                    L 500 ${height - radius} 
-                    C 500 ${height - radius/2}   497 ${height}   494 ${height} 
+                    C ${width} ${height - angleHeight - radius / 2}    ${width - radius / 2} ${height - angleHeight}    ${width - radius} ${height - angleHeight} 
+                    L ${width - angleWidth + radius} ${height - angleHeight} 
+                    C ${width - angleWidth + radius / 2} ${height - angleHeight}    ${width - angleWidth} ${height - angleHeight + radius / 2}    ${width - angleWidth} ${height - angleHeight + radius} 
+                    L ${width - angleWidth} ${height - radius} 
+                    C ${width - angleWidth} ${height - radius / 2}   ${width - angleWidth - radius / 2} ${height}   ${width - angleWidth - radius} ${height} 
                     L ${radius} ${height} 
-                    C ${radius/2}  ${height}     ${0} ${height - radius/2}     ${0} ${height-radius} 
+                    C ${radius / 2}  ${height}     ${0} ${height - radius / 2}     ${0} ${height - radius} 
                     L ${0} ${radius} 
-                    C ${0} ${radius/2}    ${radius/2} ${0}    ${radius} ${0}
+                    C ${0} ${radius / 2}    ${radius / 2} ${0}    ${radius} ${0}
                     Z
                 `;
             }
