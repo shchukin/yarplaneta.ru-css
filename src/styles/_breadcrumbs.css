@@ -24,3 +24,15 @@
         .breadcrumbs__title {
             color: #8E8FFA;
         }
+
+
+@media (width < 1500px) {
+
+
+    .breadcrumbs {
+        padding-top: 38px;
+        padding-bottom: 38px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

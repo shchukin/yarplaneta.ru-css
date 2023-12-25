@@ -37,21 +37,40 @@
     margin-top: 40px;
     margin-bottom: var(--body-line-height);
     font-family: var(--font-headings);
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 22px;
+    line-height: 26px;
 }
+    @media (width < 1500px) {
+        .wysiwyg h2 {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+
 
 .wysiwyg h3 {
     font-family: var(--font-headings);
-    font-size: 18px; /* В дизайне не было, но проставляем значение меньшее чем у <h2> */
-    line-height: 20px; /* В дизайне не было, но проставляем значение меньшее чем у <h2> */
+    font-size: 20px; /* В дизайне не было, но проставляем значение меньшее чем у <h2> */
+    line-height: 23px; /* В дизайне не было, но проставляем значение меньшее чем у <h2> */
 }
+    @media (width < 1500px) {
+        .wysiwyg h3 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
 
 .wysiwyg h4 {
-    font-size: 16px; /* В дизайне не было, но проставляем значение меньшее чем у <h3> */
-    line-height: 18px; /* В дизайне не было, но проставляем значение меньшее чем у <h3> */
+    font-size: 18px; /* В дизайне не было, но проставляем значение меньшее чем у <h3> */
+    line-height: 224px; /* В дизайне не было, но проставляем значение меньшее чем у <h3> */
 }
-
+    @media (width < 1500px) {
+        .wysiwyg h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
 .wysiwyg h2:first-child,
 .wysiwyg h3:first-child,
 .wysiwyg h4:first-child {
