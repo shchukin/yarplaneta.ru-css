@@ -1,0 +1,59 @@
+.membership {
+    position: relative;
+    padding: 24px 24px 17px;
+}
+    .membership__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--font-headings);
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .membership__text {
+        margin-top: 24px;
+    }
+
+    .membership__list {
+        margin-top: 24px;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+        .membership__feature {
+            position: relative;
+            margin-top: 13px;
+            padding-left: 40px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .membership__feature:first-child {
+            margin-top: 0;
+        }
+            .membership__feature::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                display: block;
+                width: 23px;
+                height: 1px;
+                background-color: currentColor;
+            }
+
+    .membership__total {
+        position: absolute;
+        left: 24px;
+        top: 100%;
+        margin-top: 6px;
+        padding-left: 42px;
+    }
+        .membership__docs-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            vertical-align: top;
+            fill: currentColor;
+        }

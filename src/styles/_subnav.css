@@ -40,7 +40,8 @@
         }
 
         .subnav__link:hover {
-            background-color: #8E8FFA;
+            backdrop-filter: blur(4px);
+            background-color: rgb(142 143 250 / 60%);
         }
 
         .subnav__link--current {
@@ -146,4 +147,21 @@
                     display: none;
                 }
 
+}
+
+
+
+.subnav--horizontal {
+
+}
+
+@media (740px <= width) {
+    .subnav--horizontal .subnav__list {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+        .subnav--horizontal .subnav__link {
+            margin-top: 0;
+        }
 }

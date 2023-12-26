@@ -1,0 +1,87 @@
+.publication {
+
+}
+    .publication__stage {
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+        .publication__preview {
+            position: relative;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            overflow: hidden;
+        }
+            .publication__image {
+                vertical-align: top;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 446 / 250;
+                object-fit: cover;
+                background-color: var(--image-fallback);
+                transition: filter var(--transition-hover);
+            }
+
+            .panel__body:hover .publication__image {
+                filter: brightness(1.05) contrast(1.05);
+            }
+
+            .publication__preview::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: block;
+                background: linear-gradient(180deg, rgba(142, 143, 250, 0.00) 0%, rgba(142, 143, 250, 0.50) 119.8%);
+            }
+
+    .publication__body {
+        position: relative;
+        padding: 22px 24px 24px;
+    }
+        .publication__content {
+
+        }
+            .publication__favorites {
+                float: right;
+                margin-left: 16px;
+                margin-bottom: 16px;
+                cursor: help;
+            }
+                .publication__pin {
+                    vertical-align: top;
+                    fill: #C2D9FF;
+                }
+
+            .publication__pre-header {
+                font-family: var(--font-headings);
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .publication__header {
+                margin-top: 4px;
+                margin-bottom: 0;
+                font-family: var(--font-headings);
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .publication__text {
+                margin-top: 15px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+        .publication__time {
+            position: absolute;
+            left: 24px;
+            top: 100%;
+            margin-top: 13px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }

@@ -28,7 +28,6 @@
              * stroke (толщина бордюра), по-идее, надо бы извелкать из box-shadow в стилях,
              * но парсить его сложно и ненадёжно. Теоретически там может быть несколько box-shadow.
              */
-
             let angleWidth = 0;
             let angleHeight = 0;
             let stroke = 0;
@@ -59,9 +58,9 @@
             }
 
 
-            if ($this.hasClass('announcement__background')) {
-                angleWidth = parseInt($this.parents('.announcement').find('.announcement__details').outerWidth(), 10) + 10;
-                angleHeight = parseInt($this.parents('.announcement').find('.announcement__details').outerHeight(), 10) + 8;
+            if ($this.hasClass('panel__body')) {
+                angleWidth = parseInt($this.parents('.panel').find('.panel__action').outerWidth(), 10) + 10;
+                angleHeight = parseInt($this.parents('.panel').find('.panel__action').outerHeight(), 10) + 8;
                 stroke = 2;
             }
 

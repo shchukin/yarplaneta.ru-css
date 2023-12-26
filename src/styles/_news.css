@@ -1,0 +1,40 @@
+.news {
+
+}
+    .news__filters {
+
+    }
+
+    .news__list {
+        margin-top: 38px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .news__pages {
+
+    }
+
+
+
+@media (width < 740px) {
+
+    .news {
+
+    }
+        .news__filters {
+
+        }
+
+        .news__list {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .news__pages {
+
+        }
+}

@@ -28,5 +28,10 @@
 @import url("_subnav.css");
 @import url("_article.css");
 @import url("_slide-down.css");
-@import url("_announcement.css");
+@import url("_panel.css");
+@import url("_clamping.css");
+@import url("_teaser.css");
+@import url("_news.css");
+@import url("_membership.css");
+@import url("_publication.css");
 
