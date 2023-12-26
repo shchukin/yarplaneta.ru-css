@@ -1,9 +1,9 @@
 .header {
-    height: 188px;
+    height: 140px;
     background-color: purple;
 }
 
-@media (width < 1600px) {
+@media (width < 1500px) {
     .header {
         height: 120px;
     }
