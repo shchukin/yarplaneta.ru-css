@@ -10,6 +10,7 @@
     background-color: transparent;
     border-radius: 6px;
     font-family: var(--font-headings);
+    font-weight: normal;
     font-size: 18px;
     line-height: 20px;
     text-align: center;
@@ -202,5 +203,21 @@
     }
         .button__icon {
             height: 16px;
+        }
+}
+
+
+@media (width < 740px) {
+
+    .button {
+        gap: 8px;
+        padding: 13px 18px 13px 14px;
+        min-width: 60px;
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+        .button__icon {
+            height: 14px;
         }
 }
