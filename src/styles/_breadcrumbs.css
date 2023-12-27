@@ -28,10 +28,22 @@
 
 
 @media (1500px <= width) {
+
     .breadcrumbs {
         padding-top: 40px;
         padding-bottom: 40px;
         font-size: 16px;
         line-height: 24px;
+    }
+}
+
+
+@media (width < 740px) {
+
+    .breadcrumbs {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
