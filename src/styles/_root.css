@@ -28,11 +28,17 @@
 
 @media (400px <= width < 740px) {
     :root {
-        --container-padding: 24px;
+        --container-padding: 36px;
     }
 }
 
-@media (350px <= width < 400px) {
+@media (380px <= width < 400px) {
+    :root {
+        --container-padding: 30px;
+    }
+}
+
+@media (350px <= width < 380px) {
     :root {
         --container-padding: 20px;
     }
