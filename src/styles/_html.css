@@ -4,6 +4,12 @@ html {
     margin: 0 !important; /* Revoke the space reserved by Magnific Popup or any other library. Native scrollbar-gutter works better since it doesn’t conflict with elements with position: fixed;" */
 }
 
+
+/* Это диапазон ширин для планшетов. Здесь показываем точно такую же версию сайта
+   как на ноутбуках с расчётом на зум. Задаём ширину документа заведомо большую,
+   чем размер экрана, чтобы браузеры включили горизонтальный скроллбар.
+   На планшетах это, по-сути, зум и есть.
+*/
 @media (740px <= width < 1260px) {
 
     html {
