@@ -5,6 +5,8 @@
 
     function drawPolygons() {
 
+        const userScreen = window.matchMedia('(min-width: 1500px)').matches ? 'monitor' : window.matchMedia('(max-width: 739px)').matches ? 'smartphone' : 'notebook';
+
         $('.polygon').each(function () {
 
             const $this = $(this);
@@ -34,33 +36,39 @@
 
 
             if ($this.hasClass('subnav__link')) {
-                angleWidth = 13;
-                angleHeight = 13;
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 2;
             }
 
             if ($this.hasClass('button--primary')) {
-                angleWidth = 17;
-                angleHeight = 24;
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 0;
             }
 
             if ($this.hasClass('button--secondary')) {
-                angleWidth = 17;
-                angleHeight = 24;
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 0;
             }
 
             if ($this.hasClass('button--outline')) {
-                angleWidth = 17;
-                angleHeight = 24;
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 1;
             }
 
 
             if ($this.hasClass('panel__body')) {
-                angleWidth = parseInt($this.parents('.panel').find('.panel__action').outerWidth(), 10) + 10;
-                angleHeight = parseInt($this.parents('.panel').find('.panel__action').outerHeight(), 10) + 8;
+
+                /* Отступы между карточкой и кнопкой: */
+                const topPadding = (userScreen === 'smartphone') ? 8 : (userScreen === 'monitor') ? 10 : 9; /* Читать справа-налево, чтобы было laptop first (как в стилях) */;
+                const leftPadding = (userScreen === 'smartphone') ? 6 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */;
+
+                /* Размеры кнопки + отступы: */
+                angleWidth = parseInt($this.parents('.panel').find('.panel__action').outerWidth(), 10) + topPadding;
+                angleHeight = parseInt($this.parents('.panel').find('.panel__action').outerHeight(), 10) + leftPadding;
                 stroke = 2;
             }
 
