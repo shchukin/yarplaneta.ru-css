@@ -26,7 +26,6 @@
 @import url("_teaser.css");
 @import url("_news.css");
 @import url("_membership.css");
-@import url("_publication.css");
 
 
 @import url("_html.css");
@@ -37,5 +36,6 @@
 @import url("_link.css");
 @import url("_button.css");
 @import url("_breadcrumbs.css");
+@import url("_publication.css");
 @import url("_blog.css");
 
