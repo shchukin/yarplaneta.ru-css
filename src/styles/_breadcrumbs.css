@@ -2,7 +2,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     font-family: var(--font-headings);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
 }
     .breadcrumbs__item {
@@ -32,7 +32,7 @@
     .breadcrumbs {
         padding-top: 40px;
         padding-bottom: 40px;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
     }
 }
