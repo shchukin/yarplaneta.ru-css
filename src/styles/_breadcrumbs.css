@@ -1,6 +1,6 @@
 .breadcrumbs {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-family: var(--font-headings);
     font-size: 16px;
     line-height: 22px;
@@ -30,8 +30,8 @@
 @media (1500px <= width) {
 
     .breadcrumbs {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         font-size: 18px;
         line-height: 24px;
     }
@@ -41,8 +41,8 @@
 @media (width < 740px) {
 
     .breadcrumbs {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
         font-size: 14px;
         line-height: 20px;
     }

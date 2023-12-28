@@ -1,59 +1,133 @@
 .blog {
-    display: grid;
-    grid-template-columns: 340fr 840fr;
+
 }
-    .blog__sidebar {
-        position: relative;
-        padding-right: 60px;
+    .blog__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--font-headings);
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 59px;
     }
-        /* Разделитель */
-        .blog__sidebar::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: -1px;
-            display: block;
-            width: 2px;
-            background-image: linear-gradient(rgb(142 143 250 / 44%) 0%, rgb(142 143 250 / 100%) 50%, rgb(142 143 250 / 44%) 100%);
-        }
 
-    .blog__content {
-        padding-left: 60px;
-    }
-        .blog__list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-        }
-
-        .blog__pagination {
-
-        }
-
-
-@media (width < 740px) {
-
-    .blog {
-        display: block;
+    .blog__body {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 340fr 840fr;
     }
         .blog__sidebar {
-            padding-right: 0;
+            position: relative;
+            padding-right: 60px;
         }
             /* Разделитель */
             .blog__sidebar::after {
-                display: none;
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -1px;
+                display: block;
+                width: 2px;
+                background-image: linear-gradient(rgb(142 143 250 / 44%) 0%, rgb(142 143 250 / 100%) 50%, rgb(142 143 250 / 44%) 100%);
             }
 
         .blog__content {
-            padding-left: 0;
+            padding-left: 60px;
         }
             .blog__list {
-                grid-template-columns: repeat(1, 1fr);
-                gap: var(--container-padding);
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
             }
 
             .blog__pagination {
 
             }
+
+
+@media (1500px <= width) {
+
+    .blog {
+
+    }
+        .blog__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-family: var(--font-headings);*/
+            /*font-weight: bold;*/
+            font-size: 50px;
+            line-height: 66px;
+        }
+
+        .blog__body {
+            margin-top: 40px;
+            /*display: grid;*/
+            /*grid-template-columns: 340fr 840fr;*/
+        }
+            .blog__sidebar {
+                /*position: relative;*/
+                /*padding-right: 60px;*/
+            }
+                /* Разделитель */
+                .blog__sidebar::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*top: 0;*/
+                    /*bottom: 0;*/
+                    /*right: -1px;*/
+                    /*display: block;*/
+                    /*width: 2px;*/
+                    /*background-image: linear-gradient(rgb(142 143 250 / 44%) 0%, rgb(142 143 250 / 100%) 50%, rgb(142 143 250 / 44%) 100%);*/
+                }
+
+            .blog__content {
+                /*padding-left: 60px;*/
+            }
+                .blog__list {
+                    /*display: grid;*/
+                    /*grid-template-columns: repeat(2, 1fr);*/
+                    /*gap: 24px;*/
+                }
+
+                .blog__pagination {
+
+                }
+}
+
+
+@media (width < 740px) {
+
+    .blog {
+
+    }
+        .blog__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        .blog__body {
+            display: block;
+            margin-top: 24px;
+        }
+            .blog__sidebar {
+                padding-right: 0;
+            }
+                /* Разделитель */
+                .blog__sidebar::after {
+                    display: none;
+                }
+
+            .blog__content {
+                padding-left: 0;
+            }
+                .blog__list {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: var(--container-padding);
+                }
+
+                .blog__pagination {
+
+                }
 }
