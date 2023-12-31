@@ -95,7 +95,7 @@
 }
     .panel--portrait .panel__left-trapezoid {
         top: auto;
-        bottom: 39px;
+        bottom: 88px;
         height: 84px;
         border-left-color: #9397FA;
     }
@@ -171,7 +171,7 @@
 
     }
         .panel--portrait .panel__left-trapezoid {
-            bottom: 52px;
+            bottom: 84px;
             height: 112px;
         }
 
@@ -230,7 +230,7 @@
 
     }
         .panel--portrait .panel__left-trapezoid {
-
+            bottom: 82px;
         }
 
         .panel--portrait .panel__top-trapezoid {
