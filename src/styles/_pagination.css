@@ -1,11 +1,10 @@
 .pagination {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
     .pagination__ribbon {
         display: inline-flex;
         vertical-align: top;
-        gap: 20px;
+        gap: 18px;
     }
         .pagination__item {
             position: relative;
@@ -13,8 +12,8 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            height: 45px;
-            padding: 12px 14px 11px;
+            height: 41px;
+            padding: 10px 12px 9px;
             box-shadow: inset 0 0 0 1px #BDD3FE;
             border-radius: 4px;
         }
@@ -44,29 +43,82 @@
         color: #14131E;
     }
 
+
 .pagination__item--separator {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important; /* перебиваем стили адаптива ниже */
+    padding-right: 0 !important; /* перебиваем стили адаптива ниже */
     box-shadow: none;
 }
 
 
-.pagination__item--arrow {
+.pagination__item--nav {
     box-shadow: none;
 }
-    .pagination__icon {
+    .pagination__arrow {
         position: relative;
+        height: 15px;
         fill: rgb(194 217 255 / 30%);
         transition: fill var(--transition-hover);
     }
 
-    .pagination__item--arrow #polygon__path {
+    .pagination__item--nav #polygon__path {
         stroke: transparent;
     }
 
-.pagination__item--arrow:hover {
+.pagination__item--nav:hover {
 
 }
-    .pagination__item--arrow:hover .pagination__icon {
+    .pagination__item--nav:hover .pagination__arrow {
         fill: #14131E;
     }
+
+
+
+@media (1500px <= width) {
+    .pagination {
+
+    }
+        .pagination__ribbon {
+            gap: 20px;
+        }
+            .pagination__item {
+                height: 45px;
+                padding: 12px 15px 11px;
+            }
+                .pagination__label {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+
+                .pagination__arrow {
+                    height: 16px;
+                }
+}
+
+
+@media (width < 740px) {
+
+    .pagination {
+        overflow-x: auto;
+        margin-left: calc(-1 * var(--container-padding));
+        margin-right: calc(-1 * var(--container-padding));
+    }
+        .pagination__ribbon {
+            gap: 16px;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+        }
+
+            .pagination__item {
+                height: 35px;
+                padding: 8px 12px 7px;
+            }
+                .pagination__label {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+
+                .pagination__arrow {
+                    height: 14px;
+                }
+}

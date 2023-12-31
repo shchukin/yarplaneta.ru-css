@@ -36,8 +36,8 @@
 
 
             if ($this.hasClass('pagination__item')) {
-                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                angleHeight = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleWidth = (userScreen === 'smartphone') ? 6 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 9 : (userScreen === 'monitor') ? 11 : 10; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 1;
             }
 
