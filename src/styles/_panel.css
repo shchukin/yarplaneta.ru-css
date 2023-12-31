@@ -32,9 +32,9 @@
             .panel__left-trapezoid {
                 position: absolute;
                 left: 0;
-                top: 66px;
+                top: 50px;
                 width: 0;
-                height: 100px;
+                height: 75px;
                 border: 5px solid transparent;
                 border-left-color: #9498FA;
                 pointer-events: none;
@@ -42,9 +42,9 @@
 
             .panel__top-trapezoid {
                 position: absolute;
-                left: 193px;
+                left: 145px;
                 top: 0;
-                width: 124px;
+                width: 93px;
                 height: 0;
                 border: 6px solid transparent;
                 border-top-color: #A7B3FB;
@@ -53,9 +53,9 @@
 
             .panel__bottom-trapezoid {
                 position: absolute;
-                right: 220px;
+                right: 165px;
                 bottom: 0;
-                width: 124px;
+                width: 93px;
                 height: 0;
                 border: 5px solid transparent;
                 border-bottom-color: #9AA0FB;
@@ -94,19 +94,20 @@
 
 }
     .panel--portrait .panel__left-trapezoid {
-        top: 308px;
-        height: 112px;
+        top: auto;
+        bottom: 39px;
+        height: 84px;
         border-left-color: #9397FA;
     }
 
     .panel--portrait .panel__top-trapezoid {
         left: auto;
-        right: 37px;
+        right: 27px;
         border-top-color: #B7C8FE;
     }
 
     .panel--portrait .panel__bottom-trapezoid {
-        right: 170px;
+        right: 150px;
     }
 
     /* перемещаем угол из левого-нижнего в левый-верхний */
@@ -140,14 +141,20 @@
             }
 
             .panel__left-trapezoid {
+                top: 66px;
+                height: 100px;
                 border-width: 6px;
             }
 
             .panel__top-trapezoid {
+                left: 193px;
+                width: 124px;
                 border-width: 7px;
             }
 
             .panel__bottom-trapezoid {
+                right: 220px;
+                width: 124px;
                 border-width: 6px;
             }
 
@@ -158,6 +165,31 @@
             .panel__right-angle {
                 border-width: 11px;
             }
+
+
+    .panel--portrait {
+
+    }
+        .panel--portrait .panel__left-trapezoid {
+            bottom: 52px;
+            height: 112px;
+        }
+
+        .panel--portrait .panel__top-trapezoid {
+            right: 37px;
+        }
+
+        .panel--portrait .panel__bottom-trapezoid {
+            right: 170px;
+        }
+
+        .panel--portrait .panel__left-angle {
+
+        }
+
+        .panel--portrait .panel__right-angle {
+
+        }
 }
 
 
@@ -170,4 +202,53 @@
         .panel__body {
             border-radius: 4px;
         }
+            .panel__slot {
+
+            }
+
+            .panel__left-trapezoid {
+
+            }
+
+            .panel__top-trapezoid {
+                left: 43px;
+            }
+
+            .panel__bottom-trapezoid {
+                display: none;
+            }
+
+            .panel__left-angle {
+
+            }
+
+            .panel__right-angle {
+
+            }
+
+    .panel--portrait {
+
+    }
+        .panel--portrait .panel__left-trapezoid {
+
+        }
+
+        .panel--portrait .panel__top-trapezoid {
+
+        }
+
+        .panel--portrait .panel__bottom-trapezoid {
+
+        }
+
+        /* перемещаем угол из левого-нижнего в левый-верхний */
+        .panel--portrait .panel__left-angle {
+
+        }
+
+        .panel--portrait .panel__right-angle {
+
+        }
 }
+
+
