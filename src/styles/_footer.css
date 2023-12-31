@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 120px;
+}
+
+@media ( 1500px <= width) {
+    .footer {
+        padding-top: 150px;
+    }
+}
+
+
+@media (width < 740px) {
+    .footer {
+        padding-top: 80px;
+    }
+}

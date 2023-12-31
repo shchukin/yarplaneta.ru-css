@@ -41,7 +41,7 @@
             }
 
             .blog__pagination {
-
+                margin-top: 40px;
             }
 
 
@@ -90,7 +90,7 @@
                 }
 
                 .blog__pagination {
-
+                    margin-top: 60px;
                 }
 }
 
@@ -129,6 +129,6 @@
                 }
 
                 .blog__pagination {
-
+                    margin-top: 32px;
                 }
 }
