@@ -35,9 +35,9 @@
                 top: 66px;
                 width: 0;
                 height: 100px;
-                border-left: 6px solid #9498FA;
-                border-top: 9px solid transparent;
-                border-bottom: 9px solid transparent;
+                border-left: 5px solid #9498FA;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
                 pointer-events: none;
             }
 
@@ -47,9 +47,9 @@
                 top: 0;
                 width: 124px;
                 height: 0;
-                border-top: 7px solid #A7B3FB;
-                border-left: 7px solid transparent;
-                border-right: 7px solid transparent;
+                border-top: 6px solid #A7B3FB;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
                 pointer-events: none;
             }
 
@@ -59,9 +59,9 @@
                 bottom: 0;
                 width: 124px;
                 height: 0;
-                border-bottom: 6px solid #9AA0FB;
-                border-left: 8px solid transparent;
-                border-right: 8px solid transparent;
+                border-bottom: 5px solid #9AA0FB;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
                 pointer-events: none;
             }
 
@@ -69,10 +69,10 @@
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                border-top: 11px solid transparent;
-                border-right: 11px solid transparent;
-                border-bottom: 11px solid #8E8FFA;
-                border-left: 11px solid #8E8FFA;
+                border-top: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-bottom: 9px solid #8E8FFA;
+                border-left: 9px solid #8E8FFA;
                 pointer-events: none;
             }
 
@@ -80,10 +80,10 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                border-top: 11px solid #BCD2FE;
-                border-right: 11px solid #BCD2FE;
-                border-bottom: 11px solid transparent;
-                border-left: 11px solid transparent;
+                border-top: 9px solid #BCD2FE;
+                border-right: 9px solid #BCD2FE;
+                border-bottom: 9px solid transparent;
+                border-left: 9px solid transparent;
                 pointer-events: none;
             }
 
@@ -93,91 +93,6 @@
         bottom: 0;
     }
 
-
-
-@media (1500px <= width) {
-
-    .panel {
-
-    }
-        .panel__body {
-            border-radius: 6px;
-        }
-            .panel__slot {
-                /*padding-bottom: 63px;*/
-            }
-                .panel__left-trapezoid {
-                    /*top: 66px;*/
-                    /*height: 100px;*/
-                    /*border-left: 6px solid #9498FA;*/
-                    /*border-top: 9px solid transparent;*/
-                    /*border-bottom: 9px solid transparent;*/
-                }
-
-                .panel__top-trapezoid {
-                    /*left: 193px;*/
-                    /*width: 124px;*/
-                    /*border-top: 7px solid #A7B3FB;*/
-                    /*border-left: 7px solid transparent;*/
-                    /*border-right: 7px solid transparent;*/
-                }
-
-                .panel__bottom-trapezoid {
-                    /*right: 220px;*/
-                    /*width: 124px;*/
-                    /*border-bottom: 6px solid #9AA0FB;*/
-                    /*border-left: 8px solid transparent;*/
-                    /*border-right: 8px solid transparent;*/
-                }
-
-                .panel__left-angle {
-                    /*border-top: 11px solid transparent;*/
-                    /*border-right: 11px solid transparent;*/
-                    /*border-bottom: 11px solid #8E8FFA;*/
-                    /*border-left: 11px solid #8E8FFA;*/
-                }
-
-                .panel__right-angle {
-                    /*border-top: 11px solid #BCD2FE;*/
-                    /*border-right: 11px solid #BCD2FE;*/
-                    /*border-bottom: 11px solid transparent;*/
-                    /*border-left: 11px solid transparent;*/
-                }
-}
-
-
-
-@media (width < 740px) {
-
-    .panel {
-
-    }
-        .panel__body {
-            border-radius: 4px;
-            /*transition: background-color var(--transition-hover);*/
-        }
-
-        .panel__body:hover {
-
-        }
-            .panel__body.polygon--applied {
-
-            }
-
-            .panel__body #polygon__path {
-
-            }
-                .panel__slot {
-                    /*padding: 24px 24px 80px;*/
-                }
-                    .panel__top-trapezoid {
-                        /*left: 193px;*/
-                        /*width: 124px;*/
-                        /*border-top: 7px solid #A7B3FB;*/
-                        /*border-left: 7px solid transparent;*/
-                        /*border-right: 7px solid transparent;*/
-                    }
-}
 
 
 .panel--portrait {
@@ -205,10 +120,89 @@
         top: 0;
         border-left: 11px solid #9DA4FC;
         border-top: 11px solid #9DA4FC;
-        border-bottom-color: transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 11px solid transparent;
     }
 
 
     .panel--portrait .panel__right-angle {
         display: none;
     }
+
+
+
+@media (1500px <= width) {
+
+    .panel {
+
+    }
+        .panel__body {
+            border-radius: 6px;
+        }
+            .panel__slot {
+
+            }
+
+            .panel__left-trapezoid {
+                border-width: 6px;
+            }
+
+            .panel__top-trapezoid {
+                border-width: 7px;
+            }
+
+            .panel__bottom-trapezoid {
+                border-width: 6px;
+            }
+
+            .panel__left-angle {
+                border-width: 11px;
+            }
+
+            .panel__right-angle {
+                border-width: 11px;
+            }
+
+
+
+    .panel--portrait {
+
+    }
+        .panel--portrait .panel__left-trapezoid {
+
+        }
+
+        .panel--portrait .panel__top-trapezoid {
+
+        }
+
+        .panel--portrait .panel__bottom-trapezoid {
+
+        }
+
+        .panel--portrait .panel__left-angle {
+            /*border-left: 11px solid #9DA4FC;*/
+            /*border-top: 11px solid #9DA4FC;*/
+            /*border-bottom-color: transparent;*/
+            border-width: 11px;
+        }
+
+
+        .panel--portrait .panel__right-angle {
+
+        }
+
+
+}
+
+
+
+@media (width < 740px) {
+
+    .panel {
+
+    }
+        .panel__body {
+            border-radius: 4px;
+        }
+}
