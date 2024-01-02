@@ -4,13 +4,60 @@
     background-color: rgb(142 143 250 / 45%);
     border-radius: 6px;
     backdrop-filter: blur(4px);
+    overflow: hidden; /* Обрезаем голки внутри */
     text-align: center;
 }
+    .simpler-panel__left-trapezoid {
+        position: absolute;
+        left: 0;
+        top: 18px;
+        bottom: 24px;
+        width: 0;
+        border: 5px solid transparent;
+        border-left-color: #8E8FFA;
+        pointer-events: none;
+    }
+
+    .simpler-panel__top-trapezoid {
+        position: absolute;
+        right: 26px;
+        top: 0;
+        width: 69px;
+        height: 0;
+        border: 6px solid transparent;
+        border-top-color: #8E8FFA;
+        pointer-events: none;
+    }
+
+    .simpler-panel__bottom-angle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border: 9px solid transparent;
+        border-bottom-color: #8E8FFA;
+        border-right-color: #8E8FFA;
+        pointer-events: none;
+    }
 
 @media (1500px <= width) {
     .simpler-panel {
         padding: 40px;
     }
+        .simpler-panel__left-trapezoid {
+            top: 22px;
+            bottom: 30px;
+            border-width: 6px;
+        }
+
+        .simpler-panel__top-trapezoid {
+            right: 31px;
+            width: 83px;
+            border-width: 7px;
+        }
+
+        .simpler-panel__right-angle {
+            border-width: 11px;
+        }
 }
 
 
@@ -21,4 +68,15 @@
         background-color: transparent;
         backdrop-filter: none;
     }
+        .simpler-panel__top-trapezoid {
+            display: none;
+        }
+
+        .simpler-panel__left-trapezoid {
+            display: none;
+        }
+
+        .simpler-panel__bottom-angle {
+            display: none;
+        }
 }
