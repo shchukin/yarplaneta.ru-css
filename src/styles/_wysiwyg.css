@@ -95,9 +95,19 @@
 
 
 .wysiwyg img {
+    vertical-align: top;
     width: 100%;
     height: auto;
-    vertical-align: top;
+    max-height: 80vh;
+    object-fit: cover;
+    background-color: var(--image-fallback);
+    border-radius: 12px;
+}
+
+@media (500px <= width) {
+    .wysiwyg img {
+        border-radius: 16px;
+    }
 }
 
 .wysiwyg a {
