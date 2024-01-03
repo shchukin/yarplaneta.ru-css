@@ -231,3 +231,32 @@
             margin-top: 0;
         }
 }
+
+
+.sub-nav--horizontal {
+
+}
+
+@media (740px <= width) {
+
+    .sub-nav--horizontal {
+
+    }
+        .sub-nav--horizontal .sub-nav__list {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+            .sub-nav--horizontal .sub-nav__link {
+                margin-top: 0;
+            }
+}
+
+    @media (1500px <= width) {
+
+        .sub-nav--horizontal .sub-nav__list {
+            gap: 24px;
+        }
+
+    }

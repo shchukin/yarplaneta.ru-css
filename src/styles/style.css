@@ -21,7 +21,6 @@
 @import url("_header.css");
 @import url("_default.css");
 @import url("_teaser.css");
-@import url("_news.css");
 @import url("_membership.css");
 
 
@@ -47,3 +46,4 @@
 @import url("_panel.css");
 @import url("_simpler-panel.css");
 @import url("_dot.css");
+@import url("_news.css");

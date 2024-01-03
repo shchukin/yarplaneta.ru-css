@@ -6,15 +6,38 @@
     }
 
     .news__list {
-        margin-top: 38px;
+        margin-top: 32px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
 
-    .news__pages {
+    .news__pagination {
+        margin-top: 48px;
+    }
+
+
+
+@media (1500px <= width) {
+
+    .news {
 
     }
+        .news__filters {
+
+        }
+
+        .news__list {
+            margin-top: 40px;
+            /*display: grid;*/
+            /*grid-template-columns: 1fr 1fr;*/
+            /*gap: 24px;*/
+        }
+
+        .news__pagination {
+            margin-top: 60px;
+        }
+}
 
 
 
@@ -34,7 +57,7 @@
             gap: 40px;
         }
 
-        .news__pages {
-
+        .news__pagination {
+            margin-top: 32px;
         }
 }
