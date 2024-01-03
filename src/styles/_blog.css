@@ -44,9 +44,9 @@
                 margin-top: 48px;
             }
 
-        .blog__article {
+            .blog__article {
 
-        }
+            }
 
 
 @media (1500px <= width) {
@@ -97,9 +97,9 @@
                     margin-top: 60px;
                 }
 
-            .blog__article {
+                .blog__article {
 
-            }
+                }
 }
 
 
@@ -140,7 +140,7 @@
                     margin-top: 32px;
                 }
 
-            .blog__article {
+                .blog__article {
 
-            }
+                }
 }
