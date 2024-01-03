@@ -1,14 +1,14 @@
-.default-layout {
+.default {
     display: grid;
     gap: 53px;
     grid-template-columns: 304fr 925fr;
     padding-bottom: 176px;
 }
-    .default-layout__sidebar {
+    .default__sidebar {
 
     }
 
-    .default-layout__content {
+    .default__content {
 
     }
 
@@ -16,33 +16,33 @@
 
 @media (width < 1500px) {
 
-    .default-layout {
+    .default {
         gap: 32px;
         /*grid-template-columns: 304fr 925fr;*/
         padding-bottom: 140px;
     }
-        .default-layout__sidebar {
+        .default__sidebar {
 
         }
 
-        .default-layout__content {
+        .default__content {
 
         }
 }
 
 @media (width < 740px) {
 
-    .default-layout {
+    .default {
         display: block;
         /*gap: 53px;*/
         /*grid-template-columns: 304fr 925fr;*/
         padding-bottom: 140px;
     }
-        .default-layout__sidebar {
+        .default__sidebar {
 
         }
 
-        .default-layout__content {
+        .default__content {
             margin-top: 38px;
         }
 
