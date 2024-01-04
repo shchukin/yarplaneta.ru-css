@@ -1,22 +1,22 @@
-.publication {
+.presentation {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-self: stretch;
 }
-    .publication__stage {
+    .presentation__stage {
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
         border-right: 2px solid transparent;
         flex-shrink: 0;
     }
-        .publication__preview {
+        .presentation__preview {
             position: relative;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             overflow: hidden;
         }
-            .publication__image {
+            .presentation__image {
                 vertical-align: top;
                 width: 100%;
                 height: auto;
@@ -26,11 +26,11 @@
                 transition: filter var(--transition-hover);
             }
 
-            .panel__body:hover .publication__image {
+            .panel__body:hover .presentation__image {
                 filter: brightness(1.05) contrast(1.05);
             }
 
-            .publication__preview::after {
+            .presentation__preview::after {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -41,38 +41,36 @@
                 background-image: linear-gradient(rgb(142 143 250 / 0) 0%, rgb(142 143 250 / 50%) 119.8%);
             }
 
-    .publication__body {
+    .presentation__body {
         position: relative;
         flex-grow: 1;
         border-top: 2px solid #BCD2FE;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding: 18px 18px 20px;
+        padding: 18px 20px 20px;
     }
-        .publication__content {
+        .presentation__content {
 
         }
-            .publication__favorites {
+            .presentation__favorites {
                 float: right;
                 margin-left: 14px;
                 margin-top: -5px;
                 margin-right: -5px;
                 cursor: help;
             }
-                .publication__pin {
+                .presentation__pin {
                     vertical-align: top;
                     fill: #C2D9FF;
                     width: auto;
                     height: 21px;
                 }
 
-            .publication__pre-header {
+            .presentation__pre-header {
                 font-family: var(--font-headings);
                 font-size: 15px;
                 line-height: 22px;
             }
 
-            .publication__header {
+            .presentation__header {
                 margin-top: 5px;
                 margin-bottom: 0;
                 font-family: var(--font-headings);
@@ -82,13 +80,13 @@
                 text-wrap: balance;
             }
 
-            .publication__text {
+            .presentation__text {
                 margin-top: 15px;
                 font-size: 16px;
                 line-height: 19px;
             }
 
-        .publication__time {
+        .presentation__time {
             position: absolute;
             left: 18px;
             top: 100%;
@@ -102,57 +100,57 @@
 
 @media (1500px < width) {
 
-    .publication {
+    .presentation {
 
     }
-        .publication__stage {
+        .presentation__stage {
 
         }
-            .publication__preview {
+            .presentation__preview {
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
             }
-                .publication__image {
+                .presentation__image {
 
                 }
 
-                .publication__preview::after {
+                .presentation__preview::after {
 
                 }
 
-        .publication__body {
+        .presentation__body {
             padding: 22px 24px 24px;
         }
-            .publication__content {
+            .presentation__content {
 
             }
-                .publication__favorites {
+                .presentation__favorites {
                     margin-left: 16px;
                     margin-top: -6px;
                     margin-right: -6px;
                 }
-                    .publication__pin {
+                    .presentation__pin {
                         width: auto;
                         height: 26px;
                     }
 
-                .publication__pre-header {
+                .presentation__pre-header {
                     font-size: 16px;
                     line-height: 24px;
                 }
 
-                .publication__header {
+                .presentation__header {
                     margin-top: 6px;
                     font-size: 24px;
                     line-height: 28px;
                 }
 
-                .publication__text {
+                .presentation__text {
                     font-size: 18px;
                     line-height: 22px;
                 }
 
-            .publication__time {
+            .presentation__time {
                 left: 24px;
                 font-size: 16px;
                 line-height: 24px;
@@ -163,54 +161,54 @@
 
 @media (width < 740px) {
 
-    .publication {
+    .presentation {
 
     }
-        .publication__stage {
+        .presentation__stage {
 
         }
-            .publication__preview {
+            .presentation__preview {
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
             }
-                .publication__image {
+                .presentation__image {
 
                 }
 
-        .publication__body {
+        .presentation__body {
             padding: 16px 17px 17px;
         }
-            .publication__content {
+            .presentation__content {
 
             }
-                .publication__favorites {
+                .presentation__favorites {
                     margin-left: 12px;
                     margin-top: -3px;
                     margin-right: -3px;
                 }
-                    .publication__pin {
+                    .presentation__pin {
                         width: auto;
                         height: 18px;
                     }
 
-                .publication__pre-header {
+                .presentation__pre-header {
                     font-size: 14px;
                     line-height: 20px;
                 }
 
-                .publication__header {
+                .presentation__header {
                     margin-top: 4px;
                     font-size: 20px;
                     line-height: 24px;
                 }
 
-                .publication__text {
+                .presentation__text {
                     margin-top: 12px;
                     font-size: 16px;
                     line-height: 19px;
                 }
 
-            .publication__time {
+            .presentation__time {
                 left: 17px;
                 font-size: 14px;
                 line-height: 20px;
