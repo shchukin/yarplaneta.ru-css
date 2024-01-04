@@ -113,5 +113,6 @@
 
         .entry__text {
             /*margin-top: 32px;*/
+            margin-right: 0;
         }
 }

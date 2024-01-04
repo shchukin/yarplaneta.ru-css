@@ -11,7 +11,7 @@
         .news__list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            gap: 20px;
         }
 
         .news__pagination {
@@ -37,9 +37,7 @@
             margin-top: 40px;
         }
             .news__list {
-                /*display: grid;*/
-                /*grid-template-columns: 1fr 1fr;*/
-                /*gap: 24px;*/
+                gap: 24px;
             }
 
         .news__pagination {
