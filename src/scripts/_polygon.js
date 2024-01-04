@@ -35,6 +35,13 @@
             let stroke = 0;
 
 
+            if ($this.hasClass('docs__item')) {
+                angleWidth = (userScreen === 'smartphone') ? 6 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 9 : (userScreen === 'monitor') ? 11 : 10; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                stroke = 1;
+            }
+
+
             if ($this.hasClass('pagination__item')) {
                 angleWidth = (userScreen === 'smartphone') ? 6 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 angleHeight = (userScreen === 'smartphone') ? 9 : (userScreen === 'monitor') ? 11 : 10; /* Читать справа-налево, чтобы было laptop first (как в стилях) */

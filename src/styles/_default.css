@@ -1,8 +1,7 @@
 .default {
     display: grid;
-    gap: 53px;
+    gap: 32px;
     grid-template-columns: 304fr 925fr;
-    padding-bottom: 176px;
 }
     .default__sidebar {
 
@@ -14,12 +13,10 @@
 
 
 
-@media (width < 1500px) {
+@media (1500px <= width) {
 
     .default {
-        gap: 32px;
-        /*grid-template-columns: 304fr 925fr;*/
-        padding-bottom: 140px;
+        gap: 53px;
     }
         .default__sidebar {
 
@@ -30,13 +27,11 @@
         }
 }
 
+
 @media (width < 740px) {
 
     .default {
         display: block;
-        /*gap: 53px;*/
-        /*grid-template-columns: 304fr 925fr;*/
-        padding-bottom: 140px;
     }
         .default__sidebar {
 

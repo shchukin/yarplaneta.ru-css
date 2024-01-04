@@ -75,6 +75,27 @@
 
 
 
+.wysiwyg img {
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    background-color: var(--image-fallback);
+    border-radius: 12px;
+}
+
+@media (1500px <= width) {
+    .wysiwyg img {
+        border-radius: 16px;
+    }
+}
+
+.wysiwyg a {
+    /* See .link component */
+}
+
+
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
@@ -101,28 +122,5 @@
 {
     margin-bottom: 0;
 }
-
-
-
-.wysiwyg img {
-    vertical-align: top;
-    width: 100%;
-    height: auto;
-    max-height: 80vh;
-    object-fit: cover;
-    background-color: var(--image-fallback);
-    border-radius: 12px;
-}
-
-@media (500px <= width) {
-    .wysiwyg img {
-        border-radius: 16px;
-    }
-}
-
-.wysiwyg a {
-    /* See .link component */
-}
-
 
 
