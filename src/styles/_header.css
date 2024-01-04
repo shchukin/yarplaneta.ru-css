@@ -2,16 +2,3 @@
     height: 140px;
     background-color: purple;
 }
-
-@media (width < 1500px) {
-    .header {
-        height: 120px;
-    }
-}
-
-
-@media (width < 740px) {
-    .header {
-        height: 80px;
-    }
-}
