@@ -103,11 +103,22 @@
     }
         .show__info {
             flex-grow: 1;
+            position: relative;
             background-color: #FFFFFF;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             color: #191825;
         }
+            .show__info::after {
+                content: "";
+                position: absolute;
+                left: 100%;
+                top: 0;
+                width: 10px;
+                height: 10px;
+                background-color: red;
+                clip-path: path('M3,6 C4.67141801,6 6,4.65685425 6,3 C6,1.34314575 4.65685425,0 3,0 C1.34314575,0 0,1.34314575 0,3 C0,4.65685425 1.32858199,6 3,6 Z');
+            }
 
         .show__action {
             flex-shrink: 0;
