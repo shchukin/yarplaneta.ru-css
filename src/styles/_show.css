@@ -1,22 +1,22 @@
-.presentation {
+.show {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-self: stretch;
 }
-    .presentation__stage {
+    .show__stage {
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
         border-right: 2px solid transparent;
         flex-shrink: 0;
     }
-        .presentation__preview {
+        .show__preview {
             position: relative;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             overflow: hidden;
         }
-            .presentation__image {
+            .show__image {
                 vertical-align: top;
                 width: 100%;
                 height: auto;
@@ -26,11 +26,11 @@
                 transition: filter var(--transition-hover);
             }
 
-            .panel__body:hover .presentation__image {
+            .panel__body:hover .show__image {
                 filter: brightness(1.05) contrast(1.05);
             }
 
-            .presentation__preview::after {
+            .show__preview::after {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -41,36 +41,36 @@
                 background-image: linear-gradient(rgb(142 143 250 / 0) 0%, rgb(142 143 250 / 50%) 119.8%);
             }
 
-    .presentation__body {
+    .show__body {
         position: relative;
         flex-grow: 1;
         border-top: 2px solid #BCD2FE;
         padding: 18px 20px 20px;
     }
-        .presentation__content {
+        .show__content {
 
         }
-            .presentation__favorites {
+            .show__favorites {
                 float: right;
                 margin-left: 14px;
                 margin-top: -5px;
                 margin-right: -5px;
                 cursor: help;
             }
-                .presentation__pin {
+                .show__pin {
                     vertical-align: top;
                     fill: #C2D9FF;
                     width: auto;
                     height: 21px;
                 }
 
-            .presentation__pre-header {
+            .show__pre-header {
                 font-family: var(--font-headings);
                 font-size: 15px;
                 line-height: 22px;
             }
 
-            .presentation__header {
+            .show__header {
                 margin-top: 5px;
                 margin-bottom: 0;
                 font-family: var(--font-headings);
@@ -80,13 +80,13 @@
                 text-wrap: balance;
             }
 
-            .presentation__text {
+            .show__text {
                 margin-top: 15px;
                 font-size: 16px;
                 line-height: 19px;
             }
 
-        .presentation__time {
+        .show__time {
             position: absolute;
             left: 18px;
             top: 100%;
@@ -100,57 +100,57 @@
 
 @media (1500px < width) {
 
-    .presentation {
+    .show {
 
     }
-        .presentation__stage {
+        .show__stage {
 
         }
-            .presentation__preview {
+            .show__preview {
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
             }
-                .presentation__image {
+                .show__image {
 
                 }
 
-                .presentation__preview::after {
+                .show__preview::after {
 
                 }
 
-        .presentation__body {
+        .show__body {
             padding: 22px 24px 24px;
         }
-            .presentation__content {
+            .show__content {
 
             }
-                .presentation__favorites {
+                .show__favorites {
                     margin-left: 16px;
                     margin-top: -6px;
                     margin-right: -6px;
                 }
-                    .presentation__pin {
+                    .show__pin {
                         width: auto;
                         height: 26px;
                     }
 
-                .presentation__pre-header {
+                .show__pre-header {
                     font-size: 16px;
                     line-height: 24px;
                 }
 
-                .presentation__header {
+                .show__header {
                     margin-top: 6px;
                     font-size: 24px;
                     line-height: 28px;
                 }
 
-                .presentation__text {
+                .show__text {
                     font-size: 18px;
                     line-height: 22px;
                 }
 
-            .presentation__time {
+            .show__time {
                 left: 24px;
                 font-size: 16px;
                 line-height: 24px;
@@ -161,54 +161,54 @@
 
 @media (width < 740px) {
 
-    .presentation {
+    .show {
 
     }
-        .presentation__stage {
+        .show__stage {
 
         }
-            .presentation__preview {
+            .show__preview {
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
             }
-                .presentation__image {
+                .show__image {
 
                 }
 
-        .presentation__body {
+        .show__body {
             padding: 16px 17px 17px;
         }
-            .presentation__content {
+            .show__content {
 
             }
-                .presentation__favorites {
+                .show__favorites {
                     margin-left: 12px;
                     margin-top: -3px;
                     margin-right: -3px;
                 }
-                    .presentation__pin {
+                    .show__pin {
                         width: auto;
                         height: 18px;
                     }
 
-                .presentation__pre-header {
+                .show__pre-header {
                     font-size: 14px;
                     line-height: 20px;
                 }
 
-                .presentation__header {
+                .show__header {
                     margin-top: 4px;
                     font-size: 20px;
                     line-height: 24px;
                 }
 
-                .presentation__text {
+                .show__text {
                     margin-top: 12px;
                     font-size: 16px;
                     line-height: 19px;
                 }
 
-            .presentation__time {
+            .show__time {
                 left: 17px;
                 font-size: 14px;
                 line-height: 20px;
