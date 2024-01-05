@@ -22,9 +22,74 @@
             <br>
             <h1>.show</h1>
             <p>
-                От слова <b>Шоу</b>, а не от слова показ.
+                От слова <b>Шоу</b>, а не от слова показ. Это общее слово объединяющее две карточки:
+                <b>Программа</b> и <b>Событие</b>.
+            </p>
+            <p>
+                Карточки идентичны за исключением содержимого в <b>.show__info</b> (левый-нижний угол).
             </p>
 
+
+            <br>
+            <br>
+            <br>
+            <p>
+                В случае с событием там просто текстовая строка со временем/датой.
+                Здесь хорошо бы использовать тег <b>&lt;time&gt;</b> для семмантики,
+                и фейковую ссылку, чтобы особо умные мобильные браузеры не вставили свой ссылку на календарь.
+            </p>
+
+            <article class="show">
+                <div class="show__stage">
+                    <a class="show__preview" href="#">
+                        <img class="show__image"
+                             srcset="
+                                ../temp/shows/event-b@3x.jpg 3x,
+                                ../temp/shows/event-b@2x.jpg 2x,
+                                ../temp/shows/event-b@1.5x.jpg 1.5x,
+                                ../temp/shows/event-b@1x.jpg 1x
+                             "
+                             src="../temp/shows/event-b@1x.jpg"
+                             width="450"
+                             height="424"
+                             alt=""
+                        >
+                    </a>
+                </div>
+                <div class="show__body">
+                    <div class="show__restriction">
+                        12+
+                    </div>
+                    <div class="show__pre-header">
+                        полнокупольный фильм
+                    </div>
+                    <h2 class="show__header">
+                        Путешествие к миллиарду Солнц
+                    </h2>
+                </div>
+                <div class="show__footer">
+                    <div class="show__info">
+                        <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                            <a class="link link--fake" name="datetime">31/12/2023</a>
+                        </time>
+                    </div>
+                    <div class="show__action">
+                        <a class="button button--primary polygon polygon--trapezoid" href="#">
+                            <span class="button__label">Подробнее</span>
+                            <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+
+            <br>
+            <br>
+            <p>
+                В случае с программой там блок <a href="_stat.html">.stat</a> с залом:
+            </p>
 
             <article class="show">
                 <div class="show__stage">
@@ -61,7 +126,7 @@
                         </div>
                     </div>
                     <div class="show__action">
-                        <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                        <a class="button button--primary polygon polygon--trapezoid" href="#">
                             <span class="button__label">Подробнее</span>
                             <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
@@ -71,24 +136,23 @@
                 </div>
             </article>
 
-
-
-
             <br>
             <br>
-            <br>
+            <p>
+                Если это групповая программа, то добавляем <b>.show__list</b>, а в углу <a href="_stat.html">.stat</a> с продолжительностью:
+            </p>
 
             <article class="show">
                 <div class="show__stage">
                     <a class="show__preview" href="#">
                         <img class="show__image"
                              srcset="
-                                ../temp/shows/program-b@3x.jpg 3x,
-                                ../temp/shows/program-b@2x.jpg 2x,
-                                ../temp/shows/program-b@1.5x.jpg 1.5x,
-                                ../temp/shows/program-b@1x.jpg 1x
+                                ../temp/shows/group-b@3x.jpg 3x,
+                                ../temp/shows/group-b@2x.jpg 2x,
+                                ../temp/shows/group-b@1.5x.jpg 1.5x,
+                                ../temp/shows/group-b@1x.jpg 1x
                              "
-                             src="../temp/shows/program-b@1x.jpg"
+                             src="../temp/shows/group-b@1x.jpg"
                              width="450"
                              height="424"
                              alt=""
@@ -100,20 +164,28 @@
                         12+
                     </div>
                     <div class="show__pre-header">
-                        полнокупольный фильм
+                        мастер-класс и викторина
                     </div>
                     <h2 class="show__header">
-                        Путешествие к миллиарду Солнц
+                        Космос Детям
                     </h2>
+                    <div class="show__list">
+                        <div class="list">
+                            <div class="list__item">Полнокупольный фильм на ваш выбор </div>
+                            <div class="list__item">Интерактивный ролик в классе</div>
+                            <div class="list__item">Занимательная викторина</div>
+                            <div class="list__item">Создание своей Вселенной</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="show__footer">
                     <div class="show__info">
-                        <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
-                            31/12/2023
-                        </time>
+                        <div class="stat stat--inverted stat--duration">
+                            1 час 20 мин
+                        </div>
                     </div>
                     <div class="show__action">
-                        <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                        <a class="button button--primary polygon polygon--trapezoid" href="#">
                             <span class="button__label">Подробнее</span>
                             <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
@@ -122,6 +194,10 @@
                     </div>
                 </div>
             </article>
+
+
+
+
 
             <br>
             <br>

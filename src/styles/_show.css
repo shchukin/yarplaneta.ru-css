@@ -85,6 +85,13 @@
             text-wrap: balance;
         }
 
+        .show__list {
+            margin-top: 16px;
+        }
+            .show__item {
+
+            }
+
     .show__footer {
         flex-shrink: 0;
         display: flex;
@@ -167,6 +174,10 @@
                     line-height: 32px;
                 }
 
+        .show__list {
+            margin-top: 18px;
+        }
+
         .show__footer {
 
         }
@@ -180,7 +191,6 @@
                 padding-top: 8px;
                 padding-left: 10px;
             }
-
 }
 
 
@@ -217,10 +227,12 @@
                 }
 
                 .show__header {
-                    margin-top: 4px;
-                    font-size: 18px;
-                    line-height: 22px;
+
                 }
+
+        .show__list {
+
+        }
 
         .show__footer {
 
