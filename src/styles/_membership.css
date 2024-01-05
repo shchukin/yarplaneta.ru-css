@@ -1,60 +1,69 @@
 .membership {
     position: relative;
-    padding: 24px 24px 17px;
+    padding: 24px 24px 20px;
 }
     .membership__heading {
         margin-top: 0;
         margin-bottom: 0;
         font-family: var(--font-headings);
         font-weight: bold;
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 24px;
+        line-height: 30px;
         text-wrap: balance;
     }
 
     .membership__text {
-        margin-top: 24px;
+        margin-top: 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .membership__list {
         margin-top: 24px;
         margin-bottom: 0;
-        padding-left: 0;
-        list-style: none;
     }
-        .membership__feature {
-            position: relative;
-            margin-top: 13px;
-            padding-left: 40px;
-            font-size: 16px;
-            line-height: 22px;
-        }
-
-        .membership__feature:first-child {
-            margin-top: 0;
-        }
-            .membership__feature::before {
-                content: "";
-                position: absolute;
-                top: 10px;
-                left: 0;
-                display: block;
-                width: 23px;
-                height: 1px;
-                background-color: currentColor;
-            }
 
     .membership__total {
         position: absolute;
         left: 24px;
         top: 100%;
-        margin-top: 6px;
-        padding-left: 42px;
+        margin-top: 16px;
     }
-        .membership__docs-icon {
-            position: absolute;
-            left: 0;
-            top: 0;
-            vertical-align: top;
-            fill: currentColor;
+
+
+
+@media (1500px <= width) {
+
+    .membership {
+        /*position: relative;*/
+        /*padding: 24px 24px 20px;*/
+    }
+        .membership__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-family: var(--font-headings);*/
+            /*font-weight: bold;*/
+            font-size: 28px;
+            line-height: 34px;
+            /*text-wrap: balance;*/
         }
+
+        .membership__text {
+            margin-top: 24px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .membership__list {
+            margin-top: 26px;
+            /*margin-bottom: 0;*/
+        }
+
+        .membership__total {
+            /*position: absolute;*/
+            /*left: 24px;*/
+            /*top: 100%;*/
+            margin-top: 14px;
+        }
+}
+
