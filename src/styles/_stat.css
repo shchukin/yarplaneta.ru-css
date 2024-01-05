@@ -23,3 +23,13 @@
     .stat--duration::before     { background-image: url("../vectors/stat-duration@3x.png"); }
     .stat--restriction::before  { background-image: url("../vectors/stat-restriction@3x.png"); }
     .stat--pushkin-card::before { background-image: url("../vectors/stat-pushkin-card@3x.png"); }
+
+
+
+.stat--inverted {
+    color: #000000;
+    opacity: 92%;
+}
+    .stat--inverted::before {
+        filter: none;
+    }
