@@ -35,12 +35,17 @@
             let stroke = 0;
 
 
+            if ($this.hasClass('session__info')) {
+                angleWidth = (userScreen === 'smartphone') ? 36 : (userScreen === 'monitor') ? 52 : 45; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 30 : (userScreen === 'monitor') ? 42 : 36; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                stroke = 2;
+            }
+
             if ($this.hasClass('docs__link')) {
                 angleWidth = (userScreen === 'smartphone') ? 20 : (userScreen === 'monitor') ? 52 : 45; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 angleHeight = (userScreen === 'smartphone') ? 32 : (userScreen === 'monitor') ? 42 : 36; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 2;
             }
-
 
             if ($this.hasClass('pagination__item')) {
                 angleWidth = (userScreen === 'smartphone') ? 6 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
