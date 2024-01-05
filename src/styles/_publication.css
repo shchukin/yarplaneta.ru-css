@@ -58,13 +58,16 @@
                 margin-top: -5px;
                 margin-right: -5px;
                 cursor: help;
+                width: 17px;
+                height: 21px;
+                background-image: url("../vectors/publication-favorites.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
             }
-                .publication__pin {
-                    vertical-align: top;
-                    fill: #C2D9FF;
-                    width: auto;
-                    height: 21px;
-                }
 
             .publication__pre-header {
                 font-family: var(--font-headings);
@@ -130,11 +133,9 @@
                     margin-left: 16px;
                     margin-top: -6px;
                     margin-right: -6px;
+                    width: 21px;
+                    height: 26px;
                 }
-                    .publication__pin {
-                        width: auto;
-                        height: 26px;
-                    }
 
                 .publication__pre-header {
                     font-size: 16px;
@@ -187,11 +188,9 @@
                     margin-left: 12px;
                     margin-top: -3px;
                     margin-right: -3px;
+                    width: 15px;
+                    height: 18px;
                 }
-                    .publication__pin {
-                        width: auto;
-                        height: 18px;
-                    }
 
                 .publication__pre-header {
                     font-size: 14px;

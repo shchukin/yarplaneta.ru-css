@@ -19,7 +19,7 @@
                 vertical-align: top;
                 width: 100%;
                 height: auto;
-                aspect-ratio: 450 / 250;
+                aspect-ratio: 450 / 424;
                 object-fit: cover;
                 background-color: var(--image-fallback);
                 transition: filter var(--transition-hover);

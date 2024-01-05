@@ -17,7 +17,7 @@
             </defs>
         </svg>
 
-        <div style="max-width: 540px; margin: 0 auto;">
+        <div style="max-width: 450px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
             <h1>.show</h1>
@@ -26,7 +26,6 @@
             </p>
 
 
-            <!-- Дочерний компонент -->
             <article class="show">
                 <div class="show__stage">
                     <a class="show__preview" href="#">
@@ -71,7 +70,58 @@
                     </div>
                 </div>
             </article>
-            <!--/Дочерний компонент -->
+
+
+
+
+            <br>
+            <br>
+            <br>
+
+            <article class="show">
+                <div class="show__stage">
+                    <a class="show__preview" href="#">
+                        <img class="show__image"
+                             srcset="
+                                ../temp/shows/program-b@3x.jpg 3x,
+                                ../temp/shows/program-b@2x.jpg 2x,
+                                ../temp/shows/program-b@1.5x.jpg 1.5x,
+                                ../temp/shows/program-b@1x.jpg 1x
+                             "
+                             src="../temp/shows/program-b@1x.jpg"
+                             width="450"
+                             height="424"
+                             alt=""
+                        >
+                    </a>
+                </div>
+                <div class="show__body">
+                    <div class="show__restriction">
+                        12+
+                    </div>
+                    <div class="show__pre-header">
+                        полнокупольный фильм
+                    </div>
+                    <h2 class="show__header">
+                        Путешествие к миллиарду Солнц
+                    </h2>
+                </div>
+                <div class="show__footer">
+                    <div class="show__info">
+                        <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                            31/12/2023
+                        </time>
+                    </div>
+                    <div class="show__action">
+                        <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                            <span class="button__label">Подробнее</span>
+                            <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
 
             <br>
             <br>
