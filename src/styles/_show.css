@@ -107,10 +107,12 @@
                 position: absolute;
                 left: 100%;
                 top: 0;
-                width: 10px;
-                height: 10px;
+                margin-left: -1px; /* минус единичка чтобы избежать визуальных багов когда ставим один белый фон рядом с другим */
+                margin-top: -1px; /* минус единичка чтобы избежать визуальных багов когда ставим один белый фон рядом с другим */
+                width: 7px;
+                height: 7px;
                 background-color: #FFFFFF;
-                clip-path: path('M0 6V0H6C3 0 0 3 0 6Z'); /* show-inner-angle.svg */
+                clip-path: path('M7 1C4 1 1 4 1 7H0V0H7V1Z'); /* show-inner-angle.svg */
             }
 
         .show__action {
