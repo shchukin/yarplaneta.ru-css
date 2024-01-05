@@ -1,0 +1,25 @@
+.stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+    .stat::before {
+        content: "";
+        display: block;
+        width: 26px;
+        height: 26px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        filter: invert(1);
+    }
+
+
+    .stat--contains::before     { background-image: url("../vectors/stat-contains@3x.png"); }
+    .stat--location::before     { background-image: url("../vectors/stat-location@3x.png"); }
+    .stat--duration::before     { background-image: url("../vectors/stat-duration@3x.png"); }
+    .stat--restriction::before  { background-image: url("../vectors/stat-restriction@3x.png"); }
+    .stat--pushkin-card::before { background-image: url("../vectors/stat-pushkin-card@3x.png"); }
