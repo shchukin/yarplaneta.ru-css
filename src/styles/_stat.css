@@ -5,6 +5,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
+    white-space: nowrap;
 }
     .stat::before {
         content: "";
@@ -18,11 +19,11 @@
     }
 
 
-    .stat--contains::before     { background-image: url("../vectors/stat-contains@3x.png"); }
-    .stat--location::before     { background-image: url("../vectors/stat-location@3x.png"); }
-    .stat--duration::before     { background-image: url("../vectors/stat-duration@3x.png"); }
-    .stat--restriction::before  { background-image: url("../vectors/stat-restriction@3x.png"); }
-    .stat--pushkin-card::before { background-image: url("../vectors/stat-pushkin-card@3x.png"); }
+    .stat--contains::before     { width: 26px; background-image: url("../vectors/stat-contains@3x.png"); }
+    .stat--location::before     { width: 32px; background-image: url("../vectors/stat-location@3x.png"); }
+    .stat--duration::before     { width: 26px; background-image: url("../vectors/stat-duration@3x.png"); }
+    .stat--restriction::before  { width: 21px; background-image: url("../vectors/stat-restriction@3x.png"); }
+    .stat--pushkin-card::before { width: 26px; background-image: url("../vectors/stat-pushkin-card@3x.png"); }
 
 
 
