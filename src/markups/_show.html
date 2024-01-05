@@ -17,7 +17,7 @@
             </defs>
         </svg>
 
-        <div style="max-width: 450px; margin: 0 auto; padding: 0 var(--container-padding);">
+        <div style="max-width: 540px; margin: 0 auto;">
             <br>
             <br>
             <h1>.show</h1>
@@ -29,7 +29,7 @@
             <!-- Дочерний компонент -->
             <article class="show">
                 <div class="show__stage">
-                    <div class="show__preview">
+                    <a class="show__preview" href="#">
                         <img class="show__image"
                              srcset="
                                 ../temp/shows/program-b@3x.jpg 3x,
@@ -42,7 +42,7 @@
                              height="424"
                              alt=""
                         >
-                    </div>
+                    </a>
                 </div>
                 <div class="show__body">
                     <div class="show__restriction">
@@ -56,9 +56,11 @@
                     </h2>
                 </div>
                 <div class="show__footer">
-                    <time class="show__info" datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
-                        31/12/2023
-                    </time>
+                    <div class="show__info">
+                        <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                            31/12/2023
+                        </time>
+                    </div>
                     <div class="show__action">
                         <a class="button button--secondary polygon polygon--trapezoid" href="#">
                             <span class="button__label">Подробнее</span>
