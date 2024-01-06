@@ -11,23 +11,20 @@
         flex-shrink: 0;
         overflow: hidden;
     }
-        .publication__stretch-image {
-
+        .publication__stage .preview {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
-            .publication__stage .preview {
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
-                .publication__stage .preview__image {
-                    aspect-ratio: 450 / 250;
+            .publication__stage .preview__image {
+                aspect-ratio: 450 / 250;
 
-                    /* Подтягиваем картинку до стандартных размеров
-                     * (380px на ноутбуках и 450px на мониторах):
-                     */
-                    width: calc(100% + 4px);
-                    margin-left: -2px;
-                    margin-right: -2px;
-                }
+                /* Подтягиваем картинку до стандартных размеров
+                 * (380px на ноутбуках и 450px на мониторах):
+                 */
+                width: calc(100% + 4px);
+                margin-left: -2px;
+                margin-right: -2px;
+            }
 
     .publication__body {
         position: relative;
