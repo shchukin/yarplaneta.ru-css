@@ -4,7 +4,7 @@
     gap: 10px;
     font-weight: 600;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 18px;
 }
     .stat::before {
         content: "";
@@ -42,7 +42,7 @@
     .stat {
         gap: 8px;
         font-size: 18px;
-        line-height: 26px;
+        line-height: 22px;
     }
         .stat::before {
             width: 26px;

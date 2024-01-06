@@ -19,8 +19,8 @@
     .project__body {
         margin-top: 30px;
         display: grid;
-        grid-template-columns: 722fr 379fr;
-        gap: 77px;
+        grid-template-columns: 722fr 380fr;
+        gap: 78px;
     }
         .project__content {
             order: -1;
@@ -94,8 +94,8 @@
         .project__body {
             /*margin-top: 30px;*/
             /*display: grid;*/
-            /*grid-template-columns: 722fr 379fr;*/
-            /*gap: 77px;*/
+            grid-template-columns: 808fr 450fr;
+            gap: 140px;
         }
             .project__stage {
 

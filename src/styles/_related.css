@@ -66,4 +66,8 @@
     .related--blog .related__list {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .related--portfolio .related__list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
