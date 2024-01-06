@@ -10,7 +10,7 @@
             border-radius: 12px;
         }
             .presentation__stage .preview__image {
-
+                aspect-ratio: 450 / 424;
             }
 
     .presentation__content {
@@ -78,7 +78,7 @@
             /*flex-shrink: 0;*/
         }
             .presentation__stage .preview {
-                /*border-radius: 12px;*/
+                border-radius: 16px;
             }
                 .presentation__stage .preview__image {
 
