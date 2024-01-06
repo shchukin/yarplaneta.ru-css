@@ -88,11 +88,11 @@
             height: 38px;
         }
         /* stylelint-disable */
-        .stat--contains::before     { width: 38px; }
-        .stat--location::before     { width: 47px; }
-        .stat--duration::before     { width: 38px; }
-        .stat--restriction::before  { width: 31px; }
-        .stat--pushkin-card::before { width: 38px; }
+        .stat--larger.stat--contains::before     { width: 38px; }
+        .stat--larger.stat--location::before     { width: 47px; }
+        .stat--larger.stat--duration::before     { width: 38px; }
+        .stat--larger.stat--restriction::before  { width: 31px; }
+        .stat--larger.stat--pushkin-card::before { width: 38px; }
         /* stylelint-enable */
 
 }
@@ -107,10 +107,10 @@
         }
 
         /* stylelint-disable */
-        .stat--contains::before     { width: 26px; }
-        .stat--location::before     { width: 32px; }
-        .stat--duration::before     { width: 26px; }
-        .stat--restriction::before  { width: 21px; }
-        .stat--pushkin-card::before { width: 26px; }
+        .stat--larger.stat--contains::before     { width: 26px; }
+        .stat--larger.stat--location::before     { width: 32px; }
+        .stat--larger.stat--duration::before     { width: 26px; }
+        .stat--larger.stat--restriction::before  { width: 21px; }
+        .stat--larger.stat--pushkin-card::before { width: 26px; }
         /* stylelint-enable */
 }
