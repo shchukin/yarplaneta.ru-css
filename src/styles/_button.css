@@ -177,12 +177,11 @@
 
 .button--link-alike:hover {
     background-color: transparent;
-    color: #8E8FFA;
+    color: #190482;
 }
 
 .button--link-alike:active {
     background-color: transparent;
-    color: #190482;
 }
 
 .button--link-alike:disabled,

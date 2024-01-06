@@ -1,0 +1,173 @@
+.groups-card {
+    display: block;
+    padding: 5px;
+    background-image: var(--sky-gradient);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+}
+    .groups-card__inner {
+        position: relative;
+        padding: 40px 35px 50px;
+        background-color: #576AC9;
+        background-image: url("../images/groups-card-desktop@1x.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 13px;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .groups-card__inner {
+            background-image: url("../images/groups-card-desktop@1.5x.jpg");
+        }
+    }
+
+    @media (min-resolution: 2dppx) {
+        .groups-card__inner {
+            background-image: url("../images/groups-card-desktop@2x.jpg");
+        }
+    }
+
+    @media (min-resolution: 3dppx) {
+        .groups-card__inner {
+            background-image: url("../images/groups-card-desktop@3x.jpg");
+        }
+    }
+        .groups-card__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-headings);
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        .groups-card__description {
+            max-width: 574px;
+            margin-top: 32px;
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .groups-card__actions {
+            margin-top: 50px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .groups-card__details {
+            position: absolute;
+            right: 16px;
+            top: 22px;
+        }
+
+
+
+@media (1500px <= width) {
+
+    .groups-card {
+        border-radius: 20px;
+    }
+        .groups-card__inner {
+            padding: 60px 55px 80px;
+            border-radius: 15px;
+        }
+            .groups-card__heading {
+                font-size: 44px;
+                line-height: 52px;
+            }
+
+            .groups-card__description {
+                max-width: 742px;
+                margin-top: 44px;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .groups-card__actions {
+                margin-top: 60px;
+            }
+
+            .groups-card__details {
+
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .groups-card {
+        /*display: block;*/
+        padding: 2px;
+        /*background-image: var(--sky-gradient);*/
+        border-radius: 6px;
+        /*text-decoration: none;*/
+        /*color: inherit;*/
+    }
+        .groups-card__inner {
+            /*position: relative;*/
+            padding: 18px 14px 192px;
+            /*background-color: #576AC9;*/
+            background-image: url("../images/groups-card-smartphone@1x.jpg");
+            /*background-size: cover;*/
+            /*background-repeat: no-repeat;*/
+            background-position: center bottom;
+            border-radius: 4px;
+        }
+
+        @media (min-resolution: 1.5dppx) {
+            .groups-card__inner {
+                background-image: url("../images/groups-card-smartphone@1.5x.jpg");
+            }
+        }
+
+        @media (min-resolution: 2dppx) {
+            .groups-card__inner {
+                background-image: url("../images/groups-card-smartphone@2x.jpg");
+            }
+        }
+
+        @media (min-resolution: 3dppx) {
+            .groups-card__inner {
+                background-image: url("../images/groups-card-smartphone@3x.jpg");
+            }
+        }
+            .groups-card__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                max-width: 200px;
+                /*font-family: var(--font-headings);*/
+                /*font-weight: bold;*/
+                font-size: 28px;
+                line-height: 31px;
+            }
+
+            .groups-card__description {
+                /*max-width: 574px;*/
+                margin-top: 16px;
+                /*margin-bottom: 0;*/
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .groups-card__actions {
+                margin-top: 24px;
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                gap: 16px;
+            }
+
+            .groups-card__details {
+                position: absolute;
+                left: 14px;
+                bottom: 8px;
+                top: auto;
+                margin-top: 10px;
+                margin-left: -14px;
+            }
+}
+

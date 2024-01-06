@@ -164,6 +164,10 @@
     .project {
 
     }
+        .project__time {
+
+        }
+
         .project__category {
             /*font-family: var(--font-headings);*/
             /*font-size: 15px;*/
