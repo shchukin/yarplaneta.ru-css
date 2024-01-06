@@ -1,7 +1,7 @@
 .default {
     display: grid;
     gap: 32px;
-    grid-template-columns: 304fr 925fr;
+    grid-template-columns: 282fr 866fr;
 }
     .default__sidebar {
 
@@ -16,7 +16,8 @@
 @media (1500px <= width) {
 
     .default {
-        gap: 53px;
+        gap: 52px;
+        grid-template-columns: 332fr 1014fr;
     }
         .default__sidebar {
 
