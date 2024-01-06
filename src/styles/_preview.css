@@ -1,0 +1,31 @@
+.preview {
+    position: relative;
+    display: block;
+    background-color: var(--image-fallback);
+    overflow: hidden;
+}
+    .preview__image {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        background-color: var(--image-fallback);
+        transition: filter var(--transition-hover);
+    }
+
+    /* Несколько вариантов наведения: */
+    a.preview:hover .preview__image,
+    a.panel__body:hover:hover .preview__image {
+        filter: brightness(1.05) contrast(1.05);
+    }
+
+    .preview::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background-image: linear-gradient(rgb(142 143 250 / 0) 0%, rgb(142 143 250 / 50%) 119.8%);
+    }

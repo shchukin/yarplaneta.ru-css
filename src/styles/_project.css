@@ -1,0 +1,146 @@
+.project {
+
+}
+    .project__category {
+        font-family: var(--font-headings);
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .project__heading {
+        margin-top: 16px;
+        margin-bottom: 0;
+        font-family: var(--font-headings);
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .project__body {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 722fr 379fr;
+        gap: 77px;
+    }
+        .project__content {
+
+        }
+            .project__text {
+
+            }
+
+            .project__summary {
+                margin-top: 40px;
+                display: flex;
+                align-items: flex-start;
+                gap: 20px 40px;
+            }
+
+        .project__stage {
+
+        }
+            .project__stage .preview {
+                border-radius: 8px;
+            }
+                .project__stage .preview__image {
+
+                }
+
+    .project__schedule {
+        margin-top: 80px;
+    }
+        .project__sub-heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-headings);
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .project__calendar {
+            margin-top: 23px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+    .project__group {
+        margin-top: 80px;
+    }
+
+
+
+@media (1500px <= width) {
+
+    .project {
+
+    }
+        .project__category {
+            /*font-family: var(--font-headings);*/
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .project__heading {
+            /*margin-top: 16px;*/
+            /*margin-bottom: 0;*/
+            /*font-family: var(--font-headings);*/
+            /*font-weight: bold;*/
+            font-size: 40px;
+            line-height: 46px;
+        }
+
+        .project__body {
+            /*margin-top: 30px;*/
+            /*display: grid;*/
+            /*grid-template-columns: 722fr 379fr;*/
+            /*gap: 77px;*/
+        }
+            .project__content {
+
+            }
+                .project__text {
+
+                }
+
+                .project__summary {
+                    /*margin-top: 40px;*/
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                    /*gap: 20px 40px;*/
+                }
+
+            .project__stage {
+
+            }
+                .project__stage .preview {
+                    border-radius: 10px;
+                }
+                    .project__stage .preview__image {
+
+                    }
+
+        .project__schedule {
+            margin-top: 100px;
+        }
+            .project__sub-heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-family: var(--font-headings);*/
+                /*font-weight: bold;*/
+                /*font-size: 32px;*/
+                /*line-height: 40px;*/
+            }
+
+            .project__calendar {
+                margin-top: 36px;
+                /*display: grid;*/
+                /*grid-template-columns: repeat(6, 1fr);*/
+                /*gap: 20px;*/
+            }
+
+        .project__group {
+            margin-top: 100px;
+        }
+}
