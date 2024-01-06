@@ -64,15 +64,15 @@
                     }
 
         .footer__contacts {
-            max-width: 430px;
+            max-width: 385px;
             margin-left: auto;
             margin-top: -40px;
             text-align: right;
         }
             .footer__line {
                 margin-top: 12px;
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 20px;
             }
 
             .footer__line:first-child {
@@ -194,15 +194,15 @@
                         }
 
             .footer__contacts {
-                /*max-width: 430px;*/
+                max-width: 430px;
                 /*margin-left: auto;*/
-                /*margin-top: -40px;*/
+                margin-top: -48px;
                 /*text-align: right;*/
             }
                 .footer__line {
                     /*margin-top: 12px;*/
-                    /*font-size: 18px;*/
-                    /*line-height: 22px;*/
+                    font-size: 18px;
+                    line-height: 22px;
                 }
 
                 .footer__line:first-child {
