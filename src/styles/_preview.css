@@ -11,13 +11,13 @@
         object-fit: cover;
         background-color: var(--image-fallback);
         pointer-events: none;
-        transition: filter var(--transition-hover);
+        transition: filter var(--transition-long-hover);
     }
 
     /* Несколько вариантов наведения: */
     a.preview:hover .preview__image,
     a.panel__body:hover:hover .preview__image {
-        filter: brightness(1.05) contrast(1.05);
+        filter: brightness(1.1) contrast(1.1);
     }
 
     .preview::after {

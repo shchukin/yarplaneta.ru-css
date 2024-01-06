@@ -96,15 +96,11 @@
         .publication__stage {
 
         }
-            .preview {
+            .publication__stage .preview {
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
             }
-                .preview__image {
-
-                }
-
-                .preview::after {
+                .publication__stage .preview__image {
 
                 }
 
@@ -155,11 +151,11 @@
         .publication__stage {
 
         }
-            .preview {
+            .publication__stage .preview {
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
             }
-                .preview__image {
+                .publication__stage .preview__image {
 
                 }
 
