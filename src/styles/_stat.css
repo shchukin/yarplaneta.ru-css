@@ -96,3 +96,21 @@
         /* stylelint-enable */
 
 }
+
+@media (width < 740px) {
+
+    .stat--larger {
+
+    }
+        .stat--larger::before {
+            height: 26px;
+        }
+
+        /* stylelint-disable */
+        .stat--contains::before     { width: 26px; }
+        .stat--location::before     { width: 32px; }
+        .stat--duration::before     { width: 26px; }
+        .stat--restriction::before  { width: 21px; }
+        .stat--pushkin-card::before { width: 26px; }
+        /* stylelint-enable */
+}
