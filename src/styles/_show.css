@@ -76,7 +76,7 @@
         .show__info {
             flex-grow: 1;
             position: relative;
-            padding: 0 16px;
+            padding: 0 16px 4px; /* 4px чтобы сильно к низу не прижимало, когда внутри .stat в две строчки */
             display: flex;
             align-items: center;
             background-color: #FFFFFF;
@@ -157,7 +157,7 @@
 
         }
             .show__info {
-                padding: 0 20px;
+                padding: 0 20px 6px;
                 border-bottom-left-radius: 6px;
                 border-bottom-right-radius: 6px;
             }
