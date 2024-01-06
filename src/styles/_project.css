@@ -3,7 +3,7 @@
 }
     .project__time {
         font-family: var(--font-headings);
-        font-size: 20px;
+        font-size: 19px;
         line-height: 24px;
     }
 
@@ -88,7 +88,8 @@
 
     }
         .project__time {
-
+            font-size: 22px;
+            line-height: 26px;
         }
 
         .project__category {
