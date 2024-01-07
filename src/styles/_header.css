@@ -1,22 +1,25 @@
 .header {
 
 }
-    .header__bar {
+    .header__wrap {
 
     }
-        .header__logo {
-            display: inline-block;
-            vertical-align: top;
+        .header__mobile-panel {
+
         }
-            .header__emblem {
+            .header__logo {
+                display: inline-block;
+                vertical-align: top;
+            }
+                .header__emblem {
+
+                }
+
+            .header__burger {
 
             }
 
-        .header__burger {
-
-        }
-
-        .header__dropdown {
+        .header__mobile-dropdown {
 
         }
             .header__navigation {
@@ -48,26 +51,30 @@
     .header {
 
     }
-        .header__bar {
-            display: flex;
-            align-items: flex-start;
-            padding-top: 26px;
-            padding-bottom: 26px;
+        .header__wrap {
+            position: relative;
         }
-            .header__logo {
+            .header__mobile-panel {
 
             }
-                .header__emblem {
-                    flex-shrink: 0;
-                    width: 240px;
-                    height: 82px;
+                .header__logo {
+                    position: absolute;
+                    left: 0;
+                    top: 26px;
+                }
+                    .header__emblem {
+                        flex-shrink: 0;
+                        width: 240px;
+                        height: 82px;
+                    }
+
+                .header__burger {
+                    display: none;
                 }
 
-            .header__burger {
-                display: none;
-            }
-
-            .header__dropdown {
+            .header__mobile-dropdown {
+                padding-top: 26px;
+                padding-bottom: 26px;
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
@@ -107,53 +114,55 @@
     .header {
 
     }
-        .header__bar {
-            /*display: flex;*/
-            /*align-items: flex-start;*/
-            padding-top: 36px;
-            padding-bottom: 36px;
+        .header__wrap {
+
         }
-            .header__logo {
+            .header__mobile-panel {
 
             }
-                .header__emblem {
-                    /*flex-shrink: 0;*/
-                    margin-top: 15px;
-                    width: 252px;
-                    height: 86px;
-                }
-
-            .header__dropdown {
-                /*flex-grow: 1;*/
-                /*display: flex;*/
-                /*flex-direction: column;*/
-            }
-                .header__navigation {
+                .header__logo {
 
                 }
+                    .header__emblem {
+                        /*flex-shrink: 0;*/
+                        margin-top: 15px;
+                        width: 252px;
+                        height: 86px;
+                    }
 
-                .header__data {
-                    /*order: -1;*/
+                .header__mobile-dropdown {
+                    padding-top: 36px;
+                    padding-bottom: 36px;
+                    /*flex-grow: 1;*/
                     /*display: flex;*/
-                    /*align-items: center;*/
-                    /*justify-content: flex-end;*/
+                    /*flex-direction: column;*/
                 }
-                    .header__info {
+                    .header__navigation {
+
+                    }
+
+                    .header__data {
+                        /*order: -1;*/
                         /*display: flex;*/
                         /*align-items: center;*/
+                        /*justify-content: flex-end;*/
                     }
-                        .header__day-phases {
-
+                        .header__info {
+                            /*display: flex;*/
+                            /*align-items: center;*/
                         }
+                            .header__day-phases {
 
-                        .header__moon-phases {
-                            margin-left: 36px;
+                            }
+
+                            .header__moon-phases {
+                                margin-left: 36px;
+                            }
+
+                        .header__languages {
+                            margin-left: 40px;
+                            /*margin-right: -4px;*/
                         }
-
-                    .header__languages {
-                        margin-left: 40px;
-                        /*margin-right: -4px;*/
-                    }
 }
 
 
@@ -163,85 +172,98 @@
     .header {
         height: 82px; /* Распорка. Остаётся на странице. */
     }
-        .header__bar {
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            right: 0;
-            height: 82px;
-            /*display: flex;*/
-            /*padding-top: 26px;*/
-            /*padding-bottom: 26px;*/
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .header__wrap {
+
         }
-
-        .document-scrolled .header__bar {
-            background-color: #000000;
-        }
-            .header__logo {
-
-            }
-                .header__emblem {
-                    /*flex-shrink: 0;*/
-                    width: 147px;
-                    height: 50px;
-                }
-
-            .header__burger {
-                /*display: none;*/
-                border: none;
-                width: 60px;
-                height: 60px;
-                padding: 0;
-                background-color: transparent;
-                background-image: url("../vectors/header-burger.svg");
-                background-size: 37px 24px;
-                background-repeat: no-repeat;
-                background-position: center center;
-                text-indent: 200%;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-
-            .header__dropdown {
-                display: none;
-                /*flex-grow: 1;*/
+            .header__mobile-panel {
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 82px;
                 /*display: flex;*/
-                /*flex-direction: column;*/
+                /*padding-top: 26px;*/
+                /*padding-bottom: 26px;*/
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
             }
 
-            .burger-expanded .header__dropdown {
-                display: block;
+            .document-scrolled .header__mobile-panel {
+                background-color: rgb(39 38 64 / 80%);
+                backdrop-filter: blur(4px);
+                box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
             }
-                .header__navigation {
-
+                .header__mobile-wrap {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                 }
+                    .header__logo {
 
-                .header__data {
-                    /*order: -1;*/
-                    /*display: flex;*/
-                    /*align-items: center;*/
-                    /*justify-content: flex-end;*/
-                }
-                    .header__info {
+                    }
+                        .header__emblem {
+                            /*flex-shrink: 0;*/
+                            width: 147px;
+                            height: 50px;
+                        }
+
+                    .header__burger {
+                        /*display: none;*/
+                        border: none;
+                        margin-right: -11px;
+                        width: 60px;
+                        height: 60px;
+                        padding: 0;
+                        background-color: transparent;
+                        background-image: url("../vectors/header-burger.svg");
+                        background-size: 37px 24px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        text-indent: 200%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+
+                    .header__mobile-dropdown {
+                        display: none;
+                        /*flex-grow: 1;*/
                         /*display: flex;*/
-                        /*align-items: center;*/
+                        /*flex-direction: column;*/
                     }
-                        .header__day-phases {
+
+                    .burger-expanded .header__mobile-dropdown {
+                        display: block;
+                    }
+                        .header__navigation {
 
                         }
 
-                        .header__moon-phases {
-                            /*margin-left: 18px;*/
+                        .header__data {
+                            /*order: -1;*/
+                            /*display: flex;*/
+                            /*align-items: center;*/
+                            /*justify-content: flex-end;*/
                         }
+                            .header__info {
+                                /*display: flex;*/
+                                /*align-items: center;*/
+                            }
+                                .header__day-phases {
 
-                    .header__languages {
-                        /*margin-left: 20px;*/
-                        /*margin-right: -4px;*/
-                    }
+                                }
+
+                                .header__moon-phases {
+                                    /*margin-left: 18px;*/
+                                }
+
+                            .header__languages {
+                                /*margin-left: 20px;*/
+                                /*margin-right: -4px;*/
+                            }
 }
 
 
