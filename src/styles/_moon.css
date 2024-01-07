@@ -96,5 +96,7 @@
 
         .moon__text {
             padding-bottom: 2px;
+            font-size: 18px;
+            line-height: 22px;
         }
 }

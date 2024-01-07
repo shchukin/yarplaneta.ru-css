@@ -12,42 +12,38 @@
 
         }
 
-        @media (740px <= width) {
-            .header__burger {
-                display: none;
-            }
-        }
 
     .header__dropdown {
 
     }
+        .header__nav {
+
+        }
+            .header__column {
+
+            }
+                .header__chevron {
+                    fill: currentColor;
+                }
+
+                .header__menu {
+
+                }
+                    .header__link {
+
+                    }
+
         .header__data {
-            display: flex;
-            align-items: flex-start;
+
         }
             .header__info {
 
             }
 
-            .header__moon {
+            .header__languages {
 
             }
 
-            .header__eng {
-                font-family: var(--font-headings);
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 22px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-decoration: underline 2px #8E8FFA;
-                text-underline-offset: 4px;
-                transition: text-decoration-color var(--transition-hover);
-            }
-
-            .header__eng:hover {
-                text-decoration-color: transparent;
-            }
 
         .header__nav {
 

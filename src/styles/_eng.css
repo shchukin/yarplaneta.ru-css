@@ -1,0 +1,15 @@
+.eng {
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: underline 2px #8E8FFA;
+    text-underline-offset: 4px;
+    transition: text-decoration-color var(--transition-hover);
+}
+
+.eng:hover {
+    text-decoration-color: transparent;
+}
