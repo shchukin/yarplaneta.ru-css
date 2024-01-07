@@ -1,7 +1,7 @@
 .nav {
 
 }
-    .nav__column {
+    .nav__item {
 
     }
         .nav__heading {
@@ -28,7 +28,7 @@
         align-items: flex-start;
         justify-content: flex-end;
     }
-        .nav--header .nav__column {
+        .nav--header .nav__item {
             position: relative;
         }
             .nav--header .nav__heading {
@@ -72,12 +72,12 @@
                             visibility var(--transition-dropdown);
             }
 
-            .nav__column:hover .nav__menu {
+            .nav__item:hover .nav__menu {
                 opacity: 1;
                 visibility: visible;
             }
 
-            .nav__column:focus-within .nav__menu {
+            .nav__item:focus-within .nav__menu {
                 opacity: 1;
                 visibility: visible;
             }
@@ -111,7 +111,7 @@
         /*align-items: flex-start;*/
         /*justify-content: flex-end;*/
     }
-        .nav--header .nav__column {
+        .nav--header .nav__item {
 
         }
             .nav--header .nav__heading {
@@ -160,7 +160,7 @@
         /*align-items: flex-start;*/
         /*justify-content: flex-end;*/
     }
-        .nav--header .nav__column {
+        .nav--header .nav__item {
             /*position: relative;*/
         }
             .nav--header .nav__heading {
@@ -187,7 +187,7 @@
                     transition: transform 100ms ease;
                 }
 
-                .nav--header .nav__column--expanded .nav__chevron {
+                .nav--header .nav__item--expanded .nav__chevron {
                     transform: scaleY(-1);
                 }
 
@@ -209,7 +209,7 @@
                 /*            visibility var(--transition-dropdown);*/
             }
 
-            .nav--header .nav__column--expanded .nav__menu {
+            .nav--header .nav__item--expanded .nav__menu {
                 display: block;
                 animation: slide-down 300ms ease;
             }
@@ -248,7 +248,7 @@
     justify-content: space-between;
     gap: 32px;
 }
-    .nav--footer .nav__column {
+    .nav--footer .nav__item {
 
     }
         .nav--footer .nav__heading {
@@ -307,7 +307,7 @@
         /*align-items: flex-start;*/
         /*gap: 32px;*/
     }
-        .nav--footer .nav__column {
+        .nav--footer .nav__item {
 
         }
             .nav--footer .nav__heading {
@@ -357,7 +357,7 @@
         /*justify-content: space-between;*/
         /*gap: 32px;*/
     }
-        .nav--footer .nav__column {
+        .nav--footer .nav__item {
 
         }
             .nav--footer .nav__heading {

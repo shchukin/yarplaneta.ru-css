@@ -11,7 +11,7 @@
             $(window).scrollTop(0); /* При открытии меню его скролл должен быть в начале */
         } else {
             $html.removeClass('burger-expanded');
-            $('.nav__column').removeClass('nav__column--expanded');
+            $('.nav__item').removeClass('nav__item--expanded');
             $(window).scrollTop(rememberedPageScrollPosition);/* При закрытии меню скролл должен быть там, где пользователь его оставил */
         }
     });
