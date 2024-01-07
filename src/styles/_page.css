@@ -4,6 +4,10 @@
 
 @media (width < 740px) {
 
+    .page {
+        padding-top: var(--mobile-header-height);
+    }
+
     .burger-expanded .page {
         display: none;
     }

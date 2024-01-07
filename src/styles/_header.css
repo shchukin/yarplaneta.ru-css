@@ -170,7 +170,7 @@
 @media (width < 740px) {
 
     .header {
-        height: 82px; /* Распорка. Остаётся на странице. */
+
     }
         .header__wrap {
 
@@ -181,10 +181,7 @@
                 left: 0;
                 top: 0;
                 right: 0;
-                height: 82px;
-                /*display: flex;*/
-                /*padding-top: 26px;*/
-                /*padding-bottom: 26px;*/
+                height: var(--mobile-header-height);
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -193,20 +190,29 @@
                 box-shadow 300ms ease;
             }
 
-            .document-scrolled .header__mobile-panel {
+            .document-scrolled:not(.burger-expanded) .header__mobile-panel {
                 background-color: rgb(39 38 64 / 80%);
                 backdrop-filter: blur(4px);
                 box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
             }
+
+            .burger-expanded .header__mobile-panel {
+                pointer-events: none;
+            }
+
                 .header__mobile-wrap {
                     width: 100%;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
                 }
                     .header__logo {
 
                     }
+
+                    .burger-expanded .header__logo {
+                        display: none;
+                    }
+
                         .header__emblem {
                             /*flex-shrink: 0;*/
                             width: 147px;
@@ -217,6 +223,7 @@
                         /*display: none;*/
                         border: none;
                         margin-right: -11px;
+                        margin-left: auto;
                         width: 60px;
                         height: 60px;
                         padding: 0;
@@ -231,8 +238,15 @@
                         cursor: pointer;
                     }
 
+                    .burger-expanded .header__burger {
+                        background-image: url("../vectors/header-burger-expanded.svg");
+                        background-size: 26px 26px;
+                        pointer-events: auto;
+                    }
+
                     .header__mobile-dropdown {
                         display: none;
+                        padding-top: var(--mobile-header-height);
                         /*flex-grow: 1;*/
                         /*display: flex;*/
                         /*flex-direction: column;*/
