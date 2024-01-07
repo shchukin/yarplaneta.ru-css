@@ -12,39 +12,228 @@
 
         }
 
-
-    .header__dropdown {
-
-    }
-        .header__nav {
+        .header__dropdown {
 
         }
-            .header__column {
+            .header__nav {
 
             }
-                .header__chevron {
-                    fill: currentColor;
-                }
-
-                .header__menu {
+                .header__column {
 
                 }
-                    .header__link {
+                    .header__heading {
+
+                    }
+                        .header__chevron {
+                            fill: currentColor;
+                        }
+
+                    .header__menu {
+
+                    }
+                        .header__link {
+
+                        }
+
+            .header__data {
+
+            }
+                .header__info {
+
+                }
+                    .header__day-phases {
 
                     }
 
-        .header__data {
+                    .header__moon-phases {
 
+                    }
+
+                .header__languages {
+
+                }
+
+
+
+@media (740px <= width) {
+
+    .header {
+
+    }
+        .header__bar {
+            display: flex;
+            align-items: flex-start;
+            padding-top: 26px;
+            padding-bottom: 26px;
         }
-            .header__info {
-
+            .header__logo {
+                flex-shrink: 0;
+                width: 240px;
+                height: 82px;
             }
 
-            .header__languages {
-
+            .header__burger {
+                display: none;
             }
 
+            .header__dropdown {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+                .header__nav {
+                    margin-right: -12px;
+                    margin-top: 8px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                }
+                    .header__column {
 
-        .header__nav {
+                    }
+                        .header__heading {
+                            display: flex;
+                            align-items: center;
+                            padding: 6px 12px;
+                            gap: 8px;
+                            text-decoration: none;
+                            font-family: var(--font-headings);
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 24px;
+                            white-space: nowrap;
+                            color: inherit;
+                            transition: color var(--transition-hover);
+                        }
 
+                        .header__heading:hover {
+                            color: #8E8FFA;
+                        }
+
+                            .header__chevron {
+                                margin-top: 4px;
+                                width: 12px;
+                                height: 7px;
+                            }
+
+                        .header__menu {
+                            display: none;
+                        }
+                            .header__link {
+
+                            }
+
+                .header__data {
+                    order: -1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+                    .header__info {
+                        display: flex;
+                        align-items: center;
+                    }
+                        .header__day-phases {
+
+                        }
+
+                        .header__moon-phases {
+                            margin-left: 18px;
+                        }
+
+                    .header__languages {
+                        margin-left: 20px;
+                        margin-right: -4px;
+                    }
+}
+
+
+
+@media (1500px <= width) {
+
+    .header {
+
+    }
+        .header__bar {
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            padding-top: 36px;
+            padding-bottom: 36px;
         }
+            .header__logo {
+                /*flex-shrink: 0;*/
+                margin-top: 15px;
+                width: 252px;
+                height: 86px;
+            }
+
+            .header__dropdown {
+                /*flex-grow: 1;*/
+                /*display: flex;*/
+                /*flex-direction: column;*/
+            }
+                .header__nav {
+                    margin-right: -16px;
+                    margin-top: 21px;
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                    /*justify-content: flex-end;*/
+                }
+                    .header__column {
+
+                    }
+                        .header__heading {
+                            /*display: flex;*/
+                            /*align-items: center;*/
+                            padding: 8px 16px;
+                            /*gap: 8px;*/
+                            /*text-decoration: none;*/
+                            /*font-family: var(--font-headings);*/
+                            /*font-weight: bold;*/
+                            font-size: 22px;
+                            line-height: 26px;
+                            /*white-space: nowrap;*/
+                            /*color: inherit;*/
+                            /*transition: color var(--transition-hover);*/
+                        }
+
+                        .header__heading:hover {
+                            /*color: #8E8FFA;*/
+                        }
+
+                            .header__chevron {
+                                /*margin-top: 4px;*/
+                                width: 14px;
+                                height: 8px;
+                            }
+
+                        .header__menu {
+
+                        }
+                            .header__link {
+
+                            }
+
+                .header__data {
+                    /*order: -1;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: flex-end;*/
+                }
+                    .header__info {
+                        /*display: flex;*/
+                        /*align-items: center;*/
+                    }
+                        .header__day-phases {
+
+                        }
+
+                        .header__moon-phases {
+                            margin-left: 36px;
+                        }
+
+                    .header__languages {
+                        margin-left: 40px;
+                        /*margin-right: -4px;*/
+                    }
+}
