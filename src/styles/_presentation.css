@@ -23,6 +23,15 @@
     .presentation__summary {
         padding-right: 127px;
     }
+        .presentation__time {
+            display: block;
+            padding-bottom: 4px;
+            font-family: var(--font-headings);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
         .presentation__heading {
             margin-top: 0;
             margin-bottom: 0;
@@ -90,6 +99,12 @@
         .presentation__summary {
             padding-right: 284px;
         }
+            .presentation__time {
+                padding-bottom: 4px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
             .presentation__heading {
                 /*margin-top: 0;*/
                 /*margin-bottom: 0;*/
@@ -170,6 +185,11 @@
             display: flex;
             flex-direction: column;
         }
+            .presentation--vertical-on-smartphones .presentation__time {
+                order: -1;
+                padding-bottom: 3px;
+            }
+
             .presentation--vertical-on-smartphones .presentation__heading {
                 margin-top: 7px;
                 /*margin-bottom: 0;*/
@@ -238,6 +258,10 @@
             .presentation--squared-on-smartphones .presentation__summary {
                 /*padding-right: 127px;*/
             }
+                .presentation--squared-on-smartphones .presentation__time {
+
+                }
+
                 .presentation--squared-on-smartphones .presentation__heading {
                     /*margin-top: 0;*/
                     /*margin-bottom: 0;*/
