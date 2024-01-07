@@ -177,6 +177,10 @@
             align-items: center;
             justify-content: space-between;
         }
+
+        .document-scrolled .header__bar {
+            background-color: #000000;
+        }
             .header__logo {
 
             }
