@@ -190,7 +190,7 @@
                 box-shadow 300ms ease;
             }
 
-            .document-scrolled:not(.burger-expanded) .header__mobile-panel {
+            .page-scrolled:not(.burger-expanded) .header__mobile-panel {
                 background-color: rgb(39 38 64 / 80%);
                 backdrop-filter: blur(4px);
                 box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
