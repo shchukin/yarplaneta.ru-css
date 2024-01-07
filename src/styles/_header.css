@@ -7,6 +7,9 @@
         .header__logo {
 
         }
+            .header__emblem {
+
+            }
 
         .header__burger {
 
@@ -15,25 +18,9 @@
         .header__dropdown {
 
         }
-            .header__nav {
+            .header__navigation {
 
             }
-                .header__column {
-
-                }
-                    .header__heading {
-
-                    }
-                        .header__chevron {
-                            fill: currentColor;
-                        }
-
-                    .header__menu {
-
-                    }
-                        .header__link {
-
-                        }
 
             .header__data {
 
@@ -67,10 +54,14 @@
             padding-bottom: 26px;
         }
             .header__logo {
-                flex-shrink: 0;
-                width: 240px;
-                height: 82px;
+                display: inline-block;
+                vertical-align: top;
             }
+                .header__emblem {
+                    flex-shrink: 0;
+                    width: 240px;
+                    height: 82px;
+                }
 
             .header__burger {
                 display: none;
@@ -81,47 +72,9 @@
                 display: flex;
                 flex-direction: column;
             }
-                .header__nav {
-                    margin-right: -12px;
-                    margin-top: 8px;
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-end;
+                .header__navigation {
+
                 }
-                    .header__column {
-
-                    }
-                        .header__heading {
-                            display: flex;
-                            align-items: center;
-                            padding: 6px 12px;
-                            gap: 8px;
-                            text-decoration: none;
-                            font-family: var(--font-headings);
-                            font-weight: bold;
-                            font-size: 20px;
-                            line-height: 24px;
-                            white-space: nowrap;
-                            color: inherit;
-                            transition: color var(--transition-hover);
-                        }
-
-                        .header__heading:hover {
-                            color: #8E8FFA;
-                        }
-
-                            .header__chevron {
-                                margin-top: 4px;
-                                width: 12px;
-                                height: 7px;
-                            }
-
-                        .header__menu {
-                            display: none;
-                        }
-                            .header__link {
-
-                            }
 
                 .header__data {
                     order: -1;
@@ -161,58 +114,23 @@
             padding-bottom: 36px;
         }
             .header__logo {
-                /*flex-shrink: 0;*/
-                margin-top: 15px;
-                width: 252px;
-                height: 86px;
+
             }
+                .header__emblem {
+                    /*flex-shrink: 0;*/
+                    margin-top: 15px;
+                    width: 252px;
+                    height: 86px;
+                }
 
             .header__dropdown {
                 /*flex-grow: 1;*/
                 /*display: flex;*/
                 /*flex-direction: column;*/
             }
-                .header__nav {
-                    margin-right: -16px;
-                    margin-top: 21px;
-                    /*display: flex;*/
-                    /*align-items: flex-start;*/
-                    /*justify-content: flex-end;*/
+                .header__navigation {
+
                 }
-                    .header__column {
-
-                    }
-                        .header__heading {
-                            /*display: flex;*/
-                            /*align-items: center;*/
-                            padding: 8px 16px;
-                            /*gap: 8px;*/
-                            /*text-decoration: none;*/
-                            /*font-family: var(--font-headings);*/
-                            /*font-weight: bold;*/
-                            font-size: 22px;
-                            line-height: 26px;
-                            /*white-space: nowrap;*/
-                            /*color: inherit;*/
-                            /*transition: color var(--transition-hover);*/
-                        }
-
-                        .header__heading:hover {
-                            /*color: #8E8FFA;*/
-                        }
-
-                            .header__chevron {
-                                /*margin-top: 4px;*/
-                                width: 14px;
-                                height: 8px;
-                            }
-
-                        .header__menu {
-
-                        }
-                            .header__link {
-
-                            }
 
                 .header__data {
                     /*order: -1;*/
