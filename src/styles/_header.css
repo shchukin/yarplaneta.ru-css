@@ -188,6 +188,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                transition: background-color 300ms ease,
+                backdrop-filter 300ms ease,
+                box-shadow 300ms ease;
             }
 
             .document-scrolled .header__mobile-panel {
