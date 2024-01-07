@@ -5,7 +5,8 @@
 
     }
         .header__logo {
-
+            display: inline-block;
+            vertical-align: top;
         }
             .header__emblem {
 
@@ -54,8 +55,7 @@
             padding-bottom: 26px;
         }
             .header__logo {
-                display: inline-block;
-                vertical-align: top;
+
             }
                 .header__emblem {
                     flex-shrink: 0;
@@ -155,3 +155,89 @@
                         /*margin-right: -4px;*/
                     }
 }
+
+
+
+@media (width < 740px) {
+
+    .header {
+        height: 82px; /* Распорка. Остаётся на странице. */
+    }
+        .header__bar {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 82px;
+            /*display: flex;*/
+            /*padding-top: 26px;*/
+            /*padding-bottom: 26px;*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            .header__logo {
+
+            }
+                .header__emblem {
+                    /*flex-shrink: 0;*/
+                    width: 147px;
+                    height: 50px;
+                }
+
+            .header__burger {
+                /*display: none;*/
+                border: none;
+                width: 60px;
+                height: 60px;
+                padding: 0;
+                background-color: transparent;
+                background-image: url("../vectors/header-burger.svg");
+                background-size: 37px 24px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .header__dropdown {
+                display: none;
+                /*flex-grow: 1;*/
+                /*display: flex;*/
+                /*flex-direction: column;*/
+            }
+
+            .burger-expanded .header__dropdown {
+                display: block;
+            }
+                .header__navigation {
+
+                }
+
+                .header__data {
+                    /*order: -1;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: flex-end;*/
+                }
+                    .header__info {
+                        /*display: flex;*/
+                        /*align-items: center;*/
+                    }
+                        .header__day-phases {
+
+                        }
+
+                        .header__moon-phases {
+                            /*margin-left: 18px;*/
+                        }
+
+                    .header__languages {
+                        /*margin-left: 20px;*/
+                        /*margin-right: -4px;*/
+                    }
+}
+
+

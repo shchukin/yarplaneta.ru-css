@@ -20,3 +20,10 @@ body {
         background-size: 838px 2165px;
     }
 }
+
+
+.burger-expanded body {
+    background-color: #FFFFFF;
+    background-image: none;
+    color: #000000;
+}
