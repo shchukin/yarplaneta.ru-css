@@ -140,3 +140,148 @@
                     /*flex-shrink: 0;*/
                 }
 }
+
+
+
+@media (width < 740px) {
+
+    .presentation--vertical-on-smartphones {
+        display: block;
+        /*grid-template-columns: 288fr 816fr;*/
+        /*gap: 20px;*/
+    }
+        .presentation--vertical-on-smartphones .presentation__stage {
+            /*flex-shrink: 0;*/
+        }
+            .presentation--vertical-on-smartphones .presentation__stage .preview {
+                /*border-radius: 12px;*/
+            }
+                .presentation--vertical-on-smartphones .presentation__stage .preview__image {
+                    /*aspect-ratio: 450 / 424;*/
+                }
+
+        .presentation--vertical-on-smartphones .presentation__content {
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+            .presentation--vertical-on-smartphones .presentation__summary {
+                padding-right: 0;
+            }
+                .presentation--vertical-on-smartphones .presentation__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-weight: bold;*/
+                    /*font-size: 24px;*/
+                    /*line-height: 30px;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .presentation--vertical-on-smartphones .presentation__category {
+                    /*margin-top: 5px;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-size: 16px;*/
+                    /*line-height: 20px;*/
+                }
+
+                .presentation--vertical-on-smartphones .presentation__text {
+                    /*margin-top: 16px;*/
+                }
+
+            .presentation--vertical-on-smartphones .presentation__footer {
+                /*margin-top: auto;*/
+                /*padding-top: 16px;*/
+                display: block;
+                /*align-items: flex-end;*/
+            }
+                .presentation--vertical-on-smartphones .presentation__stats {
+                    /*flex-grow: 1;*/
+                }
+                    .presentation--vertical-on-smartphones .presentation__location {
+
+                    }
+
+                    .presentation--vertical-on-smartphones .presentation__remaining-stats {
+                        margin-top: 10px;
+                        /*display: block;*/
+                        /*align-items: flex-start;*/
+                        flex-wrap: wrap;
+                        gap: 14px 22px;
+                    }
+
+                .presentation--vertical-on-smartphones .presentation__details {
+                    /*flex-shrink: 0;*/
+                    text-align: right;
+                }
+
+
+
+    .presentation--squared-on-smartphones {
+        /*display: grid;*/
+        /*grid-template-columns: 288fr 816fr;*/
+        /*gap: 20px;*/
+    }
+        .presentation--squared-on-smartphones .presentation__stage {
+            /*flex-shrink: 0;*/
+        }
+            .presentation--squared-on-smartphones .presentation__stage .preview {
+                /*border-radius: 12px;*/
+            }
+                .presentation--squared-on-smartphones .presentation__stage .preview__image {
+                    /*aspect-ratio: 450 / 424;*/
+                }
+
+        .presentation--squared-on-smartphones .presentation__content {
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+            .presentation--squared-on-smartphones .presentation__summary {
+                /*padding-right: 127px;*/
+            }
+                .presentation--squared-on-smartphones .presentation__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-weight: bold;*/
+                    /*font-size: 24px;*/
+                    /*line-height: 30px;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .presentation--squared-on-smartphones .presentation__category {
+                    /*margin-top: 5px;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-size: 16px;*/
+                    /*line-height: 20px;*/
+                }
+
+                .presentation--squared-on-smartphones .presentation__text {
+                    /*margin-top: 16px;*/
+                }
+
+            .presentation--squared-on-smartphones .presentation__footer {
+                /*margin-top: auto;*/
+                /*padding-top: 16px;*/
+                /*display: flex;*/
+                /*align-items: flex-end;*/
+            }
+                .presentation--squared-on-smartphones .presentation__stats {
+                    /*flex-grow: 1;*/
+                }
+                    .presentation--squared-on-smartphones .presentation__location {
+
+                    }
+
+                    .presentation--squared-on-smartphones .presentation__remaining-stats {
+                        /*margin-top: 10px;*/
+                        /*display: flex;*/
+                        /*align-items: flex-start;*/
+                        /*gap: 20px 40px;*/
+                    }
+
+                .presentation--squared-on-smartphones .presentation__details {
+                    /*flex-shrink: 0;*/
+                }
+}
+
+
