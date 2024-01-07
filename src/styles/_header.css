@@ -199,7 +199,6 @@
             .burger-expanded .header__mobile-panel {
                 pointer-events: none;
             }
-
                 .header__mobile-wrap {
                     width: 100%;
                     display: flex;
@@ -212,7 +211,6 @@
                     .burger-expanded .header__logo {
                         display: none;
                     }
-
                         .header__emblem {
                             /*flex-shrink: 0;*/
                             width: 147px;
@@ -254,6 +252,7 @@
 
                     .burger-expanded .header__mobile-dropdown {
                         display: block;
+                        animation: slide-down-longer var(--transition-show);
                     }
                         .header__navigation {
 

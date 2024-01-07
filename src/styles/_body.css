@@ -22,8 +22,16 @@ body {
 }
 
 
-.burger-expanded body {
-    background-color: #FFFFFF;
-    background-image: none;
-    color: #000000;
+
+.burger-expanded {
+
+}
+
+@media (width < 740px) {
+    .burger-expanded body {
+        background-color: #FFFFFF;
+        background-image: none;
+        color: #000000;
+        transition: background-color var(--transition-show);
+    }
 }

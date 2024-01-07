@@ -8,3 +8,15 @@
         transform: translateY(0);
     }
 }
+
+
+@keyframes slide-down-longer {
+    from {
+        opacity: 20%;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
