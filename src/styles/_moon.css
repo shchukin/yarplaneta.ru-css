@@ -100,3 +100,22 @@
             line-height: 22px;
         }
 }
+
+
+
+@media (width < 740px) {
+
+    .moon {
+        gap: 14px;
+    }
+        .moon__pic {
+            width: 30px;
+            height: 30px;
+        }
+
+        .moon__text {
+            padding-bottom: 2px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+}

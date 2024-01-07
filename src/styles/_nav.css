@@ -168,7 +168,7 @@
             .nav--header .nav__heading {
                 display: flex;
                 align-items: center;
-                padding: 6px 0;
+                padding: 16px 0;
                 gap: 8px;
                 /*text-decoration: none;*/
                 font-family: var(--font-headings);

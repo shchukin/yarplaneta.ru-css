@@ -9,11 +9,12 @@
         isUserScreenMobile = window.matchMedia('(max-width: 739px)').matches;
     }
 
+    /* Если у айтема есть подменю, то его открываем по клику. Остальные айтемы не трогаем, там пусть срабатывает href */
     $('.nav--header .nav__heading').on('click', function (event) {
-        // if(isUserScreenMobile) {
+        if($(this).parents('.nav__column').find('.nav__menu').length && isUserScreenMobile) {
             event.preventDefault();
             $(this).parents('.nav__column').toggleClass('nav__column--expanded');
-        // }
+        }
     });
 
 

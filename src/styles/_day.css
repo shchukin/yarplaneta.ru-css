@@ -5,19 +5,31 @@
     gap: 4px 26px;
 }
     .day__stat {
+        position: relative;
         padding-left: 24px;
-        background-size: 18px 18px;
-        background-repeat: no-repeat;
-        background-position: left center;
         font-family: var(--font-headings);
         font-size: 16px;
         line-height: 20px;
     }
 
-    .day__stat--sunrise { background-image: url("../vectors/day-stat-sunrise@3x.png") }
-    .day__stat--sunset { background-image: url("../vectors/day-stat-sunset@3x.png") }
-    .day__stat--daylight-duration { background-image: url("../vectors/day-stat-daylight-duration@3x.png") }
-    .day__stat--night-duration { background-image: url("../vectors/day-stat-night-duration@3x.png") }
+    .day__stat::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -10px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    .day__stat--sunrise::before           { background-image: url("../vectors/day-stat-sunrise@3x.png") }
+    .day__stat--sunset::before            { background-image: url("../vectors/day-stat-sunset@3x.png") }
+    .day__stat--daylight-duration::before { background-image: url("../vectors/day-stat-daylight-duration@3x.png") }
+    .day__stat--night-duration::before    { background-image: url("../vectors/day-stat-night-duration@3x.png") }
 
 
 
@@ -32,6 +44,25 @@
             font-size: 18px;
             line-height: 22px;
         }
+}
+
+
+
+
+@media (width < 740px) {
+
+    .day {
+        gap: 4px 40px;
+    }
+        .day__stat {
+            padding-left: 26px;
+            background-size: 20px 20px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+            .day__stat::before {
+                filter: invert(1);
+            }
 }
 
 

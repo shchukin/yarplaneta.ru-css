@@ -15,7 +15,8 @@
 
 
     $('.header__burger').on('click', function () {
-        $html.toggleClass('burger-expanded')
+        $html.toggleClass('burger-expanded');
+        $('.nav__column').removeClass('nav__column--expanded');
     });
 
 })(jQuery);
