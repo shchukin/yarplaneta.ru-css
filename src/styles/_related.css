@@ -59,15 +59,11 @@
 
 @media (740px <= width) {
 
-    .related--news .related__list {
+    .related__list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .related--two-columns .related__list {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .related--blog .related__list {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .related--portfolio .related__list {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
