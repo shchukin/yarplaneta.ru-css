@@ -1,6 +1,6 @@
 {
-    "name": "Template",
-    "short_name": "Template",
+    "name": "yarplaneta.ru",
+    "short_name": "yarplaneta.ru",
     "icons": [
         {
             "src": "favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ECE5E4",
-    "background_color": "#ECE5E4",
+    "theme_color": "#14131E",
+    "background_color": "#14131E",
     "display": "standalone"
 }
