@@ -57,7 +57,6 @@
             </defs>
         </svg>
 
-
         <!--[if IE]>
             <div class="browser">
                 Вы используете устаревший браузер. Для корректной работы этого сайта и большинства других вам необходимо перейти на современный&nbsp;браузер.
@@ -65,224 +64,479 @@
         <![endif]-->
 
         <header class="header">
-
+            <div class="header__wrap container">
+                <div class="header__mobile-panel">
+                    <div class="header__mobile-wrap container">
+                        <a class="header__logo" href="#">
+                            <img class="header__emblem" src="../content/logo.svg" alt="">
+                        </a>
+                        <button class="header__burger">
+                            Открыть меню
+                        </button>
+                    </div>
+                </div>
+                <div class="header__mobile-dropdown">
+                    <div class="header__navigation">
+                        <div class="nav nav--header">
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    О центре
+                                    <svg class="nav__chevron" width="14" height="8" viewbox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.31-.007L.07 1.205 7 7.94l6.93-6.74-1.239-1.206-5.69 5.536L1.308-.007z"/>
+                                    </svg>
+                                </a>
+                                <div class="nav__menu">
+                                    <a class="nav__sub-link" href="#">История<br> создания</a>
+                                    <a class="nav__sub-link" href="#">Этапы жизни<br> <span class="nobr">В.В. Терешковой</span></a>
+                                    <a class="nav__sub-link" href="#">Музыка сфер</a>
+                                    <a class="nav__sub-link" href="#">Новости</a>
+                                    <a class="nav__sub-link" href="#">Календарь<br>космонавтики</a>
+                                    <a class="nav__sub-link" href="#">Карта<br> планетария</a>
+                                </div>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    Афиша
+                                </a>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    Мероприятия
+                                    <svg class="nav__chevron" width="14" height="8" viewbox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.31-.007L.07 1.205 7 7.94l6.93-6.74-1.239-1.206-5.69 5.536L1.308-.007z"/>
+                                    </svg>
+                                </a>
+                                <div class="nav__menu">
+                                    <a class="nav__sub-link" href="#">Конференции</a>
+                                    <a class="nav__sub-link" href="#">Конкурсы</a>
+                                    <a class="nav__sub-link" href="#">Фестивали</a>
+                                    <a class="nav__sub-link" href="#">События</a>
+                                </div>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    Для групп
+                                    <svg class="nav__chevron" width="14" height="8" viewbox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.31-.007L.07 1.205 7 7.94l6.93-6.74-1.239-1.206-5.69 5.536L1.308-.007z"/>
+                                    </svg>
+                                </a>
+                                <div class="nav__menu">
+                                    <a class="nav__sub-link" href="#">Школьные туры</a>
+                                    <a class="nav__sub-link" href="#">Турфирмы</a>
+                                    <a class="nav__sub-link" href="#">Организация<br> праздников</a>
+                                    <a class="nav__sub-link" href="#">События</a>
+                                </div>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    Билеты
+                                    <svg class="nav__chevron" width="14" height="8" viewbox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.31-.007L.07 1.205 7 7.94l6.93-6.74-1.239-1.206-5.69 5.536L1.308-.007z"/>
+                                    </svg>
+                                </a>
+                                <div class="nav__menu">
+                                    <a class="nav__sub-link" href="#">Правила<br> посещения</a>
+                                    <a class="nav__sub-link" href="#">Порядок<br> оказания услуг</a>
+                                    <a class="nav__sub-link" href="#">Льготное<br> посещение</a>
+                                </div>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    Астроблог
+                                </a>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link-heading" href="#">
+                                    Контакты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__data">
+                        <div class="header__info">
+                            <div class="header__day-phases">
+                                <div class="day">
+                                    <div class="day__stat day__stat--sunrise">
+                                        восход: 7:59
+                                    </div>
+                                    <div class="day__stat day__stat--sunset">
+                                        заход: 15:50
+                                    </div>
+                                    <div class="day__stat day__stat--daylight-duration">
+                                        день: 9:50
+                                    </div>
+                                    <div class="day__stat day__stat--night-duration">
+                                        ночь: 14:10
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__moon-phases">
+                                <div class="moon">
+                                    <div class="moon__pic moon__pic--phase-4"></div>
+                                    <div class="moon__text">Растущая луна</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__languages">
+                            <a class="eng" href="#">
+                                Eng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <div class="breadcrumbs container">
-            <span class="breadcrumbs__item">
-                <a class="link link--white" href="landing.html">Главная</a>
-            </span>
-            <span class="breadcrumbs__item">
-                <a class="link link--white" href="events.html">События</a>
-            </span>
-            <span class="breadcrumbs__item">
-                <span class="breadcrumbs__title">Планетарий: взгляд сквозь десятилетия</span>
-            </span>
+        <div class="page">
+            <div class="breadcrumbs container">
+                <span class="breadcrumbs__item">
+                    <a class="link link--white" href="landing.html">Главная</a>
+                </span>
+                <span class="breadcrumbs__item">
+                    <a class="link link--white" href="events.html">События</a>
+                </span>
+                <span class="breadcrumbs__item">
+                    <span class="breadcrumbs__title">Планетарий: взгляд сквозь десятилетия</span>
+                </span>
+            </div>
+            <article class="project container">
+                <time class="project__time" datetime="2023-12-31T23:59Z"><!-- дата только на страницах Ивентов -->
+                    <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
+                </time>
+                <h1 class="project__heading">
+                    Планетарий: взгляд сквозь десятилетия
+                </h1>
+                <div class="project__category">
+                    Ретро-лекция
+                </div>
+                <div class="project__body">
+                    <div class="project__stage">
+                        <a class="preview" href="#">
+                            <img class="preview__image"
+                                 srcset="
+                                ../temp/shows/event-a@3x.jpg 3x,
+                                ../temp/shows/event-a@2x.jpg 2x,
+                                ../temp/shows/event-a@1.5x.jpg 1.5x,
+                                ../temp/shows/event-a@1x.jpg 1x
+                             "
+                                 src="../temp/shows/event-a@1x.jpg"
+                                 width="450"
+                                 height="424"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__text wysiwyg">
+                            <p>В 2023 году исполняется 75 лет со дня открытия первого планетария в Ярославле. Центр имени В.В. Терешковой является преемником этогопланетария и поддерживает традиции астрономического просвещенияжителей нашей области и её гостей. В памятную дату юбилея планетариев вЯрославле, в звездном зале Центра будет проведена ретро-лекция,сопровождаемая диапроекцией винтажных слайдов о космическихдостопримечательностях: скоплениях и туманностях. Подобные слайд-шоуиспользовались для астрономических лекций до использования современныхполнокупольных проекторных систем. Звёздное небо будет проецироватьоптико-механический аппарат ZEISS ZKP 4. В стенах нового планетария мыпочувствуем себя посетителями первого звёздного дома Ярославля.</p>
+                            <p>С использованием оптико-механического аппарата ZEISS ZKP 4, звёздное небо превратится в волшебное киноживописное шоу. Невероятные кластеры и туманности оживут на огромном экране, словно засияют в своей первозданной красоте. Этот аппарат, ставший символом истории планетариев, подарит зрителям неповторимый опыт наблюдения за небесными явлениями, точно так же, как это делали посетители первого звёздного дома Ярославля 75 лет назад.</p>
+                        </div>
+                        <div class="project__summary">
+                            <div class="stat stat--larger stat--location">Звездный зал</div>
+                            <div class="stat stat--larger stat--duration">45 минут</div>
+                            <div class="stat stat--larger stat--restriction">12+</div>
+                            <div class="stat stat--larger stat--pushkin-card">Пушкинская карта</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__schedule">
+                    <h2 class="project__sub-heading">
+                        Ближайшие показы
+                    </h2>
+                    <div class="project__calendar hide-scrollbar">
+                        <div class="project__repeat">
+                            <div class="session">
+                                <div class="session__info polygon polygon--trapezoid">
+                                    <div class="session__date"><a class="link link--fake" name="fake-link">25 окт, ср</a></div>
+                                    <div class="session__time"><a class="link link--fake" name="fake-link">13:00</a></div>
+                                    <div class="session__price">200₽</div>
+                                    <div class="session__availability">места есть</div>
+                                </div>
+                                <div class="session__action">
+                                    <a class="button" href="#">Купить билет</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="related related--portfolio container">
+                <h2 class="related__heading">
+                    Другие события
+                </h2>
+                <div class="related__list">
+                    <article class="show">
+                        <div class="show__stage">
+                            <a class="preview" href="#">
+                                <img class="preview__image"
+                                     srcset="
+                                    ../temp/shows/event-b@3x.jpg 3x,
+                                    ../temp/shows/event-b@2x.jpg 2x,
+                                    ../temp/shows/event-b@1.5x.jpg 1.5x,
+                                    ../temp/shows/event-b@1x.jpg 1x
+                                 "
+                                     src="../temp/shows/event-b@1x.jpg"
+                                     width="450"
+                                     height="424"
+                                     alt=""
+                                >
+                            </a>
+                        </div>
+                        <div class="show__body">
+                            <div class="show__restriction">
+                                12+
+                            </div>
+                            <div class="show__pre-header">
+                                фестиваль “Ночь искусств 2023”
+                            </div>
+                            <h2 class="show__header">
+                                Взгляд в будущее: сквозь время и пространство
+                            </h2>
+                        </div>
+                        <div class="show__footer">
+                            <div class="show__info">
+                                <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                                    <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
+                                </time>
+                            </div>
+                            <div class="show__action">
+                                <a class="button button--primary polygon polygon--trapezoid" href="#">
+                                    <span class="button__label">Подробнее</span>
+                                    <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="show">
+                        <div class="show__stage">
+                            <a class="preview" href="#">
+                                <img class="preview__image"
+                                     srcset="
+                                    ../temp/shows/event-c@3x.jpg 3x,
+                                    ../temp/shows/event-c@2x.jpg 2x,
+                                    ../temp/shows/event-c@1.5x.jpg 1.5x,
+                                    ../temp/shows/event-c@1x.jpg 1x
+                                 "
+                                     src="../temp/shows/event-c@1x.jpg"
+                                     width="450"
+                                     height="424"
+                                     alt=""
+                                >
+                            </a>
+                        </div>
+                        <div class="show__body">
+                            <div class="show__restriction">
+                                12+
+                            </div>
+                            <div class="show__pre-header">
+                                полнокупольный концерт
+                            </div>
+                            <h2 class="show__header">
+                                Магия неоклассики
+                            </h2>
+                        </div>
+                        <div class="show__footer">
+                            <div class="show__info">
+                                <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                                    <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
+                                </time>
+                            </div>
+                            <div class="show__action">
+                                <a class="button button--primary polygon polygon--trapezoid" href="#">
+                                    <span class="button__label">Подробнее</span>
+                                    <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="show">
+                        <div class="show__stage">
+                            <a class="preview" href="#">
+                                <img class="preview__image"
+                                     srcset="
+                                    ../temp/shows/event-d@3x.jpg 3x,
+                                    ../temp/shows/event-d@2x.jpg 2x,
+                                    ../temp/shows/event-d@1.5x.jpg 1.5x,
+                                    ../temp/shows/event-d@1x.jpg 1x
+                                 "
+                                     src="../temp/shows/event-d@1x.jpg"
+                                     width="450"
+                                     height="424"
+                                     alt=""
+                                >
+                            </a>
+                        </div>
+                        <div class="show__body">
+                            <div class="show__restriction">
+                                12+
+                            </div>
+                            <div class="show__pre-header">
+                                полнокупольное шоу
+                            </div>
+                            <h2 class="show__header">
+                                барабанный космический концерт
+                            </h2>
+                        </div>
+                        <div class="show__footer">
+                            <div class="show__info">
+                                <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                                    <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
+                                </time>
+                            </div>
+                            <div class="show__action">
+                                <a class="button button--primary polygon polygon--trapezoid" href="#">
+                                    <span class="button__label">Подробнее</span>
+                                    <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__wrap container">
+                    <div class="nav nav--footer">
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Главная
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                            <div class="nav__menu">
+                                <a class="nav__sub-link" href="#">Афиша</a>
+                                <a class="nav__sub-link" href="#">Анонсы событий</a>
+                                <a class="nav__sub-link" href="#">Зоны<br> Планетария</a>
+                                <a class="nav__sub-link" href="#">Новости</a>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                О центре
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                            <div class="nav__menu">
+                                <a class="nav__sub-link" href="#">История<br> создания</a>
+                                <a class="nav__sub-link" href="#">Этапы жизни<br> <span class="nobr">В.В. Терешковой</span></a>
+                                <a class="nav__sub-link" href="#">Музыка сфер</a>
+                                <a class="nav__sub-link" href="#">Новости</a>
+                                <a class="nav__sub-link" href="#">Календарь<br>космонавтики</a>
+                                <a class="nav__sub-link" href="#">Карта<br> планетария</a>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Афиша
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Мероприятия
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                            <div class="nav__menu">
+                                <a class="nav__sub-link" href="#">Конференции</a>
+                                <a class="nav__sub-link" href="#">Конкурсы</a>
+                                <a class="nav__sub-link" href="#">Фестивали</a>
+                                <a class="nav__sub-link" href="#">События</a>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Для групп
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                            <div class="nav__menu">
+                                <a class="nav__sub-link" href="#">Школьные туры</a>
+                                <a class="nav__sub-link" href="#">Турфирмы</a>
+                                <a class="nav__sub-link" href="#">Организация<br> праздников</a>
+                                <a class="nav__sub-link" href="#">События</a>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Билеты
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                            <div class="nav__menu">
+                                <a class="nav__sub-link" href="#">Правила<br> посещения</a>
+                                <a class="nav__sub-link" href="#">Порядок<br> оказания услуг</a>
+                                <a class="nav__sub-link" href="#">Льготное<br> посещение</a>
+                            </div>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Астроблог
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav__item">
+                            <a class="nav__link-heading" href="#">
+                                Контакты
+                                <svg class="nav__chevron" width="8" height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.59L4.94467 6L0 1.41L1.52227 0L8 6L1.52227 12L0 10.59Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__line desktop-only">
+                            Государственное автономное учреждение культуры Ярославской области "Культурно-просветительский центр имени В.В. Терешковой"
+                        </div>
+                        <div class="footer__line">
+                            Телефон: <a class="link link--no-hover nobr" href="tel:+74852729361">+7 (4852) 72-93-61</a>
+                        </div>
+                        <div class="footer__line">
+                            Телефон для групповых заявок: <a class="link link--no-hover nobr" href="tel:+74852728200">+7 (4852) 72-82-00</a>
+                        </div>
+                        <div class="footer__line">
+                            <a class="link link--text-alike" href="mailto:centrtereshkovoi.dk@yarregion.ru">centrtereshkovoi.dk@yarregion.ru</a>
+                        </div>
+                        <div class="footer__line">
+                            150000, г. Ярославль, ул. Чайковского, д.З
+                        </div>
+                    </div>
+                    <div class="footer__summary">
+                        <div class="footer__copyright">
+                            © 2010 - 2023 Центр им. Терешковой
+                        </div>
+                        <div class="footer__alt-nav">
+                            <a class="footer__alt-link" href="#">Документы</a>
+                            <a class="footer__alt-link" href="#">Политика конфиденциальности</a>
+                            <a class="footer__alt-link" href="#">Пользовательское соглашение</a>
+                            <a class="footer__alt-link" href="#">Версия для слабовидящих</a>
+                        </div>
+                        <div class="footer__developer">
+                            разработано в
+                            <svg class="footer__red-star" width="74" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#D92C04" d="M7.306 13.902c4.034 0 7.305-3.112 7.305-6.951C14.611 3.112 11.341 0 7.306 0S0 3.112 0 6.95c0 3.84 3.27 6.952 7.306 6.952z"/>
+                                <path fill="#000" d="M24.216 3.072c.923 0 1.692.292 2.308.875.625.583.937 1.308.937 2.173 0 .858-.312 1.582-.937 2.174-.616.583-1.385.875-2.308.875h-2v3.18h-1.61V3.072h3.61zm0 4.665c.475 0 .867-.15 1.175-.45.308-.31.461-.698.461-1.167 0-.468-.154-.852-.461-1.153-.308-.309-.7-.463-1.175-.463h-2v3.233h2zm5.241 1.909c.112.503.368.892.77 1.166.4.265.89.398 1.468.398.802 0 1.404-.274 1.805-.822l1.245.69c-.69.962-1.712 1.444-3.064 1.444-1.138 0-2.056-.327-2.756-.981-.699-.663-1.049-1.498-1.049-2.505 0-.99.345-1.816 1.035-2.478.69-.672 1.576-1.007 2.658-1.007 1.026 0 1.865.34 2.518 1.02.662.68.993 1.507.993 2.478 0 .15-.018.35-.056.597h-5.567zm-.014-1.166h4.113c-.103-.54-.34-.946-.714-1.22a2.079 2.079 0 0 0-1.287-.41c-.56 0-1.026.145-1.399.437-.373.291-.61.689-.713 1.193zm12.848 2.518h.938v3.127h-1.483V12.35h-4.798v1.776h-1.483v-3.127h.853c.43-.575.644-1.374.644-2.4V5.724h5.33v5.275zm-4.308 0h2.826V7.035h-2.364v1.564c0 .945-.154 1.745-.462 2.399zm9.5 1.524c-1.053 0-1.934-.336-2.643-1.008-.7-.671-1.05-1.497-1.05-2.478 0-.99.35-1.816 1.05-2.478.709-.672 1.59-1.007 2.644-1.007.68 0 1.3.154 1.86.463.56.31.98.725 1.259 1.246l-1.3.716a1.686 1.686 0 0 0-.728-.742 2.147 2.147 0 0 0-1.105-.279c-.616 0-1.133.2-1.553.597-.41.397-.616.892-.616 1.484s.206 1.087.616 1.485c.42.397.937.596 1.553.596.41 0 .778-.093 1.105-.278.335-.186.587-.433.755-.743l1.301.703c-.298.53-.727.95-1.287 1.259a3.78 3.78 0 0 1-1.86.464zm9.515-6.8v1.38h-2.28v5.247h-1.51V7.101h-2.295V5.723h6.085zm6.289 0h1.51v6.627h-1.51v-.954c-.57.751-1.385 1.127-2.448 1.127a3.38 3.38 0 0 1-2.462-1.008c-.681-.68-1.021-1.506-1.021-2.478 0-.98.34-1.807 1.02-2.478A3.379 3.379 0 0 1 60.84 5.55c1.063 0 1.879.37 2.448 1.113v-.941zm-3.791 4.838c.42.398.946.597 1.58.597.635 0 1.161-.2 1.581-.597.42-.406.63-.914.63-1.524s-.21-1.113-.63-1.51c-.42-.407-.946-.61-1.58-.61-.635 0-1.162.203-1.581.61-.42.397-.63.9-.63 1.51s.21 1.118.63 1.524zm11.02-5.01c.961 0 1.782.34 2.463 1.021.68.672 1.021 1.493 1.021 2.465 0 .98-.34 1.807-1.021 2.479a3.38 3.38 0 0 1-2.462 1.007c-1.063 0-1.88-.371-2.448-1.114V15h-1.51V5.723h1.51v.954c.569-.75 1.385-1.126 2.448-1.126zm-1.818 5.01c.42.398.947.597 1.581.597s1.161-.2 1.58-.597c.42-.406.63-.914.63-1.524s-.21-1.113-.63-1.51c-.419-.407-.946-.61-1.58-.61-.634 0-1.16.203-1.58.61-.42.397-.63.9-.63 1.51s.21 1.118.63 1.524z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-        <article class="project container">
-            <time class="project__time" datetime="2023-12-31T23:59Z"><!-- дата только на страницах Ивентов -->
-                <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
-            </time>
-            <h1 class="project__heading">
-                Планетарий: взгляд сквозь десятилетия
-            </h1>
-            <div class="project__category">
-                Ретро-лекция
-            </div>
-            <div class="project__body">
-                <div class="project__stage">
-                    <a class="preview" href="#">
-                        <img class="preview__image"
-                             srcset="
-                            ../temp/shows/event-a@3x.jpg 3x,
-                            ../temp/shows/event-a@2x.jpg 2x,
-                            ../temp/shows/event-a@1.5x.jpg 1.5x,
-                            ../temp/shows/event-a@1x.jpg 1x
-                         "
-                             src="../temp/shows/event-a@1x.jpg"
-                             width="450"
-                             height="424"
-                             alt=""
-                        >
-                    </a>
-                </div>
-                <div class="project__content">
-                    <div class="project__text wysiwyg">
-                        <p>В 2023 году исполняется 75 лет со дня открытия первого планетария в Ярославле. Центр имени В.В. Терешковой является преемником этогопланетария и поддерживает традиции астрономического просвещенияжителей нашей области и её гостей. В памятную дату юбилея планетариев вЯрославле, в звездном зале Центра будет проведена ретро-лекция,сопровождаемая диапроекцией винтажных слайдов о космическихдостопримечательностях: скоплениях и туманностях. Подобные слайд-шоуиспользовались для астрономических лекций до использования современныхполнокупольных проекторных систем. Звёздное небо будет проецироватьоптико-механический аппарат ZEISS ZKP 4. В стенах нового планетария мыпочувствуем себя посетителями первого звёздного дома Ярославля.</p>
-                        <p>С использованием оптико-механического аппарата ZEISS ZKP 4, звёздное небо превратится в волшебное киноживописное шоу. Невероятные кластеры и туманности оживут на огромном экране, словно засияют в своей первозданной красоте. Этот аппарат, ставший символом истории планетариев, подарит зрителям неповторимый опыт наблюдения за небесными явлениями, точно так же, как это делали посетители первого звёздного дома Ярославля 75 лет назад.</p>
-                    </div>
-                    <div class="project__summary">
-                        <div class="stat stat--larger stat--location">Звездный зал</div>
-                        <div class="stat stat--larger stat--duration">45 минут</div>
-                        <div class="stat stat--larger stat--restriction">12+</div>
-                        <div class="stat stat--larger stat--pushkin-card">Пушкинская карта</div>
-                    </div>
-                </div>
-            </div>
-            <div class="project__schedule">
-                <h2 class="project__sub-heading">
-                    Ближайшие показы
-                </h2>
-                <div class="project__calendar hide-scrollbar">
-                    <div class="project__repeat">
-                        <div class="session">
-                            <div class="session__info polygon polygon--trapezoid">
-                                <div class="session__date"><a class="link link--fake" name="fake-link">25 окт, ср</a></div>
-                                <div class="session__time"><a class="link link--fake" name="fake-link">13:00</a></div>
-                                <div class="session__price">200₽</div>
-                                <div class="session__availability">места есть</div>
-                            </div>
-                            <div class="session__action">
-                                <a class="button" href="#">Купить билет</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <section class="related related--portfolio container">
-            <h2 class="related__heading">
-                Другие события
-            </h2>
-            <div class="related__list">
-                <article class="show">
-                    <div class="show__stage">
-                        <a class="preview" href="#">
-                            <img class="preview__image"
-                                 srcset="
-                                ../temp/shows/event-b@3x.jpg 3x,
-                                ../temp/shows/event-b@2x.jpg 2x,
-                                ../temp/shows/event-b@1.5x.jpg 1.5x,
-                                ../temp/shows/event-b@1x.jpg 1x
-                             "
-                                 src="../temp/shows/event-b@1x.jpg"
-                                 width="450"
-                                 height="424"
-                                 alt=""
-                            >
-                        </a>
-                    </div>
-                    <div class="show__body">
-                        <div class="show__restriction">
-                            12+
-                        </div>
-                        <div class="show__pre-header">
-                            фестиваль “Ночь искусств 2023”
-                        </div>
-                        <h2 class="show__header">
-                            Взгляд в будущее: сквозь время и пространство
-                        </h2>
-                    </div>
-                    <div class="show__footer">
-                        <div class="show__info">
-                            <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
-                                <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
-                            </time>
-                        </div>
-                        <div class="show__action">
-                            <a class="button button--primary polygon polygon--trapezoid" href="#">
-                                <span class="button__label">Подробнее</span>
-                                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="show">
-                    <div class="show__stage">
-                        <a class="preview" href="#">
-                            <img class="preview__image"
-                                 srcset="
-                                ../temp/shows/event-c@3x.jpg 3x,
-                                ../temp/shows/event-c@2x.jpg 2x,
-                                ../temp/shows/event-c@1.5x.jpg 1.5x,
-                                ../temp/shows/event-c@1x.jpg 1x
-                             "
-                                 src="../temp/shows/event-c@1x.jpg"
-                                 width="450"
-                                 height="424"
-                                 alt=""
-                            >
-                        </a>
-                    </div>
-                    <div class="show__body">
-                        <div class="show__restriction">
-                            12+
-                        </div>
-                        <div class="show__pre-header">
-                            полнокупольный концерт
-                        </div>
-                        <h2 class="show__header">
-                            Магия неоклассики
-                        </h2>
-                    </div>
-                    <div class="show__footer">
-                        <div class="show__info">
-                            <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
-                                <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
-                            </time>
-                        </div>
-                        <div class="show__action">
-                            <a class="button button--primary polygon polygon--trapezoid" href="#">
-                                <span class="button__label">Подробнее</span>
-                                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="show">
-                    <div class="show__stage">
-                        <a class="preview" href="#">
-                            <img class="preview__image"
-                                 srcset="
-                                ../temp/shows/event-d@3x.jpg 3x,
-                                ../temp/shows/event-d@2x.jpg 2x,
-                                ../temp/shows/event-d@1.5x.jpg 1.5x,
-                                ../temp/shows/event-d@1x.jpg 1x
-                             "
-                                 src="../temp/shows/event-d@1x.jpg"
-                                 width="450"
-                                 height="424"
-                                 alt=""
-                            >
-                        </a>
-                    </div>
-                    <div class="show__body">
-                        <div class="show__restriction">
-                            12+
-                        </div>
-                        <div class="show__pre-header">
-                            полнокупольное шоу
-                        </div>
-                        <h2 class="show__header">
-                            барабанный космический концерт
-                        </h2>
-                    </div>
-                    <div class="show__footer">
-                        <div class="show__info">
-                            <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
-                                <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
-                            </time>
-                        </div>
-                        <div class="show__action">
-                            <a class="button button--primary polygon polygon--trapezoid" href="#">
-                                <span class="button__label">Подробнее</span>
-                                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <footer class="footer">
-
-        </footer>
 
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>

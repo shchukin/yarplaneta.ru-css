@@ -57,6 +57,7 @@
 
             .nav--header .nav__menu {
                 position: absolute;
+                z-index: 100;
                 right: 0;
                 top: 100%;
                 min-width: 100%;
