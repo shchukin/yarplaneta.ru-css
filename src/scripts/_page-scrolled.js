@@ -2,10 +2,10 @@
 
     const $html = $('html');
 
-    $(window).on('scroll', isDocumentScrolled);
-    $(document).ready(isDocumentScrolled);
+    $(window).on('scroll', isPageScrolled);
+    $(document).ready(isPageScrolled);
 
-    function isDocumentScrolled() {
+    function isPageScrolled() {
         if( $(window).scrollTop() > 10 ) {
             $html.addClass('page-scrolled');
         } else {
