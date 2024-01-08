@@ -271,11 +271,8 @@
         .nav--footer .nav__link-heading:hover {
             text-decoration-color: currentColor;
         }
-            @media (740px <= width) {
-
-                .nav--footer .nav__chevron {
-                    display: none;
-                }
+            .nav--footer .nav__chevron {
+                display: none;
             }
 
         .nav--footer .nav__menu {
