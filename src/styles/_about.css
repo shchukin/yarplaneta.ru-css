@@ -1,13 +1,13 @@
-.default {
+.about {
     display: grid;
     gap: 32px;
     grid-template-columns: 282fr 866fr;
 }
-    .default__sidebar {
+    .about__sidebar {
 
     }
 
-    .default__content {
+    .about__content {
 
     }
 
@@ -15,15 +15,15 @@
 
 @media (1500px <= width) {
 
-    .default {
+    .about {
         gap: 52px;
         grid-template-columns: 332fr 1014fr;
     }
-        .default__sidebar {
+        .about__sidebar {
 
         }
 
-        .default__content {
+        .about__content {
 
         }
 }
@@ -31,14 +31,14 @@
 
 @media (width < 740px) {
 
-    .default {
+    .about {
         display: block;
     }
-        .default__sidebar {
+        .about__sidebar {
 
         }
 
-        .default__content {
+        .about__content {
             margin-top: 38px;
         }
 
