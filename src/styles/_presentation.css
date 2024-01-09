@@ -75,12 +75,37 @@
 
         .presentation__actions {
             flex-shrink: 0;
+            display: flex;
+            align-items: stretch;
         }
             .presentation__details {
 
             }
 
-            
+
+            .presentation__price {
+                margin-right: -12px;
+                display: flex;
+                min-width: 106px;
+                align-items: center;
+                padding-right: 28px;
+                padding-left: 16px;
+                background-color: rgb(142 143 250 / 30%);
+                box-shadow: inset 0 0 0 2px #7951EE,
+                            0 4px 12px 0 rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+                font-family: var(--font-headings);
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 32px;
+                color: #191825;
+                text-align: center;
+            }
+
+            .presentation__buy {
+                position: relative;
+                z-index: 10;
+            }
 
 
 
@@ -266,11 +291,12 @@
 @media (width < 740px) {
 
     .presentation--summarized-schedule {
-        /*display: flex;*/
+        display: block;
+        padding-left: 0;
         /*flex-direction: column;*/
     }
         .presentation--summarized-schedule .presentation__stage {
-            /*flex-shrink: 0;*/
+            position: static;
         }
             .presentation--summarized-schedule .presentation__stage .preview {
                 /*border-radius: 12px;*/
@@ -310,12 +336,17 @@
         .presentation--summarized-schedule .presentation__footer {
             /*margin-top: auto;*/
             /*padding-top: 16px;*/
-            /*display: flex;*/
+            display: block;
             /*align-items: flex-end;*/
         }
             .presentation--summarized-schedule .presentation__stats {
                 /*flex-grow: 1;*/
             }
+
+            .presentation--summarized-schedule .presentation__stats .stat:not(.stat--pushkin-card) {
+                display: none;
+            }
+
                 .presentation--summarized-schedule .presentation__location {
 
                 }
@@ -335,8 +366,23 @@
 
 
 .presentation--highlighted-schedule {
-
+    background-color: #CCCDFD;
+    box-shadow: inset 0 0 0 5px #1A0482;
+    border-radius: 15px;
 }
+    .presentation--highlighted-schedule .presentation__stage {
+        padding: 26px;
+    }
+
+    .presentation--highlighted-schedule .presentation__summary {
+        padding-top: 26px;
+    }
+
+    .presentation--highlighted-schedule .presentation__footer {
+        padding-bottom: 26px;
+        padding-right: 26px;
+    }
+
     .presentation--highlighted-schedule .stat::before {
         filter: none;
     }
@@ -344,11 +390,12 @@
 @media (width < 740px) {
 
     .presentation--highlighted-schedule {
-        /*display: flex;*/
+        display: block;
+        padding: 12px;
         /*flex-direction: column;*/
     }
         .presentation--highlighted-schedule .presentation__stage {
-            /*flex-shrink: 0;*/
+            position: static;
         }
             .presentation--highlighted-schedule .presentation__stage .preview {
                 /*border-radius: 12px;*/
