@@ -176,7 +176,8 @@
 
             .groups-card__details {
                 position: absolute;
-                left: 14px;
+                left: auto;
+                right: 0;
                 bottom: 8px;
                 top: auto;
                 margin-top: 10px;
