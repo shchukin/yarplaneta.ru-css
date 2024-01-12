@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>.panel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css?1705046585">
+    </head>
+
+    <body>
+        <svg class="visuallyhidden">
+            <defs>
+                <linearGradient id="sky-gradient" x1="-1.54328" y1="365.397" x2="601.643" y2="-129.956" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8E8FFA"/>
+                    <stop offset="1" stop-color="#BDD3FE"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>.panel</h1>
+            <p>
+                Это обобщённый компонент, для создания карточки с вырезанной формой и кнопкой.
+                Несколько слоёв, уголки и вырезание фона при помощи <a href="_polygon.html">.polygon</a>.
+            </p>
+            <p>
+                Вариант по умолчанию, будет использоваться в новостях и абонементах:
+            </p>
+
+            <article class="panel">
+                <a class="panel__body polygon polygon--card" href="#">
+                    <div class="panel__slot">
+
+                        <!-- Дочерний компонент -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolor dolorum excepturi incidunt magni voluptatem! Aperiam beatae debitis deleniti eos, esse inventore itaque iusto laudantium natus placeat quae quas rem repudiandae saepe similique sunt vel veniam. Amet, blanditiis distinctio ea eligendi esse et laborum, possimus repellat sed sint voluptatem.
+                        <!--/Дочерний компонент -->
+
+                    </div>
+                    <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                </a>
+                <div class="panel__action">
+                    <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                        <span class="button__label">Подробнее</span>
+                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+
+
+
+            <br>
+            <h3>Примеры</h3>
+            <p>С карточкой <b>.teaser</b>:</p>
+
+            <article class="panel">
+                <a class="panel__body polygon polygon--card" href="#">
+                    <div class="panel__slot">
+
+                        <!-- Дочерний компонент -->
+                        <div class="teaser">
+                            <time class="teaser__time" datetime="2023-12-31T23:59Z">
+                                31.12.2023
+                            </time>
+                            <h2 class="teaser__heading">
+                                «Взгляд в будущее: сквозь время и пространство» в рамках Всероссийской акции «Ночь искусств–2023»
+                            </h2>
+                            <div class="teaser__text clamping clamping--3-rows">
+                                3 ноября 2023 года уже по сложившейся хорошей традиции в Культурно-просветительском центре имени В.В. Терешковой состоялась Всероссийскаяакция «Ночь искусств-2023».В рамках Всероссийской акции в Звёздном зале гости Центра увидели двакрасочных полнокупольных фильма: «Мир народов майя» и «Под звёзднымнебом Ярославля» + «Путешествия со скоростью света».
+                            </div>
+                        </div>
+                        <!--/Дочерний компонент -->
+
+                    </div>
+                    <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                </a>
+                <div class="panel__action">
+                    <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                        <span class="button__label">Подробнее</span>
+                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+
+            <br>
+            <p>С карточкой <b>.membership</b>:</p>
+
+            <article class="panel">
+                <a class="panel__body polygon polygon--card" href="#">
+                    <div class="panel__slot">
+
+                        <!-- Дочерний компонент -->
+                        <div class="membership">
+                            <h2 class="membership__heading">
+                                Абонемент по астрономии №1
+                            </h2>
+                            <div class="membership__text">
+                                3 ноября 2023 года уже по сложившейся хорошей традиции в Культурно-просветительском центре имени В.В. Терешковой состоялась Всероссийскаяакция «Ночь искусств-2023».В рамках Всероссийской акции в Звёздном зале гости Центра увидели двакрасочных полнокупольных фильма: «Мир народов майя» и «Под звёзднымнебом Ярославля» + «Путешествия со скоростью света».
+                            </div>
+                            <div class="membership__list">
+                                <ul class="list">
+                                    <li class="list__item">Астрономия, ее значение и свяязь с другими науками</li>
+                                    <li class="list__item">Практические основы астрономии</li>
+                                    <li class="list__item">Строение солнечной системы</li>
+                                    <li class="list__item">Природа тел Солнечной системы</li>
+                                    <li class="list__item">Солнце и звезды</li>
+                                    <li class="list__item">Строение и эволюция Вселенной</li>
+                                    <li class="list__item">Жизнь и разум во Вселенной</li>
+                                    <li class="list__item">Практикум (дневные/вечерние) наблюдение</li>
+                                </ul>
+                            </div>
+                            <div class="membership__total">
+                                <div class="stat stat--contains">11 занятий</div>
+                            </div>
+                        </div>
+                        <!--/Дочерний компонент -->
+
+                    </div>
+                    <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                    <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                </a>
+                <div class="panel__action">
+                    <button class="button button--secondary polygon polygon--trapezoid" type="button">
+                        <span class="button__label">
+                            Скачать КП
+                        </span>
+                        <svg class="button__icon" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5965 5.64706H9.83176V0H4.18471V5.64706H0.42L7.00824 12.2353L13.5965 5.64706ZM0.42 14.1176V16H13.5965V14.1176H0.42Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.panel--portrait</h2>
+            <p>
+                Вертикально-ориентированный вариант -- будет использоваться в блоге.
+            </p>
+            <div style="max-width: 450px; margin: 0 auto;">
+
+
+                <article class="panel panel--portrait">
+                    <a class="panel__body polygon polygon--card" href="#">
+                        <div class="panel__slot">
+
+                            <!-- Дочерний компонент -->
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolor dolorum excepturi incidunt magni voluptatem! Aperiam beatae debitis deleniti eos, esse inventore itaque iusto laudantium natus placeat quae quas rem repudiandae saepe similique sunt vel veniam. Amet, blanditiis distinctio ea eligendi esse et laborum, possimus repellat sed sint voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dolor dolorum excepturi incidunt magni voluptatem! Aperiam beatae debitis deleniti eos, esse inventore itaque iusto laudantium natus placeat quae quas rem repudiandae saepe similique sunt vel veniam. Amet, blanditiis distinctio ea eligendi esse et laborum, possimus repellat sed sint voluptatem.
+                            <!--/Дочерний компонент -->
+
+                        </div>
+                        <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                    </a>
+                    <div class="panel__action">
+                        <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                            <span class="button__label">Читать</span>
+                            <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+
+            </div>
+
+            <br>
+            <h3>Пример</h3>
+            <p>
+                С карточкой <b>.publication</b>:
+            </p>
+            <div style="max-width: 450px; margin: 0 auto;">
+
+
+                <article class="panel panel--portrait">
+                    <a class="panel__body polygon polygon--card" href="#">
+                        <div class="panel__slot">
+
+                            <!-- Дочерний компонент -->
+                            <article class="publication">
+                                <div class="publication__stage">
+                                    <div class="preview">
+                                        <img class="preview__image"
+                                             srcset="
+                                                ../temp/publications/publication-a@3x.jpg 3x,
+                                                ../temp/publications/publication-a@2x.jpg 2x,
+                                                ../temp/publications/publication-a@1.5x.jpg 1.5x,
+                                                ../temp/publications/publication-a@1x.jpg 1x
+                                             "
+                                             src="../temp/publications/publication-a@1x.jpg"
+                                             width="450"
+                                             height="250"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="publication__body">
+                                    <div class="publication__content">
+                                        <div class="publication__favorites" title="Закреплено">
+                                            Закреплено
+                                        </div>
+                                        <div class="publication__pre-header">
+                                            Этапы жизни В.В. Терешковой
+                                        </div>
+                                        <h2 class="publication__header">
+                                            Ранние годы
+                                        </h2>
+                                        <div class="publication__text clamping clamping--3-rows">
+                                            3 ноября 2023 года уже по сложившейся хорошей традиции в Культурно-просветительском центре имени В.В. Терешковой состоялась Всероссийскаяакция «Ночь искусств-2023».В рамках Всероссийской акции в Звёздном зале гости Центра увидели двакрасочных полнокупольных фильма: «Мир народов майя» и «Под звёзднымнебом Ярославля» + «Путешествия со скоростью света».
+                                        </div>
+                                    </div>
+                                    <time class="publication__time" datetime="2023-12-31T23:59Z">
+                                        31/12/2023
+                                    </time>
+                                </div>
+                            </article>
+                            <!--/Дочерний компонент -->
+
+                        </div>
+                        <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                        <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                    </a>
+                    <div class="panel__action">
+                        <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                            <span class="button__label">Читать</span>
+                            <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
+        <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_mfp.js?1705046585"></script>
+        <script src="../scripts/_input.js?1705046585"></script>
+        <script src="../scripts/_polygon.js?1705046585"></script>
+        <script src="../scripts/_sticky.js?1705046585"></script>
+        <script src="../scripts/_sub-nav.js?1705046585"></script>
+        <script src="../scripts/_header.js?1705046585"></script>
+        <script src="../scripts/_nav.js?1705046585"></script>
+        <script src="../scripts/_page-scrolled.js?1705046585"></script>
+
+
+    </body>
+</html>
+
+

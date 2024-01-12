@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>.button</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css?1705046585">
+    </head>
+
+    <body>
+        <svg class="visuallyhidden">
+            <defs>
+                <linearGradient id="sky-gradient" x1="-1.54328" y1="365.397" x2="601.643" y2="-129.956" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8E8FFA"/>
+                    <stop offset="1" stop-color="#BDD3FE"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>.button</h1>
+
+            <button class="button" type="button">
+                <span class="button__label">Купить билет</span>
+            </button>
+
+            <br>
+            <br>
+            <h2>Модификаторы по цвету</h2>
+            <br>
+            <h3>.button--primary</h3>
+
+            <button class="button button--primary polygon polygon--trapezoid" type="button">
+                <span class="button__label">Купить билет</span>
+            </button>
+
+            <button class="button button--primary polygon polygon--trapezoid" type="button" disabled>
+                <span class="button__label">Купить билет</span>
+            </button>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h3>.button--secondary</h3>
+
+            <button class="button button--secondary polygon polygon--trapezoid" type="button">
+                <span class="button__label">Подробнее</span>
+            </button>
+
+            <button class="button button--secondary polygon polygon--trapezoid" type="button" disabled>
+                <span class="button__label">Подробнее</span>
+            </button>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h3>.button--outline</h3>
+
+            <button class="button button--outline polygon polygon--trapezoid" type="button">
+                <span class="button__label">Скачать КП</span>
+            </button>
+
+            <button class="button button--outline polygon polygon--trapezoid" type="button" disabled>
+                <span class="button__label">Скачать КП</span>
+            </button>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h3>.button--link-alike</h3>
+
+            <button class="button button--link-alike" type="button">
+                <span class="button__label">К программам</span>
+            </button>
+
+            <button class="button button--link-alike" type="button" disabled>
+                <span class="button__label">К программам</span>
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Иконки</h2>
+
+            <button class="button button--outline polygon polygon--trapezoid" type="button">
+                <span class="button__label">
+                    Скачать КП
+                </span>
+                <svg class="button__icon" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5965 5.64706H9.83176V0H4.18471V5.64706H0.42L7.00824 12.2353L13.5965 5.64706ZM0.42 14.1176V16H13.5965V14.1176H0.42Z"/>
+                </svg>
+            </button>
+
+            <button class="button button--primary polygon polygon--trapezoid" type="button">
+                <span class="button__label">
+                    Подробнее
+                </span>
+                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                </svg>
+            </button>
+
+            <button class="button button--link-alike" type="button">
+                <span class="button__label">
+                    К программам
+                </span>
+                <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                </svg>
+            </button>
+
+            <ul>
+                <li>
+                    Иконки вставляем прямо в HTML-код. Таким образом их можно раскрашивать стилями.
+                </li>
+                <li>
+                    Иконки для кнопок нарезаются отдельно. Смотри <b>assets.fig</b> в корне проекта.
+                    Оттуда можно их копировать командой <b class="nobr">Copy/Paste as → copy as svg</b>.
+                </li>
+                <li>
+                    Фишка таких иконок, что у них произвольная ширина от иконки к иконке. Стрелка -- длинная,
+                    кнопка загрузки -- узкая.
+                </li>
+                <li>
+                    Высота фиксированная: <b>14px</b> (дефолт на ноутах), и проставляется в стилях. Соответственно все иконки для
+                    кнопок должны быть одинаковой высоты. Далее стилями эту высоту будет менятся под адаптив.
+                </li>
+                <li>
+                    При вставке иконок удаляем все <b>fill="#123456"</b>, чтобы в коде она осталась бесцветной.
+                </li>
+            </ul>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Тест тегов</h2>
+
+            <div class="button button--primary polygon polygon--trapezoid" tabindex="0">
+                <span class="button__label">div.button</span>
+            </div>
+
+            <br><br>
+
+            <span class="button button--primary polygon polygon--trapezoid" tabindex="0">
+                <span class="button__label">span.button</span>
+            </span>
+
+            <br><br>
+
+            <label class="button button--primary polygon polygon--trapezoid" for="#" tabindex="0">
+                <span class="button__label">label.button</span>
+            </label>
+
+            <br><br>
+
+            <a class="button button--primary polygon polygon--trapezoid" href="#">
+                <span class="button__label">a.button</span>
+            </a>
+
+            <br><br>
+
+            <button class="button button--primary polygon polygon--trapezoid" type="button">
+                <span class="button__label">button.button</span>
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
+        <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_mfp.js?1705046585"></script>
+        <script src="../scripts/_input.js?1705046585"></script>
+        <script src="../scripts/_polygon.js?1705046585"></script>
+        <script src="../scripts/_sticky.js?1705046585"></script>
+        <script src="../scripts/_sub-nav.js?1705046585"></script>
+        <script src="../scripts/_header.js?1705046585"></script>
+        <script src="../scripts/_nav.js?1705046585"></script>
+        <script src="../scripts/_page-scrolled.js?1705046585"></script>
+
+
+    </body>
+</html>
+
+
