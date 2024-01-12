@@ -19,11 +19,11 @@
     }
 
     /* stylelint-disable */
-    .stat--contains::before     { width: 22px; background-image: url("../vectors/stat-contains@3x.png"); }
-    .stat--location::before     { width: 27px; background-image: url("../vectors/stat-location@3x.png"); }
-    .stat--duration::before     { width: 22px; background-image: url("../vectors/stat-duration@3x.png"); }
-    .stat--restriction::before  { width: 18px; background-image: url("../vectors/stat-restriction@3x.png"); }
-    .stat--pushkin-card::before { width: 22px; background-image: url("../vectors/stat-pushkin-card@3x.png"); }
+    .stat--contains::before     { width: 22px; background-image: url("../vectors/stat-contains.svg"); }
+    .stat--location::before     { width: 27px; background-image: url("../vectors/stat-location.svg"); }
+    .stat--duration::before     { width: 22px; background-image: url("../vectors/stat-duration.svg"); }
+    .stat--restriction::before  { width: 18px; background-image: url("../vectors/stat-restriction.svg"); }
+    .stat--pushkin-card::before { width: 22px; background-image: url("../vectors/stat-pushkin-card.svg"); }
     /* stylelint-enable */
 
 
