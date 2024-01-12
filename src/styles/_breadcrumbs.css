@@ -16,14 +16,22 @@
         .breadcrumbs__item:first-child::before {
             display: none;
         }
+            .breadcrumbs__link {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                color: #BDD3FE;
+                text-decoration: underline 1px transparent;
+                text-underline-offset: 4px;
+                transition: text-decoration-color var(--transition-hover);
+            }
 
-        .breadcrumbs__link {
+            .breadcrumbs__link:hover {
+                text-decoration-color: currentColor;
+            }
 
-        }
+            .breadcrumbs__title {
 
-        .breadcrumbs__title {
-            color: #8E8FFA;
-        }
+            }
 
 
 
