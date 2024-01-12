@@ -5,7 +5,9 @@
 
     }
         .nav__link-heading {
-
+            background-color: transparent;
+            border: none;
+            font-family: inherit;
         }
             .nav__chevron {
                 fill: currentColor;
@@ -15,7 +17,7 @@
 
         }
             .nav__sub-link {
-
+                text-transform: lowercase;
             }
 
 
@@ -43,10 +45,11 @@
                 line-height: 24px;
                 white-space: nowrap;
                 color: inherit;
+                text-transform: lowercase;
                 transition: color var(--transition-hover);
             }
 
-            .nav--header .nav__link-heading:hover {
+            .nav--header .nav__item:not(:has(.nav__menu)) .nav__link-heading:hover {
                 color: #8E8FFA;
             }
                 .nav--header .nav__chevron {
@@ -261,6 +264,7 @@
             font-size: 18px;
             line-height: 22px;
             color: inherit;
+            text-transform: lowercase;
             text-decoration: underline;
             text-decoration-thickness: 1.5px;
             text-decoration-color: transparent;
@@ -268,7 +272,7 @@
             transition: text-decoration-color var(--transition-hover);
         }
 
-        .nav--footer .nav__link-heading:hover {
+        .nav--footer .nav__item:not(:has(.nav__menu)) .nav__link-heading:hover {
             text-decoration-color: currentColor;
         }
             .nav--footer .nav__chevron {
