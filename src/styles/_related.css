@@ -48,8 +48,8 @@
 
         .related__list {
             margin-top: 24px;
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 40px;
         }
 }
