@@ -67,6 +67,7 @@
         box-shadow: none;
         background-color: transparent;
         backdrop-filter: none;
+        text-align: left;
     }
         .simpler-panel__top-trapezoid {
             display: none;
