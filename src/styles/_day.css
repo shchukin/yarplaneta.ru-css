@@ -26,10 +26,10 @@
         background-position: left center;
     }
 
-    .day__stat--sunrise::before           { background-image: url("../vectors/day-stat-sunrise@3x.png") }
-    .day__stat--sunset::before            { background-image: url("../vectors/day-stat-sunset@3x.png") }
-    .day__stat--daylight-duration::before { background-image: url("../vectors/day-stat-daylight-duration@3x.png") }
-    .day__stat--night-duration::before    { background-image: url("../vectors/day-stat-night-duration@3x.png") }
+    .day__stat--sunrise::before           { background-image: url("../vectors/day-stat-sunrise.svg") }
+    .day__stat--sunset::before            { background-image: url("../vectors/day-stat-sunset.svg") }
+    .day__stat--daylight-duration::before { background-image: url("../vectors/day-stat-daylight-duration.svg") }
+    .day__stat--night-duration::before    { background-image: url("../vectors/day-stat-night-duration.svg") }
 
 
 
