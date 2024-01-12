@@ -5,6 +5,7 @@
 
     }
         .nav__link-heading {
+            padding: 0;
             background-color: transparent;
             border: none;
             font-family: inherit;
@@ -366,30 +367,23 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                padding-top: 8px;
-                padding-bottom: 8px;
+                padding-top: 6px;
+                padding-bottom: 6px;
                 /*white-space: nowrap;*/
                 /*font-weight: bold;*/
-                /*font-size: 18px;*/
-                /*line-height: 22px;*/
+                font-size: 16px;
+                line-height: 20px;
                 /*color: inherit;*/
                 /*text-decoration: none;*/
             }
-                .nav--footer .nav__link-heading::after {
-                    content: "";
-                    margin-top: 2px;
-                    flex-shrink: 0;
-                    width: 8px;
-                    height: 12px;
-                    background-image: url("../vectors/footer-chevron.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                }
 
             .nav--footer .nav__menu {
-                display: none;
+
             }
+                .nav--footer .nav__sub-link {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
 }
 
 
