@@ -121,13 +121,13 @@
 
         }
             .footer__primary-section {
-
+                gap: 48px;
             }
                 .footer__logo {
-
+                    margin-top: 7px;
                 }
                     .footer__emblem {
-
+                        width: 213px;
                     }
 
                 .footer__navigation {
@@ -219,10 +219,10 @@
 
         }
             .footer__primary-section {
-
+                display: block;
             }
                 .footer__logo {
-
+                    display: none;
                 }
                     .footer__emblem {
 
