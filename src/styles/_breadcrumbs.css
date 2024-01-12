@@ -8,6 +8,10 @@
     .breadcrumbs__item {
         margin-left: 4px;
     }
+
+    .breadcrumbs__item:first-child {
+        margin-left: 0;
+    }
         .breadcrumbs__item::before {
             content: "/";
             margin-right: 4px;
