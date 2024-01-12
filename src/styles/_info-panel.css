@@ -1,0 +1,18 @@
+.info-panel {
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    min-height: 24px;
+    background-image: url("../vectors/info-panel.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+@media (1500px <= width) {
+    .info-panel {
+        min-height: 30px;
+        padding-left: 44px;
+        background-size: 30px 30px;
+    }
+}

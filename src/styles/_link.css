@@ -28,24 +28,19 @@
     transition: none;
 }
 
-.link--text-alike {
+.link--text-alike,
+.wysiwyg .link--text-alike {
     color: inherit;
-}
-
-
-.link--white {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.link--white:hover {
-    color: #8E8FFA;
 }
 
 
 .link--no-hover,
 .link--no-hover:hover,
-.link--no-hover:active {
+.link--no-hover:active,
+.wysiwyg .link--no-hover,
+.wysiwyg .link--no-hover:hover,
+.wysiwyg .link--no-hover:active
+{
     text-decoration: none;
     color: inherit;
 }
@@ -53,18 +48,23 @@
 
 .link--fake,
 .link--fake:hover,
-.link--fake:active {
+.link--fake:active,
+.wysiwyg .link--fake,
+.wysiwyg .link--fake:hover,
+.wysiwyg .link--fake:active {
     text-decoration: none;
     color: inherit;
     cursor: text;
 }
 
 
-.link--inherit {
+.link--inherit,
+.wysiwyg .link--inherit {
     color: inherit;
     text-decoration: none;
 }
 
-.link--inherit:hover {
+.link--inherit:hover,
+.wysiwyg .link--inherit:hover {
     color: #8E8FFA;
 }
