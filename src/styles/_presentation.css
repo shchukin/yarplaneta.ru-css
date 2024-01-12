@@ -272,8 +272,8 @@
                 }
 
             .presentation--in-catalog .presentation__actions {
-                /*flex-shrink: 0;*/
                 margin-top: 32px;
+                justify-content: flex-end;
             }
 }
 
