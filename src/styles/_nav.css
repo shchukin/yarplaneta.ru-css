@@ -262,7 +262,7 @@
             padding-bottom: 6px;
             white-space: nowrap;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 22px;
             color: inherit;
             text-transform: lowercase;
@@ -281,6 +281,7 @@
             }
 
         .nav--footer .nav__menu {
+            margin-top: 4px;
             display: inline-flex;
             flex-direction: column;
         }
