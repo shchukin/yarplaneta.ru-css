@@ -85,7 +85,7 @@
                         position: relative; /* Выше .polygon__border */
                     }
 
-    .sub-nav__addition-action {
+    .sub-nav__additional-action {
         margin-top: 46px;
     }
 
@@ -115,7 +115,7 @@
                         line-height: 26px;
                     }
 
-        .sub-nav__addition-action {
+        .sub-nav__additional-action {
             margin-top: 60px;
         }
 }
@@ -227,7 +227,7 @@
                             display: none;
                         }
 
-        .sub-nav__addition-action {
+        .sub-nav__additional-action {
             grid-area: right-top;
             margin-top: 20px;
         }
