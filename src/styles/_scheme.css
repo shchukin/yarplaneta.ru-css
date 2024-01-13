@@ -1,0 +1,37 @@
+.scheme {
+
+}
+
+#star-hall:hover #star-hall-background {
+    fill: red;
+}
+
+#museum-background:hover {
+    fill: red;
+}
+
+
+
+
+#museum-background,
+#observatory-background,
+#shuttle-5d-background,
+#interactive-gallery-background,
+#star-hall-background,
+#interactive-classroom-background
+{
+    fill: rgb(142 143 250 / 55%);
+    transition: fill var(--transition-hover);
+}
+
+#museum:hover #museum-background,
+#observatory:hover #observatory-background,
+#shuttle-5d:hover #shuttle-5d-background,
+#star-hall:hover #star-hall-background,
+#interactive-gallery:hover #interactive-gallery-background,
+#interactive-classroom:hover #interactive-classroom-background
+{
+    fill: #8E8FFA;
+}
+
+#
