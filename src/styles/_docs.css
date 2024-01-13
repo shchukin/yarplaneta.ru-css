@@ -53,7 +53,7 @@
             }
 
             .docs__link:hover {
-                background-color: rgb(142 143 250 / 60%);
+                background-color: rgb(142 143 250 / 80%);
             }
 
             .docs__link.polygon--applied {
