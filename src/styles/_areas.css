@@ -35,14 +35,16 @@
     .areas__plan {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 874px 1fr; /* 874px -- ширина SVG */
-        gap: 60px;
+        grid-template-columns: 734px 1fr;
+        gap: 48px;
     }
         .areas__svg {
 
         }
             .areas__svg svg {
                 vertical-align: top;
+                width: 100%;
+                height: auto;
             }
 
         .areas__scheme {
@@ -83,6 +85,8 @@
 
         .areas__plan {
             margin-top: 40px;
+            grid-template-columns: 874px 1fr;
+            gap: 60px;
         }
             .areas__svg {
 
