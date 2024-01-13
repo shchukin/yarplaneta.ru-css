@@ -40,7 +40,9 @@
     });
 
 
-    /* Здесь адреса страниц: */
+
+    /* Здесь добавить реальные страниц: */
+
     $('#museum').on('click', function () {
         window.location.href = "areas-item.html";
     });

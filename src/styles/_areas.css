@@ -32,7 +32,7 @@
         gap: 32px;
     }
 
-    .areas_scheme {
+    .areas__plan {
         margin-top: 32px;
         display: grid;
         grid-template-columns: 924px 1fr; /* 924px -- ширина SVG */
@@ -42,10 +42,13 @@
             vertical-align: top;
         }
 
-        .areas__plan {
+        .areas__scheme {
             margin-top: 35px;
         }
 
+    .areas__ {
+
+    }
 
 
 @media (1500px <= width) {
@@ -75,7 +78,7 @@
             gap: 40px;
         }
 
-        .areas_scheme {
+        .areas__plan {
             margin-top: 40px;
         }
             .areas__svg {
@@ -119,7 +122,7 @@
             gap: 16px;
         }
 
-        .areas_scheme {
+        .areas__plan {
             margin-top: 24px;
         }
             .areas__svg {
