@@ -13,7 +13,7 @@
     .related__list {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 
@@ -50,18 +50,18 @@
             margin-top: 24px;
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 24px 40px;
         }
 }
 
 
 
 
-@media (740px <= width) {
+.related--two-columns {
 
-    .related__list {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+}
+
+@media (740px <= width) {
 
     .related--two-columns .related__list {
         grid-template-columns: 1fr 1fr;

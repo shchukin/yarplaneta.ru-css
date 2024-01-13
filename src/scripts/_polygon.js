@@ -59,21 +59,13 @@
                 stroke = 2;
             }
 
-            if ($this.hasClass('button--primary')) {
-                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                stroke = 0;
-            }
-
-            if ($this.hasClass('button--secondary')) {
+            if ($this.hasClass('button')) {
                 angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 0;
             }
 
             if ($this.hasClass('button--outline')) {
-                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 1;
             }
 
