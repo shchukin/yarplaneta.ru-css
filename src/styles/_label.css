@@ -1,9 +1,20 @@
 .label {
     display: block; /* In case it is being followed by button or smaller input. We want it to be on a new line. */
     width: fit-content; /* Specify clickable area */
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    color: #333333;
+    color: #FFFFFF;
 }
+
+
+@media (1500px <= width) {
+
+    .label {
+        padding-bottom: 6px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
