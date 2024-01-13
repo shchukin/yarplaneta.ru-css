@@ -53,10 +53,16 @@
             .nav--header .nav__item:not(:has(.nav__menu)) .nav__link-heading:hover {
                 color: #8E8FFA;
             }
-                .nav--header .nav__chevron {
+                .nav--header .nav__item:has(.nav__menu) .nav__link-heading::after {
+                    content: "";
+                    display: block;
                     margin-top: 4px;
                     width: 12px;
                     height: 7px;
+                    background-image: url("../vectors/nav-chevron.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
                 }
 
             .nav--header .nav__menu {
