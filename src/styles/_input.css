@@ -13,7 +13,7 @@
         outline: none;
         border-radius: 5px;
         font-family: inherit;
-        font-size: 15px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+        font-size: 15px;
         line-height: 22px;
         color: #FFFFFF;
         opacity: 1; /* reset select:disabled default fade on iOS */
@@ -158,30 +158,40 @@ select.input__widget:disabled {
 
 @media (1500px <= width) {
 
-
-    .input {
-
+    .input__widget {
+        height: 48px;
+        padding: 10px 23px;
+        border-radius: 6px;
     }
-        .input__widget {
-            height: 48px;
-            padding: 10px 23px;
-            border-radius: 6px;
-        }
-
-
 
     textarea.input__widget {
         height: auto; /* user rows="" attribute to set a default height */
         min-height: 48px; /* 1 row */
-        /*max-height: 266px; !* 10 rows *!*/
+        max-height: 266px; /* 10 rows */
     }
-
-
 
     select.input__widget {
         padding-right: 50px;
         background-size: 20px 12px;
         background-position: right 20px center;
+    }
+}
+
+
+
+
+@media (width < 740px) {
+
+    .input__widget {
+        height: 44px;
+        font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+        line-height: 24px;
+    }
+
+    textarea.input__widget {
+        height: auto; /* user rows="" attribute to set a default height */
+        min-height: 44px; /* 1 row */
+        max-height: 256px; /* 10 rows */
     }
 }
 
