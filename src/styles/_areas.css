@@ -35,19 +35,22 @@
     .areas__plan {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 924px 1fr; /* 924px -- ширина SVG */
-        gap: 24px;
+        grid-template-columns: 874px 1fr; /* 874px -- ширина SVG */
+        gap: 60px;
     }
         .areas__svg {
-            vertical-align: top;
+
         }
+            .areas__svg svg {
+                vertical-align: top;
+            }
 
         .areas__scheme {
             margin-top: 35px;
         }
 
-    .areas__ {
-
+    .areas__legend {
+        margin-top: 57px;
     }
 
 
