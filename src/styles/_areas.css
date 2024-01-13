@@ -32,9 +32,19 @@
         gap: 32px;
     }
 
-    .areas__map {
+    .areas_scheme {
         margin-top: 32px;
+        display: grid;
+        grid-template-columns: 924px 1fr; /* 924px -- ширина SVG */
+        gap: 24px;
     }
+        .areas__svg {
+            vertical-align: top;
+        }
+
+        .areas__plan {
+            margin-top: 35px;
+        }
 
 
 
@@ -65,9 +75,12 @@
             gap: 40px;
         }
 
-        .areas__map {
+        .areas_scheme {
             margin-top: 40px;
         }
+            .areas__svg {
+
+            }
 }
 
 
@@ -106,9 +119,12 @@
             gap: 16px;
         }
 
-        .areas__map {
+        .areas_scheme {
             margin-top: 24px;
         }
+            .areas__svg {
+
+            }
 }
 
 
