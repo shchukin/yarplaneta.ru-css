@@ -1,18 +1,13 @@
-.scheme {
-
+#museum,
+#observatory,
+#shuttle-5d,
+#interactive-gallery,
+#star-hall,
+#interactive-classroom {
+    cursor: pointer;
 }
 
-#star-hall:hover #star-hall-background {
-    fill: red;
-}
-
-#museum-background:hover {
-    fill: red;
-}
-
-
-
-
+/* Заполняем цветами оригинальную картинку */
 #museum-background,
 #observatory-background,
 #shuttle-5d-background,
@@ -24,14 +19,27 @@
     transition: fill var(--transition-hover);
 }
 
-#museum:hover #museum-background,
-#observatory:hover #observatory-background,
-#shuttle-5d:hover #shuttle-5d-background,
-#star-hall:hover #star-hall-background,
-#interactive-gallery:hover #interactive-gallery-background,
-#interactive-classroom:hover #interactive-classroom-background
+
+/* Наведения на части карты */
+.areas--museum                 #museum-background,
+.areas--observatory            #observatory-background,
+.areas--shuttle-5d             #shuttle-5d-background,
+.areas--interactive-gallery    #interactive-gallery-background,
+.areas--star-hall              #star-hall-background,
+.areas--interactive-classroom  #interactive-classroom-background
 {
     fill: #8E8FFA;
 }
 
-#
+
+/* Наведения на меню в сайдбаре */
+.areas--museum                 #museum-link,
+.areas--observatory            #observatory-link,
+.areas--shuttle-5d             #shuttle-5d-link,
+.areas--interactive-gallery    #interactive-gallery-link,
+.areas--star-hall              #star-hall-link,
+.areas--interactive-classroom  #interactive-classroom-link
+{
+    background-color: #8E8FFA;
+}
+
