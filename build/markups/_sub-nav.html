@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>.sub-nav</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css?1705057464">
+        <link rel="stylesheet" href="../styles/style.css?1705158472">
     </head>
 
     <body>
@@ -17,28 +17,165 @@
             </defs>
         </svg>
 
-        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+        <div style="max-width: 380px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
             <h1>.sub-nav</h1>
 
+            <p>
+                Самый полный кейс, с заголовками и кнопкой:
+            </p>
+
             <div class="sub-nav">
-                <a class="sub-nav__link polygon polygon--trapezoid" href="#">
-                    <span class="sub-nav__label">История создания</span>
-                </a>
-                <a class="sub-nav__link sub-nav__link--current polygon polygon--trapezoid" href="#">
-                    <span class="sub-nav__label">Этапы жизни В.В. Терешковой</span>
-                </a>
-                <a class="sub-nav__link polygon polygon--trapezoid" href="#">
-                    <span class="sub-nav__label">Музыка сфер</span>
-                </a>
-                <a class="sub-nav__link polygon polygon--trapezoid" href="#">
-                    <span class="sub-nav__label">Календарь космонавтики</span>
-                </a>
-                <a class="sub-nav__link polygon polygon--trapezoid" href="#">
-                    <span class="sub-nav__label">Клубные формирования</span>
-                </a>
+                <button class="sub-nav__handler" type="button">
+                    Разделы
+                </button>
+                <div class="sub-nav__dropdown">
+                    <div class="sub-nav__section">
+                        <b class="sub-nav__heading">
+                            Космонавтика
+                        </b>
+                        <div class="sub-nav__list">
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="blog.html">
+                                <span class="sub-nav__label">Календарь космонавтики</span>
+                            </a>
+                            <a class="sub-nav__link sub-nav__link--current polygon polygon--trapezoid" href="blog.html">
+                                <span class="sub-nav__label">Космические события</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="blog.html">
+                                <span class="sub-nav__label">Вопросы по космонавтике</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sub-nav__section">
+                        <b class="sub-nav__heading">
+                            Астрономия
+                        </b>
+                        <div class="sub-nav__list">
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="blog.html">
+                                <span class="sub-nav__label">Астрономический календарь</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="blog.html">
+                                <span class="sub-nav__label">Астрособытия</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="blog.html">
+                                <span class="sub-nav__label">Вопросы по астрономии</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-nav__additional-action">
+                    <div class="simpler-panel">
+                        <div class="simpler-panel__top-trapezoid"></div>
+                        <div class="simpler-panel__left-trapezoid"></div>
+                        <div class="simpler-panel__bottom-angle"></div>
+                        <a class="button button--primary polygon polygon--trapezoid" href="#">Задать вопрос</a>
+                    </div>
+                </div>
             </div>
+
+
+            <br>
+            <br>
+            <br>
+            <p>
+                Вариант попроще (убираем из DOM ненужные части):
+            </p>
+
+            <div class="sub-nav">
+                <button class="sub-nav__handler" type="button">
+                    Разделы
+                </button>
+                <div class="sub-nav__dropdown">
+                    <div class="sub-nav__section">
+                        <div class="sub-nav__list">
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="about.html">
+                                <span class="sub-nav__label">История создания</span>
+                            </a>
+                            <a class="sub-nav__link sub-nav__link--current polygon polygon--trapezoid" href="about.html">
+                                <span class="sub-nav__label">Этапы жизни В.В. Терешковой</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="about.html">
+                                <span class="sub-nav__label">Музыка сфер</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="about.html">
+                                <span class="sub-nav__label">Календарь космонавтики</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="about.html">
+                                <span class="sub-nav__label">Клубные формирования</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="about.html">
+                                <span class="sub-nav__label">История создания</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <div style="max-width: 800px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+
+            <h2>.sub-nav--horizontal</h2>
+
+            <div class="sub-nav sub-nav--horizontal">
+                <button class="sub-nav__handler" type="button">
+                    Разделы
+                </button>
+                <div class="sub-nav__dropdown">
+                    <div class="sub-nav__section">
+                        <div class="sub-nav__list">
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="news.html">
+                                <span class="sub-nav__label">Все анонсы</span>
+                            </a>
+                            <a class="sub-nav__link sub-nav__link--current polygon polygon--trapezoid" href="news.html">
+                                <span class="sub-nav__label">Мероприятия</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="news.html">
+                                <span class="sub-nav__label">Конкурсы</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="news.html">
+                                <span class="sub-nav__label">Анонсы</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.sub-nav--tabs-on-smartphone</h2>
+            <p>
+                Отменяем дропдаун на смартфонах, отображаем ссылки в виде табов:
+            </p>
+
+            <div class="sub-nav sub-nav--horizontal sub-nav--tabs-on-smartphone">
+                <button class="sub-nav__handler" type="button">
+                    Разделы
+                </button>
+                <div class="sub-nav__dropdown">
+                    <div class="sub-nav__section">
+                        <div class="sub-nav__list">
+                            <a class="sub-nav__link sub-nav__link--current polygon polygon--trapezoid" href="areas.html">
+                                <span class="sub-nav__label">Зоны планетария</span>
+                            </a>
+                            <a class="sub-nav__link polygon polygon--trapezoid" href="areas-map.html">
+                                <span class="sub-nav__label">Карта планетария</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <br>
             <br>
@@ -54,16 +191,19 @@
         </div>
 
 
+
+
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_mfp.js?1705057464"></script>
-        <script src="../scripts/_input.js?1705057464"></script>
-        <script src="../scripts/_polygon.js?1705057464"></script>
-        <script src="../scripts/_sticky.js?1705057464"></script>
-        <script src="../scripts/_sub-nav.js?1705057464"></script>
-        <script src="../scripts/_header.js?1705057464"></script>
-        <script src="../scripts/_nav.js?1705057464"></script>
-        <script src="../scripts/_page-scrolled.js?1705057464"></script>
+        <script src="../scripts/_mfp.js?1705158472"></script>
+        <script src="../scripts/_input.js?1705158472"></script>
+        <script src="../scripts/_polygon.js?1705158472"></script>
+        <script src="../scripts/_sticky.js?1705158472"></script>
+        <script src="../scripts/_sub-nav.js?1705158472"></script>
+        <script src="../scripts/_header.js?1705158472"></script>
+        <script src="../scripts/_nav.js?1705158472"></script>
+        <script src="../scripts/_page-scrolled.js?1705158472"></script>
+        <script src="../scripts/_areas.js?1705158472"></script>
 
 
     </body>

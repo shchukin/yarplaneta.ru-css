@@ -28,18 +28,18 @@
     height: auto;
     right: 0;
     bottom: 0;
-    background: rgba(48, 48, 48, 0.95);
+    background-color: rgb(25 24 37 / 85%);
 }
 
 /* overlay at start */
 .mfp-bg {
     opacity: 0;
-    transition: opacity 0.2s ease-out;
+    transition: opacity 200ms ease-out;
 }
 
 /* overlay animate in */
 .mfp-bg.mfp-ready {
-    opacity: 1;
+    opacity: 100%;
 }
 
 /* overlay animate out */
@@ -50,12 +50,12 @@
 /* content at start */
 .mfp-wrap .mfp-content {
     opacity: 0;
-    transition: opacity 0.2s ease-out;
+    transition: opacity 200ms ease-out;
 }
 
 /* content animate it */
 .mfp-wrap.mfp-ready .mfp-content {
-    opacity: 1;
+    opacity: 100%;
 }
 
 /* content animate out */
@@ -65,6 +65,6 @@
 
 
 button.mfp-close:focus-visible {
-    outline: 2px auto black;
+    outline: 2px auto white;
 }
 

@@ -13,8 +13,8 @@
 @import url("_label.css");
 @import url("_helper.css");
 
-/*@import url("_mfp.css");*/
-/*@import url("_window.css");*/
+@import url("_mfp.css");
+@import url("_window.css");
 @import url("_question.css");
 
 @import url("_membership.css");
