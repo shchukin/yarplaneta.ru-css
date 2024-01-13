@@ -261,3 +261,54 @@
         }
 
     }
+
+
+
+@media (width < 740px) {
+
+    .sub-nav--tabs-on-smartphone {
+
+    }
+        .sub-nav--tabs-on-smartphone .sub-nav__handler {
+            display: none;
+        }
+
+        .sub-nav--tabs-on-smartphone .sub-nav__dropdown {
+            /*grid-area: bottom;*/
+            background-color: transparent;
+            backdrop-filter: none;
+            margin-top: 0;
+            border: none;
+            padding: 0;
+            display: block;
+            animation: none;
+        }
+            .sub-nav--tabs-on-smartphone .sub-nav__list {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            @media (width < 350px) {
+
+                .sub-nav--tabs-on-smartphone .sub-nav__list {
+                    gap: 16px;
+                }
+            }
+                .sub-nav--tabs-on-smartphone .sub-nav__link {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                @media (width < 350px) {
+                    .sub-nav--tabs-on-smartphone .sub-nav__link {
+                        font-size: 14px;
+                    }
+                }
+
+                .sub-nav--tabs-on-smartphone .sub-nav__link--current {
+                    text-decoration: underline 2px #BECAFE;
+                    text-underline-offset: 10px;
+                }
+
+}
