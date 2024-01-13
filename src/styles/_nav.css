@@ -144,7 +144,7 @@
                 /*color: #8E8FFA;*/
             }
 
-                .nav--header .nav__chevron {
+                .nav--header .nav__item:has(.nav__menu) .nav__link-heading::after {
                     /*margin-top: 4px;*/
                     width: 14px;
                     height: 8px;
@@ -178,7 +178,7 @@
                 display: flex;
                 align-items: center;
                 padding: 16px 0;
-                gap: 8px;
+                gap: 12px;
                 /*text-decoration: none;*/
                 font-family: var(--font-headings);
                 /*font-weight: bold;*/
@@ -193,9 +193,18 @@
             .nav--header .nav__link-heading:hover {
                 /*color: #8E8FFA;*/
             }
-                .nav--header .nav__chevron {
+                .nav--header .nav__item:has(.nav__menu) .nav__link-heading::after {
+                    content: "";
+                    display: block;
                     margin-top: 4px;
+                    width: 14px;
+                    height: 8px;
+                    background-image: url("../vectors/nav-chevron.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
                     transition: transform 100ms ease;
+                    filter: invert(1);
                 }
 
                 .nav--header .nav__item--expanded .nav__chevron {
