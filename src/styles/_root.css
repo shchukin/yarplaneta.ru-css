@@ -11,12 +11,12 @@
     --image-fallback: #272640;
     --container-padding: 40px;
     --mobile-header-height: 82px;
-    /*--input-border: #B3B3B3;*/
-    /*--input-border-hover-and-focus: #7E7E7E;*/
-    /*--placeholder-color: #999999;*/
-    /*--disabled-background: #F6F6F6;*/
-    /*--disabled-color: #999999;*/
-    /*--error: #FF0033;*/
+    --input-border: #FFFFFF;
+    --input-border-hover-and-focus: #8E8FFA;
+    --placeholder-color: #CCCCCC;
+    --disabled-background: rgb(255 255 255 / 10%);
+    --disabled-color: #AAAAAA;
+    --error: #FF0033;
     --sky-gradient: linear-gradient(45deg, #9293FB, #BCD3FE);
 }
 
