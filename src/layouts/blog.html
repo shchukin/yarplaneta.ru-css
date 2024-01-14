@@ -653,13 +653,73 @@
             <button class="window__close mfp-close" type="button">
                 Закрыть
             </button>
-            <div class="question">
+            <form class="question">
                 <h2 class="question__heading">
-                    Magnific Popup!
+                    Задать вопрос
                 </h2>
-                <div class="question__body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur debitis eligendi fugiat provident sed, velit! At debitis dolore fuga ipsum laudantium nemo reiciendis temporibus voluptates? Ab, accusantium aspernatur cumque dicta ducimus eaque eius eos eum in maxime nihil nulla numquam velit. Accusamus, aliquid atque beatae culpa cupiditate fugiat iure iusto non odit pariatur quae saepe ullam voluptatibus.
+                <div class="question__note">
+                    в скором времени с вами свяжется менеджер для уточнения
                 </div>
+                <div class="question__body">
+                    <div class="question__field">
+                        <div class="input">
+                            <select class="input__widget">
+                                <option value="placeholder" selected>Тема вопроса*</option>
+                                <option>Foo</option>
+                                <option>Bar</option>
+                                <option>...</option>
+                                <option>Baz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="question__field">
+                        <div class="input">
+                            <input class="input__widget" type="text" placeholder="Ваше имя">
+                        </div>
+                    </div>
+                    <div class="question__field">
+                        <div class="input">
+                            <input class="input__widget" type="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="question__field">
+                        <div class="input">
+                            <input class="input__widget" type="tel" placeholder="Телефон*">
+                        </div>
+                    </div>
+                    <div class="question__field">
+                        <div class="input">
+                            <textarea class="input__widget" placeholder="Ваш вопрос*" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="question__submit">
+                        <button class="button button--primary" type="button">
+                            <span class="button__label">Купить билет</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="inner-alert inner-alert--in-modal inner-alert--success" style="display: none;">
+                <div class="inner-alert__heading">
+                    Thank you for your request
+                </div>
+                <div class="inner-alert__description">
+                    We will contact you within one business day.
+                </div>
+                <button class="inner-alert__action button button--submit" type="button">
+                    Send another massage
+                </button>
+            </div>
+            <div class="inner-alert inner-alert--in-modal inner-alert--danger" style="display: none;">
+                <div class="inner-alert__heading">
+                    Form has not been sent
+                </div>
+                <div class="inner-alert__description">
+                    Something went wrong. Check your internet connection, and try again.
+                </div>
+                <button class="inner-alert__action button button--submit" type="button">
+                    Try again
+                </button>
             </div>
         </div>
 

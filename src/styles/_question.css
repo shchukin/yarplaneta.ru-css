@@ -1,22 +1,112 @@
 .question {
-    width: 926px;
-    padding: 40px;
+    width: 600px;
+    padding: 52px 44px 44px;
 }
     .question__heading {
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: inherit;
+        font-family: var(--font-headings);
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .question__note {
+        margin-top: 14px;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .question__body {
-        margin-top: 20px;
+        margin-top: 21px;
     }
+        .question__field {
+            margin-top: 12px;
+        }
+
+        .question__field:first-child {
+            margin-top: 0;
+        }
+
+        .question__submit {
+            margin-top: 32px;
+            width: fit-content;
+            margin-left: auto;
+        }
 
 
-@media (width < 600px) {
+
+@media (1500px <= width) {
+
+    .question {
+        width: 680px;
+        padding: 70px 60px 60px;
+    }
+        .question__heading {
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        .question__note {
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .question__body {
+            margin-top: 28px;
+        }
+            .question__field {
+                margin-top: 16px;
+            }
+            .question__submit {
+                margin-top: 40px;
+            }
+}
+
+
+
+
+
+@media (width < 740px) {
 
     .question {
         width: 100%;
         max-width: 440px;
+        padding: 32px 28px;
     }
+        .question__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-family: var(--font-headings);*/
+            /*font-weight: bold;*/
+            /*font-size: 32px;*/
+            /*line-height: 32px;*/
+        }
+
+        .question__note {
+            /*margin-top: 14px;*/
+            /*font-size: 14px;*/
+            /*line-height: 18px;*/
+        }
+
+        .question__body {
+            /*margin-top: 21px;*/
+        }
+            .question__field {
+                /*margin-top: 12px;*/
+            }
+
+            .question__field:first-child {
+                /*margin-top: 0;*/
+            }
+
+            .question__submit {
+                margin-top: 24px;
+                /*width: fit-content;*/
+                /*margin-left: auto;*/
+            }
 }
+
+
+
