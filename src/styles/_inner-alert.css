@@ -1,7 +1,7 @@
 .inner-alert {
     display: flex;
     flex-direction: column;
-    padding: 121px 0 10px;
+    padding: 130px 40px 130px;
     background-size: 72px 72px;
     background-repeat: no-repeat;
     background-position: center 28px;
@@ -15,11 +15,10 @@
     background-image: url("../vectors/inner-alert-stop.svg");
 }
     .inner-alert__heading {
-        font-family: var(--evolventa);
-        font-size: 36px;
-        line-height: 48px;
+        font-family: var(--font-headings);
+        font-size: 40px;
+        line-height: 46px;
         text-align: center;
-        letter-spacing: -1px;
     }
 
     .inner-alert__description {
