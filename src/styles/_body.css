@@ -35,3 +35,12 @@ body {
         transition: background-color var(--transition-show);
     }
 }
+
+
+.landing-background {
+    background-color: #15141E;
+    background-image: url("../images/intro/intro-desktop-background-illustration-1500@1x.jpg");
+    background-size: 1500px 726px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
