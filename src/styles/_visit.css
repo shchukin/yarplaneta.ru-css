@@ -1,54 +1,51 @@
 .visit {
     margin-top: 80px;
+    display: grid;
+    grid-template-columns: 40.8571% 1fr;
+    gap: 32px;
 }
-    .visit__heading {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: var(--font-headings);
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 34px;
-    }
+    .visit__intro {
 
-    .visit__body {
-        margin-top: 32px;
-        display: grid;
-        grid-template-columns: 40.8571% 1fr;
-        gap: 32px;
     }
+        .visit__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-headings);
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
         .visit__note {
-            font-size: var(--body-font-size);
-            line-height: var(--body-line-height);
+            margin-top: 32px;
         }
 
-        .visit__form {
-
-        }
+    .visit__form {
+        margin-top: 12px;
+    }
 
 
 @media (1500px <= width) {
 
-
     .visit {
         margin-top: 100px;
+        gap: 40px;
     }
-        .visit__heading {
-            font-size: 32px;
-            line-height: 40px;
-        }
+        .visit__intro {
 
-        .visit__body {
-            margin-top: 40px;
-            /*grid-template-columns: 40.8571% 1fr;*/
-            gap: 40px;
         }
+            .visit__heading {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
             .visit__note {
-
+                margin-top: 40px;
             }
 
-            .visit__form {
-
-            }
+        .visit__form {
+            margin-top: 13px;
+        }
 }
 
 
@@ -57,21 +54,21 @@
 
     .visit {
         margin-top: 40px;
+        display: block;
     }
-        .visit__heading {
-            font-size: 24px;
-            line-height: 28px;
-        }
+        .visit__intro {
 
-        .visit__body {
-            margin-top: 16px;
-            display: block;
         }
+            .visit__heading {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
             .visit__note {
-
+                margin-top: 16px;
             }
 
-            .visit__form {
-                margin-top: 24px;
-            }
+        .visit__form {
+            margin-top: 24px;
+        }
 }
