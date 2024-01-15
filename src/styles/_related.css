@@ -17,6 +17,10 @@
         gap: 20px;
     }
 
+    .related__list:first-child {
+        margin-top: 0;
+    }
+
 
 
 @media (1500px <= width) {
@@ -54,6 +58,19 @@
         }
 }
 
+
+
+
+.related--one-column {
+
+}
+
+@media (740px <= width) {
+
+    .related--two-column .related__list {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
