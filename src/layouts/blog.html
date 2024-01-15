@@ -653,76 +653,82 @@
             <button class="window__close mfp-close" type="button">
                 Закрыть
             </button>
-            <form class="question">
-                <h2 class="question__heading">
-                    Задать вопрос
-                </h2>
-                <div class="question__note">
-                    в скором времени с вами свяжется менеджер для уточнения
+            <div class="submitting">
+                <div class="submitting__form">
+                    <form class="question">
+                        <h2 class="question__heading">
+                            Задать вопрос
+                        </h2>
+                        <div class="question__note">
+                            в скором времени с вами свяжется менеджер для уточнения
+                        </div>
+                        <div class="question__body">
+                            <div class="question__field">
+                                <div class="input">
+                                    <select class="input__widget">
+                                        <option value="placeholder" selected>Тема вопроса*</option>
+                                        <option>Foo</option>
+                                        <option>Bar</option>
+                                        <option>...</option>
+                                        <option>Baz</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="question__field">
+                                <div class="input">
+                                    <input class="input__widget" type="text" placeholder="Ваше имя">
+                                </div>
+                            </div>
+                            <div class="question__field">
+                                <div class="input">
+                                    <input class="input__widget" type="email" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="question__field">
+                                <div class="input">
+                                    <input class="input__widget" type="tel" placeholder="Телефон*">
+                                </div>
+                            </div>
+                            <div class="question__field">
+                                <div class="input">
+                                    <textarea class="input__widget" placeholder="Ваш вопрос*" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="question__submit">
+                                <button class="button button--primary submitting-handler" type="button">
+                                    <span class="button__label">Купить билет</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="question__body">
-                    <div class="question__field">
-                        <div class="input">
-                            <select class="input__widget">
-                                <option value="placeholder" selected>Тема вопроса*</option>
-                                <option>Foo</option>
-                                <option>Bar</option>
-                                <option>...</option>
-                                <option>Baz</option>
-                            </select>
+                <div class="submitting__response" style="display: none;">
+                    <div class="inner-alert inner-alert--success">
+                        <div class="inner-alert__heading">
+                            Ваша вопрос отправлен!
+                        </div>
+                        <div class="inner-alert__description">
+                            В скором времени с вами свяжется менеджер для уточнения
+                        </div>
+                        <div class="inner-alert__action">
+                            <button class="button button--submit" type="button">
+                                Отправить ещё вопрос
+                            </button>
                         </div>
                     </div>
-                    <div class="question__field">
-                        <div class="input">
-                            <input class="input__widget" type="text" placeholder="Ваше имя">
+                    <div class="inner-alert inner-alert--danger">
+                        <div class="inner-alert__heading">
+                            Вопрос не был отправлен
+                        </div>
+                        <div class="inner-alert__description">
+                            Пожалуйста, проверьте соединение и попробуйте ещё&nbsp;раз
+                        </div>
+                        <div class="inner-alert__action">
+                            <button class="button button--submit" type="button">
+                                Попробовать ещё
+                            </button>
                         </div>
                     </div>
-                    <div class="question__field">
-                        <div class="input">
-                            <input class="input__widget" type="email" placeholder="E-mail">
-                        </div>
-                    </div>
-                    <div class="question__field">
-                        <div class="input">
-                            <input class="input__widget" type="tel" placeholder="Телефон*">
-                        </div>
-                    </div>
-                    <div class="question__field">
-                        <div class="input">
-                            <textarea class="input__widget" placeholder="Ваш вопрос*" rows="5"></textarea>
-                        </div>
-                    </div>
-                    <div class="question__submit">
-                        <button class="button button--primary" type="button">
-                            <span class="button__label">Купить билет</span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-            <div class="inner-alert inner-alert--success" style="display: none;">
-                <div class="inner-alert__heading">
-                    Ваша вопрос отправлен!
-                </div>
-                <div class="inner-alert__description">
-                    В скором времени с вами свяжется менеджер для уточнения
-                </div>
-                <div class="inner-alert__action">
-                    <button class="button button--submit" type="button">
-                        Отправить ещё вопрос
-                    </button>
-                </div>
-            </div>
-            <div class="inner-alert inner-alert--danger" style="display: none;">
-                <div class="inner-alert__heading">
-                    Вопрос не был отправлен
-                </div>
-                <div class="inner-alert__description">
-                    Пожалуйста, проверьте соединение и попробуйте ещё&nbsp;раз
-                </div>
-                <div class="inner-alert__action">
-                    <button class="button button--submit" type="button">
-                        Попробовать ещё
-                    </button>
                 </div>
             </div>
         </div>
@@ -738,7 +744,7 @@
         <script src="../scripts/_nav.js"></script>
         <script src="../scripts/_page-scrolled.js"></script>
         <script src="../scripts/_areas.js"></script>
-        <script src="../scripts/_question.js"></script>
+        <script src="../scripts/_submitting.js"></script>
 
     </body>
 </html>

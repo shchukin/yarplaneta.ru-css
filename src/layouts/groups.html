@@ -484,9 +484,86 @@
                     </article>
                 </div>
             </section>
-            <div class="request">
-
-            </div>
+            <section class="visit container">
+                <h2 class="visit__heading">
+                    Заявка на групповое посещение
+                </h2>
+                <div class="visit__body">
+                    <div class="visit__note">
+                        Группы принимаются строго по предварительным заявкам! Заявки принимаются только в будние дни с 09:00 до 18:00 и минимум за 3 дня до даты посещения планетария.
+                    </div>
+                    <div class="visit__form">
+                        <div class="submitting">
+                            <div class="submitting__form">
+                                <form class="request">
+                                    <div class="request__field">
+                                        <div class="input">
+                                            <input class="input__widget" type="text" placeholder="Ваше имя">
+                                        </div>
+                                    </div>
+                                    <div class="request__field">
+                                        <div class="input">
+                                            <input class="input__widget" type="tel" placeholder="Телефон*">
+                                        </div>
+                                    </div>
+                                    <div class="request__field">
+                                        <div class="input">
+                                            <input class="input__widget" type="number" min="1" placeholder="Количество человек">
+                                        </div>
+                                    </div>
+                                    <div class="request__field">
+                                        <div class="input">
+                                            <select class="input__widget">
+                                                <option value="placeholder" selected>Желаемая дата*</option>
+                                                <option>Foo</option>
+                                                <option>Bar</option>
+                                                <option>...</option>
+                                                <option>Baz</option>
+                                            </select>
+                                        </div>
+                                        <div class="helper">
+                                            в скором времени с вами свяжется менеджер для уточнения
+                                        </div>
+                                    </div>
+                                    <div class="request__submit">
+                                        <button class="button button--primary submitting-handler polygon polygon--trapezoid" type="button">
+                                            <span class="button__label">Оставить заявку</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="submitting__response" style="display: none;">
+                                <div class="inner-alert inner-alert--success">
+                                    <div class="inner-alert__heading">
+                                        Ваша вопрос отправлен!
+                                    </div>
+                                    <div class="inner-alert__description">
+                                        В скором времени с вами свяжется менеджер для уточнения
+                                    </div>
+                                    <div class="inner-alert__action">
+                                        <button class="button button--submit" type="button">
+                                            Отправить ещё вопрос
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="inner-alert inner-alert--danger">
+                                    <div class="inner-alert__heading">
+                                        Вопрос не был отправлен
+                                    </div>
+                                    <div class="inner-alert__description">
+                                        Пожалуйста, проверьте соединение и попробуйте ещё&nbsp;раз
+                                    </div>
+                                    <div class="inner-alert__action">
+                                        <button class="button button--submit" type="button">
+                                            Попробовать ещё
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <footer class="footer">
                 <div class="footer__wrap container">
                     <div class="footer__primary-section">
@@ -605,7 +682,7 @@
         <script src="../scripts/_nav.js"></script>
         <script src="../scripts/_page-scrolled.js"></script>
         <script src="../scripts/_areas.js"></script>
-        <script src="../scripts/_question.js"></script>
+        <script src="../scripts/_submitting.js"></script>
 
     </body>
 </html>

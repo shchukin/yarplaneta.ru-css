@@ -41,8 +41,7 @@
 @media (1500px <= width) {
 
     .request {
-        width: 680px;
-        padding: 70px 60px 60px;
+
     }
         .request__heading {
             font-size: 42px;
@@ -76,9 +75,7 @@
 @media (width < 740px) {
 
     .request {
-        width: 100%;
-        max-width: 440px;
-        padding: 32px 28px;
+
     }
         .request__heading {
             /*margin-top: 0;*/
