@@ -1,5 +1,10 @@
 .intro {
-    padding-bottom: 75px;
+    padding-bottom: 96px;
+    margin-bottom: -21px; /* Уголки .schedule */
+    background-image: url("../vectors/intro-desktop-background-gas.svg");
+    background-size: 2120px 1194px;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
     .intro__gallery {
 
@@ -29,7 +34,10 @@
 @media (1500px <= width) {
 
     .intro {
-        padding-bottom: 100px;
+        background-size: 2826px 1592px;
+        background-position: calc(50% + 100px) -100px;
+        padding-bottom: 130px;
+        margin-bottom: -30px; /* Уголки .schedule */
     }
         .intro__gallery {
 
