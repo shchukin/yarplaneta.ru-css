@@ -1,40 +1,19 @@
 .request {
 
 }
-    .request__heading {
+    .request__field {
+        margin-top: 12px;
+    }
+
+    .request__field:first-child {
         margin-top: 0;
-        margin-bottom: 0;
-        font-family: var(--font-headings);
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 32px;
     }
 
-    .request__body {
-
+    .request__submit {
+        margin-top: 32px;
+        width: fit-content;
+        margin-left: auto;
     }
-        .request__note {
-            margin-top: 14px;
-            font-size: 14px;
-            line-height: 18px;
-        }
-
-        .request__form {
-            margin-top: 21px;
-        }
-            .request__field {
-                margin-top: 12px;
-            }
-
-            .request__field:first-child {
-                margin-top: 0;
-            }
-
-            .request__submit {
-                margin-top: 32px;
-                width: fit-content;
-                margin-left: auto;
-            }
 
 
 
@@ -43,29 +22,12 @@
     .request {
 
     }
-        .request__heading {
-            font-size: 42px;
-            line-height: 42px;
+        .request__field {
+            margin-top: 16px;
         }
-
-        .request__body {
-
+        .request__submit {
+            margin-top: 40px;
         }
-            .request__note {
-                margin-top: 18px;
-                font-size: 16px;
-                line-height: 19px;
-            }
-
-            .request__form {
-                margin-top: 28px;
-            }
-                .request__field {
-                    margin-top: 16px;
-                }
-                .request__submit {
-                    margin-top: 40px;
-                }
 }
 
 
@@ -89,28 +51,20 @@
         .request__body {
 
         }
-            .request__note {
-                /*margin-top: 14px;*/
-                /*font-size: 14px;*/
-                /*line-height: 18px;*/
+            .request__field {
+                /*margin-top: 12px;*/
             }
 
-            .request__form {
-                /*margin-top: 21px;*/
+            .request__field:first-child {
+                /*margin-top: 0;*/
             }
-                .request__field {
-                    /*margin-top: 12px;*/
-                }
 
-                .request__field:first-child {
-                    /*margin-top: 0;*/
-                }
-
-                .request__submit {
-                    margin-top: 24px;
-                    /*width: fit-content;*/
-                    /*margin-left: auto;*/
-                }
+            .request__submit {
+                margin-top: 24px;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
 }
 
 

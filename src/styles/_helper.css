@@ -26,3 +26,35 @@
         padding-top: 5px;
     }
 }
+
+
+
+.helper--with-icon {
+    display: flex;
+    align-items: center;
+}
+    .helper--with-icon::before {
+        content: "";
+        display: block;
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../vectors/helper.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+@media (1500px <= width) {
+    .helper--with-icon {
+
+    }
+        .helper--with-icon::before {
+            margin-top: -1px;
+            margin-bottom: -1px;
+            margin-right: 10px;
+            width: 22px;
+            height: 22px;
+        }
+}
+
