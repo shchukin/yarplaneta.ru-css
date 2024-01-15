@@ -1,69 +1,193 @@
 .panel-alike-button {
-    display: block;
-    height: 130px;
-    box-shadow: inset 0 0 0 2px #8E8FFA;
-    background-color: rgb(142 143 250 / 45%);
-    border-radius: 6px;
+    position: relative;
+    min-height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px 33px;
+    box-shadow: inset 0 0 0 3px #C2D9FF;
+    background-color: rgb(142 143 250 / 10%);
     backdrop-filter: blur(4px);
+    border-radius: 6px;
     overflow: hidden; /* Обрезаем уголки внутри */
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
     text-align: center;
     text-decoration: none;
-    color: inherit;
+    color: #C2D9FF;
+    text-transform: lowercase;
+    transition: background-color var(--transition-hover);
 }
-    .panel-alike-button__left-trapezoid {
-        position: absolute;
-        left: 0;
-        top: 18px;
-        bottom: 24px;
-        width: 0;
-        border: 5px solid transparent;
-        border-left-color: #8E8FFA;
-        pointer-events: none;
-    }
 
+.panel-alike-button:hover {
+    background-color: rgb(142 143 250 / 30%);
+}
     .panel-alike-button__top-trapezoid {
         position: absolute;
-        right: 26px;
         top: 0;
-        width: 69px;
+        left: 34px;
+        width: 122px;
         height: 0;
         border: 6px solid transparent;
-        border-top-color: #8E8FFA;
+        border-left-width: 11px;
+        border-right-width: 11px;
+        border-top-color: #C2D9FF;
         pointer-events: none;
     }
 
-    .panel-alike-button__bottom-angle {
+    .panel-alike-button__bottom-trapezoid {
+        position: absolute;
+        bottom: 0;
+        right: 21px;
+        width: 122px;
+        height: 0;
+        border: 6px solid transparent;
+        border-left-width: 11px;
+        border-right-width: 11px;
+        border-bottom-color: #C2D9FF;
+        pointer-events: none;
+    }
+
+    .panel-alike-button__left-angle {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border: 12px solid transparent;
+        border-bottom-color: #C2D9FF;
+        border-left-color: #C2D9FF;
+        pointer-events: none;
+    }
+
+    .panel-alike-button__right-angle {
         position: absolute;
         right: 0;
-        bottom: 0;
-        border: 9px solid transparent;
-        border-bottom-color: #8E8FFA;
-        border-right-color: #8E8FFA;
+        top: 0;
+        border: 12px solid transparent;
+        border-top-color: #C2D9FF;
+        border-right-color: #C2D9FF;
         pointer-events: none;
     }
 
+
+
 @media (1500px <= width) {
+
     .panel-alike-button {
-        padding: 40px;
+        min-height: 130px;
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        padding: 18px 30px 22px;
+        /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
+        /*background-color: rgb(142 143 250 / 10%);*/
+        /*backdrop-filter: blur(4px);*/
+        border-radius: 10px;
+        /*overflow: hidden; !* Обрезаем уголки внутри *!*/
+        /*font-family: var(--font-headings);*/
+        /*font-weight: bold;*/
+        font-size: 24px;
+        line-height: 30px;
+        /*text-align: center;*/
+        /*text-decoration: none;*/
+        /*color: #C2D9FF;*/
+        /*text-transform: lowercase;*/
+        /*transition: background-color var(--transition-hover);*/
     }
-        .panel-alike-button__left-trapezoid {
-            top: 22px;
-            bottom: 30px;
-            border-width: 6px;
-        }
 
+    .panel-alike-button:hover {
+        /*background-color: rgb(142 143 250 / 30%);*/
+    }
         .panel-alike-button__top-trapezoid {
-            right: 31px;
-            width: 83px;
-            border-width: 7px;
+            left: 45px;
+            width: 163px;
         }
 
-        .panel-alike-button__right-angle {
-            border-width: 11px;
+        .panel-alike-button__bottom-trapezoid {
+            right: 28px;
+            width: 163px;
         }
+
 }
 
 
 @media (width < 740px) {
 
+    .panel-alike-button {
+        min-height: 100px;
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        padding: 15px 16px 19px;
+        /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
+        /*background-color: rgb(142 143 250 / 10%);*/
+        /*backdrop-filter: blur(4px);*/
+        /*border-radius: 8px;*/
+        /*overflow: hidden; !* Обрезаем уголки внутри *!*/
+        /*font-family: var(--font-headings);*/
+        /*font-weight: bold;*/
+        font-size: 18px;
+        line-height: 22px;
+        /*text-align: center;*/
+        /*text-decoration: none;*/
+        /*color: #C2D9FF;*/
+        /*text-transform: lowercase;*/
+        /*transition: background-color var(--transition-hover);*/
+    }
+
+    @media (width < 350px) {
+        .panel-alike-button {
+            font-size: 17px;
+        }
+    }
+
+    .panel-alike-button:hover {
+        /*background-color: rgb(142 143 250 / 30%);*/
+    }
+
+        .panel-alike-button__left-trapezoid {
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top: 18px;*/
+            /*bottom: 24px;*/
+            /*width: 0;*/
+            /*border: 5px solid transparent;*/
+            /*border-left-color: #8E8FFA;*/
+            /*pointer-events: none;*/
+        }
+
+        .panel-alike-button__top-trapezoid {
+            /*position: absolute;*/
+            /*right: 26px;*/
+            /*top: 0;*/
+            /*width: 69px;*/
+            /*height: 0;*/
+            /*border: 6px solid transparent;*/
+            /*border-top-color: #8E8FFA;*/
+            /*pointer-events: none;*/
+        }
+
+        .panel-alike-button__bottom-angle {
+            /*position: absolute;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+            /*border: 9px solid transparent;*/
+            /*border-bottom-color: #8E8FFA;*/
+            /*border-right-color: #8E8FFA;*/
+            /*pointer-events: none;*/
+        }
+
+    /* Правый уголок превращается в левый: */
+    .panel-alike-button__right-angle {
+        right: auto;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #C2D9FF;
+        border-left-color: #C2D9FF;
+        pointer-events: none;
+    }
 }
