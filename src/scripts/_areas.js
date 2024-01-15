@@ -1,6 +1,5 @@
 (function ($) {
 
-
     const $areas = $('.areas');
 
     $('#museum, #museum-link').on('mouseenter', function () {

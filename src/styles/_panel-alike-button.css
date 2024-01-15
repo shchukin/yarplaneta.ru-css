@@ -1,0 +1,86 @@
+.panel-alike-button {
+    display: block;
+    padding: 32px;
+    box-shadow: inset 0 0 0 2px #8E8FFA;
+    background-color: rgb(142 143 250 / 45%);
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    overflow: hidden; /* Обрезаем уголки внутри */
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+    .panel-alike-button__left-trapezoid {
+        position: absolute;
+        left: 0;
+        top: 18px;
+        bottom: 24px;
+        width: 0;
+        border: 5px solid transparent;
+        border-left-color: #8E8FFA;
+        pointer-events: none;
+    }
+
+    .panel-alike-button__top-trapezoid {
+        position: absolute;
+        right: 26px;
+        top: 0;
+        width: 69px;
+        height: 0;
+        border: 6px solid transparent;
+        border-top-color: #8E8FFA;
+        pointer-events: none;
+    }
+
+    .panel-alike-button__bottom-angle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border: 9px solid transparent;
+        border-bottom-color: #8E8FFA;
+        border-right-color: #8E8FFA;
+        pointer-events: none;
+    }
+
+@media (1500px <= width) {
+    .panel-alike-button {
+        padding: 40px;
+    }
+        .panel-alike-button__left-trapezoid {
+            top: 22px;
+            bottom: 30px;
+            border-width: 6px;
+        }
+
+        .panel-alike-button__top-trapezoid {
+            right: 31px;
+            width: 83px;
+            border-width: 7px;
+        }
+
+        .panel-alike-button__right-angle {
+            border-width: 11px;
+        }
+}
+
+
+@media (width < 740px) {
+    .panel-alike-button {
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+        backdrop-filter: none;
+        text-align: left;
+    }
+        .panel-alike-button__top-trapezoid {
+            display: none;
+        }
+
+        .panel-alike-button__left-trapezoid {
+            display: none;
+        }
+
+        .panel-alike-button__bottom-angle {
+            display: none;
+        }
+}

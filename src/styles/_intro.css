@@ -1,0 +1,26 @@
+.intro {
+    padding-bottom: 95px;
+}
+    .intro__gallery {
+
+    }
+
+    .intro__footer {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 29% 1fr;
+        align-items: center;
+        gap: 40px;
+    }
+        .intro__label {
+            padding-right: 35%;
+            font-family: var(--font-headings);
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .intro__actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
