@@ -20,10 +20,6 @@
     .schedule__body {
         position: relative;
         margin-top: 40px;
-        background-color: #FFFFFF;
-        color: #14131E;
-        color-scheme: light;
-        border-radius: 21px;
     }
         .schedule__body-wrap {
             padding-top: 32px;
@@ -55,6 +51,23 @@
                     .schedule__item:first-child {
                         margin-top: 0;
                     }
+
+
+
+/* background */
+
+.schedule:not(.schedule--on-landing) .schedule__body, /* default case (schedule page) -- */
+.schedule--on-landing {
+    background-color: #FFFFFF;
+    background-image: url("../images/schedule-background-desktop.svg");
+    background-size: 3796px 5152px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #14131E;
+    color-scheme: light;
+    border-radius: 21px;
+}
+
 
 
 
