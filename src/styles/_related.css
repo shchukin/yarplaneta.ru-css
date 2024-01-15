@@ -67,7 +67,7 @@
 
 @media (740px <= width) {
 
-    .related--two-column .related__list {
+    .related--one-column .related__list {
         grid-template-columns: 1fr;
     }
 }

@@ -1,5 +1,6 @@
 .membership {
     position: relative;
+    min-height: 100%;
     padding: 24px 24px 20px;
 }
     .membership__heading {
