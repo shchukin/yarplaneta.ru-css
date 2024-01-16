@@ -5,7 +5,7 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        padding: 70px 60px 60px;
+        padding: 70px 180px 80px;
         box-shadow: inset 0 0 0 2px #9698FB;
         background-color: rgb(142 143 250 / 45%);
         backdrop-filter: blur(4px);
@@ -15,32 +15,36 @@
         .http-error__left-trapezoid {
             position: absolute;
             left: 0;
-            top: 50px;
+            top: 175px;
             width: 0;
-            height: 75px;
-            border: 5px solid transparent;
+            height: 232px;
+            border: 12px solid transparent;
             border-left-color: #9498FA;
             pointer-events: none;
         }
 
         .http-error__top-trapezoid {
             position: absolute;
-            left: 145px;
+            left: 124px;
             top: 0;
-            width: 93px;
+            width: 421px;
             height: 0;
-            border: 6px solid transparent;
+            border: 12px solid transparent;
+            border-left-width: 28px;
+            border-right-width: 28px;
             border-top-color: #A7B3FB;
             pointer-events: none;
         }
 
         .http-error__bottom-trapezoid {
             position: absolute;
-            right: 165px;
+            right: 146px;
             bottom: 0;
-            width: 93px;
+            width: 414px;
             height: 0;
-            border: 5px solid transparent;
+            border: 8px solid transparent;
+            border-left-width: 19px;
+            border-right-width: 19px;
             border-bottom-color: #9AA0FB;
             pointer-events: none;
         }
@@ -49,7 +53,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            border: 9px solid transparent;
+            border: 18px solid transparent;
             border-bottom-color: #8E8FFA;
             border-left-color: #8E8FFA;
             pointer-events: none;
@@ -59,7 +63,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            border: 9px solid transparent;
+            border: 18px solid transparent;
             border-top-color: #BCD2FE;
             border-right-color: #BCD2FE;
             pointer-events: none;
@@ -84,7 +88,6 @@
 
         .http-error__description {
             margin-top: 23px;
-            max-width: 780px;
             font-size: 18px;
             line-height: 24px;
         }
@@ -107,7 +110,7 @@
             /*position: relative;*/
             /*margin-left: auto;*/
             /*margin-right: auto;*/
-            padding: 80px 80px 100px;
+            padding: 80px 190px 100px;
             /*box-shadow: inset 0 0 0 2px #9698FB;*/
             /*background-color: rgb(142 143 250 / 45%);*/
             /*backdrop-filter: blur(4px);*/
