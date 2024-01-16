@@ -16,18 +16,6 @@
         $dotCurrent.removeClass('slideshow__dot--current');
         $slideshow.find('.slideshow__dot').eq(slideTo).addClass('slideshow__dot--current');
 
-
-        /* Disabling arrows */
-
-        $prev.removeClass('slideshow__control--disabled').prop('disabled', false);
-        $next.removeClass('slideshow__control--disabled').prop('disabled', false);
-
-        if ( slideTo === total - 1 ) {
-            $next.addClass('slideshow__control--disabled').prop('disabled', true);
-        } else if ( slideTo === 0 ) {
-            $prev.addClass('slideshow__control--disabled').prop('disabled', true);
-        }
-
     }
 
 
@@ -79,7 +67,7 @@
 
         if( $this.hasClass('slideshow__control--next') ) {
             if (current + 1 === total) {
-                return;
+                slideTo = 0;
             } else {
                 slideTo = current + 1;
             }
@@ -87,7 +75,7 @@
 
         if( $this.hasClass('slideshow__control--prev') ) {
             if (current === 0) {
-                return;
+                slideTo = total - 1;
             } else {
                 slideTo = current - 1;
             }
