@@ -76,7 +76,7 @@
                     margin-bottom: 7px;
                     padding-top: 44px;
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: space-between;
                 }
                     .program__info {
@@ -195,3 +195,108 @@
                 /*top: 0;*/
             }
 }
+
+
+
+@media (width < 740px) {
+
+    .program {
+        padding-top: 24px;
+        padding-bottom: 36px;
+        /*background-color: #FFFFFF;*/
+        background-image: none;
+        /*background-size: 1725px 585px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center top;*/
+        /*color-scheme: light;*/
+        border-radius: 0;
+        /*color: #14131E;*/
+    }
+        .program__wrap {
+            /*position: relative;*/
+        }
+            .program__head {
+
+            }
+                .program__category {
+                    /*font-family: var(--font-headings);*/
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .program__heading {
+                    margin-top: 8px;
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-weight: bold;*/
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+
+            .program__article {
+                margin-top: 20px;
+                display: block;
+                /*gap: 100px;*/
+                /*grid-template-columns: 1fr 40.7142%;*/
+            }
+                .program__preview {
+                    /*padding-top: 4px;*/
+                }
+                    .program__preview .preview {
+                        border-radius: 6px;
+                    }
+
+                .program__content {
+                    margin-top: 23px;
+                    display: block;
+                    /*flex-direction: column;*/
+                }
+                    .program__description {
+
+                    }
+
+                    .program__sub-heading {
+                        margin-top: 18px;
+                        /*margin-bottom: 0;*/
+                        /*font-family: var(--font-headings);*/
+                        /*font-weight: bold;*/
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+
+                    .program__list {
+                        margin-top: 16px;
+                    }
+
+                    .program__footer {
+                        /*margin-top: auto;*/
+                        /*margin-bottom: 7px;*/
+                        padding-top: 24px;
+                        /*display: flex;*/
+                        /*align-items: center;*/
+                        /*justify-content: space-between;*/
+                    }
+                        .program__info {
+
+                        }
+
+                        .program__price {
+                            /*font-family: var(--font-headings);*/
+                            /*font-weight: bold;*/
+                            font-size: 24px;
+                            line-height: 28px;
+                            /*color: #190482;*/
+                        }
+
+            .program__download {
+                margin-top: 32px;
+                position: static;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                /*right: 0;*/
+                /*top: 2px;*/
+            }
+}
+
+
