@@ -4,4 +4,6 @@
     .slide__background {
         vertical-align: top;
         border-radius: 15px;
+        width: 100%;
+        height: auto;
     }
