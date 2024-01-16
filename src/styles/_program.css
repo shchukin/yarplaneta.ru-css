@@ -1,9 +1,9 @@
 .program {
-    padding-top: 62px;
-    padding-bottom: 60px;
+    padding-top: 44px;
+    padding-bottom: 50px;
     background-color: #FFFFFF;
     background-image: url("../images/program-background-desktop.svg");
-    background-size: 2300px 780px;
+    background-size: 1725px 585px;
     background-repeat: no-repeat;
     background-position: center top;
     color-scheme: light;
@@ -18,23 +18,23 @@
         }
             .program__category {
                 font-family: var(--font-headings);
-                font-size: 18px;
+                font-size: 17px;
                 line-height: 22px;
             }
 
             .program__heading {
-                margin-top: 27px;
+                margin-top: 20px;
                 margin-bottom: 0;
                 font-family: var(--font-headings);
                 font-weight: bold;
-                font-size: 40px;
-                line-height: 40px;
+                font-size: 32px;
+                line-height: 32px;
             }
 
         .program__article {
-            margin-top: 35px;
+            margin-top: 24px;
             display: grid;
-            gap: 140px;
+            gap: 100px;
             grid-template-columns: 1fr 40.7142%;
         }
             .program__preview {
@@ -59,21 +59,22 @@
                 }
 
                 .program__sub-heading {
-                    margin-top: 60px;
+                    margin-top: 40px;
                     margin-bottom: 0;
                     font-family: var(--font-headings);
                     font-weight: bold;
-                    font-size: 28px;
-                    line-height: 32px;
+                    font-size: 24px;
+                    line-height: 28px;
                 }
 
                 .program__list {
-                    margin-top: 24px;
+                    margin-top: 18px;
                 }
 
                 .program__footer {
                     margin-top: auto;
                     margin-bottom: 7px;
+                    padding-top: 44px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -85,13 +86,112 @@
                     .program__price {
                         font-family: var(--font-headings);
                         font-weight: bold;
-                        font-size: 32px;
-                        line-height: 40px;
+                        font-size: 28px;
+                        line-height: 36px;
                         color: #190482;
                     }
 
         .program__download {
             position: absolute;
             right: 0;
-            top: 0;
+            top: 2px;
         }
+
+
+
+@media (1500px <= width) {
+
+    .program {
+        padding-top: 62px;
+        padding-bottom: 60px;
+        /*background-color: #FFFFFF;*/
+        /*background-image: url("../images/program-background-desktop.svg");*/
+        background-size: 2300px 780px;
+        /*background-repeat: no-repeat;*/
+        /*background-position: center top;*/
+        /*color-scheme: light;*/
+        /*border-radius: 20px;*/
+        /*color: #14131E;*/
+    }
+        .program__wrap {
+            /*position: relative;*/
+        }
+            .program__head {
+
+            }
+                .program__category {
+                    /*font-family: var(--font-headings);*/
+                    /*font-size: 18px;*/
+                    /*line-height: 22px;*/
+                }
+
+                .program__heading {
+                    margin-top: 27px;
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-headings);*/
+                    /*font-weight: bold;*/
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+            .program__article {
+                margin-top: 35px;
+                /*display: grid;*/
+                gap: 140px;
+                /*grid-template-columns: 1fr 40.7142%;*/
+            }
+                .program__preview {
+                    /*padding-top: 4px;*/
+                }
+                    .program__preview .preview {
+                        border-radius: 9px;
+                    }
+
+                .program__content {
+                    /*order: -1;*/
+                    /*display: flex;*/
+                    /*flex-direction: column;*/
+                }
+                    .program__description {
+
+                    }
+
+                    .program__sub-heading {
+                        margin-top: 60px;
+                        /*margin-bottom: 0;*/
+                        /*font-family: var(--font-headings);*/
+                        /*font-weight: bold;*/
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
+
+                    .program__list {
+                        margin-top: 24px;
+                    }
+
+                    .program__footer {
+                        /*margin-top: auto;*/
+                        /*margin-bottom: 7px;*/
+                        padding-top: 60px;
+                        /*display: flex;*/
+                        /*align-items: center;*/
+                        /*justify-content: space-between;*/
+                    }
+                        .program__info {
+
+                        }
+
+                        .program__price {
+                            /*font-family: var(--font-headings);*/
+                            /*font-weight: bold;*/
+                            /*font-size: 32px;*/
+                            /*line-height: 40px;*/
+                            /*color: #190482;*/
+                        }
+
+            .program__download {
+                /*position: absolute;*/
+                /*right: 0;*/
+                /*top: 0;*/
+            }
+}
