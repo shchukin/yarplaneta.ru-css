@@ -70,8 +70,8 @@
             }
 
             if ($this.hasClass('slideshow__control')) {
-                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleWidth = (userScreen === 'smartphone') ? 7 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 12 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 0;
             }
 
