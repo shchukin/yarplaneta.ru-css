@@ -27,6 +27,7 @@
     }
 
     .slideshow__control:disabled {
+        opacity: 50%;
         cursor: default;
     }
 
@@ -136,10 +137,6 @@
                     background-color var(--transition-show);
     }
 
-    .slideshow--info .slideshow__control:disabled {
-        opacity: 50%;
-    }
-
     .slideshow--info .slideshow__control--prev {
         left: 0;
         transform: scaleX(-1); /* инвертируем polygon */
@@ -191,7 +188,6 @@
 @media (width < 740px) {
 
     .slideshow--info {
-        /*position: relative;*/
         padding-left: 0;
         padding-right: 0;
     }
@@ -202,49 +198,22 @@
         }
             .slideshow--info .slideshow__navigation {
                 position: static;
-                /*left: 0;*/
-                /*right: 0;*/
-                /*top: 100%;*/
-                /*display: flex;*/
-                /*align-items: flex-start;*/
-                /*justify-content: center;*/
             }
                 .slideshow--info .slideshow__dot {
-                    /*position: relative;*/
-                    /*width: 30px;*/
-                    /*height: 44px;*/
-                    /*padding: 0;*/
-                    /*background-color: transparent;*/
-                    /*border: none;*/
-                    /*text-indent: 200%;*/
-                    /*white-space: nowrap;*/
-                    /*overflow: hidden;*/
+
                 }
                     .slideshow--info .slideshow__dot::before {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*left: 0;*/
-                        /*top: 0;*/
-                        /*right: 0;*/
-                        /*bottom: 0;*/
-                        /*margin: auto;*/
-                        /*display: block;*/
-                        /*width: 12px;*/
-                        /*height: 12px;*/
-                        /*border-radius: 50%;*/
-                        /*border: 1px solid #BACFFE;*/
-                        /*transition: background-color var(--transition-slide),*/
-                        /*            border-color var(--transition-slide);*/
+
                     }
 
                     .slideshow--info .slideshow__dot:hover::before {
-                        /*background-color: rgb(188 209 254 / 50%);*/
+
                     }
 
 
                     .slideshow--info .slideshow__dot--current::before,
                     .slideshow--info .slideshow__dot--current:hover::before {
-                        /*background-color: #BCD1FE;*/
+
                     }
 
             .slideshow--info .slideshow__buttons {
@@ -261,17 +230,9 @@
                     position: relative;
                     top: auto;
                     margin-top: 0;
-                    /*width: 54px;*/
-                    /*height: 50px;*/
                     background-color: transparent;
                     box-shadow: inset 0 0 0 1px #BACFFE;
                     border-radius: 4px;
-                    /*padding: 0;*/
-                    /*border: none;*/
-                    /*text-indent: 200%;*/
-                    /*white-space: nowrap;*/
-                    /*overflow: hidden;*/
-                    /*transition: opacity var(--transition-show);*/
                 }
 
                 .slideshow--info .slideshow__control.polygon--applied {
@@ -281,17 +242,12 @@
                         stroke: #BACFFE;
                     }
 
-                .slideshow--info .slideshow__control:disabled {
-                    /*opacity: 50%;*/
-                }
-
                 .slideshow--info .slideshow__control--prev {
-                    /*left: 0;*/
-                    /*transform: scaleX(-1); !* инвертируем polygon *!*/
+
                 }
 
                 .slideshow--info .slideshow__control--next {
-                    /*right: 0;*/
+
                 }
 
                 .slideshow--info .slideshow__control:hover {
@@ -301,15 +257,8 @@
                 .slideshow--info .slideshow__control:active {
                     margin-top: 0;
                     top: 1px; /* Не используй translate -- будет конфликтовать с разворотом кнопки */
-                    /*transition: none;*/
                 }
                     .slideshow--info .slideshow__arrow {
-                        /*position: absolute;*/
-                        /*left: 0;*/
-                        /*top: 0;*/
-                        /*right: 0;*/
-                        /*bottom: 0;*/
-                        /*margin: auto;*/
                         fill: #BACFFE;
                     }
 }
@@ -322,9 +271,9 @@
 }
     .slideshow--main .slideshow__inner {
         position: relative;
-        padding: 5px;
+        padding: 4px;
         background: linear-gradient(to right, #989DFC, #BACEFE);
-        border-radius: 20px !important;
+        border-radius: 15px;
         overflow: hidden;
     }
         .slideshow--main .slideshow__content {
@@ -336,20 +285,20 @@
             left: 0;
             top: 50%;
             width: 0;
-            height: 248px;
-            margin-top: -124px;
-            border: 16px solid transparent;
+            height: 186px;
+            margin-top: -93px;
+            border: 12px solid transparent;
             border-left-color: #989DFC;
             pointer-events: none;
         }
 
         .slideshow--main .slideshow__top-trapezoid {
             position: absolute;
-            left: 447px;
+            left: 335px;
             top: 0;
-            width: 248px;
+            width: 186px;
             height: 0;
-            border: 16px solid transparent;
+            border: 12px solid transparent;
             border-top-color: #A6B2FC;
             pointer-events: none;
         }
@@ -358,27 +307,25 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            border: 28px solid transparent;
+            border: 21px solid transparent;
             border-bottom-color: #BACEFE;
             border-right-color: #BACEFE;
             pointer-events: none;
         }
 
 
-.slideshow--main .slideshow__control-panel {
+    .slideshow--main .slideshow__control-panel {
         display: flex;
-        margin-top: 40px;
+        margin-top: 24px;
         align-items: center;
         justify-content: center;
     }
         .slideshow--main .slideshow__navigation {
-            /*top: 100%;*/
             display: flex;
             align-items: flex-start;
             justify-content: center;
         }
             .slideshow--main .slideshow__dot {
-                /*position: relative;*/
                 height: 40px;
                 padding: 0 8px;
                 border: none;
@@ -386,10 +333,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                /*border: none;*/
-                /*text-indent: 200%;*/
-                /*white-space: nowrap;*/
-                /*overflow: hidden;*/
                 cursor: pointer;
             }
 
@@ -419,13 +362,13 @@
                 }
 
                 .slideshow--main .slideshow__dot:hover::before {
-                    /*background-color: rgb(188 209 254 / 50%);*/
+
                 }
 
 
                 .slideshow--main .slideshow__dot--current::before,
                 .slideshow--main .slideshow__dot--current:hover::before {
-                    /*background-color: #BCD1FE;*/
+
                 }
 
 
@@ -442,34 +385,26 @@
         }
 
         .slideshow--main .slideshow__control:disabled {
-            /*opacity: 50%;*/
+
         }
 
         .slideshow--main .slideshow__control--prev {
-            /*left: 0;*/
-            /*transform: scaleX(-1); !* инвертируем polygon *!*/
+
         }
 
         .slideshow--main .slideshow__control--next {
-            /*right: 0;*/
+
         }
 
         .slideshow--main .slideshow__control:hover {
-            /*background-color: #D7F0FF;*/
+
         }
 
         .slideshow--main .slideshow__control:active {
-            /*margin-top: -24px; !* Не используй translate -- будет конфликтовать с разворотом кнопки *!*/
-            /*transition: none;*/
+
         }
 
             .slideshow--main .slideshow__arrow {
-                /*position: absolute;*/
-                /*left: 0;*/
-                /*top: 0;*/
-                /*right: 0;*/
-                /*bottom: 0;*/
-                /*margin: auto;*/
                 fill: #FFFFFF;
                 transition: fill var(--transition-hover);
             }
@@ -477,3 +412,135 @@
             .slideshow--main .slideshow__control:hover .slideshow__arrow {
                 fill: #BDD3FE;
             }
+
+
+
+@media (1500px <= width) {
+
+    .slideshow--main {
+
+    }
+        .slideshow--main .slideshow__inner {
+            padding: 5px;
+            border-radius: 20px;
+        }
+            .slideshow--main .slideshow__content {
+
+            }
+
+            .slideshow--main .slideshow__left-trapezoid {
+                height: 248px;
+                margin-top: -124px;
+                border-width: 16px;
+            }
+
+            .slideshow--main .slideshow__top-trapezoid {
+                left: 447px;
+                width: 248px;
+                border-width: 16px;
+            }
+
+            .slideshow--main .slideshow__right-angle {
+                border-width: 28px;
+            }
+
+
+        .slideshow--main .slideshow__control-panel {
+            /*display: flex;*/
+            margin-top: 40px;
+            /*align-items: center;*/
+            /*justify-content: center;*/
+        }
+            .slideshow--main .slideshow__navigation {
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                /*justify-content: center;*/
+            }
+                .slideshow--main .slideshow__dot {
+                    /*height: 40px;*/
+                    /*padding: 0 8px;*/
+                    /*border: none;*/
+                    /*background-color: transparent;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: center;*/
+                    /*cursor: pointer;*/
+                }
+
+                .slideshow--main .slideshow__dot--current {
+
+                }
+                    .slideshow--main .slideshow__planet {
+                        /*vertical-align: top;*/
+                        /*width: 24px;*/
+                        /*height: 24px;*/
+                        /*border-radius: 50%;*/
+                        /*transition: width var(--transition-slide),*/
+                        /*            height var(--transition-slide),*/
+                        /*            box-shadow var(--transition-slide),*/
+                        /*            filter 200ms ease;*/
+                    }
+
+                    .slideshow--main .slideshow__dot:hover .slideshow__planet {
+                        /*filter: brightness(1.15) contrast(1.15);*/
+                    }
+
+                    .slideshow--main .slideshow__dot--current .slideshow__planet {
+                        /*width: 40px;*/
+                        /*height: 40px;*/
+                        /*box-shadow: 2px 2px 12px rgba(157, 165, 252, 0.45),*/
+                        /*            -2px -2px 12px rgba(158, 166, 252, 0.45);*/
+                    }
+
+                    .slideshow--main .slideshow__dot:hover::before {
+
+                    }
+
+
+                    .slideshow--main .slideshow__dot--current::before,
+                    .slideshow--main .slideshow__dot--current:hover::before {
+
+                    }
+
+
+            .slideshow--main .slideshow__control {
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
+                /*width: 40px;*/
+                /*height: 40px;*/
+                /*background-color: transparent;*/
+                /*padding: 0;*/
+                /*border: none;*/
+                /*cursor: pointer;*/
+            }
+
+            .slideshow--main .slideshow__control:disabled {
+
+            }
+
+            .slideshow--main .slideshow__control--prev {
+
+            }
+
+            .slideshow--main .slideshow__control--next {
+
+            }
+
+            .slideshow--main .slideshow__control:hover {
+
+            }
+
+            .slideshow--main .slideshow__control:active {
+
+            }
+
+                .slideshow--main .slideshow__arrow {
+                    /*fill: #FFFFFF;*/
+                    /*transition: fill var(--transition-hover);*/
+                }
+
+                .slideshow--main .slideshow__control:hover .slideshow__arrow {
+                    /*fill: #BDD3FE;*/
+                }
+}
