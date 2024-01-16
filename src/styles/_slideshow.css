@@ -56,12 +56,15 @@
                 font-weight: bold;
             }
 
+        .slideshow__buttons {
+
+        }
 
 
 .slideshow--info {
     position: relative;
-    padding-left: 119px;
-    padding-right: 119px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
     .slideshow--info .slideshow__control-panel {
 
@@ -113,20 +116,24 @@
                     background-color: #BCD1FE;
                 }
 
+        .slideshow--info .slideshow__buttons {
+
+        }
 
     .slideshow--info .slideshow__control {
         position: absolute;
         top: 50%;
-        margin-top: -29px;
-        width: 62px;
-        height: 58px;
+        margin-top: -25px;
+        width: 54px;
+        height: 50px;
         background-color: #BCD1FE;
         padding: 0;
         border: none;
         text-indent: 200%;
         white-space: nowrap;
         overflow: hidden;
-        transition: opacity var(--transition-show);
+        transition: opacity var(--transition-show),
+                    background-color var(--transition-show);
     }
 
     .slideshow--info .slideshow__control:disabled {
@@ -142,12 +149,12 @@
         right: 0;
     }
 
-    .slideshow--info .slideshow__control:not(.slideshow__control:disabled):hover {
+    .slideshow--info .slideshow__control:hover {
         background-color: #D7F0FF;
     }
 
-    .slideshow--info .slideshow__control:not(.slideshow__control:disabled):active {
-        margin-top: -28px;
+    .slideshow--info .slideshow__control:active {
+        margin-top: -24px; /* Не используй translate -- будет конфликтовать с разворотом кнопки */
         transition: none;
     }
 
@@ -160,3 +167,151 @@
             margin: auto;
             fill: #191825;
         }
+
+
+@media (1500px <= width) {
+
+    .slideshow--info {
+        padding-left: 119px;
+        padding-right: 119px;
+    }
+        .slideshow--info .slideshow__control {
+            margin-top: -29px;
+            width: 62px;
+            height: 58px;
+        }
+
+        .slideshow--info .slideshow__control:active {
+            margin-top: -28px; /* Не используй translate -- будет конфликтовать с разворотом кнопки */
+        }
+}
+
+
+
+@media (width < 740px) {
+
+    .slideshow--info {
+        /*position: relative;*/
+        padding-left: 0;
+        padding-right: 0;
+    }
+        .slideshow--info .slideshow__control-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .slideshow--info .slideshow__navigation {
+                position: static;
+                /*left: 0;*/
+                /*right: 0;*/
+                /*top: 100%;*/
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                /*justify-content: center;*/
+            }
+                .slideshow--info .slideshow__dot {
+                    /*position: relative;*/
+                    /*width: 30px;*/
+                    /*height: 44px;*/
+                    /*padding: 0;*/
+                    /*background-color: transparent;*/
+                    /*border: none;*/
+                    /*text-indent: 200%;*/
+                    /*white-space: nowrap;*/
+                    /*overflow: hidden;*/
+                }
+                    .slideshow--info .slideshow__dot::before {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*top: 0;*/
+                        /*right: 0;*/
+                        /*bottom: 0;*/
+                        /*margin: auto;*/
+                        /*display: block;*/
+                        /*width: 12px;*/
+                        /*height: 12px;*/
+                        /*border-radius: 50%;*/
+                        /*border: 1px solid #BACFFE;*/
+                        /*transition: background-color var(--transition-slide),*/
+                        /*            border-color var(--transition-slide);*/
+                    }
+
+                    .slideshow--info .slideshow__dot:hover::before {
+                        /*background-color: rgb(188 209 254 / 50%);*/
+                    }
+
+
+                    .slideshow--info .slideshow__dot--current::before,
+                    .slideshow--info .slideshow__dot--current:hover::before {
+                        /*background-color: #BCD1FE;*/
+                    }
+
+            .slideshow--info .slideshow__buttons {
+                margin-top: 24px;
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .slideshow--info .slideshow__navigation + .slideshow__buttons {
+                margin-top: 0;
+            }
+                .slideshow--info .slideshow__control {
+                    position: relative;
+                    top: auto;
+                    margin-top: 0;
+                    /*width: 54px;*/
+                    /*height: 50px;*/
+                    background-color: transparent;
+                    box-shadow: inset 0 0 0 1px #BACFFE;
+                    border-radius: 4px;
+                    /*padding: 0;*/
+                    /*border: none;*/
+                    /*text-indent: 200%;*/
+                    /*white-space: nowrap;*/
+                    /*overflow: hidden;*/
+                    /*transition: opacity var(--transition-show);*/
+                }
+
+                .slideshow--info .slideshow__control.polygon--applied {
+                    box-shadow: none;
+                }
+                    .slideshow--info .slideshow__control.polygon--applied #polygon__path {
+                        stroke: #BACFFE;
+                    }
+
+                .slideshow--info .slideshow__control:disabled {
+                    /*opacity: 50%;*/
+                }
+
+                .slideshow--info .slideshow__control--prev {
+                    /*left: 0;*/
+                    /*transform: scaleX(-1); !* инвертируем polygon *!*/
+                }
+
+                .slideshow--info .slideshow__control--next {
+                    /*right: 0;*/
+                }
+
+                .slideshow--info .slideshow__control:hover {
+                    background-color: transparent;
+                }
+
+                .slideshow--info .slideshow__control:active {
+                    margin-top: 0;
+                    top: 1px; /* Не используй translate -- будет конфликтовать с разворотом кнопки */
+                    /*transition: none;*/
+                }
+                    .slideshow--info .slideshow__arrow {
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*top: 0;*/
+                        /*right: 0;*/
+                        /*bottom: 0;*/
+                        /*margin: auto;*/
+                        fill: #BACFFE;
+                    }
+}
+
+

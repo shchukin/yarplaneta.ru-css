@@ -72,7 +72,7 @@
             if ($this.hasClass('slideshow__control')) {
                 angleWidth = (userScreen === 'smartphone') ? 7 : (userScreen === 'monitor') ? 8 : 7; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 angleHeight = (userScreen === 'smartphone') ? 12 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                stroke = 0;
+                stroke = 1;
             }
 
 

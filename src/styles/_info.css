@@ -6,7 +6,7 @@
         height: auto;
         vertical-align: top;
         background-color: var(--image-fallback);
-        border-radius: 8px;
+        border-radius: 9px;
         transition: filter var(--transition-hover);
     }
 
@@ -21,7 +21,7 @@
 
     }
         .info__image {
-            border-radius: 10px;
+            border-radius: 12px;
         }
 
 }
@@ -33,7 +33,7 @@
 
     }
         .info__image {
-            border-radius: 7px;
+
         }
 
 }
