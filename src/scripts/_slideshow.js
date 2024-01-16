@@ -1,14 +1,14 @@
 (function($) {
 
     function slide($slideshow, slideTo) {
-        var $items = $slideshow.find('.slideshow__item')
-        var $itemCurrent = $slideshow.find('.slideshow__item--current');
-        var $next = $slideshow.find('.slideshow__control--next');
-        var $prev = $slideshow.find('.slideshow__control--prev');
-        var $dots = $slideshow.find('.slideshow__dot');
-        var $dotCurrent = $slideshow.find('.slideshow__dot--current');
-        var current = $itemCurrent.index();
-        var total = $items.length;
+        const $items = $slideshow.find('.slideshow__item')
+        const $itemCurrent = $slideshow.find('.slideshow__item--current');
+        const $next = $slideshow.find('.slideshow__control--next');
+        const $prev = $slideshow.find('.slideshow__control--prev');
+        const $dots = $slideshow.find('.slideshow__dot');
+        const $dotCurrent = $slideshow.find('.slideshow__dot--current');
+        const current = $itemCurrent.index();
+        const total = $items.length;
 
         $itemCurrent.removeClass('slideshow__item--current');
         $slideshow.find('.slideshow__item').eq(slideTo).addClass('slideshow__item--current');
@@ -43,9 +43,9 @@
 
     var timeout = setInterval(function () {
         $('.slideshow--autoscroll').each(function () {
-            var $slideshow = $(this);
-            var current = $slideshow.find('.slideshow__item--current').index();
-            var total = $slideshow.find('.slideshow__item').length;
+            const $slideshow = $(this);
+            const current = $slideshow.find('.slideshow__item--current').index();
+            const total = $slideshow.find('.slideshow__item').length;
 
             if (current + 1 === total) {
                 slide($slideshow, 0);
@@ -68,11 +68,11 @@
     /* Navigation using arrows */
 
     $('.slideshow__control').on('click', function () {
-        var $this = $(this);
-        var $slideshow = $this.parents('.slideshow');
-        var current = $slideshow.find('.slideshow__item--current').index();
-        var total = $slideshow.find('.slideshow__item').length;
-        var slideTo = 0;
+        const $this = $(this);
+        const $slideshow = $this.parents('.slideshow');
+        const current = $slideshow.find('.slideshow__item--current').index();
+        const total = $slideshow.find('.slideshow__item').length;
+        let slideTo = 0;
 
 
         /* Sliding */
