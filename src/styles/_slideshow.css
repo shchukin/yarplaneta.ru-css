@@ -331,7 +331,41 @@
             position: relative;
         }
 
-    .slideshow--main .slideshow__control-panel {
+        .slideshow--main .slideshow__left-trapezoid {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 248px;
+            margin-top: -124px;
+            border: 16px solid transparent;
+            border-left-color: #989DFC;
+            pointer-events: none;
+        }
+
+        .slideshow--main .slideshow__top-trapezoid {
+            position: absolute;
+            left: 447px;
+            top: 0;
+            width: 248px;
+            height: 0;
+            border: 16px solid transparent;
+            border-top-color: #A6B2FC;
+            pointer-events: none;
+        }
+
+        .slideshow--main .slideshow__right-angle {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border: 28px solid transparent;
+            border-bottom-color: #BACEFE;
+            border-right-color: #BACEFE;
+            pointer-events: none;
+        }
+
+
+.slideshow--main .slideshow__control-panel {
         display: flex;
         margin-top: 40px;
         align-items: center;
