@@ -322,6 +322,7 @@
 }
     .slideshow--main .slideshow__control-panel {
         display: flex;
+        margin-top: 40px;
         align-items: center;
         justify-content: center;
     }
@@ -333,9 +334,8 @@
         }
             .slideshow--main .slideshow__dot {
                 /*position: relative;*/
-                width: 40px;
                 height: 40px;
-                padding: 0;
+                padding: 0 8px;
                 border: none;
                 background-color: transparent;
                 display: flex;
@@ -347,17 +347,30 @@
                 /*overflow: hidden;*/
                 cursor: pointer;
             }
-                .slideshow--main .slideshow__icon {
+
+            .slideshow--main .slideshow__dot--current {
+
+            }
+                .slideshow--main .slideshow__planet {
                     vertical-align: top;
                     width: 24px;
                     height: 24px;
+                    border-radius: 50%;
                     transition: width var(--transition-slide),
-                                height var(--transition-slide);
+                                height var(--transition-slide),
+                                box-shadow var(--transition-slide),
+                                filter 200ms ease;
                 }
 
-                .slideshow--main .slideshow__dot--current .slideshow__icon {
+                .slideshow--main .slideshow__dot:hover .slideshow__planet {
+                    filter: brightness(1.15) contrast(1.15);
+                }
+
+                .slideshow--main .slideshow__dot--current .slideshow__planet {
                     width: 40px;
                     height: 40px;
+                    box-shadow: 2px 2px 12px rgba(157, 165, 252, 0.45),
+                                -2px -2px 12px rgba(158, 166, 252, 0.45);
                 }
 
                 .slideshow--main .slideshow__dot:hover::before {
@@ -372,19 +385,12 @@
 
 
         .slideshow--main .slideshow__control {
-            /*position: absolute;*/
-            /*top: 50%;*/
-            /*margin-top: -25px;*/
-            /*width: 54px;*/
-            /*height: 50px;*/
-            /*background-color: #BCD1FE;*/
-            /*padding: 0;*/
-            /*border: none;*/
-            /*text-indent: 200%;*/
-            /*white-space: nowrap;*/
-            /*overflow: hidden;*/
-            /*transition: opacity var(--transition-show),*/
-            /*            background-color var(--transition-show);*/
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            cursor: pointer;
         }
 
         .slideshow--main .slideshow__control:disabled {
@@ -416,6 +422,10 @@
                 /*right: 0;*/
                 /*bottom: 0;*/
                 /*margin: auto;*/
-                /*fill: #191825;*/
+                fill: #FFFFFF;
+                transition: fill var(--transition-hover);
             }
 
+            .slideshow--main .slideshow__control:hover .slideshow__arrow {
+                fill: #BDD3FE;
+            }
