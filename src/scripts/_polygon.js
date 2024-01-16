@@ -69,6 +69,12 @@
                 stroke = 1;
             }
 
+            if ($this.hasClass('slideshow__control')) {
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 17 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 18 : (userScreen === 'monitor') ? 24 : 21; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                stroke = 0;
+            }
+
 
             if ($this.hasClass('panel__body')) {
 
@@ -122,10 +128,10 @@
             }
 
             /* Удаляем форматирование (переносы строки и табуляции) */
-            path = path.replace(/\s\s+/g, ' ')
+            path = path.replace(/\s\s+/g, ' ');
 
             /* Вырезаем нужную форму: */
-            $this.attr('style', `clip-path: path('${path}')`)
+            $this.attr('style', `clip-path: path('${path}')`);
 
             /* Опциональный контур в виде такой же формы: */
             if (stroke) {
