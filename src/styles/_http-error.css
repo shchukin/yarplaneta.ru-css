@@ -9,42 +9,42 @@
         box-shadow: inset 0 0 0 2px #9698FB;
         background-color: rgb(142 143 250 / 45%);
         backdrop-filter: blur(4px);
-        border-radius: 10px;
+        border-radius: 8px;
         overflow: hidden;
     }
         .http-error__left-trapezoid {
             position: absolute;
             left: 0;
-            top: 175px;
+            top: 131px;
             width: 0;
-            height: 232px;
-            border: 12px solid transparent;
+            height: 174px;
+            border: 9px solid transparent;
             border-left-color: #9498FA;
             pointer-events: none;
         }
 
         .http-error__top-trapezoid {
             position: absolute;
-            left: 124px;
+            left: 93px;
             top: 0;
-            width: 421px;
+            width: 315px;
             height: 0;
-            border: 12px solid transparent;
-            border-left-width: 28px;
-            border-right-width: 28px;
+            border: 9px solid transparent;
+            border-left-width: 21px;
+            border-right-width: 21px;
             border-top-color: #A7B3FB;
             pointer-events: none;
         }
 
         .http-error__bottom-trapezoid {
             position: absolute;
-            right: 146px;
+            right: 109px;
             bottom: 0;
-            width: 414px;
+            width: 310px;
             height: 0;
-            border: 8px solid transparent;
-            border-left-width: 19px;
-            border-right-width: 19px;
+            border: 6px solid transparent;
+            border-left-width: 14px;
+            border-right-width: 14px;
             border-bottom-color: #9AA0FB;
             pointer-events: none;
         }
@@ -53,7 +53,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            border: 18px solid transparent;
+            border: 14px solid transparent;
             border-bottom-color: #8E8FFA;
             border-left-color: #8E8FFA;
             pointer-events: none;
@@ -63,7 +63,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            border: 18px solid transparent;
+            border: 14px solid transparent;
             border-top-color: #BCD2FE;
             border-right-color: #BCD2FE;
             pointer-events: none;
@@ -104,71 +104,41 @@
 @media (1500px <= width) {
 
     .http-error {
-        /*padding-top: 60px;*/
+
     }
         .http-error__screen {
-            /*position: relative;*/
-            /*margin-left: auto;*/
-            /*margin-right: auto;*/
             padding: 80px 190px 100px;
-            /*box-shadow: inset 0 0 0 2px #9698FB;*/
-            /*background-color: rgb(142 143 250 / 45%);*/
-            /*backdrop-filter: blur(4px);*/
-            /*border-radius: 10px;*/
-            /*overflow: hidden;*/
+            border-radius: 10px;
         }
-            /*.http-error__left-trapezoid {*/
-            /*    position: absolute;*/
-            /*    left: 0;*/
-            /*    top: 50px;*/
-            /*    width: 0;*/
-            /*    height: 75px;*/
-            /*    border: 5px solid transparent;*/
-            /*    border-left-color: #9498FA;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__left-trapezoid {
+                top: 175px;
+                height: 232px;
+                border-width: 12px;
+            }
 
-            /*.http-error__top-trapezoid {*/
-            /*    position: absolute;*/
-            /*    left: 145px;*/
-            /*    top: 0;*/
-            /*    width: 93px;*/
-            /*    height: 0;*/
-            /*    border: 6px solid transparent;*/
-            /*    border-top-color: #A7B3FB;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__top-trapezoid {
+                left: 124px;
+                width: 421px;
+                border-width: 12px;
+                border-left-width: 28px;
+                border-right-width: 28px;
+            }
 
-            /*.http-error__bottom-trapezoid {*/
-            /*    position: absolute;*/
-            /*    right: 165px;*/
-            /*    bottom: 0;*/
-            /*    width: 93px;*/
-            /*    height: 0;*/
-            /*    border: 5px solid transparent;*/
-            /*    border-bottom-color: #9AA0FB;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__bottom-trapezoid {
+                right: 146px;
+                width: 414px;
+                border-width: 8px;
+                border-left-width: 19px;
+                border-right-width: 19px;
+            }
 
-            /*.http-error__left-angle {*/
-            /*    position: absolute;*/
-            /*    left: 0;*/
-            /*    bottom: 0;*/
-            /*    border: 9px solid transparent;*/
-            /*    border-bottom-color: #8E8FFA;*/
-            /*    border-left-color: #8E8FFA;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__left-angle {
+                border-width: 18px;
+            }
 
-            /*.http-error__right-angle {*/
-            /*    position: absolute;*/
-            /*    right: 0;*/
-            /*    top: 0;*/
-            /*    border: 9px solid transparent;*/
-            /*    border-top-color: #BCD2FE;*/
-            /*    border-right-color: #BCD2FE;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__right-angle {
+                border-width: 18px;
+            }
 
             .http-error__code {
                 font-size: 150px;
@@ -198,73 +168,36 @@
 @media (width < 740px) {
 
     .http-error {
-        /*padding-top: 60px;*/
     }
         .http-error__screen {
-            /*position: relative;*/
-            /*margin-left: auto;*/
-            /*margin-right: auto;*/
             padding: 46px 18px 69px;
-            /*box-shadow: inset 0 0 0 2px #9698FB;*/
-            /*background-color: rgb(142 143 250 / 45%);*/
-            /*backdrop-filter: blur(4px);*/
-            /*border-radius: 10px;*/
-            /*overflow: hidden;*/
         }
-            /*.http-error__left-trapezoid {*/
-            /*    position: absolute;*/
-            /*    left: 0;*/
-            /*    top: 50px;*/
-            /*    width: 0;*/
-            /*    height: 75px;*/
-            /*    border: 5px solid transparent;*/
-            /*    border-left-color: #9498FA;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__left-trapezoid {
+                display: none;
+            }
 
-            /*.http-error__top-trapezoid {*/
-            /*    position: absolute;*/
-            /*    left: 145px;*/
-            /*    top: 0;*/
-            /*    width: 93px;*/
-            /*    height: 0;*/
-            /*    border: 6px solid transparent;*/
-            /*    border-top-color: #A7B3FB;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__top-trapezoid {
+                left: 41px;
+                width: 137px;
+                border-width: 8px;
+            }
 
-            /*.http-error__bottom-trapezoid {*/
-            /*    position: absolute;*/
-            /*    right: 165px;*/
-            /*    bottom: 0;*/
-            /*    width: 93px;*/
-            /*    height: 0;*/
-            /*    border: 5px solid transparent;*/
-            /*    border-bottom-color: #9AA0FB;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__bottom-trapezoid {
+                right: 23px;
+                width: 137px;
+                border-width: 8px;
+            }
 
-            /*.http-error__left-angle {*/
-            /*    position: absolute;*/
-            /*    left: 0;*/
-            /*    bottom: 0;*/
-            /*    border: 9px solid transparent;*/
-            /*    border-bottom-color: #8E8FFA;*/
-            /*    border-left-color: #8E8FFA;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__left-angle {
+                border-width: 22px;
+            }
 
-            /*.http-error__right-angle {*/
-            /*    position: absolute;*/
-            /*    right: 0;*/
-            /*    top: 0;*/
-            /*    border: 9px solid transparent;*/
-            /*    border-top-color: #BCD2FE;*/
-            /*    border-right-color: #BCD2FE;*/
-            /*    pointer-events: none;*/
-            /*}*/
+            .http-error__right-angle {
+                border-width: 22px;
+            }
 
-            .http-error__code {
+
+    .http-error__code {
                 font-size: 90px;
                 line-height: 90px;
                 text-align: center;
