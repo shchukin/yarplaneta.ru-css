@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>.show</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css?1705158472">
+        <link rel="stylesheet" href="../styles/style.css?1705392962">
     </head>
 
     <body>
@@ -22,21 +22,12 @@
             <br>
             <h1>.show</h1>
             <p>
-                От слова <b>Шоу</b>, а не от слова показ. Это общее слово объединяющее две карточки:
-                <b>Программа</b> и <b>Событие</b>.
-            </p>
-            <p>
-                Карточки идентичны за исключением содержимого в <b>.show__info</b> (левый-нижний угол).
+                От слова <b>Шоу</b>, а не от слова показ. Это общая карточкая для мероприятий (<b>Программы</b>, <b>События</b> и т.д.)
             </p>
 
-
-            <br>
-            <br>
-            <br>
             <p>
-                В случае с событием там просто текстовая строка со временем/датой.
-                Здесь хорошо бы использовать тег <b>&lt;time&gt;</b> для семмантики,
-                и фейковую ссылку, чтобы особо умные мобильные браузеры не вставили свой ссылку на календарь.
+                В дате хорошо бы использовать тег <b>&lt;time&gt;</b> для семмантики.
+                И фейковую ссылку, чтобы особо умные мобильные браузеры не вставили свою ссылку на календарь.
             </p>
 
             <article class="show">
@@ -64,14 +55,17 @@
                         полнокупольный фильм
                     </div>
                     <h2 class="show__header">
-                        Путешествие к миллиарду Солнц
+                        Взгляд в будущее: сквозь время и пространство
                     </h2>
+                    <time class="show__date" datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
+                        <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
+                    </time>
                 </div>
                 <div class="show__footer">
                     <div class="show__info">
-                        <time datetime="2023-12-31T23:59Z"><!-- дата или зал, в зависимости от карточки -->
-                            <a class="link link--fake" name="fake-link">31 декабря 2023, 23:59</a>
-                        </time>
+                        <div class="stat stat--inverted stat--location">
+                            Звёздный зал
+                        </div>
                     </div>
                     <div class="show__action">
                         <a class="button button--primary polygon polygon--trapezoid" href="#">
@@ -88,7 +82,7 @@
             <br>
             <br>
             <p>
-                В случае с программой там блок <a href="_stat.html">.stat</a> с залом:
+                У программ дату убираем:
             </p>
 
             <article class="show">
@@ -171,7 +165,7 @@
                     </h2>
                     <div class="show__list">
                         <ul class="list">
-                            <li class="list__item">Полнокупольный фильм на ваш выбор </li>
+                            <li class="list__item">Полнокупольный фильм на ваш выбор</li>
                             <li class="list__item">Интерактивный ролик в классе</li>
                             <li class="list__item">Занимательная викторина</li>
                             <li class="list__item">Создание своей Вселенной</li>
@@ -181,11 +175,11 @@
                 <div class="show__footer">
                     <div class="show__info">
                         <div class="stat stat--inverted stat--duration">
-                            1 час 20 мин
+                            1 час 20 минут
                         </div>
                     </div>
                     <div class="show__action">
-                        <a class="button button--primary polygon polygon--trapezoid" href="#">
+                        <a class="button button--primary polygon polygon--trapezoid" href="../layouts/groups-item.html">
                             <span class="button__label">Подробнее</span>
                             <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
@@ -215,15 +209,16 @@
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_mfp.js?1705158472"></script>
-        <script src="../scripts/_input.js?1705158472"></script>
-        <script src="../scripts/_polygon.js?1705158472"></script>
-        <script src="../scripts/_sticky.js?1705158472"></script>
-        <script src="../scripts/_sub-nav.js?1705158472"></script>
-        <script src="../scripts/_header.js?1705158472"></script>
-        <script src="../scripts/_nav.js?1705158472"></script>
-        <script src="../scripts/_page-scrolled.js?1705158472"></script>
-        <script src="../scripts/_areas.js?1705158472"></script>
+        <script src="../scripts/_mfp.js?1705392962"></script>
+        <script src="../scripts/_input.js?1705392962"></script>
+        <script src="../scripts/_polygon.js?1705392962"></script>
+        <script src="../scripts/_sticky.js?1705392962"></script>
+        <script src="../scripts/_sub-nav.js?1705392962"></script>
+        <script src="../scripts/_header.js?1705392962"></script>
+        <script src="../scripts/_nav.js?1705392962"></script>
+        <script src="../scripts/_page-scrolled.js?1705392962"></script>
+        <script src="../scripts/_areas.js?1705392962"></script>
+        <script src="../scripts/_submitting.js?1705392962"></script>
 
 
     </body>

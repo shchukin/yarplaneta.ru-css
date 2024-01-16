@@ -2,7 +2,7 @@
 <html lang="ru" itemscope itemtype="https://schema.org/Thing">
     <head>
         <meta charset="utf-8">
-        <title>Афиша</title>
+        <title>Лендинг</title>
         <meta name="description" content="[%description%]">
 
         <!-- schema.org (google plus) -->
@@ -47,7 +47,7 @@
         <link rel="stylesheet" href="../styles/style.css?1705392962">
 
     </head>
-    <body>
+    <body class="landing-background">
         <svg class="visuallyhidden">
             <defs>
                 <linearGradient id="sky-gradient" x1="-1.54328" y1="365.397" x2="601.643" y2="-129.956" gradientUnits="userSpaceOnUse">
@@ -172,15 +172,33 @@
         </header>
 
         <div class="page">
-            <div class="breadcrumbs container">
-                <span class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="landing.html">Главная</a>
-                </span>
-                <span class="breadcrumbs__item">
-                    <span class="breadcrumbs__title">События</span>
-                </span>
+            <div class="intro">
+                <div class="intro__wrap container">
+                    <div class="intro__gallery">
+                        <div style="background: purple; color: white; display: flex; align-items: center; justify-content: center; height: 500px;">Слайдер</div>
+                    </div>
+                    <div class="intro__footer">
+                        <div class="intro__label">
+                            Выберите формат посещения:
+                        </div>
+                        <div class="intro__actions">
+                            <a class="panel-alike-button" href="#">
+                                <div class="panel-alike-button__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                                <div class="panel-alike-button__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                                <div class="panel-alike-button__left-angle" role="presentation" aria-hidden="true"></div>
+                                Индивидуальное посещение
+                            </a>
+                            <a class="panel-alike-button" href="#">
+                                <div class="panel-alike-button__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                                <div class="panel-alike-button__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                                <div class="panel-alike-button__right-angle" role="presentation" aria-hidden="true"></div>
+                                Групповое посещение
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="schedule">
+            <div class="schedule schedule--on-landing">
                 <div class="schedule__head container">
                     <h1 class="schedule__heading">
                         Афиша
@@ -437,6 +455,31 @@
             </div>
             <section class="related container">
                 <h2 class="related__heading">
+                    Зоны планетария
+                </h2>
+                <div class="related__list">
+                    <a class="sector sector__link--star-hall" href="areas-item.html">
+                        <span class="sector__label">Звёздный зал</span>
+                    </a>
+                    <a class="sector sector__link--interactive-classroom" href="areas-item.html">
+                        <span class="sector__label">Интерактивный класс</span>
+                    </a>
+                    <a class="sector sector__link--museum" href="areas-item.html">
+                        <span class="sector__label">Экспозиционно-выставочный зал «история космонавтики»</span>
+                    </a>
+                    <a class="sector sector__link--observatory" href="areas-item.html">
+                        <span class="sector__label">Обсерватория</span>
+                    </a>
+                    <a class="sector sector__link--interactive-gallery" href="areas-item.html">
+                        <span class="sector__label">Интерактивная галерея</span>
+                    </a>
+                    <a class="sector sector__link--shuttle-5d" href="areas-item.html">
+                        <span class="sector__label">Aттракцион «Шаттл 5D»</span>
+                    </a>
+                </div>
+            </section>
+            <section class="related container">
+                <h2 class="related__heading">
                     Анонсы событий
                 </h2>
                 <div class="related__list">
@@ -572,6 +615,105 @@
                             </div>
                         </div>
                     </article>
+                </div>
+            </section>
+            <section class="related related--two-columns container">
+                <h2 class="related__heading">
+                    Новости
+                </h2>
+                <div class="related__list">
+                    <article class="panel">
+                        <a class="panel__body polygon polygon--card" href="news-item.html">
+                            <div class="panel__slot">
+                                <div class="teaser">
+                                    <time class="teaser__time" datetime="2023-12-31T23:59Z">
+                                        31.12.2023
+                                    </time>
+                                    <h2 class="teaser__heading">
+                                        «Взгляд в будущее: сквозь время и пространство» в рамках Всероссийской акции «Ночь искусств–2023»
+                                    </h2>
+                                    <div class="teaser__text clamping clamping--3-rows">
+                                        3 ноября 2023 года уже по сложившейся хорошей традиции в Культурно-просветительском центре имени В.В. Терешковой состоялась Всероссийскаяакция «Ночь искусств-2023».В рамках Всероссийской акции в Звёздном зале гости Центра увидели двакрасочных полнокупольных фильма: «Мир народов майя» и «Под звёзднымнебом Ярославля» + «Путешествия со скоростью света».
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                        </a>
+                        <a class="panel__action button button--secondary polygon polygon--trapezoid" href="news-item.html">
+                            <span class="button__label">Подробнее</span>
+                            <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                            </svg>
+                        </a>
+                    </article>
+                    <article class="panel">
+                        <a class="panel__body polygon polygon--card" href="news-item.html">
+                            <div class="panel__slot">
+                                <div class="teaser">
+                                    <time class="teaser__time" datetime="2023-12-31T23:59Z">
+                                        31.12.2023
+                                    </time>
+                                    <h2 class="teaser__heading">
+                                        «Взгляд в будущее: сквозь время и пространство» в рамках Всероссийской акции «Ночь искусств–2023»
+                                    </h2>
+                                    <div class="teaser__text clamping clamping--3-rows">
+                                        3 ноября 2023 года уже по сложившейся хорошей традиции в Культурно-просветительском центре имени В.В. Терешковой состоялась Всероссийскаяакция «Ночь искусств-2023».В рамках Всероссийской акции в Звёздном зале гости Центра увидели двакрасочных полнокупольных фильма: «Мир народов майя» и «Под звёзднымнебом Ярославля» + «Путешествия со скоростью света».
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__bottom-trapezoid" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__left-angle" role="presentation" aria-hidden="true"></div>
+                            <div class="panel__right-angle" role="presentation" aria-hidden="true"></div>
+                        </a>
+                        <a class="panel__action button button--secondary polygon polygon--trapezoid" href="news-item.html">
+                            <span class="button__label">Подробнее</span>
+                            <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="related related--one-column container">
+                <div class="related__list">
+                    <div class="groups-card"><!-- Можно всю панель сделать ссылкой, но осторожнее с кнопками внутри (ссылку в ссылку делать нельзя) -->
+                        <div class="groups-card__inner">
+                            <h2 class="groups-card__heading">
+                                Групповое посещение
+                            </h2>
+                            <p class="groups-card__description">
+                                <span class="desktop-only">Для подбора и обработки коллективной заявки, вы можете обратиться к администрации планетария, заполнив форму заявки. Мы свяжемся с вами и подберем подходящую программу и дату проведения</span>
+                                <span class="smartphone-only">Для подбора и обработки коллективной заявки, вы можете заполнить форму заявки</span>
+                            </p>
+                            <div class="groups-card__actions">
+                                <a class="button button--outline polygon polygon--trapezoid" href="#">
+                                    <span class="button__label">Скачать КП</span>
+                                    <svg class="button__icon" width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.5965 5.64706H9.83176V0H4.18471V5.64706H0.42L7.00824 12.2353L13.5965 5.64706ZM0.42 14.1176V16H13.5965V14.1176H0.42Z"/>
+                                    </svg>
+                                </a>
+                                <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                                    <span class="button__label">Оставить заявку</span>
+                                </a>
+                            </div>
+                            <div class="groups-card__details">
+                                <a class="button button--link-alike" href="groups.html">
+                                        <span class="button__label">
+                                            К программам
+                                        </span>
+                                    <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <footer class="footer">
