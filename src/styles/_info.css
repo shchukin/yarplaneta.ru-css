@@ -1,0 +1,39 @@
+.info {
+
+}
+    .info__image {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        border-radius: 8px;
+        transition: filter var(--transition-hover);
+    }
+
+    .info:hover .info__image {
+        filter: brightness(1.1) contrast(1.1);
+    }
+
+
+@media (1500px <= width) {
+
+    .info {
+
+    }
+        .info__image {
+            border-radius: 10px;
+        }
+
+}
+
+
+@media (width < 740px) {
+
+    .info {
+
+    }
+        .info__image {
+            border-radius: 7px;
+        }
+
+}

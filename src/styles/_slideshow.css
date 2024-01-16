@@ -1,0 +1,174 @@
+.slideshow {
+
+}
+    .slideshow__content {
+        position: relative;
+    }
+        .slideshow__item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-slide),
+                        visibility var(--transition-slide);
+        }
+
+        .slideshow__item--current {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+    .slideshow__control {
+        cursor: pointer;
+    }
+
+    .slideshow__control:disabled {
+        cursor: default;
+    }
+
+    .slideshow__control--prev {
+
+    }
+
+    .slideshow__control--next {
+
+    }
+        .slideshow__arrow {
+
+        }
+
+    .slideshow__control-panel {
+
+    }
+        .slideshow__navigation {
+
+        }
+            .slideshow__dot {
+                cursor: pointer;
+            }
+
+            .slideshow__dot--current {
+                cursor: default;
+                font-weight: bold;
+            }
+
+
+
+.slideshow--info {
+    position: relative;
+    padding-left: 119px;
+    padding-right: 119px;
+}
+    .slideshow--info .slideshow__control-panel {
+
+    }
+        .slideshow--info .slideshow__navigation {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            .slideshow--info .slideshow__dot {
+                position: relative;
+                width: 30px;
+                height: 44px;
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+                .slideshow--info .slideshow__dot::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 1px solid #BACFFE;
+                    transition: background-color var(--transition-slide),
+                                border-color var(--transition-slide);
+                }
+
+                .slideshow--info .slideshow__dot:hover::before {
+                    background-color: rgb(188 209 254 / 50%);
+                }
+
+
+                .slideshow--info .slideshow__dot--current::before,
+                .slideshow--info .slideshow__dot--current:hover::before {
+                    background-color: #BCD1FE;
+                }
+
+
+    .slideshow--info .slideshow__control {
+        position: absolute;
+        top: 50%;
+        margin-top: -29px;
+        width: 62px;
+        height: 58px;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: opacity var(--transition-show);
+    }
+
+    .slideshow--info .slideshow__control:disabled {
+        opacity: 50%;
+    }
+
+    .slideshow--info .slideshow__control--prev {
+        left: 0;
+    }
+
+    .slideshow--info .slideshow__control--next {
+        right: 0;
+    }
+        .slideshow--info .slideshow__control::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            transition: background-color var(--transition-hover);
+        }
+
+        .slideshow--info .slideshow__control:not(.slideshow__control:disabled):hover::before {
+            background-color: var(--panel-hover);
+        }
+
+        .slideshow--info .slideshow__control:not(.slideshow__control:disabled):active::before {
+            background-color: var(--panel-active);
+            transition: none;
+        }
+
+        .slideshow--info .slideshow__arrow {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            fill: #44474A;
+        }
