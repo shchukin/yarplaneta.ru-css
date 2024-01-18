@@ -25,6 +25,10 @@
         margin-top: 32px;
     }
 
+    .areas__article:first-child {
+        margin-top: 0;
+    }
+
     .areas__actions {
         margin-top: 48px;
         display: flex;
