@@ -1,0 +1,180 @@
+.filter {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .filter__handler {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 10px;
+        vertical-align: top;
+        width: 100%;
+        padding: 14px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 6px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+        .filter__handler br {
+            display: none;
+        }
+
+        .filter__handler::after {
+            content: "";
+            flex-shrink: 0;
+            display: block;
+            margin-top: 6px;
+            border-top: 10px solid #FFFFFF;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            transition: transform var(--transition-dropdown);
+        }
+
+    .filter__dropdown {
+        padding-top: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-dropdown),
+                    visibility var(--transition-dropdown);
+    }
+        .filter__inner {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background-color: rgb(142 143 250 / 55%);
+            border: 2px solid #8E8FFA;
+            border-radius: 6px;
+            backdrop-filter: blur(4px);
+        }
+            .filter__option {
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+                border: none;
+                padding: 7px 13px;
+                background-color: transparent;
+                font-family: var(--font-headings);
+                font-size: 18px;
+                line-height: 20px;
+                text-align: left;
+                white-space: nowrap;
+                cursor: pointer;
+            }
+
+            .filter__option:hover {
+                background-color: #8E8FFA;
+            }
+
+            .filter__option--selected {
+                background-color: #8E8FFA;
+            }
+
+
+.filter--expanded {
+
+}
+    .filter--expanded .filter__dropdown {
+        opacity: 100%;
+        visibility: visible;
+    }
+
+    .filter--expanded .filter__handler::after {
+        transform: scaleY(-1);
+    }
+
+
+
+@media (1500px <= width) {
+
+    .filter {
+        /*position: relative;*/
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
+    }
+        .filter__handler {
+            /*display: inline-flex;*/
+            /*align-items: flex-start;*/
+            /*gap: 10px;*/
+            /*vertical-align: top;*/
+            /*width: 100%;*/
+            padding: 18px;
+            /*background-color: transparent;*/
+            /*border: 1px solid #FFFFFF;*/
+            border-radius: 8px;
+            /*font-family: inherit;*/
+            /*font-weight: 600;*/
+            /*font-size: 18px;*/
+            /*line-height: 20px;*/
+            /*text-align: left;*/
+            /*white-space: nowrap;*/
+            /*cursor: pointer;*/
+        }
+            .filter__handler br {
+                /*display: none;*/
+            }
+
+            .filter__handler::after {
+                /*content: "";*/
+                /*display: block;*/
+                /*margin-top: 6px;*/
+                border-top-width: 12px;
+                border-left-width: 7px;
+                border-right-width: 7px;
+                /*transition: transform var(--transition-dropdown);*/
+            }
+
+        .filter__dropdown {
+            padding-top: 26px;
+            /*opacity: 0;*/
+            /*visibility: hidden;*/
+            /*transition: opacity var(--transition-dropdown),*/
+            /*            visibility var(--transition-dropdown);*/
+        }
+            .filter__inner {
+                /*position: absolute;*/
+                /*right: 0;*/
+                /*top: 100%;*/
+                padding-top: 9px;
+                padding-bottom: 9px;
+                /*background-color: rgb(142 143 250 / 55%);*/
+                /*border: 2px solid #8E8FFA;*/
+                border-radius: 8px;
+                /*backdrop-filter: blur(4px);*/
+            }
+                .filter__option {
+                    /*display: inline-block;*/
+                    /*vertical-align: top;*/
+                    /*width: 100%;*/
+                    /*border: none;*/
+                    padding: 8px 17px;
+                    /*background-color: transparent;*/
+                    /*font-family: inherit;*/
+                    font-size: 20px;
+                    line-height: 23px;
+                    /*text-align: left;*/
+                    /*white-space: nowrap;*/
+                    /*cursor: pointer;*/
+                }
+
+
+    .filter--expanded {
+
+    }
+        .filter--expanded .filter__dropdown {
+            /*opacity: 100%;*/
+            /*visibility: visible;*/
+        }
+
+        .filter--expanded .filter__handler::after {
+            /*transform: scaleY(-1);*/
+        }
+}
+

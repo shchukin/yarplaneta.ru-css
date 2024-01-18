@@ -84,12 +84,12 @@
             }
 
             .nav__item:hover .nav__menu {
-                opacity: 1;
+                opacity: 100%;
                 visibility: visible;
             }
 
             .nav__item:focus-within .nav__menu {
-                opacity: 1;
+                opacity: 100%;
                 visibility: visible;
             }
                 .nav--header .nav__sub-link {

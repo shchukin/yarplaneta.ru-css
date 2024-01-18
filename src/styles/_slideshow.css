@@ -17,7 +17,7 @@
 
         .slideshow__item--current {
             position: static;
-            opacity: 1;
+            opacity: 100%;
             visibility: visible;
         }
 
