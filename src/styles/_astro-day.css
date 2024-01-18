@@ -1,10 +1,10 @@
-.day {
+.astro-day {
     display: grid;
     grid-template: auto auto / 1fr 1fr;
     grid-auto-flow: column;
     gap: 4px 26px;
 }
-    .day__stat {
+    .astro-day__stat {
         position: relative;
         padding-left: 24px;
         font-family: var(--font-headings);
@@ -12,7 +12,7 @@
         line-height: 20px;
     }
 
-    .day__stat::before {
+    .astro-day__stat::before {
         content: "";
         position: absolute;
         left: 0;
@@ -26,19 +26,19 @@
         background-position: left center;
     }
 
-    .day__stat--sunrise::before           { background-image: url("../vectors/day-stat-sunrise.svg") }
-    .day__stat--sunset::before            { background-image: url("../vectors/day-stat-sunset.svg") }
-    .day__stat--daylight-duration::before { background-image: url("../vectors/day-stat-daylight-duration.svg") }
-    .day__stat--night-duration::before    { background-image: url("../vectors/day-stat-night-duration.svg") }
+    .astro-day__stat--sunrise::before           { background-image: url("../vectors/day-stat-sunrise.svg") }
+    .astro-day__stat--sunset::before            { background-image: url("../vectors/day-stat-sunset.svg") }
+    .astro-day__stat--daylight-duration::before { background-image: url("../vectors/day-stat-daylight-duration.svg") }
+    .astro-day__stat--night-duration::before    { background-image: url("../vectors/day-stat-night-duration.svg") }
 
 
 
 @media (1500px <= width) {
 
-    .day {
+    .astro-day {
         gap: 4px 40px;
     }
-        .day__stat {
+        .astro-day__stat {
             padding-left: 26px;
             background-size: 20px 20px;
             font-size: 18px;
@@ -51,16 +51,16 @@
 
 @media (width < 740px) {
 
-    .day {
+    .astro-day {
         gap: 4px 40px;
     }
-        .day__stat {
+        .astro-day__stat {
             padding-left: 26px;
             background-size: 20px 20px;
             font-size: 18px;
             line-height: 22px;
         }
-            .day__stat::before {
+            .astro-day__stat::before {
                 filter: invert(1);
             }
 }
