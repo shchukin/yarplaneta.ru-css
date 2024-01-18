@@ -11,7 +11,7 @@
 
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.filter').length) {
-            $('.filter').toggleClass('filter--expanded');
+            $('.filter').removeClass('filter--expanded');
         }
     });
 
