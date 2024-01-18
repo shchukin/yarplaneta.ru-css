@@ -24,3 +24,35 @@
             align-items: flex-start;
             gap: 24px;
         }
+
+
+
+@media (1500px <= width) {
+
+    .filters-panel {
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+        gap: 32px;
+    }
+        .filters-panel__primary {
+            /*flex-shrink: 0;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            gap: 32px;
+        }
+
+        .filters-panel__date {
+            /*flex-grow: 1;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+            .filters-panel__calendar {
+                /*margin-right: auto;*/
+            }
+
+            .filters-panel__list {
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                gap: 32px;
+            }
+}
