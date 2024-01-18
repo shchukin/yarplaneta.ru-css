@@ -34,8 +34,8 @@
 
     .date-picker__dropdown {
         position: absolute;
-        right: 0;
-        top: 100%;
+        left: 0;
+        min-width: 100%;
         opacity: 0;
         visibility: hidden;
     }
