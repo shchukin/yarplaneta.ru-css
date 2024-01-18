@@ -50,6 +50,13 @@
     box-shadow: none;
 }
 
+.pagination__item--current {
+    background-color: #BCD1FE;
+}
+    .pagination__item--current .pagination__label {
+        color: #14131E;
+    }
+
 
 .pagination__item--nav {
     box-shadow: none;
