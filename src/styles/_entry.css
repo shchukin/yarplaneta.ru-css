@@ -19,6 +19,11 @@
         margin-top: 0;
     }
 
+    .entry__heading--larger {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
     .entry__preview {
         display: block;
         float: right;
@@ -67,6 +72,11 @@
             margin-top: 10px;
             font-size: 32px;
             line-height: 40px;
+        }
+
+        .entry__heading--larger {
+            font-size: 42px;
+            line-height: 59px;
         }
 
         .entry__preview {
