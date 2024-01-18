@@ -50,7 +50,7 @@
                 right: 0;
             }
                 .filters-panel__arrow {
-                    fill: #FFFFFF;
+                    fill: currentColor;
                     transition: fill var(--transition-hover);
                 }
 
@@ -61,7 +61,7 @@
                     fill: #B5B5B5;
                 }
 
-
+                
 
 @media (1500px <= width) {
 
