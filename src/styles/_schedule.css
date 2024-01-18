@@ -14,6 +14,8 @@
         }
 
         .schedule__filters {
+            position: relative;
+            z-index: 10;
             margin-top: 32px;
         }
 
