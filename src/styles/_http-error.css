@@ -95,7 +95,7 @@
         .http-error__back {
             margin-top: 38px;
         }
-            .http-error__back .button {
+            .http-error__back .button:not(:hover) {
                 color: #4B4A82;
             }
 
