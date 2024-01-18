@@ -75,6 +75,12 @@
                 stroke = 1;
             }
 
+            if ($this.hasClass('day')) {
+                angleWidth = (userScreen === 'smartphone') ? 13 : (userScreen === 'monitor') ? 15 : 13; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 10 : (userScreen === 'monitor') ? 12 : 10; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                stroke = 1;
+            }
+
 
             if ($this.hasClass('panel__body')) {
 
