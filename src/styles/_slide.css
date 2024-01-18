@@ -52,6 +52,13 @@
                 color: #191825;
             }
 
+            .slide__action .button:hover {
+                color: #FFFFFF;
+            }
+
+            .slide__action .button:active {
+                color: #FFFFFF;
+            }
 
 
 @media (1500px <= width) {
