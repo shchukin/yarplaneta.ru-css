@@ -21,8 +21,16 @@
         text-align: left;
         white-space: nowrap;
         cursor: pointer;
+        transition: background-color var(--transition-hover);
     }
-        .filter__handler br {
+
+
+    .filter__handler:hover {
+        background-color: rgb(142 143 250 / 30%);
+    }
+
+
+    .filter__handler br {
             display: none;
         }
 
@@ -106,14 +114,14 @@
             /*gap: 10px;*/
             /*vertical-align: top;*/
             /*width: 100%;*/
-            padding: 21px 19px;
+            padding: 20px 19px;
             /*background-color: transparent;*/
             /*border: 1px solid #FFFFFF;*/
             border-radius: 8px;
             /*font-family: inherit;*/
             /*font-weight: 600;*/
-            /*font-size: 18px;*/
-            /*line-height: 20px;*/
+            font-size: 20px;
+            line-height: 22px;
             /*text-align: left;*/
             /*white-space: nowrap;*/
             /*cursor: pointer;*/
