@@ -36,10 +36,10 @@
             }
 
 
-.pagination__item:not(.pagination__item--separator):hover #polygon__path {
+.pagination__item:not(.pagination__item--separator):not(.pagination__item--disabled):hover #polygon__path {
     fill: #BDD3FE;
 }
-    .pagination__item:not(.pagination__item--separator):hover .pagination__label {
+    .pagination__item:not(.pagination__item--separator):not(.pagination__item--disabled):hover .pagination__label {
         color: #14131E;
     }
 
@@ -64,7 +64,7 @@
     .pagination__arrow {
         position: relative;
         height: 15px;
-        fill: rgb(194 217 255 / 30%);
+        fill: #BDD3FE;
         transition: fill var(--transition-hover);
     }
 
@@ -75,10 +75,16 @@
 .pagination__item--nav:hover {
 
 }
-    .pagination__item--nav:hover .pagination__arrow {
+    .pagination__item--nav:not(.pagination__item--disabled):hover .pagination__arrow {
         fill: #14131E;
     }
 
+.pagination__item--disabled {
+
+}
+    .pagination__item--disabled .pagination__arrow {
+        fill: rgb(194 217 255 / 30%);
+    }
 
 
 @media (1500px <= width) {
