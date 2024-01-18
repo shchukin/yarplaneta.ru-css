@@ -220,7 +220,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filters-panel__date">
+                            <div class="filters-panel__date hide-scrollbar">
                                 <div class="filters-panel__calendar">
                                     <div class="date-picker">
                                         <button class="date-picker__handler" type="button">
@@ -240,18 +240,99 @@
                                     </div>
                                 </div>
                                 <div class="filters-panel__list">
-                                    <button class="day polygon polygon--trapezoid" type="button">
-                                        05 ноя, вс
-                                    </button>
-                                    <button class="day polygon polygon--trapezoid day--selected" type="button">
-                                        06 ноя, пн
-                                    </button>
-                                    <button class="day polygon polygon--trapezoid" type="button">
-                                        07 ноя, вт
-                                    </button>
-                                    <button class="day polygon polygon--trapezoid" type="button">
-                                        08 ноя, ср
-                                    </button>
+                                    <div class="filters-panel__carousel">
+                                        <div class="swiper">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        05 ноя, вс
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid day--selected" type="button">
+                                                        06 ноя, пн
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        07 ноя, вт
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        08 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        09 ноя, пн
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        10 ноя, вт
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        11 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        12 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        13 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        14 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        15 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        16 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        17 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        18 ноя, ср
+                                                    </button>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <button class="day polygon polygon--trapezoid" type="button">
+                                                        19 ноя, ср
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filters-panel__control filters-panel__control--prev">
+                                        <svg class="filters-panel__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m10 13.772-10-5.774 10-5.773v4.774h14v2h-14z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filters-panel__control filters-panel__control--next">
+                                        <svg class="filters-panel__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 2.225l10 5.774-10 5.773V8.998H0v-2h14V2.226z"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -756,6 +837,7 @@
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
         <script src="../scripts/_mfp.js"></script>
         <script src="../scripts/_input.js"></script>
         <script src="../scripts/_polygon.js"></script>
@@ -770,6 +852,7 @@
         <script src="../scripts/_filter.js"></script>
         <script src="../scripts/_day.js"></script>
         <script src="../scripts/_pushkin-card.js"></script>
+        <script src="../scripts/_swiper.js"></script>
 
     </body>
 </html>

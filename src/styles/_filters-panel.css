@@ -21,12 +21,45 @@
         }
 
         .filters-panel__list {
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
             overflow: hidden;
-
+            position: relative;
+            width: 616px;
+            padding-left: 64px;
+            padding-right: 64px;
         }
+            .filters-panel__carousel {
+
+            }
+
+            .filters-panel__control {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 54px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .filters-panel__control--prev {
+                left: 0;
+            }
+
+            .filters-panel__control--next {
+                right: 0;
+            }
+                .filters-panel__arrow {
+                    fill: #FFFFFF;
+                    transition: fill var(--transition-hover);
+                }
+
+            .filters-panel__control.swiper-button-disabled {
+                cursor: default;
+            }
+                .filters-panel__control.swiper-button-disabled .filters-panel__arrow {
+                    fill: #B5B5B5;
+                }
 
 
 
@@ -57,5 +90,109 @@
                 /*display: flex;*/
                 /*align-items: flex-start;*/
                 gap: 32px;
+                width: 750px;
+                padding-left: 65px;
+                padding-right: 65px;
             }
+                .filters-panel__carousel {
+
+                }
+
+                .filters-panel__control {
+                    width: 65px;
+                }
 }
+
+
+
+@media (width < 740px) {
+
+    .filters-panel {
+        display: block;
+        /*align-items: flex-start;*/
+        /*gap: 24px;*/
+    }
+        .filters-panel__primary {
+            /*flex-shrink: 0;*/
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 16px;
+        }
+            .filters-panel__primary .filter__handler {
+                width: 100%;
+                max-width: none !important;
+            }
+
+        .filters-panel__date {
+            /*flex-grow: 1;*/
+            /*align-items: flex-start;*/
+            /*overflow: hidden;*/
+            display: flex;
+            align-items: flex-start;
+            margin-top: 24px;
+            margin-left: calc(-1 * var(--container-padding));
+            margin-right: calc(-1 * var(--container-padding));
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+            gap: 16px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+            .filters-panel__calendar {
+                /*margin-right: auto;*/
+            }
+
+            .filters-panel__list {
+                overflow: visible;
+                /*position: relative;*/
+                width: auto;
+                padding-left: 0;
+                padding-right: 0;
+            }
+                .filters-panel__carousel {
+
+                }
+                    .swiper-wrapper {
+                        display: flex;
+                        gap: 16px;
+                    }
+
+                    .filters-panel__carousel .swiper-slide {
+                        width: auto;
+                    }
+
+                .filters-panel__control {
+                    display: none;
+                    /*position: absolute;*/
+                    /*top: 0;*/
+                    /*bottom: 0;*/
+                    /*width: 54px;*/
+                    /*cursor: pointer;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: center;*/
+                }
+
+                .filters-panel__control--prev {
+                    /*left: 0;*/
+                }
+
+                .filters-panel__control--next {
+                    /*right: 0;*/
+                }
+                    .filters-panel__arrow {
+                        /*fill: #FFFFFF;*/
+                        /*transition: fill var(--transition-hover);*/
+                    }
+
+                .filters-panel__control.swiper-button-disabled {
+                    /*cursor: default;*/
+                }
+                    .filters-panel__control.swiper-button-disabled .filters-panel__arrow {
+                        /*fill: #B5B5B5;*/
+                    }
+}
+
+
+

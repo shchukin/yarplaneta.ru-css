@@ -3,7 +3,7 @@
 
     $(window).on('load', function () {
         $('.filter__handler').each(function () {
-            $(this).css('width', $(this).outerWidth());
+            $(this).css('max-width', $(this).outerWidth());
         });
     });
 
