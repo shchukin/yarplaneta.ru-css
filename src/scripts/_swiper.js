@@ -11,8 +11,8 @@
         if( window.matchMedia('(min-width: 740px)').matches ) { /* Только на десктопах */
             scheduleDayList = new Swiper(".swiper", {
                 navigation: {
-                    prevEl: '.filters-panel__control--prev',
-                    nextEl: '.filters-panel__control--next',
+                    prevEl: '.date-picker__control--prev',
+                    nextEl: '.date-picker__control--next',
                 },
                 mousewheel: {
                     forceToAxis: true,
