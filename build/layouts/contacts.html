@@ -44,7 +44,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css?1705392962">
+        <link rel="stylesheet" href="../styles/style.css?1705996374">
 
     </head>
     <body>
@@ -102,7 +102,7 @@
                                     Мероприятия
                                 </button>
                                 <div class="nav__menu">
-                                    <a class="nav__sub-link" href="projects.html">Программы</a>
+                                    <a class="nav__sub-link" href="programs.html">Программы</a>
                                     <a class="nav__sub-link" href="projects.html">События</a>
                                     <a class="nav__sub-link" href="projects.html">Конференции,<br> презентации</a>
                                     <a class="nav__sub-link" href="projects.html">Конкурсы</a>
@@ -139,17 +139,17 @@
                     <div class="header__data">
                         <div class="header__info">
                             <div class="header__day-phases">
-                                <div class="day">
-                                    <div class="day__stat day__stat--sunrise">
+                                <div class="astro-day">
+                                    <div class="astro-day__stat astro-day__stat--sunrise">
                                         восход: 7:59
                                     </div>
-                                    <div class="day__stat day__stat--sunset">
+                                    <div class="astro-day__stat astro-day__stat--sunset">
                                         заход: 15:50
                                     </div>
-                                    <div class="day__stat day__stat--daylight-duration">
+                                    <div class="astro-day__stat astro-day__stat--daylight-duration">
                                         день: 9:50
                                     </div>
-                                    <div class="day__stat day__stat--night-duration">
+                                    <div class="astro-day__stat astro-day__stat--night-duration">
                                         ночь: 14:10
                                     </div>
                                 </div>
@@ -223,9 +223,92 @@
                     </div>
                 </div>
                 <div class="contacts__addition">
-
-                    <div style="height: 227px; background-color: red; color: white; display: flex; align-items: center; justify-content: center;">TO DO: Баннеры</div>
-
+                    <div class="slideshow slideshow--info">
+                        <div class="slideshow__content">
+                            <div class="slideshow__item slideshow__item--current">
+                                <a class="info" href="#">
+                                    <img class="info__image"
+                                         srcset="
+                                           ../temp/slideshow/info/slideshow-info-a@3x.jpg 3x,
+                                           ../temp/slideshow/info/slideshow-info-a@2x.jpg 2x,
+                                           ../temp/slideshow/info/slideshow-info-a@1.5x.jpg 1.5x,
+                                           ../temp/slideshow/info/slideshow-info-a@1x.jpg 1x"
+                                         src="../temp/slideshow/info/slideshow-info-a@1x.jpg"
+                                         width="1162"
+                                         height="227"
+                                         alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="slideshow__item">
+                                <a class="info" href="#">
+                                    <img class="info__image"
+                                         srcset="
+                                           ../temp/slideshow/info/slideshow-info-b@3x.jpg 3x,
+                                           ../temp/slideshow/info/slideshow-info-b@2x.jpg 2x,
+                                           ../temp/slideshow/info/slideshow-info-b@1.5x.jpg 1.5x,
+                                           ../temp/slideshow/info/slideshow-info-b@1x.jpg 1x"
+                                         src="../temp/slideshow/info/slideshow-info-b@1x.jpg"
+                                         width="1162"
+                                         height="227"
+                                         alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="slideshow__item">
+                                <a class="info" href="#">
+                                    <img class="info__image"
+                                         srcset="
+                                           ../temp/slideshow/info/slideshow-info-c@3x.jpg 3x,
+                                           ../temp/slideshow/info/slideshow-info-c@2x.jpg 2x,
+                                           ../temp/slideshow/info/slideshow-info-c@1.5x.jpg 1.5x,
+                                           ../temp/slideshow/info/slideshow-info-c@1x.jpg 1x"
+                                         src="../temp/slideshow/info/slideshow-info-c@1x.jpg"
+                                         width="1162"
+                                         height="227"
+                                         alt=""
+                                    >
+                                </a>
+                            </div>
+                            <div class="slideshow__item">
+                                <a class="info" href="#">
+                                    <img class="info__image"
+                                         srcset="
+                                           ../temp/slideshow/info/slideshow-info-d@3x.jpg 3x,
+                                           ../temp/slideshow/info/slideshow-info-d@2x.jpg 2x,
+                                           ../temp/slideshow/info/slideshow-info-d@1.5x.jpg 1.5x,
+                                           ../temp/slideshow/info/slideshow-info-d@1x.jpg 1x"
+                                         src="../temp/slideshow/info/slideshow-info-d@1x.jpg"
+                                         width="1162"
+                                         height="227"
+                                         alt=""
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slideshow__control-panel">
+                            <div class="slideshow__navigation">
+                                <button class="slideshow__dot slideshow__dot--current" type="button">Слайд 1</button>
+                                <button class="slideshow__dot" type="button">Слайд 2</button>
+                                <button class="slideshow__dot" type="button">Слайд 3</button>
+                                <button class="slideshow__dot" type="button">Слайд 4</button>
+                            </div>
+                            <div class="slideshow__buttons">
+                                <button class="slideshow__control slideshow__control--prev polygon polygon--trapezoid" type="button">
+                                    <svg class="slideshow__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14 2.225L24 7.9985L14 13.772V8.9985H0V6.9985H14V2.225Z"/>
+                                    </svg>
+                                    Назад
+                                </button>
+                                <button class="slideshow__control slideshow__control--next polygon polygon--trapezoid" type="button">
+                                    <svg class="slideshow__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14 2.225L24 7.9985L14 13.772V8.9985H0V6.9985H14V2.225Z"/>
+                                    </svg>
+                                    Вперёд
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer class="footer">
@@ -260,7 +343,7 @@
                                         Мероприятия
                                     </button>
                                     <div class="nav__menu">
-                                        <a class="nav__sub-link" href="projects.html">Программы</a>
+                                        <a class="nav__sub-link" href="programs.html">Программы</a>
                                         <a class="nav__sub-link" href="projects.html">События</a>
                                         <a class="nav__sub-link" href="projects.html">Конференции,<br> презентации</a>
                                         <a class="nav__sub-link" href="projects.html">Конкурсы</a>
@@ -337,16 +420,23 @@
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_mfp.js?1705392962"></script>
-        <script src="../scripts/_input.js?1705392962"></script>
-        <script src="../scripts/_polygon.js?1705392962"></script>
-        <script src="../scripts/_sticky.js?1705392962"></script>
-        <script src="../scripts/_sub-nav.js?1705392962"></script>
-        <script src="../scripts/_header.js?1705392962"></script>
-        <script src="../scripts/_nav.js?1705392962"></script>
-        <script src="../scripts/_page-scrolled.js?1705392962"></script>
-        <script src="../scripts/_areas.js?1705392962"></script>
-        <script src="../scripts/_submitting.js?1705392962"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="../scripts/_mfp.js?1705996374"></script>
+        <script src="../scripts/_input.js?1705996374"></script>
+        <script src="../scripts/_polygon.js?1705996374"></script>
+        <script src="../scripts/_sticky.js?1705996374"></script>
+        <script src="../scripts/_sub-nav.js?1705996374"></script>
+        <script src="../scripts/_header.js?1705996374"></script>
+        <script src="../scripts/_nav.js?1705996374"></script>
+        <script src="../scripts/_page-scrolled.js?1705996374"></script>
+        <script src="../scripts/_areas.js?1705996374"></script>
+        <script src="../scripts/_submitting.js?1705996374"></script>
+        <script src="../scripts/_slideshow.js?1705996374"></script>
+        <script src="../scripts/_filter.js?1705996374"></script>
+        <script src="../scripts/_day.js?1705996374"></script>
+        <script src="../scripts/_pushkin-card.js?1705996374"></script>
+        <script src="../scripts/_date-picker.js?1705996374"></script>
+        <script src="../scripts/_swiper.js?1705996374"></script>
 
     </body>
 </html>

@@ -44,7 +44,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css?1705392962">
+        <link rel="stylesheet" href="../styles/style.css?1705996374">
 
     </head>
     <body class="landing-background">
@@ -102,7 +102,7 @@
                                     Мероприятия
                                 </button>
                                 <div class="nav__menu">
-                                    <a class="nav__sub-link" href="projects.html">Программы</a>
+                                    <a class="nav__sub-link" href="programs.html">Программы</a>
                                     <a class="nav__sub-link" href="projects.html">События</a>
                                     <a class="nav__sub-link" href="projects.html">Конференции,<br> презентации</a>
                                     <a class="nav__sub-link" href="projects.html">Конкурсы</a>
@@ -139,17 +139,17 @@
                     <div class="header__data">
                         <div class="header__info">
                             <div class="header__day-phases">
-                                <div class="day">
-                                    <div class="day__stat day__stat--sunrise">
+                                <div class="astro-day">
+                                    <div class="astro-day__stat astro-day__stat--sunrise">
                                         восход: 7:59
                                     </div>
-                                    <div class="day__stat day__stat--sunset">
+                                    <div class="astro-day__stat astro-day__stat--sunset">
                                         заход: 15:50
                                     </div>
-                                    <div class="day__stat day__stat--daylight-duration">
+                                    <div class="astro-day__stat astro-day__stat--daylight-duration">
                                         день: 9:50
                                     </div>
-                                    <div class="day__stat day__stat--night-duration">
+                                    <div class="astro-day__stat astro-day__stat--night-duration">
                                         ночь: 14:10
                                     </div>
                                 </div>
@@ -175,7 +175,184 @@
             <div class="intro">
                 <div class="intro__wrap container">
                     <div class="intro__gallery">
-                        <div style="background: purple; color: white; display: flex; align-items: center; justify-content: center; height: 500px;">Слайдер</div>
+                        <div class="slideshow slideshow--main">
+                            <div class="slideshow__inner">
+                                <div class="slideshow__content">
+                                    <div class="slideshow__item slideshow__item--current">
+                                        <div class="slide">
+                                            <img class="slide__background"
+                                                 srcset="
+                                                   ../temp/slideshow/main/slideshow-main-a@3x.jpg 3x,
+                                                   ../temp/slideshow/main/slideshow-main-a@2x.jpg 2x,
+                                                   ../temp/slideshow/main/slideshow-main-a@1.5x.jpg 1.5x,
+                                                   ../temp/slideshow/main/slideshow-main-a@1x.jpg 1x"
+                                                 src="../temp/slideshow/main/slideshow-main-a@1x.jpg"
+                                                 width="1388"
+                                                 height="486"
+                                                 alt=""
+                                            >
+                                            <div class="slide__content">
+                                                <div class="slide__category">Полнокупольное шоу</div>
+                                                <div class="slide__heading">Новогодняя сказка о&nbsp;звездном драконе</div>
+                                                <div class="slide__note">23 декабря - 6 января</div>
+                                                <div class="slide__action">
+                                                    <a class="button button--secondary polygon polygon--trapezoid" href=#">
+                                                        <span class="button__label">Подробнее</span>
+                                                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slideshow__item">
+                                        <div class="slide">
+                                            <img class="slide__background"
+                                                 srcset="
+                                                   ../temp/slideshow/main/slideshow-main-b@3x.jpg 3x,
+                                                   ../temp/slideshow/main/slideshow-main-b@2x.jpg 2x,
+                                                   ../temp/slideshow/main/slideshow-main-b@1.5x.jpg 1.5x,
+                                                   ../temp/slideshow/main/slideshow-main-b@1x.jpg 1x"
+                                                 src="../temp/slideshow/main/slideshow-main-b@1x.jpg"
+                                                 width="1388"
+                                                 height="486"
+                                                 alt=""
+                                            >
+                                            <div class="slide__content">
+                                                <div class="slide__category">Полнокупольная программа</div>
+                                                <div class="slide__heading">Чёрные дыры</div>
+                                                <div class="slide__note">23 декабря - 6 января</div>
+                                                <div class="slide__action">
+                                                    <a class="button button--secondary polygon polygon--trapezoid" href=#">
+                                                        <span class="button__label">Подробнее</span>
+                                                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slideshow__item">
+                                        <div class="slide">
+                                            <img class="slide__background"
+                                                 srcset="
+                                                   ../temp/slideshow/main/slideshow-main-c@3x.jpg 3x,
+                                                   ../temp/slideshow/main/slideshow-main-c@2x.jpg 2x,
+                                                   ../temp/slideshow/main/slideshow-main-c@1.5x.jpg 1.5x,
+                                                   ../temp/slideshow/main/slideshow-main-c@1x.jpg 1x"
+                                                 src="../temp/slideshow/main/slideshow-main-c@1x.jpg"
+                                                 width="1388"
+                                                 height="486"
+                                                 alt=""
+                                            >
+                                            <div class="slide__content">
+                                                <div class="slide__category">Полнокупольное шоу</div>
+                                                <div class="slide__heading">Галактика и&nbsp;её&nbsp;население</div>
+                                                <div class="slide__note">23 декабря - 6 января</div>
+                                                <div class="slide__action">
+                                                    <a class="button button--secondary polygon polygon--trapezoid" href=#">
+                                                        <span class="button__label">Подробнее</span>
+                                                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slideshow__item">
+                                        <div class="slide">
+                                            <img class="slide__background"
+                                                 srcset="
+                                                   ../temp/slideshow/main/slideshow-main-d@3x.jpg 3x,
+                                                   ../temp/slideshow/main/slideshow-main-d@2x.jpg 2x,
+                                                   ../temp/slideshow/main/slideshow-main-d@1.5x.jpg 1.5x,
+                                                   ../temp/slideshow/main/slideshow-main-d@1x.jpg 1x"
+                                                 src="../temp/slideshow/main/slideshow-main-d@1x.jpg"
+                                                 width="1388"
+                                                 height="486"
+                                                 alt=""
+                                            >
+                                            <div class="slide__content">
+                                                <div class="slide__category">Ретро-лекция</div>
+                                                <div class="slide__heading">Планетарий: взгляд сквозь десятилетия на космос</div>
+                                                <div class="slide__note">23 декабря - 6 января</div>
+                                                <div class="slide__action">
+                                                    <a class="button button--secondary polygon polygon--trapezoid" href=#">
+                                                        <span class="button__label">Подробнее</span>
+                                                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slideshow__item">
+                                        <div class="slide">
+                                            <img class="slide__background"
+                                                 srcset="
+                                                   ../temp/slideshow/main/slideshow-main-e@3x.jpg 3x,
+                                                   ../temp/slideshow/main/slideshow-main-e@2x.jpg 2x,
+                                                   ../temp/slideshow/main/slideshow-main-e@1.5x.jpg 1.5x,
+                                                   ../temp/slideshow/main/slideshow-main-e@1x.jpg 1x"
+                                                 src="../temp/slideshow/main/slideshow-main-e@1x.jpg"
+                                                 width="1388"
+                                                 height="486"
+                                                 alt=""
+                                            >
+                                            <div class="slide__content">
+                                                <div class="slide__category">Полнокупольное шоу</div>
+                                                <div class="slide__heading">Магия неоклассики</div>
+                                                <div class="slide__note">23 декабря - 6 января</div>
+                                                <div class="slide__action">
+                                                    <a class="button button--secondary polygon polygon--trapezoid" href=#">
+                                                        <span class="button__label">Подробнее</span>
+                                                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.22501L24 7.99851L14 13.772V8.99851H0V6.99851H14V2.22501Z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slideshow__left-trapezoid" role="presentation" aria-hidden="true"></div>
+                                <div class="slideshow__top-trapezoid" role="presentation" aria-hidden="true"></div>
+                                <div class="slideshow__right-angle" role="presentation" aria-hidden="true"></div>
+                            </div>
+                            <div class="slideshow__control-panel">
+                                <button class="slideshow__control slideshow__control--prev" type="button">
+                                    <svg class="slideshow__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 13.772L5.04736e-07 7.9985L10 2.225L10 6.9985L24 6.9985L24 8.9985L10 8.9985L10 13.772Z"/>
+                                    </svg>
+                                </button>
+                                <div class="slideshow__navigation">
+                                    <button class="slideshow__dot slideshow__dot--current" type="button">
+                                        <img class="slideshow__planet" src="../content/slideshow-main-1.png" width="120" height="120" alt="">
+                                    </button>
+                                    <button class="slideshow__dot" type="button">
+                                        <img class="slideshow__planet" src="../content/slideshow-main-2.png" width="120" height="120" alt="">
+                                    </button>
+                                    <button class="slideshow__dot" type="button">
+                                        <img class="slideshow__planet" src="../content/slideshow-main-3.png" width="120" height="120" alt="">
+                                    </button>
+                                    <button class="slideshow__dot" type="button">
+                                        <img class="slideshow__planet" src="../content/slideshow-main-4.png" width="120" height="120" alt="">
+                                    </button>
+                                    <button class="slideshow__dot" type="button">
+                                        <img class="slideshow__planet" src="../content/slideshow-main-5.png" width="120" height="120" alt="">
+                                    </button>
+                                </div>
+                                <button class="slideshow__control slideshow__control--next" type="button">
+                                    <svg class="slideshow__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14 2.225L24 7.9985L14 13.772V8.9985H0V6.9985H14V2.225Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="intro__footer">
                         <div class="intro__label">
@@ -204,7 +381,156 @@
                         Афиша
                     </h1>
                     <div class="schedule__filters">
-                        <div style="height: 50px; display: flex; align-items: center; justify-content: center; background-color: red;">TO DO: Фильтры</div>
+                        <div class="filters-panel">
+                            <div class="filters-panel__primary">
+                                <div class="filter">
+                                    <button class="filter__handler" type="button">
+                                        Выбрать зону
+                                    </button>
+                                    <div class="filter__dropdown">
+                                        <div class="filter__inner">
+                                            <button class="filter__option filter__option--selected" type="button">Звёздный зал</button>
+                                            <button class="filter__option" type="button">Обсерватория</button>
+                                            <button class="filter__option" type="button">Экспозиционно-выставочный<br> зал «история космонавтики»</button>
+                                            <button class="filter__option" type="button">Интерактивный класс</button>
+                                            <button class="filter__option" type="button">Интерактивная галерея</button>
+                                            <button class="filter__option" type="button">Аттракцион «Шаттл 5D»</button>
+                                            <button class="filter__option" type="button">Сбросить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter">
+                                    <button class="filter__handler" type="button">
+                                        Возрастная категория
+                                    </button>
+                                    <div class="filter__dropdown">
+                                        <div class="filter__inner">
+                                            <button class="filter__option filter__option--selected" type="button">Дошкольники</button>
+                                            <button class="filter__option" type="button">1-4 класс</button>
+                                            <button class="filter__option" type="button">5-8 класс</button>
+                                            <button class="filter__option" type="button">9-11 класс и студенты</button>
+                                            <button class="filter__option" type="button">Взрослые</button>
+                                            <button class="filter__option" type="button">Сбросить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters-panel__secondary">
+                                <div class="date-picker">
+                                    <div class="date-picker__panel hide-scrollbar">
+                                        <button class="date-picker__handler" type="button">
+                                            <svg class="date-picker__icon" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26 2.36364H22.1V0H19.5V2.36364H6.5V0H3.9V2.36364H0V26H26V2.36364ZM23.4 23.6364H2.6V8.27273H23.4V23.6364Z"/>
+                                            </svg>
+                                        </button>
+                                        <div class="date-picker__list">
+                                            <div class="date-picker__carousel">
+                                                <div class="swiper">
+                                                    <!-- Additional required wrapper -->
+                                                    <div class="swiper-wrapper">
+                                                        <!-- Slides -->
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                05 ноя, вс
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid day--selected" type="button">
+                                                                06 ноя, пн
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                07 ноя, вт
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                08 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                09 ноя, пн
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                10 ноя, вт
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                11 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                12 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                13 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                14 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                15 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                16 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                17 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                18 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <button class="day polygon polygon--trapezoid" type="button">
+                                                                19 ноя, ср
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="date-picker__control date-picker__control--prev">
+                                                <svg class="date-picker__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="m10 13.772-10-5.774 10-5.773v4.774h14v2h-14z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="date-picker__control date-picker__control--next">
+                                                <svg class="date-picker__arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 2.225l10 5.774-10 5.773V8.998H0v-2h14V2.226z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="date-picker__dropdown">
+                                        <div class="date-picker__inner">
+
+                                            <!-- date-picker -->
+                                            <div style="height: 100px; background: purple;"></div>
+                                            <!--/date-picker -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="schedule__body">
@@ -254,7 +580,9 @@
                                                     <div class="stat stat--altered stat--location">Звёздный зал</div>
                                                 </div>
                                                 <div class="presentation__remaining-stats">
+                                                    <div class="stat stat--altered stat--duration">45 минут</div>
                                                     <div class="stat stat--altered stat--restriction">12+</div>
+                                                    <div class="stat stat--altered stat--pushkin-card">Пушкинская карта</div>
                                                 </div>
                                             </div>
                                             <div class="presentation__actions">
@@ -317,7 +645,9 @@
                                                     <div class="stat stat--altered stat--location">Звёздный зал</div>
                                                 </div>
                                                 <div class="presentation__remaining-stats">
+                                                    <div class="stat stat--altered stat--duration">45 минут</div>
                                                     <div class="stat stat--altered stat--restriction">12+</div>
+                                                    <div class="stat stat--altered stat--pushkin-card">Пушкинская карта</div>
                                                 </div>
                                             </div>
                                             <div class="presentation__actions">
@@ -431,7 +761,8 @@
                                                     <div class="stat stat--altered stat--location">Звёздный зал</div>
                                                 </div>
                                                 <div class="presentation__remaining-stats">
-                                                    <div class="stat stat--altered stat--restriction">6+</div>
+                                                    <div class="stat stat--altered stat--duration">45 минут</div>
+                                                    <div class="stat stat--altered stat--restriction">12+</div>
                                                     <div class="stat stat--altered stat--pushkin-card">Пушкинская карта</div>
                                                 </div>
                                             </div>
@@ -748,7 +1079,7 @@
                                         Мероприятия
                                     </button>
                                     <div class="nav__menu">
-                                        <a class="nav__sub-link" href="projects.html">Программы</a>
+                                        <a class="nav__sub-link" href="programs.html">Программы</a>
                                         <a class="nav__sub-link" href="projects.html">События</a>
                                         <a class="nav__sub-link" href="projects.html">Конференции,<br> презентации</a>
                                         <a class="nav__sub-link" href="projects.html">Конкурсы</a>
@@ -825,16 +1156,23 @@
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_mfp.js?1705392962"></script>
-        <script src="../scripts/_input.js?1705392962"></script>
-        <script src="../scripts/_polygon.js?1705392962"></script>
-        <script src="../scripts/_sticky.js?1705392962"></script>
-        <script src="../scripts/_sub-nav.js?1705392962"></script>
-        <script src="../scripts/_header.js?1705392962"></script>
-        <script src="../scripts/_nav.js?1705392962"></script>
-        <script src="../scripts/_page-scrolled.js?1705392962"></script>
-        <script src="../scripts/_areas.js?1705392962"></script>
-        <script src="../scripts/_submitting.js?1705392962"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="../scripts/_mfp.js?1705996374"></script>
+        <script src="../scripts/_input.js?1705996374"></script>
+        <script src="../scripts/_polygon.js?1705996374"></script>
+        <script src="../scripts/_sticky.js?1705996374"></script>
+        <script src="../scripts/_sub-nav.js?1705996374"></script>
+        <script src="../scripts/_header.js?1705996374"></script>
+        <script src="../scripts/_nav.js?1705996374"></script>
+        <script src="../scripts/_page-scrolled.js?1705996374"></script>
+        <script src="../scripts/_areas.js?1705996374"></script>
+        <script src="../scripts/_submitting.js?1705996374"></script>
+        <script src="../scripts/_slideshow.js?1705996374"></script>
+        <script src="../scripts/_filter.js?1705996374"></script>
+        <script src="../scripts/_day.js?1705996374"></script>
+        <script src="../scripts/_pushkin-card.js?1705996374"></script>
+        <script src="../scripts/_date-picker.js?1705996374"></script>
+        <script src="../scripts/_swiper.js?1705996374"></script>
 
     </body>
 </html>
