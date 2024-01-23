@@ -2,6 +2,9 @@
 @import url("../vendors/magnific-popup/magnific-popup.css");
 @import url("../vendors/swiper/swiper-bundle.min.css");
 @import url("../vendors/air-datepicker/air-datepicker.css");
+
+@import url("_air-datepicker.css");
+
 @import url("_fonts.css");
 @import url("_box-sizing.css");
 @import url("_visuallyhidden.css");

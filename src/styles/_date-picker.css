@@ -96,7 +96,6 @@
     .date-picker__dropdown {
         position: absolute;
         left: 0;
-        width: 320px;
         padding-top: 20px;
         opacity: 0;
         visibility: hidden;
@@ -105,7 +104,7 @@
         /*            visibility var(--transition-dropdown);*/
     }
         .date-picker__inner {
-            padding: 6px;
+            /*padding: 6px;*/
             background-color: rgb(142 143 250 / 55%);
             border: 2px solid #8E8FFA;
             border-radius: 6px;
@@ -181,11 +180,11 @@
                 }
 
         .date-picker__dropdown {
-            /*width: 320px;*/
             padding-top: 26px;
         }
             .date-picker__inner {
-                padding: 9px;
+                zoom: 1.1;
+                /*padding: 9px;*/
                 /*background-color: rgb(142 143 250 / 55%);*/
                 /*border: 2px solid #8E8FFA;*/
                 border-radius: 8px;
@@ -286,6 +285,10 @@
             .date-picker__inner {
 
             }
+                .date-picker__inner .air-datepicker {
+                    width: 100%;
+                    zoom: 1.1;
+                }
 
     .date-picker--expanded {
 
