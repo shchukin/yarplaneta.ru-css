@@ -49,6 +49,7 @@
             .date-picker--selected:active .date-picker__handler {
                 background-color: #8E8FFA;
                 box-shadow: 0 0 0 1px #8E8FFA;
+                color: #FFFFFF; /* Алсо заполнит fill в иконке */
             }
 
         .date-picker__list {
