@@ -41,7 +41,7 @@
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $('.filter').toggleClass('filter--expanded');
+            $('.filter').removeClass('filter--expanded');
         }
     });
 
