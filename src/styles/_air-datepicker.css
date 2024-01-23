@@ -16,7 +16,7 @@
     /*--adp-background-color-selected-other-month-focused: #8ad5f4;*/
     /*--adp-background-color-selected-other-month: #a2ddf6;*/
     --adp-color: #000000;
-    --adp-color-secondary: #C2D9FF;
+    --adp-color-secondary: #000000;
     --adp-accent-color: #190482;
     /*--adp-color-current-date: var(--adp-accent-color);*/
     --adp-color-other-month: #C2D9FF;
@@ -98,7 +98,7 @@
 }
 
 .air-datepicker-nav--title {
-    color: #FFFFFF;
+
 }
 
 .air-datepicker-nav--action:hover path {
