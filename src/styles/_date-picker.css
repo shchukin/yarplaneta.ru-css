@@ -96,6 +96,7 @@
 
     .date-picker__dropdown {
         position: absolute;
+        z-index: 500;
         left: 0;
         padding-top: 20px;
         opacity: 0;

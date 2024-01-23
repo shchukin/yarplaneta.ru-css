@@ -47,6 +47,7 @@
 
     .filter__dropdown {
         position: absolute;
+        z-index: 500;
         left: 0;
         min-width: 100%;
         padding-top: 20px;
