@@ -26,5 +26,13 @@
     });
 
 
+    /* Инициализируем AirDatepicker */
+    new AirDatepicker('.date-picker__inner', {
+        'inline': true,
+        'onSelect': function (element) {
+            $(element.datepicker.$el).parents('.date-picker').removeClass('date-picker--expanded').addClass('date-picker--selected');
+        }
+    });
+
 
 })(jQuery);
