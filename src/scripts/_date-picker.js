@@ -11,7 +11,7 @@
     /* hide popup by overlay click ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.date-picker__handler, .date-picker__dropdown').length) {
+        if (!$(event.target).closest('.date-picker__handler, .date-picker__dropdown, i').length) { /* Здесь тег <i> как часть датапикера внутри .air-datepicker-nav--title -- почему-то не регистрирует клик как часть .date-picker__dropdown */
             $('.date-picker').removeClass('date-picker--expanded');
         }
     });
