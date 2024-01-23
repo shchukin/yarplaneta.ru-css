@@ -11,7 +11,7 @@
     /* hide popup by overlay click ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.date-picker').length) {
+        if (!$(event.target).closest('.date-picker__handler, .date-picker__dropdown').length) {
             $('.date-picker').removeClass('date-picker--expanded');
         }
     });
