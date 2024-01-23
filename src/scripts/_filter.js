@@ -13,6 +13,9 @@
         const value = $this.html();
         $this.parents('.filter').find('.filter__handler').html(value);
         $this.parents('.filter').removeClass('filter--expanded');
+
+        $this.siblings('.filter__option--selected').removeClass('filter__option--selected')
+        $this.addClass('filter__option--selected')
     });
 
 
