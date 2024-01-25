@@ -456,8 +456,8 @@
             margin-top: 24px;
             display: block;
         }
-            .presentation--summarized-schedule .presentation__stats .stat:not(.stat--pushkin-card) {
-                display: none;
+            .presentation--summarized-schedule .presentation__stats {
+                max-width: 300px;
             }
                 .presentation--summarized-schedule .presentation__location {
 
@@ -498,31 +498,29 @@
             @media (360px <= width) {
 
                 .presentation--summarized-schedule .presentation__footer {
-                    display: flex;
-                    align-items: center;
-                    gap: 18px;
+
                 }
                     .presentation--summarized-schedule .presentation__remaining-stats {
-                        margin-top: 0;
+
                     }
 
                     .presentation--summarized-schedule .presentation__actions {
-                        margin-top: 0;
+
                     }
 
-                @media (width < 440px ) {
+                /*@media (width < 440px ) {*/
 
-                    .presentation--summarized-schedule .presentation__stats .stat {
-                        gap: 8px;
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 14px;
-                    }
-                        .presentation--summarized-schedule .presentation__stats .stat::before {
-                            width: 24px;
-                            height: 24px;
-                        }
-                }
+                /*    .presentation--summarized-schedule .presentation__stats .stat {*/
+                /*        gap: 8px;*/
+                /*        font-weight: 600;*/
+                /*        font-size: 12px;*/
+                /*        line-height: 14px;*/
+                /*    }*/
+                /*        .presentation--summarized-schedule .presentation__stats .stat::before {*/
+                /*            width: 24px;*/
+                /*            height: 24px;*/
+                /*        }*/
+                /*}*/
             }
 
     }
