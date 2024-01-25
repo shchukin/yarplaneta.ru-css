@@ -1,0 +1,13 @@
+.default-background {
+    background-image: url("../images/background.svg");
+    background-size: 5644px 5807px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@media (width < 740px) {
+    .default-background {
+        background-image: url("../images/background-smartphone.svg");
+        background-size: 838px 2165px;
+    }
+}

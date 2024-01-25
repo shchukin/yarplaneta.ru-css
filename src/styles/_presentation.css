@@ -408,15 +408,18 @@
 @media (width < 740px) {
 
     .presentation--summarized-schedule {
-        display: block;
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        grid-template-areas: "left-top right-top" "bottom bottom";
         padding-left: 0;
         min-height: 0;
         /*flex-direction: column;*/
     }
         .presentation--summarized-schedule .presentation__stage {
+            grid-area: left-top;
             position: static;
-            width: 114px;
-            margin-right: 16px;
+            margin-top: 0;
+            padding-right: 16px;
         }
             .presentation--summarized-schedule .presentation__stage .preview {
                 /*border-radius: 12px;*/
@@ -426,20 +429,17 @@
                 }
 
         .presentation--summarized-schedule .presentation__summary {
+            grid-area: right-top;
             padding-right: 0;
-            margin-top: 24px;
+            /*margin-top: 24px;*/
         }
             .presentation--summarized-schedule .presentation__time {
 
             }
 
             .presentation--summarized-schedule .presentation__heading {
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 20px;
                 line-height: 24px;
-                /*text-transform: uppercase;*/
             }
 
             .presentation--summarized-schedule .presentation__category {
@@ -451,10 +451,10 @@
             }
 
         .presentation--summarized-schedule .presentation__footer {
-            /*margin-top: auto;*/
             padding-top: 0;
             margin-top: 24px;
             display: block;
+            grid-area: bottom;
         }
             .presentation--summarized-schedule .presentation__stats {
                 max-width: 300px;
@@ -464,15 +464,11 @@
                 }
 
                 .presentation--summarized-schedule .presentation__remaining-stats {
-                    /*margin-top: 10px;*/
-                    /*display: flex;*/
-                    /*align-items: flex-start;*/
-                    /*gap: 20px 40px;*/
+
                 }
 
             .presentation--summarized-schedule .presentation__actions {
-                /*flex-shrink: 0;*/
-                margin-top: 14px;
+                margin-top: 22px;
             }
                 .presentation--summarized-schedule .presentation__details {
 
@@ -494,34 +490,5 @@
                     .presentation--summarized-schedule .presentation__buy {
 
                     }
-
-            @media (360px <= width) {
-
-                .presentation--summarized-schedule .presentation__footer {
-
-                }
-                    .presentation--summarized-schedule .presentation__remaining-stats {
-
-                    }
-
-                    .presentation--summarized-schedule .presentation__actions {
-
-                    }
-
-                /*@media (width < 440px ) {*/
-
-                /*    .presentation--summarized-schedule .presentation__stats .stat {*/
-                /*        gap: 8px;*/
-                /*        font-weight: 600;*/
-                /*        font-size: 12px;*/
-                /*        line-height: 14px;*/
-                /*    }*/
-                /*        .presentation--summarized-schedule .presentation__stats .stat::before {*/
-                /*            width: 24px;*/
-                /*            height: 24px;*/
-                /*        }*/
-                /*}*/
-            }
-
     }
 

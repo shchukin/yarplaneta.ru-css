@@ -1,26 +1,16 @@
 body {
     height: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     background-color: #14131E;
-    background-image: url("../images/background.svg");
-    background-size: 5644px 5807px;
+    color-scheme: dark;
     background-repeat: no-repeat;
     background-position: center top;
-    color-scheme: dark;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     font-family: var(--font);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
     color: #FFFFFF;
 }
-
-@media (width < 740px) {
-    body {
-        background-image: url("../images/background-smartphone.svg");
-        background-size: 838px 2165px;
-    }
-}
-
 
 
 .burger-expanded {
