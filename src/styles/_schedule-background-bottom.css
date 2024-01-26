@@ -1,7 +1,7 @@
 @media (740px <= width) {
 
-    .groups-item-background-bottom {
-        background-image: url("../images/backgrounds/groups-item-background-bottom.svg");
+    .schedule-background-bottom {
+        background-image: url("../images/backgrounds/schedule-background-bottom.svg");
         background-size: 5644px 2600px;
         background-repeat: no-repeat;
         background-position: center top;
@@ -16,7 +16,7 @@
     }
 
     /* Отменяем маргин у подвала */
-    .groups-item-background-bottom ~ .footer {
+    .schedule-background-bottom ~ .footer {
         margin-top: 0;
     }
 }

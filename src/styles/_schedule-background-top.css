@@ -1,0 +1,7 @@
+@media (740px <= width) {
+
+    .schedule-background-top body {
+        background-image: url("../images/backgrounds/schedule-background-top.svg");
+        background-size: 5644px 1606px;
+    }
+}

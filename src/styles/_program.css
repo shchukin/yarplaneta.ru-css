@@ -1,4 +1,5 @@
 .program {
+    position: relative; /* выше чем .groups-item-bottom-background */
     padding-top: 44px;
     padding-bottom: 50px;
     background-color: #FFFFFF;
@@ -7,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     color-scheme: light;
-    border-radius: 20px;
+    border-radius: var(--footer-radius);
     color: #14131E;
 }
     .program__wrap {
@@ -110,7 +111,6 @@
         /*background-repeat: no-repeat;*/
         /*background-position: center top;*/
         /*color-scheme: light;*/
-        /*border-radius: 20px;*/
         /*color: #14131E;*/
     }
         .program__wrap {
