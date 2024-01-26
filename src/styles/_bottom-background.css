@@ -25,18 +25,35 @@
 
     .bottom-background--groups-item {
         background-image: url("../images/backgrounds/groups-item-background-bottom.svg");
-        background-size: 5644px 2600px;
+        background-size: 4233px 1950px;
     }
+        @media (1500px <= width) {
+            .bottom-background--groups-item {
+                background-size: 5644px 2600px;
+            }
+        }
+
 
     .bottom-background--schedule {
         background-image: url("../images/backgrounds/schedule-background-bottom.svg");
-        background-size: 5644px 2600px;
+        background-size: 4233px 1950px;
     }
+        @media (1500px <= width) {
+            .bottom-background--schedule {
+                background-size: 5644px 2600px;
+            }
+        }
+
 
     .bottom-background--landing {
         background-image: url("../images/backgrounds/landing-background-bottom.svg");
-        background-size: 5644px 2600px;
+        background-size: 4233px 2696px;
     }
+        @media (1500px <= width) {
+            .bottom-background--landing {
+                background-size: 5644px 3595px;
+            }
+        }
 }
 
 
