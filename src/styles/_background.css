@@ -1,36 +1,56 @@
-/*Эта картинка применяется только на десктопах, т.е. весь файл написан внутри (740px <= width) */
+/* фон по умолчанию: */
 
+.background body {
+    background-image: url("../images/backgrounds/default-background.svg");
+    background-size: 5644px 5807px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+/* Десктопные фоны: */
 @media (740px <= width) {
 
-    .landing-background-top body {
-        background-color: #15141E;
-        background-repeat: no-repeat;
-        background-position: center top;
+    .background--text body {
+        background-image: url("../images/backgrounds/text-background.svg");
+        background-size: 5644px 7230px;
     }
 
+    .background--groups-item body {
+        background-image: url("../images/backgrounds/groups-item-background-top.svg");
+        background-size: 5644px 2928px;
+    }
+
+    .background--schedule body {
+        background-image: url("../images/backgrounds/schedule-background-top.svg");
+        background-size: 5644px 1606px;
+    }
+
+
+    /* На лендинге фон сильно сложнее */
 
     /* По-идее этот медиа-запрос должен быть (width < 1500px), т.е. "<=" вместо "<",
      * но в данном случае 1500px включаем в диапазон, потому что сама картинка 1500px.
      */
     @media (width <= 1500px) {
-        .landing-background-top body {
+        .background--landing body {
             background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1x.jpg");
             background-size: 1500px 726px;
         }
 
         @media (min-resolution: 1.5dppx) {
-            .landing-background-top body {
+            .background--landing body {
                 background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1.5x.jpg");
             }
         }
 
         @media (min-resolution: 2dppx) {
-            .landing-background-top body {
+            .background--landing body {
                 background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@2x.jpg");
             }
         }
 
-        .landing-background-top body {
+        .background--landing body {
             background-image: image-set(
                 url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@2x.avif") type("image/avif") 2x,
                 url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1.5x.avif") type("image/avif") 1.5x,
@@ -46,24 +66,24 @@
      */
     @media (1500px < width <= 1920px) {
 
-        .landing-background-top body {
+        .background--landing body {
             background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1x.jpg");
             background-size: 1920px 930px;
         }
 
         @media (min-resolution: 1.5dppx) {
-            .landing-background-top body {
+            .background--landing body {
                 background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1.5x.jpg");
             }
         }
 
         @media (min-resolution: 2dppx) {
-            .landing-background-top body {
+            .background--landing body {
                 background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@2x.jpg");
             }
         }
 
-        .landing-background-top body {
+        .background--landing body {
             background-image: image-set(
                 url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@2x.avif") type("image/avif") 2x,
                 url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1.5x.avif") type("image/avif") 1.5x,
@@ -79,24 +99,24 @@
      */
     @media (1920px < width) {
 
-        .landing-background-top body {
+        .background--landing body {
             background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1x.jpg");
             background-size: 2426px 930px;
         }
 
         @media (min-resolution: 1.5dppx) {
-            .landing-background-top body {
+            .background--landing body {
                 background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1.5x.jpg");
             }
         }
 
         @media (min-resolution: 2dppx) {
-            .landing-background-top body {
+            .background--landing body {
                 background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@2x.jpg");
             }
         }
 
-        .landing-background-top body {
+        .background--landing body {
             background-image: image-set(
                 url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@2x.avif") type("image/avif") 2x,
                 url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1.5x.avif") type("image/avif") 1.5x,
@@ -106,3 +126,18 @@
     }
 }
 
+
+
+
+
+/*
+    Мобильный нижний фон всегда одинаковый
+ */
+
+@media (width < 740px) {
+
+    body {
+        background-image: url("../images/backgrounds/background-smartphone.svg");
+        background-size: 838px 2165px;
+    }
+}

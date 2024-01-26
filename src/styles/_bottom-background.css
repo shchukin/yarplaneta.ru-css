@@ -1,0 +1,54 @@
+.bottom-background {
+    /* Нижнего фона по умолчанию нет -- он появляется только на некоторых страницах, и все они уникальны.
+       Но в теории, для сохранения общности, здесь могла бы быть картинка по умолчанию для всех нижних фонов.
+     */
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    /* Залезаем под белую карточку */
+    margin-top: calc(-1 * var(--footer-radius));
+    padding-top: var(--footer-radius);
+
+    /* Отступ перед подвалом включаем сюда в фон (включая скругление подвала) */
+    padding-bottom: calc(var(--footer-margin) + var(--footer-radius));
+    margin-bottom: calc(-1 * var(--footer-radius));
+}
+
+/* Отменяем маргин у подвала */
+.bottom-background ~ .footer {
+    margin-top: 0;
+}
+
+
+/* Десктопные фоны: */
+@media (740px <= width) {
+
+    .bottom-background--groups-item {
+        background-image: url("../images/backgrounds/groups-item-background-bottom.svg");
+        background-size: 5644px 2600px;
+    }
+
+    .bottom-background--schedule {
+        background-image: url("../images/backgrounds/schedule-background-bottom.svg");
+        background-size: 5644px 2600px;
+    }
+
+    .bottom-background--landing {
+        background-image: url("../images/backgrounds/landing-background-bottom.svg");
+        background-size: 5644px 2600px;
+    }
+}
+
+
+
+
+/*
+    Мобильный фон всегда одинаковый
+ */
+
+@media (width < 740px) {
+    .bottom-background {
+        background-image: url("../images/backgrounds/bottom-background-smartphone.svg");
+        background-size: 5644px 3720px;
+    }
+}
