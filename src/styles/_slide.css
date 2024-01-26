@@ -16,6 +16,7 @@
         object-fit: cover;
         vertical-align: top;
         border-radius: 10px;
+        background-color: var(--image-fallback);
     }
 
     .slide__content {
