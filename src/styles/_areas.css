@@ -163,7 +163,8 @@
 
         .areas__list {
             margin-top: 24px;
-            display: block;
+            display: grid;
+            grid-template-columns: 1fr;
         }
 
         .areas__article {
