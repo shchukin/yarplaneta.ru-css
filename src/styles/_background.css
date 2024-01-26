@@ -2,29 +2,48 @@
 
 .background {
     background-image: url("../images/backgrounds/default-background.svg");
-    background-size: 5644px 5807px;
+    background-size: 4233px 4355px;
     background-repeat: no-repeat;
     background-position: center top;
 }
-
+    @media (1500px <= width) {
+        .background {
+            background-size: 5644px 5807px;
+        }
+    }
 
 /* Десктопные фоны: */
 @media (740px <= width) {
 
     .background--text {
         background-image: url("../images/backgrounds/text-background.svg");
-        background-size: 5644px 7230px;
+        background-size: 4233px 5422px;
     }
+        @media (1500px <= width) {
+            .background--text {
+                background-size: 5644px 7230px;
+            }
+        }
 
     .background--groups-item {
         background-image: url("../images/backgrounds/groups-item-background-top.svg");
-        background-size: 5644px 2928px;
+        background-size: 4233px 2196px;
     }
+        @media (1500px <= width) {
+            .background--groups-item {
+                background-size: 5644px 2928px;
+            }
+        }
 
     .background--schedule {
         background-image: url("../images/backgrounds/schedule-background-top.svg");
-        background-size: 5644px 1606px;
+        background-size: 4233px 1204px;
     }
+        @media (1500px <= width) {
+            .background--schedule {
+                background-size: 5644px 1606px;
+            }
+        }
 
 
     /* На лендинге фон сильно сложнее */
