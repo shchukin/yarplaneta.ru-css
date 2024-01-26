@@ -154,8 +154,7 @@
  */
 
 @media (width < 740px) {
-
-    {
+    .background {
         background-image: url("../images/backgrounds/background-smartphone.svg");
         background-size: 838px 2165px;
     }
