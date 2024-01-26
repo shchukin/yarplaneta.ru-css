@@ -2,7 +2,7 @@
 
 @media (740px <= width) {
 
-    .landing-background {
+    .landing-background body {
         background-color: #15141E;
         background-repeat: no-repeat;
         background-position: center top;
@@ -13,28 +13,28 @@
      * но в данном случае 1500px включаем в диапазон, потому что сама картинка 1500px.
      */
     @media (width <= 1500px) {
-        .landing-background {
-            background-image: url("../images/intro/intro-desktop-background-illustration-1500@1x.jpg");
+        .landing-background body {
+            background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1x.jpg");
             background-size: 1500px 726px;
         }
 
         @media (min-resolution: 1.5dppx) {
-            .landing-background {
-                background-image: url("../images/intro/intro-desktop-background-illustration-1500@1.5x.jpg");
+            .landing-background body {
+                background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1.5x.jpg");
             }
         }
 
         @media (min-resolution: 2dppx) {
-            .landing-background {
-                background-image: url("../images/intro/intro-desktop-background-illustration-1500@2x.jpg");
+            .landing-background body {
+                background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@2x.jpg");
             }
         }
 
-        .landing-background {
+        .landing-background body {
             background-image: image-set(
-                url("../images/intro/intro-desktop-background-illustration-1500@2x.avif") type("image/avif") 2x,
-                url("../images/intro/intro-desktop-background-illustration-1500@1.5x.avif") type("image/avif") 1.5x,
-                url("../images/intro/intro-desktop-background-illustration-1500@1x.avif") type("image/avif") 1x
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@2x.avif") type("image/avif") 2x,
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1.5x.avif") type("image/avif") 1.5x,
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-1500@1x.avif") type("image/avif") 1x
             );
         }
     }
@@ -46,28 +46,28 @@
      */
     @media (1500px < width <= 1920px) {
 
-        .landing-background {
-            background-image: url("../images/intro/intro-desktop-background-illustration-1920x930@1x.jpg");
+        .landing-background body {
+            background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1x.jpg");
             background-size: 1920px 930px;
         }
 
         @media (min-resolution: 1.5dppx) {
-            .landing-background {
-                background-image: url("../images/intro/intro-desktop-background-illustration-1920x930@1.5x.jpg");
+            .landing-background body {
+                background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1.5x.jpg");
             }
         }
 
         @media (min-resolution: 2dppx) {
-            .landing-background {
-                background-image: url("../images/intro/intro-desktop-background-illustration-1920x930@2x.jpg");
+            .landing-background body {
+                background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@2x.jpg");
             }
         }
 
-        .landing-background {
+        .landing-background body {
             background-image: image-set(
-                url("../images/intro/intro-desktop-background-illustration-1920x930@2x.avif") type("image/avif") 2x,
-                url("../images/intro/intro-desktop-background-illustration-1920x930@1.5x.avif") type("image/avif") 1.5x,
-                url("../images/intro/intro-desktop-background-illustration-1920x930@1x.avif") type("image/avif") 1x
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@2x.avif") type("image/avif") 2x,
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1.5x.avif") type("image/avif") 1.5x,
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-1920x930@1x.avif") type("image/avif") 1x
             );
         }
     }
@@ -79,28 +79,28 @@
      */
     @media (1920px < width) {
 
-        .landing-background {
-            background-image: url("../images/intro/intro-desktop-background-illustration-2426x930@1x.jpg");
+        .landing-background body {
+            background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1x.jpg");
             background-size: 2426px 930px;
         }
 
         @media (min-resolution: 1.5dppx) {
-            .landing-background {
-                background-image: url("../images/intro/intro-desktop-background-illustration-2426x930@1.5x.jpg");
+            .landing-background body {
+                background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1.5x.jpg");
             }
         }
 
         @media (min-resolution: 2dppx) {
-            .landing-background {
-                background-image: url("../images/intro/intro-desktop-background-illustration-2426x930@2x.jpg");
+            .landing-background body {
+                background-image: url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@2x.jpg");
             }
         }
 
-        .landing-background {
+        .landing-background body {
             background-image: image-set(
-                url("../images/intro/intro-desktop-background-illustration-2426x930@2x.avif") type("image/avif") 2x,
-                url("../images/intro/intro-desktop-background-illustration-2426x930@1.5x.avif") type("image/avif") 1.5x,
-                url("../images/intro/intro-desktop-background-illustration-2426x930@1x.avif") type("image/avif") 1x
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@2x.avif") type("image/avif") 2x,
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1.5x.avif") type("image/avif") 1.5x,
+                url("../images/backgrounds/intro/intro-desktop-background-illustration-2426x930@1x.avif") type("image/avif") 1x
             );
         }
     }

@@ -2,6 +2,8 @@ body {
     height: 100%;
     background-color: #14131E;
     color-scheme: dark;
+    background-image: url("../images/backgrounds/default-background.svg");
+    background-size: 5644px 5807px;
     background-repeat: no-repeat;
     background-position: center top;
     -moz-osx-font-smoothing: grayscale;
@@ -14,12 +16,13 @@ body {
 
 
 /*
-    Мобильный фон на всех страницах одинаковый
+    Мобильный фон на всех страницах одинаковый.
+    Десктопные фоны смотри в классах типа .default-background, .text-background и т.д.
 */
 
 @media (width < 740px) {
-    .default-background {
-        background-image: url("../images/background-smartphone.svg");
+    body {
+        background-image: url("../images/backgrounds/background-smartphone.svg");
         background-size: 838px 2165px;
     }
 }

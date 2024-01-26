@@ -1,0 +1,7 @@
+@media (740px <= width) {
+
+    .text-background body {
+        background-image: url("../images/backgrounds/text-background.svg");
+        background-size: 5644px 7230px;
+    }
+}
