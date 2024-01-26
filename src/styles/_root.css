@@ -19,6 +19,8 @@
     --disabled-color: #AAAAAA;
     --error: #FF0033;
     --sky-gradient: linear-gradient(45deg, #9293FB, #BCD3FE);
+    --footer-margin: 142px;
+    --footer-radius: 30px;
 }
 
 /* Десктопы, планшеты и смартфоны: */
@@ -27,6 +29,15 @@
         --container-padding: 30px;
         --body-font-size: 16px;
         --body-line-height: 22px;
+        --footer-margin: 114px;
+        --footer-radius: 24px;
+    }
+}
+
+@media (width < 740px) {
+    :root {
+        --footer-margin: 80px;
+        --footer-radius: 16px;
     }
 }
 

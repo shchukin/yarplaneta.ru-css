@@ -90,4 +90,5 @@
 @import url("_date-picker.css");
 @import url("_filters-panel.css");
 @import url("_text-background.css");
-@import url("_groups-item-background.css");
+@import url("_groups-item-background-top.css");
+@import url("_groups-item-background-bottom.css");

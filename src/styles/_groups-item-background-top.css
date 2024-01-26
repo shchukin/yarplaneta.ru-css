@@ -1,0 +1,7 @@
+@media (740px <= width) {
+
+    .groups-item-background-top body {
+        background-image: url("../images/backgrounds/groups-item-background-top.svg");
+        background-size: 5644px 2928px;
+    }
+}
