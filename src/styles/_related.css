@@ -26,6 +26,23 @@
     }
 
 
+.related__background {
+    position: relative;
+    backdrop-filter: blur(4px);
+}
+    .related__noise {
+        background-image: url("../images/related-noise.png");
+        background-repeat: repeat;
+        background-position: left top;
+    }
+        .related__bg-color {
+            position: relative;
+            background-color: rgb(194 217 255 / 40%);
+            box-shadow: inset 0 0 0 5px #ADBCFC;
+            padding: 40px 52px 60px;
+            border-radius: 16px;
+        }
+
 
 @media (1500px <= width) {
 
