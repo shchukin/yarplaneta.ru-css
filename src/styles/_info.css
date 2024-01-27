@@ -8,6 +8,7 @@
         background-color: var(--image-fallback);
         border-radius: 9px;
         transition: filter var(--transition-hover);
+        pointer-events: none; /* Свайпы в hammer.js не срабатывают на картинках -- свайпаем сквозь */
     }
 
     .info:hover .info__image {
