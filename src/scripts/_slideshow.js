@@ -1,6 +1,8 @@
 (function($) {
 
-    function slide($slideshow, slideTo) {
+    /* Слайд к любому айтему по индексу (для использования в кликах по точкам навигации и других функциях) */
+
+    function slideByIndex($slideshow, slideTo) {
         const $items = $slideshow.find('.slideshow__item')
         const $itemCurrent = $slideshow.find('.slideshow__item--current');
         const $next = $slideshow.find('.slideshow__control--next');
@@ -19,12 +21,44 @@
     }
 
 
+    /* Слайд к следующему айтему (для использования в стрелках и свайпах) */
+
+    function slideNext($slideshow) {
+        const current = $slideshow.find('.slideshow__item--current').index();
+        const total = $slideshow.find('.slideshow__item').length;
+
+        let slideTo = 0;
+
+        if (current + 1 === total) {
+            slideTo = 0;
+        } else {
+            slideTo = current + 1;
+        }
+        slideByIndex( $slideshow, slideTo);
+    }
+
+    /* Слайд к предыдущему айтему (для использования в стрелках и свайпах) */
+
+    function slidePrev($slideshow) {
+        const current = $slideshow.find('.slideshow__item--current').index();
+        const total = $slideshow.find('.slideshow__item').length;
+        let slideTo = 0;
+        if (current === 0) {
+            slideTo = total - 1;
+        } else {
+            slideTo = current - 1;
+        }
+        slideByIndex( $slideshow, slideTo);
+    }
+
+
+
     /* Навигация точками */
 
     $('.slideshow__dot').on('click', function () {
         const $this = $(this);
         const $slideshow = $this.parents('.slideshow');
-        slide( $slideshow, $this.index());
+        slideByIndex( $slideshow, $this.index());
         stopAutoScroll($slideshow);
     });
 
@@ -32,30 +66,15 @@
 
     /* Навигация стрелками */
 
-    $('.slideshow__control').on('click', function () {
-        const $this = $(this);
-        const $slideshow = $this.parents('.slideshow');
-        const current = $slideshow.find('.slideshow__item--current').index();
-        const total = $slideshow.find('.slideshow__item').length;
-        let slideTo = 0;
+    $('.slideshow__control--next').on('click', function () {
+        const $slideshow = $(this).parents('.slideshow');
+        slideNext($slideshow);
+        stopAutoScroll($slideshow);
+    });
 
-        if( $this.hasClass('slideshow__control--next') ) {
-            if (current + 1 === total) {
-                slideTo = 0;
-            } else {
-                slideTo = current + 1;
-            }
-        }
-
-        if( $this.hasClass('slideshow__control--prev') ) {
-            if (current === 0) {
-                slideTo = total - 1;
-            } else {
-                slideTo = current - 1;
-            }
-        }
-
-        slide( $(this).parents('.slideshow'), slideTo);
+    $('.slideshow__control--prev').on('click', function () {
+        const $slideshow = $(this).parents('.slideshow');
+        slidePrev($slideshow);
         stopAutoScroll($slideshow);
     });
 
@@ -66,32 +85,13 @@
     $('.slideshow').each(function () {
         const mc = new Hammer( $(this)[0] );
         mc.on("swipeleft", function (event) {
-
             const $slideshow = $(event.target).parents('.slideshow');
-            const current = $slideshow.find('.slideshow__item--current').index();
-            const total = $slideshow.find('.slideshow__item').length;
-            let slideTo = 0;
-
-            if (current + 1 === total) {
-                slideTo = 0;
-            } else {
-                slideTo = current + 1;
-            }
-
-            slide( $slideshow, slideTo);
+            slideNext($slideshow);
             stopAutoScroll($slideshow);
         });
         mc.on("swiperight", function () {
             const $slideshow = $(event.target).parents('.slideshow');
-            const current = $slideshow.find('.slideshow__item--current').index();
-            const total = $slideshow.find('.slideshow__item').length;
-            let slideTo = 0;
-            if (current === 0) {
-                slideTo = total - 1;
-            } else {
-                slideTo = current - 1;
-            }
-            slide( $slideshow, slideTo);
+            slidePrev($slideshow);
             stopAutoScroll($slideshow);
         });
     });
@@ -110,14 +110,7 @@
             let $slideshow = $(this);
 
             if( ! $slideshow.hasClass('slideshow--stop-autoscroll') ) {
-                let current = $slideshow.find('.slideshow__item--current').index();
-                let total = $slideshow.find('.slideshow__item').length;
-
-                if (current + 1 === total) {
-                    slide($slideshow, 0);
-                } else {
-                    slide($slideshow, current + 1);
-                }
+                slideNext($slideshow);
             }
 
         });
