@@ -1,6 +1,11 @@
 (function($) {
 
-    function slide($slideshow, slideTo) {
+    const $slideshowsAll = $('.slideshow');
+    const $slideshowsWithAutoscroll = $('.slideshow--autoscroll');
+
+    /* Слайд к любому айтему по индексу (для использования в кликах по точкам навигации и других функциях) */
+
+    function slideByIndex($slideshow, slideTo) {
         const $items = $slideshow.find('.slideshow__item')
         const $itemCurrent = $slideshow.find('.slideshow__item--current');
         const $next = $slideshow.find('.slideshow__control--next');
@@ -19,71 +24,116 @@
     }
 
 
-    /* Navigation using timeout */
+    /* Слайд к следующему айтему (для использования в стрелках и свайпах) */
 
-    /* This may need extra work if more than one autoscroll slideshow will appear on the page.
-     * Now we have one Interval for all slideshow and it should be rewritten the way
-     * each slideshow has it's own interval. But there is a problem that we don't
-     * have such thing as slideshow in JavaScript, they are just in DOM.
-     * So need to connect  "var timeout = setInterval"  with DOM so it can be
-     * clearInterval(timeout)  by clicking arrows or dots in DOM.
-     */
+    function slideNext($slideshow) {
+        const current = $slideshow.find('.slideshow__item--current').index();
+        const total = $slideshow.find('.slideshow__item').length;
+        const slideTo = (current + 1 !== total) ? current + 1 : 0;
+        slideByIndex( $slideshow, slideTo);
+    }
 
-    var timeout = setInterval(function () {
-        $('.slideshow--autoscroll').each(function () {
-            const $slideshow = $(this);
-            const current = $slideshow.find('.slideshow__item--current').index();
-            const total = $slideshow.find('.slideshow__item').length;
 
-            if (current + 1 === total) {
-                slide($slideshow, 0);
-            } else {
-                slide($slideshow, current + 1);
+    /* Слайд к предыдущему айтему (для использования в стрелках и свайпах) */
+
+    function slidePrev($slideshow) {
+        const current = $slideshow.find('.slideshow__item--current').index();
+        const total = $slideshow.find('.slideshow__item').length;
+        let slideTo = (current !== 0) ? current - 1 : total - 1;
+        slideByIndex( $slideshow, slideTo);
+    }
+
+
+
+    /* Навигация точками */
+
+    $('.slideshow__dot').on('click', function () {
+        const $this = $(this);
+        const $slideshow = $this.parents('.slideshow');
+        slideByIndex( $slideshow, $this.index());
+        stopAutoScroll($slideshow);
+    });
+
+
+
+    /* Навигация стрелками */
+
+    $('.slideshow__control--next').on('click', function () {
+        const $slideshow = $(this).parents('.slideshow');
+        slideNext($slideshow);
+        stopAutoScroll($slideshow);
+    });
+
+    $('.slideshow__control--prev').on('click', function () {
+        const $slideshow = $(this).parents('.slideshow');
+        slidePrev($slideshow);
+        stopAutoScroll($slideshow);
+    });
+
+
+    /* Навигация клавиатурой */
+
+    $(document).on('keyup', function(event) {
+        if(event.key === "ArrowRight") {
+            $slideshowsAll.each(function () {
+                slideNext($(this));
+                stopAutoScroll($(this));
+
+            })
+        }
+        if(event.key === "ArrowLeft") {
+            $slideshowsAll.each(function () {
+                slidePrev($(this));
+                stopAutoScroll($(this));
+            })
+        }
+    });
+
+
+
+    /* Навигация свайпами (Библиотека Hammer.js) */
+
+    $slideshowsAll.each(function () {
+        const mc = new Hammer( $(this)[0] );
+        mc.on("swipeleft", function (event) {
+            const $slideshow = $(event.target).parents('.slideshow');
+            slideNext($slideshow);
+            stopAutoScroll($slideshow);
+        });
+        mc.on("swiperight", function () {
+            const $slideshow = $(event.target).parents('.slideshow');
+            slidePrev($slideshow);
+            stopAutoScroll($slideshow);
+        });
+    });
+
+
+
+    /* Навигация временем (autoScrollInterval -- один для всех) */
+
+    let autoScrollInterval = setInterval(function () {
+
+        $slideshowsWithAutoscroll.each(function () {
+
+            let $slideshow = $(this);
+
+            if( ! $slideshow.hasClass('slideshow--stop-autoscroll') ) {
+                slideNext($slideshow);
             }
         });
+
     }, 5000);
 
 
+    function stopAutoScroll($slideshow) {
 
-    /* Navigation using dots */
+        $slideshow.addClass('slideshow--stop-autoscroll');
 
-    $('.slideshow__dot').on('click', function () {
-        slide( $(this).parents('.slideshow'), $(this).index());
-        clearInterval(timeout);
-    });
-
-
-    /* Navigation using arrows */
-
-    $('.slideshow__control').on('click', function () {
-        const $this = $(this);
-        const $slideshow = $this.parents('.slideshow');
-        const current = $slideshow.find('.slideshow__item--current').index();
-        const total = $slideshow.find('.slideshow__item').length;
-        let slideTo = 0;
-
-
-        /* Sliding */
-
-        if( $this.hasClass('slideshow__control--next') ) {
-            if (current + 1 === total) {
-                slideTo = 0;
-            } else {
-                slideTo = current + 1;
-            }
+        /* Если выключили все автоскроллы, то можно и глобальный интервал отменить: */
+        if( $slideshowsWithAutoscroll.length === $('.slideshow--stop-autoscroll').length) {
+            clearInterval(autoScrollInterval);
         }
-
-        if( $this.hasClass('slideshow__control--prev') ) {
-            if (current === 0) {
-                slideTo = total - 1;
-            } else {
-                slideTo = current - 1;
-            }
-        }
-
-        slide( $(this).parents('.slideshow'), slideTo);
-        clearInterval(timeout);
-    });
+    }
 
 
 })(jQuery);
