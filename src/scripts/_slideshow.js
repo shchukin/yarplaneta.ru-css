@@ -1,5 +1,8 @@
 (function($) {
 
+    const $slideshowsAll = $('.slideshow');
+    const $slideshowsWithAutoscroll = $('.slideshow--autoscroll');
+
     /* Слайд к любому айтему по индексу (для использования в кликах по точкам навигации и других функциях) */
 
     function slideByIndex($slideshow, slideTo) {
@@ -68,10 +71,29 @@
     });
 
 
+    /* Навигация клавиатурой */
+
+    $(document).on('keyup', function(event) {
+        if(event.key === "ArrowRight") {
+            $slideshowsAll.each(function () {
+                slideNext($(this));
+                stopAutoScroll($(this));
+
+            })
+        }
+        if(event.key === "ArrowLeft") {
+            $slideshowsAll.each(function () {
+                slidePrev($(this));
+                stopAutoScroll($(this));
+            })
+        }
+    });
+
+
 
     /* Навигация свайпами (Библиотека Hammer.js) */
 
-    $('.slideshow').each(function () {
+    $slideshowsAll.each(function () {
         const mc = new Hammer( $(this)[0] );
         mc.on("swipeleft", function (event) {
             const $slideshow = $(event.target).parents('.slideshow');
@@ -87,10 +109,7 @@
 
 
 
-
     /* Навигация временем (autoScrollInterval -- один для всех) */
-
-    const $slideshowsWithAutoscroll = $('.slideshow--autoscroll');
 
     let autoScrollInterval = setInterval(function () {
 
