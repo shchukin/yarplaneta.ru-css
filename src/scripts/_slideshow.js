@@ -86,4 +86,41 @@
     });
 
 
+
+    /* Navigation by swipes (Hammer library) */
+
+    $('.slideshow').each(function () {
+        const mc = new Hammer( $(this)[0] );
+        mc.on("swipeleft", function (event) {
+
+            const $slideshow = $(event.target).parents('.slideshow');
+            const current = $slideshow.find('.slideshow__item--current').index();
+            const total = $slideshow.find('.slideshow__item').length;
+            let slideTo = 0;
+
+            if (current + 1 === total) {
+                slideTo = 0;
+            } else {
+                slideTo = current + 1;
+            }
+
+            slide( $slideshow, slideTo);
+            clearInterval(timeout);
+        });
+        mc.on("swiperight", function () {
+            const $slideshow = $(event.target).parents('.slideshow');
+            const current = $slideshow.find('.slideshow__item--current').index();
+            const total = $slideshow.find('.slideshow__item').length;
+            let slideTo = 0;
+            if (current === 0) {
+                slideTo = total - 1;
+            } else {
+                slideTo = current - 1;
+            }
+            slide( $slideshow, slideTo);
+            clearInterval(timeout);
+        });
+    });
+
+
 })(jQuery);

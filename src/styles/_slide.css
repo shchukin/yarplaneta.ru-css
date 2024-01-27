@@ -17,6 +17,7 @@
         vertical-align: top;
         border-radius: 10px;
         background-color: var(--image-fallback);
+        pointer-events: none; /* Свайпы в hammer.js не срабатывают на картинках -- свайпаем сквозь */
     }
 
     .slide__content {
