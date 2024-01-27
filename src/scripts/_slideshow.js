@@ -19,7 +19,7 @@
     }
 
 
-    /* Navigation using timeout */
+    /* Навигация временем */
 
     /* This may need extra work if more than one autoscroll slideshow will appear on the page.
      * Now we have one Interval for all slideshow and it should be rewritten the way
@@ -29,7 +29,7 @@
      * clearInterval(timeout)  by clicking arrows or dots in DOM.
      */
 
-    var timeout = setInterval(function () {
+    const timeout = setInterval(function () {
         $('.slideshow--autoscroll').each(function () {
             const $slideshow = $(this);
             const current = $slideshow.find('.slideshow__item--current').index();
@@ -45,7 +45,7 @@
 
 
 
-    /* Navigation using dots */
+    /* Навигация точками */
 
     $('.slideshow__dot').on('click', function () {
         slide( $(this).parents('.slideshow'), $(this).index());
@@ -53,7 +53,7 @@
     });
 
 
-    /* Navigation using arrows */
+    /* Навигация стрелками */
 
     $('.slideshow__control').on('click', function () {
         const $this = $(this);
@@ -61,9 +61,6 @@
         const current = $slideshow.find('.slideshow__item--current').index();
         const total = $slideshow.find('.slideshow__item').length;
         let slideTo = 0;
-
-
-        /* Sliding */
 
         if( $this.hasClass('slideshow__control--next') ) {
             if (current + 1 === total) {
@@ -87,7 +84,7 @@
 
 
 
-    /* Navigation by swipes (Hammer library) */
+    /* Навигация свайпами (Библиотека Hammer.js) */
 
     $('.slideshow').each(function () {
         const mc = new Hammer( $(this)[0] );
