@@ -21,35 +21,38 @@
 
     /* Навигация временем */
 
-    /* This may need extra work if more than one autoscroll slideshow will appear on the page.
-     * Now we have one Interval for all slideshow and it should be rewritten the way
-     * each slideshow has it's own interval. But there is a problem that we don't
-     * have such thing as slideshow in JavaScript, they are just in DOM.
-     * So need to connect  "var timeout = setInterval"  with DOM so it can be
-     * clearInterval(timeout)  by clicking arrows or dots in DOM.
-     */
+    $('.slideshow--autoscroll').each(function () {
 
-    const timeout = setInterval(function () {
-        $('.slideshow--autoscroll').each(function () {
-            const $slideshow = $(this);
-            const current = $slideshow.find('.slideshow__item--current').index();
-            const total = $slideshow.find('.slideshow__item').length;
+        let $slideshow = $(this);
 
-            if (current + 1 === total) {
-                slide($slideshow, 0);
-            } else {
-                slide($slideshow, current + 1);
+        let interval = setInterval(function () {
+
+            if( ! $slideshow.hasClass('slideshow--stop-autoscroll') ) {
+                let current = $slideshow.find('.slideshow__item--current').index();
+                let total = $slideshow.find('.slideshow__item').length;
+
+                if (current + 1 === total) {
+                    slide($slideshow, 0);
+                } else {
+                    slide($slideshow, current + 1);
+                }
             }
-        });
-    }, 5000);
+        }, 1000);
+
+    });
 
 
+    function stopAutoScroll($slideshow) {
+        $slideshow.addClass('slideshow--stop-autoscroll');
+    }
 
     /* Навигация точками */
 
     $('.slideshow__dot').on('click', function () {
-        slide( $(this).parents('.slideshow'), $(this).index());
-        clearInterval(timeout);
+        const $this = $(this);
+        const $slideshow = $this.parents('.slideshow');
+        slide( $slideshow, $this.index());
+        stopAutoScroll($slideshow);
     });
 
 
@@ -79,7 +82,7 @@
         }
 
         slide( $(this).parents('.slideshow'), slideTo);
-        clearInterval(timeout);
+        stopAutoScroll($slideshow);
     });
 
 
@@ -102,7 +105,7 @@
             }
 
             slide( $slideshow, slideTo);
-            clearInterval(timeout);
+            stopAutoScroll($slideshow);
         });
         mc.on("swiperight", function () {
             const $slideshow = $(event.target).parents('.slideshow');
@@ -115,7 +118,7 @@
                 slideTo = current - 1;
             }
             slide( $slideshow, slideTo);
-            clearInterval(timeout);
+            stopAutoScroll($slideshow);
         });
     });
 
