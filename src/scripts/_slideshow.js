@@ -19,33 +19,6 @@
     }
 
 
-    /* Навигация временем */
-
-    $('.slideshow--autoscroll').each(function () {
-
-        let $slideshow = $(this);
-
-        let interval = setInterval(function () {
-
-            if( ! $slideshow.hasClass('slideshow--stop-autoscroll') ) {
-                let current = $slideshow.find('.slideshow__item--current').index();
-                let total = $slideshow.find('.slideshow__item').length;
-
-                if (current + 1 === total) {
-                    slide($slideshow, 0);
-                } else {
-                    slide($slideshow, current + 1);
-                }
-            }
-        }, 1000);
-
-    });
-
-
-    function stopAutoScroll($slideshow) {
-        $slideshow.addClass('slideshow--stop-autoscroll');
-    }
-
     /* Навигация точками */
 
     $('.slideshow__dot').on('click', function () {
@@ -54,6 +27,7 @@
         slide( $slideshow, $this.index());
         stopAutoScroll($slideshow);
     });
+
 
 
     /* Навигация стрелками */
@@ -121,6 +95,45 @@
             stopAutoScroll($slideshow);
         });
     });
+
+
+
+
+    /* Навигация временем -- интервал autoScrollInterval -- один для всех */
+
+    const $slideshowsWithAutoscroll = $('.slideshow--autoscroll');
+
+    let autoScrollInterval = setInterval(function () {
+
+        $slideshowsWithAutoscroll.each(function () {
+
+            let $slideshow = $(this);
+
+            if( ! $slideshow.hasClass('slideshow--stop-autoscroll') ) {
+                let current = $slideshow.find('.slideshow__item--current').index();
+                let total = $slideshow.find('.slideshow__item').length;
+
+                if (current + 1 === total) {
+                    slide($slideshow, 0);
+                } else {
+                    slide($slideshow, current + 1);
+                }
+            }
+
+        });
+
+    }, 1000);
+
+
+    function stopAutoScroll($slideshow) {
+
+        $slideshow.addClass('slideshow--stop-autoscroll');
+
+        /* Если выключили все автоскроллы, то можно и глобальный интервал отменить: */
+        if( $slideshowsWithAutoscroll.length === $('.slideshow--stop-autoscroll').length) {
+            clearInterval(autoScrollInterval);
+        }
+    }
 
 
 })(jQuery);
