@@ -26,28 +26,17 @@
     function slideNext($slideshow) {
         const current = $slideshow.find('.slideshow__item--current').index();
         const total = $slideshow.find('.slideshow__item').length;
-
-        let slideTo = 0;
-
-        if (current + 1 === total) {
-            slideTo = 0;
-        } else {
-            slideTo = current + 1;
-        }
+        const slideTo = (current + 1 !== total) ? current + 1 : 0;
         slideByIndex( $slideshow, slideTo);
     }
+
 
     /* Слайд к предыдущему айтему (для использования в стрелках и свайпах) */
 
     function slidePrev($slideshow) {
         const current = $slideshow.find('.slideshow__item--current').index();
         const total = $slideshow.find('.slideshow__item').length;
-        let slideTo = 0;
-        if (current === 0) {
-            slideTo = total - 1;
-        } else {
-            slideTo = current - 1;
-        }
+        let slideTo = (current !== 0) ? current - 1 : total - 1;
         slideByIndex( $slideshow, slideTo);
     }
 
@@ -99,7 +88,7 @@
 
 
 
-    /* Навигация временем -- интервал autoScrollInterval -- один для всех */
+    /* Навигация временем (autoScrollInterval -- один для всех) */
 
     const $slideshowsWithAutoscroll = $('.slideshow--autoscroll');
 
@@ -112,7 +101,6 @@
             if( ! $slideshow.hasClass('slideshow--stop-autoscroll') ) {
                 slideNext($slideshow);
             }
-
         });
 
     }, 5000);
