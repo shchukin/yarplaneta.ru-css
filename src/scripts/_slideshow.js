@@ -122,7 +122,7 @@
 
         });
 
-    }, 1000);
+    }, 5000);
 
 
     function stopAutoScroll($slideshow) {
