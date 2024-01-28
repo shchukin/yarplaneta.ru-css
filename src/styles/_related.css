@@ -102,126 +102,151 @@
 
 
 
+/* Только на десктопах */
 
 
-
-.related__background {
-    position: relative;
-    backdrop-filter: blur(4px);
-    margin-left: -46px;
-    margin-right: -46px;
-    border-radius: 12px;
-    overflow: hidden; /* Обрезаем .related__left-angle и .related__right-angle */
-}
-    .related__noise {
-        background-image: url("../images/related-noise/related-noise@1x.png");
-        background-size: 1141px 712px;
-        background-repeat: no-repeat;
-        background-position: left top;
-        border-radius: 12px;
-    }
-
-    @media (min-resolution: 1.5dppx) {
-        .related__noise {
-            background-image: url("../images/related-noise/related-noise@1.5x.png");
-        }
-    }
-
-    @media (min-resolution: 2dppx) {
-        .related__noise {
-            background-image: url("../images/related-noise/related-noise@2x.png");
-        }
-    }
-
-    @media (min-resolution: 3dppx) {
-        .related__noise {
-            background-image: url("../images/related-noise/related-noise@3x.png");
-        }
-    }
-        .related__bg-color {
-            position: relative;
-            background-color: rgb(194 217 255 / 40%);
-            box-shadow: inset 0 0 0 5px #ADBCFC;
-            padding: 51px 46px 75px;
-            border-radius: 12px;
-        }
-            .related__top-trapezoid {
-                position: absolute;
-                left: 213px;
-                top: 0;
-                width: 292px;
-                height: 0;
-                border: 16px solid transparent;
-                border-top-color: #ADBCFC;
-                pointer-events: none;
-            }
-
-            .related__bottom-trapezoid {
-                position: absolute;
-                right: 122px;
-                bottom: 0;
-                width: 259px;
-                height: 0;
-                border: 14px solid transparent;
-                border-bottom-color: #ADBCFC;
-                pointer-events: none;
-            }
-
-            .related__left-angle {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                border: 15px solid transparent;
-                border-bottom-color: #ADBCFC;
-                border-left-color: #ADBCFC;
-                pointer-events: none;
-            }
-
-            .related__right-angle {
-                position: absolute;
-                right: 0;
-                top: 0;
-                border: 15px solid transparent;
-                border-top-color: #ADBCFC;
-                border-right-color: #ADBCFC;
-                pointer-events: none;
-            }
-
-
-
-@media (1500px <= width) {
+@media (740px <= width) {
 
     .related__background {
-        margin-left: -62px;
-        margin-right: -62px;
-        border-radius: 16px;
+        --related-shift: 46px;
+    }
+
+    .related__background {
+        position: relative;
+        backdrop-filter: blur(4px);
+        border-radius: 12px;
+        overflow: hidden; /* Обрезаем .related__left-angle и .related__right-angle */
+    }
+
+    /* Если достаточно ширины, то можно вытаскивать карточку за границы контефнера: */
+    @media (1340px <= width) {
+        .related__background {
+            margin-left: calc(-1 * var(--related-shift));
+            margin-right: calc(-1 * var(--related-shift));
+        }
     }
         .related__noise {
-            background-size: 1522px 950px;
-            border-radius: 16px;
+            background-image: url("../images/related-noise/related-noise@1x.png");
+            background-size: 1141px 712px;
+            background-repeat: no-repeat;
+            background-position: left top;
+            border-radius: 12px;
+        }
+
+        @media (min-resolution: 1.5dppx) {
+            .related__noise {
+                background-image: url("../images/related-noise/related-noise@1.5x.png");
+            }
+        }
+
+        @media (min-resolution: 2dppx) {
+            .related__noise {
+                background-image: url("../images/related-noise/related-noise@2x.png");
+            }
+        }
+
+        @media (min-resolution: 3dppx) {
+            .related__noise {
+                background-image: url("../images/related-noise/related-noise@3x.png");
+            }
         }
             .related__bg-color {
+                position: relative;
+                background-color: rgb(194 217 255 / 40%);
                 box-shadow: inset 0 0 0 5px #ADBCFC;
-                padding: 68px 62px 100px;
-                border-radius: 16px;
+                padding: 51px var(--related-shift) 75px;
+                border-radius: 12px;
             }
                 .related__top-trapezoid {
-                    left: 284px;
-                    width: 389px;
-                    border-width: 21px;
+                    position: absolute;
+                    left: 213px;
+                    top: 0;
+                    width: 292px;
+                    height: 0;
+                    border: 16px solid transparent;
+                    border-top-color: #ADBCFC;
+                    pointer-events: none;
                 }
 
                 .related__bottom-trapezoid {
-                    right: 163px;
-                    width: 346px;
-                    border-width: 19px;
+                    position: absolute;
+                    right: 122px;
+                    bottom: 0;
+                    width: 259px;
+                    height: 0;
+                    border: 14px solid transparent;
+                    border-bottom-color: #ADBCFC;
+                    pointer-events: none;
                 }
 
                 .related__left-angle {
-                    border-width: 20px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    border: 15px solid transparent;
+                    border-bottom-color: #ADBCFC;
+                    border-left-color: #ADBCFC;
+                    pointer-events: none;
                 }
 
                 .related__right-angle {
-                    border-width: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border: 15px solid transparent;
+                    border-top-color: #ADBCFC;
+                    border-right-color: #ADBCFC;
+                    pointer-events: none;
                 }
+
+
+
+    @media (1500px <= width) {
+
+        .related__background {
+            --related-shift: 62px;
+        }
+
+        .related__background {
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: 16px;
+        }
+
+        /* Если достаточно ширины, то можно вытаскивать карточку за границы контефнера: */
+        @media (1640px <= width) {
+            .related__background {
+                margin-left: calc(-1 * var(--related-shift));
+                margin-right: calc(-1 * var(--related-shift));
+            }
+        }
+            .related__noise {
+                background-size: 1522px 950px;
+                border-radius: 16px;
+            }
+                .related__bg-color {
+                    box-shadow: inset 0 0 0 5px #ADBCFC;
+                    padding: 68px var(--related-shift) 100px;
+                    border-radius: 16px;
+                }
+                    .related__top-trapezoid {
+                        left: 284px;
+                        width: 389px;
+                        border-width: 21px;
+                    }
+
+                    .related__bottom-trapezoid {
+                        right: 163px;
+                        width: 346px;
+                        border-width: 19px;
+                    }
+
+                    .related__left-angle {
+                        border-width: 20px;
+                    }
+
+                    .related__right-angle {
+                        border-width: 20px;
+                    }
+    }
 }
