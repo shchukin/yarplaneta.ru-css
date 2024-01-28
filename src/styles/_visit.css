@@ -1,7 +1,7 @@
 .visit {
     margin-top: 80px;
     display: grid;
-    grid-template-columns: 40.8571% 1fr;
+    grid-template-columns: 40.8571% minmax(0, 1fr);
     gap: 32px;
 }
     .visit__intro {

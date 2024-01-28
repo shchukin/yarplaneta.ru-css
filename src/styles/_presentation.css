@@ -409,7 +409,7 @@
 
     .presentation--summarized-schedule {
         display: grid;
-        grid-template-columns: 130px 1fr;
+        grid-template-columns: 130px minmax(0, 1fr);
         grid-template-areas: "left-top right-top" "bottom bottom";
         padding-left: 0;
         min-height: 0;

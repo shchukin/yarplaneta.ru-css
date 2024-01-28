@@ -17,7 +17,7 @@
     .related__list {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 20px;
     }
 
@@ -79,7 +79,7 @@
 @media (740px <= width) {
 
     .related--one-column .related__list {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 
@@ -92,7 +92,7 @@
 @media (740px <= width) {
 
     .related--two-columns .related__list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 

@@ -1,7 +1,7 @@
 .about {
     display: grid;
     gap: 32px;
-    grid-template-columns: 282fr 866fr;
+    grid-template-columns: minmax(0, 282fr) minmax(0, 866fr);
 }
     .about__sidebar {
 
@@ -17,7 +17,7 @@
 
     .about {
         gap: 52px;
-        grid-template-columns: 332fr 1014fr;
+        grid-template-columns: minmax(0, 332fr) minmax(0, 1014fr);
     }
         .about__sidebar {
 

@@ -13,7 +13,7 @@
     .blog__body {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 344fr 836fr;
+        grid-template-columns: minmax(0, 344fr) minmax(0, 836fr);
     }
         .blog__sidebar {
             position: relative;
@@ -36,7 +36,7 @@
         }
             .blog__list {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 20px;
             }
 
@@ -66,7 +66,7 @@
         .blog__body {
             margin-top: 40px;
             /*display: grid;*/
-            grid-template-columns: 410fr 988fr;
+            grid-template-columns: minmax(0, 410fr) minmax(0, 988fr);
         }
             .blog__sidebar {
                 /*position: relative;*/
@@ -132,7 +132,7 @@
                 padding-left: 0;
             }
                 .blog__list {
-                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
                     gap: var(--container-padding);
                 }
 

@@ -36,7 +36,7 @@
             margin-top: 24px;
             display: grid;
             gap: 100px;
-            grid-template-columns: 1fr 40.7142%;
+            grid-template-columns: minmax(0, 1fr) 40.7142%;
         }
             .program__preview {
                 padding-top: 4px;

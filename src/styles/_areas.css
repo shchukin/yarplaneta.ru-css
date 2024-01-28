@@ -17,7 +17,7 @@
     .areas__list {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 20px;
     }
 
@@ -39,7 +39,7 @@
     .areas__plan {
         margin-top: 32px;
         display: grid;
-        grid-template-columns: 734px 1fr;
+        grid-template-columns: 734px minmax(0, 1fr);
         gap: 48px;
     }
         .areas__svg {
@@ -111,7 +111,7 @@
 
         .areas__plan {
             margin-top: 40px;
-            grid-template-columns: 874px 1fr;
+            grid-template-columns: 874px minmax(0, 1fr);
             gap: 60px;
         }
             .areas__svg {
@@ -164,7 +164,7 @@
         .areas__list {
             margin-top: 24px;
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(0, 1fr);
         }
 
         .areas__article {
