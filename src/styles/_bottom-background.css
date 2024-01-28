@@ -66,6 +66,6 @@
 @media (width < 740px) {
     .bottom-background {
         background-image: url("../images/backgrounds/bottom-background-smartphone.svg");
-        background-size: 740px 3720px;
+        background-size: 838px 3720px;
     }
 }
