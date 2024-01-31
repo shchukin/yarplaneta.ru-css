@@ -18,6 +18,10 @@
                         vertical-align: top;
                     }
 
+                .header__accessibility {
+
+                }
+
                 .header__burger {
 
                 }
@@ -119,6 +123,26 @@
                                 height: 62px;
                             }
 
+                    .header__accessibility {
+                        position: absolute;
+                        right: 0;
+                        top: 35px;
+                        width: 42px;
+                        height: 32px;
+                        background-image: url("../vectors/eye.svg");
+                        background-size: 42px 30px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        text-indent: 200%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        transition: top 800ms var(--ease-out-quint);
+                    }
+
+                    .page-scrolled .header__accessibility {
+                        top: -100px;
+                    }
+
                     .header__burger {
                         display: none;
                     }
@@ -139,7 +163,7 @@
 
                     .header__data {
                         position: absolute;
-                        right: 0;
+                        right: 64px;
                         top: 26px;
                         display: flex;
                         align-items: center;
@@ -210,6 +234,11 @@
                             .page-scrolled .header__emblem {
                                 height: 73px;
                             }
+
+
+                    .header__accessibility {
+                        top: 48px;
+                    }
 
                     .header__mobile-dropdown {
 
@@ -285,9 +314,10 @@
                         width: 100%;
                         display: flex;
                         align-items: center;
+                        justify-content: flex-end;
                     }
                         .header__logo {
-
+                            margin-right: auto;
                         }
 
                         .burger-expanded .header__logo {
@@ -300,11 +330,26 @@
                                 height: 50px;
                             }
 
+                        .header__accessibility {
+                            width: 42px;
+                            height: 50px;
+                            background-image: url("../vectors/eye.svg");
+                            background-size: 35px 24px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+
+                        .burger-expanded .header__accessibility {
+                            display: none;
+                        }
+
                         .header__burger {
                             /*display: none;*/
                             border: none;
                             margin-right: -11px;
-                            margin-left: auto;
                             width: 60px;
                             height: 50px;
                             padding: 0;
