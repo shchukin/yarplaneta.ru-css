@@ -161,7 +161,7 @@
 
 
 .page-scrolled .header__desktop-panel::before {
-    /*background-color: rgb(39 38 64 / 80%);*/
+    /*background-color: rgb(39 38 64 / 60%);*/
     background-color: rgb(20 19 30 / 60%);
     backdrop-filter: blur(4px);
     box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
@@ -264,7 +264,7 @@
                 }
 
                 .page-scrolled:not(.burger-expanded) .header__mobile-panel {
-                    /*background-color: rgb(39 38 64 / 80%);*/
+                    /*background-color: rgb(39 38 64 / 60%);*/
                     background-color: rgb(20 19 30 / 60%);
                     backdrop-filter: blur(4px);
                     box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
