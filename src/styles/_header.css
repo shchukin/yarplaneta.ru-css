@@ -1,110 +1,135 @@
 .header {
 
 }
-    .header__wrap {
-
-    }
-        .header__mobile-panel {
-
-        }
-            .header__logo {
-                display: inline-block;
-                vertical-align: top;
-            }
-                .header__emblem {
-
-                }
-
-            .header__burger {
-
-            }
-
-        .header__mobile-dropdown {
-
-        }
-            .header__navigation {
-
-            }
-
-            .header__data {
-
-            }
-                .header__info {
-
-                }
-                    .header__day-phases {
-
-                    }
-
-                    .header__moon-phases {
-
-                    }
-
-                .header__languages {
-
-                }
-
-
-
-@media (740px <= width) {
-
-    .header {
+    .header__desktop-panel {
 
     }
         .header__wrap {
-            position: relative;
+
         }
             .header__mobile-panel {
 
             }
                 .header__logo {
-                    position: absolute;
-                    left: 0;
-                    top: 26px;
+                    display: inline-block;
+                    vertical-align: top;
                 }
                     .header__emblem {
-                        flex-shrink: 0;
-                        width: 240px;
-                        height: 82px;
+
                     }
 
                 .header__burger {
-                    display: none;
+
                 }
 
             .header__mobile-dropdown {
-                padding-top: 26px;
-                padding-bottom: 26px;
-                flex-grow: 1;
-                display: flex;
-                flex-direction: column;
+
             }
                 .header__navigation {
 
                 }
 
                 .header__data {
-                    order: -1;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+
                 }
                     .header__info {
-                        display: flex;
-                        align-items: center;
+
                     }
                         .header__day-phases {
 
                         }
 
                         .header__moon-phases {
-                            margin-left: 18px;
+
                         }
 
                     .header__languages {
-                        margin-left: 20px;
-                        margin-right: -4px;
+
                     }
+
+
+
+@media (740px <= width) {
+
+    .header {
+        height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
+    }
+        .header__desktop-panel {
+
+        }
+
+        .header__desktop-panel {
+            position: fixed;
+            z-index: 500;
+            left: 0;
+            top: 0;
+            right: 0;
+            transition: background-color 300ms ease,
+                        backdrop-filter 300ms ease,
+                        box-shadow 300ms ease;
+        }
+
+        .page-scrolled .header__desktop-panel {
+            /*background-color: rgb(39 38 64 / 80%);*/
+            background-color: rgb(20 19 30 / 60%);
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+        }
+
+            .header__wrap {
+                position: relative;
+            }
+                .header__mobile-panel {
+
+                }
+                    .header__logo {
+                        position: absolute;
+                        left: 0;
+                        top: 26px;
+                    }
+                        .header__emblem {
+                            flex-shrink: 0;
+                            width: 240px;
+                            height: 82px;
+                        }
+
+                    .header__burger {
+                        display: none;
+                    }
+
+                .header__mobile-dropdown {
+                    padding-top: 26px;
+                    padding-bottom: 26px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .header__navigation {
+
+                    }
+
+                    .header__data {
+                        order: -1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                    }
+                        .header__info {
+                            display: flex;
+                            align-items: center;
+                        }
+                            .header__day-phases {
+
+                            }
+
+                            .header__moon-phases {
+                                margin-left: 18px;
+                            }
+
+                        .header__languages {
+                            margin-left: 20px;
+                            margin-right: -4px;
+                        }
 }
 
 
@@ -114,156 +139,37 @@
     .header {
 
     }
-        .header__wrap {
+        .header__desktop-panel {
 
         }
-            .header__mobile-panel {
+            .header__wrap {
 
             }
-                .header__logo {
+                .header__mobile-panel {
 
-                }
-                    .header__emblem {
-                        /*flex-shrink: 0;*/
-                        margin-top: 15px;
-                        width: 252px;
-                        height: 86px;
-                    }
-
-                .header__mobile-dropdown {
-                    padding-top: 36px;
-                    padding-bottom: 36px;
-                    /*flex-grow: 1;*/
-                    /*display: flex;*/
-                    /*flex-direction: column;*/
-                }
-                    .header__navigation {
-
-                    }
-
-                    .header__data {
-                        /*order: -1;*/
-                        /*display: flex;*/
-                        /*align-items: center;*/
-                        /*justify-content: flex-end;*/
-                    }
-                        .header__info {
-                            /*display: flex;*/
-                            /*align-items: center;*/
-                        }
-                            .header__day-phases {
-
-                            }
-
-                            .header__moon-phases {
-                                margin-left: 36px;
-                            }
-
-                        .header__languages {
-                            margin-left: 40px;
-                            /*margin-right: -4px;*/
-                        }
-}
-
-
-
-@media (width < 740px) {
-
-    .header {
-
-    }
-        .header__wrap {
-
-        }
-            .header__mobile-panel {
-                position: fixed;
-                z-index: 1000;
-                left: 0;
-                top: 0;
-                right: 0;
-                height: var(--mobile-header-height);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                transition: background-color 300ms ease,
-                backdrop-filter 300ms ease,
-                box-shadow 300ms ease;
-            }
-
-            .page-scrolled:not(.burger-expanded) .header__mobile-panel {
-                background-color: rgb(39 38 64 / 80%);
-                backdrop-filter: blur(4px);
-                box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
-            }
-
-            .burger-expanded .header__mobile-panel {
-                pointer-events: none;
-            }
-                .header__mobile-wrap {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
                 }
                     .header__logo {
 
                     }
-
-                    .burger-expanded .header__logo {
-                        display: none;
-                    }
                         .header__emblem {
                             /*flex-shrink: 0;*/
-                            vertical-align: top;
-                            width: 147px;
-                            height: 50px;
+                            margin-top: 15px;
+                            width: 252px;
+                            height: 86px;
                         }
 
-                    .header__burger {
-                        /*display: none;*/
-                        border: none;
-                        margin-right: -11px;
-                        margin-left: auto;
-                        width: 60px;
-                        height: 50px;
-                        padding: 0;
-                        background-color: transparent;
-                        background-image: url("../vectors/header-burger.svg");
-                        background-size: 37px 24px;
-                        background-repeat: no-repeat;
-                        background-position: center center;
-                        text-indent: 200%;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        cursor: pointer;
-                    }
-
-                    .burger-expanded .header__burger {
-                        background-image: url("../vectors/header-burger-expanded.svg");
-                        background-size: 26px 26px;
-                        pointer-events: auto;
-                    }
-
                     .header__mobile-dropdown {
-                        display: none;
-                        padding-top: var(--mobile-header-height);
-                        padding-bottom: var(--mobile-header-height);
+                        padding-top: 36px;
+                        padding-bottom: 36px;
                         /*flex-grow: 1;*/
                         /*display: flex;*/
                         /*flex-direction: column;*/
                     }
-
-                    .burger-expanded .header__mobile-dropdown {
-                        display: block;
-                        animation: slide-down-longer var(--transition-show);
-                    }
                         .header__navigation {
-                            margin-top: -20px;
+
                         }
 
                         .header__data {
-                            margin-top: 32px;
-                            border-top: 1px solid #C2D9FF;
-                            padding-top: 32px;
                             /*order: -1;*/
                             /*display: flex;*/
                             /*align-items: center;*/
@@ -278,17 +184,142 @@
                                 }
 
                                 .header__moon-phases {
-                                    /*margin-left: 18px;*/
-                                    margin-top: 24px;
+                                    margin-left: 36px;
                                 }
 
                             .header__languages {
-                                /*margin-left: 20px;*/
+                                margin-left: 40px;
                                 /*margin-right: -4px;*/
+                            }
+}
+
+
+
+@media (width < 740px) {
+
+    .header {
+
+    }
+        .header__desktop-panel {
+
+        }
+            .header__wrap {
+
+            }
+                .header__mobile-panel {
+                    position: fixed;
+                    z-index: 1000;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    height: var(--mobile-header-height);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transition: background-color 300ms ease,
+                                backdrop-filter 300ms ease,
+                                box-shadow 300ms ease;
+                }
+
+                .page-scrolled:not(.burger-expanded) .header__mobile-panel {
+                    background-color: rgb(39 38 64 / 80%);
+                    backdrop-filter: blur(4px);
+                    box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+                }
+
+                .burger-expanded .header__mobile-panel {
+                    pointer-events: none;
+                }
+                    .header__mobile-wrap {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                        .header__logo {
+
+                        }
+
+                        .burger-expanded .header__logo {
+                            display: none;
+                        }
+                            .header__emblem {
+                                /*flex-shrink: 0;*/
+                                vertical-align: top;
+                                width: 147px;
+                                height: 50px;
+                            }
+
+                        .header__burger {
+                            /*display: none;*/
+                            border: none;
+                            margin-right: -11px;
+                            margin-left: auto;
+                            width: 60px;
+                            height: 50px;
+                            padding: 0;
+                            background-color: transparent;
+                            background-image: url("../vectors/header-burger.svg");
+                            background-size: 37px 24px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+
+                        .burger-expanded .header__burger {
+                            background-image: url("../vectors/header-burger-expanded.svg");
+                            background-size: 26px 26px;
+                            pointer-events: auto;
+                        }
+
+                        .header__mobile-dropdown {
+                            display: none;
+                            padding-top: var(--mobile-header-height);
+                            padding-bottom: var(--mobile-header-height);
+                            /*flex-grow: 1;*/
+                            /*display: flex;*/
+                            /*flex-direction: column;*/
+                        }
+
+                        .burger-expanded .header__mobile-dropdown {
+                            display: block;
+                            animation: slide-down-longer var(--transition-show);
+                        }
+                            .header__navigation {
+                                margin-top: -20px;
+                            }
+
+                            .header__data {
                                 margin-top: 32px;
                                 border-top: 1px solid #C2D9FF;
                                 padding-top: 32px;
+                                /*order: -1;*/
+                                /*display: flex;*/
+                                /*align-items: center;*/
+                                /*justify-content: flex-end;*/
                             }
+                                .header__info {
+                                    /*display: flex;*/
+                                    /*align-items: center;*/
+                                }
+                                    .header__day-phases {
+
+                                    }
+
+                                    .header__moon-phases {
+                                        /*margin-left: 18px;*/
+                                        margin-top: 24px;
+                                    }
+
+                                .header__languages {
+                                    /*margin-left: 20px;*/
+                                    /*margin-right: -4px;*/
+                                    margin-top: 32px;
+                                    border-top: 1px solid #C2D9FF;
+                                    padding-top: 32px;
+                                }
 }
 
 
