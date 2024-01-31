@@ -11,7 +11,7 @@
     --transition-show: 1200ms var(--ease-out-quint);
     --image-fallback: #272640;
     --container-padding: 40px;
-    --desktop-header-height: 140px;
+    --desktop-header-height: 164px;
     --mobile-header-height: 82px;
     --input-border: #FFFFFF;
     --input-border-hover-and-focus: #8E8FFA;
@@ -28,7 +28,7 @@
 @media (width < 1500px) {
     :root {
         --container-padding: 30px;
-        --desktop-header-height: 170px;
+        --desktop-header-height: 136px;
         --body-font-size: 16px;
         --body-line-height: 22px;
         --footer-margin: 114px;

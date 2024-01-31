@@ -56,6 +56,7 @@
     }
         .header__desktop-panel {
             position: relative;
+            height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
         }
 
         .header__desktop-panel {
@@ -79,15 +80,9 @@
                             box-shadow 300ms ease;
             }
 
-            .page-scrolled .header__desktop-panel::before {
-                /*background-color: rgb(39 38 64 / 80%);*/
-                background-color: rgb(20 19 30 / 60%);
-                backdrop-filter: blur(4px);
-                box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
-            }
-
             .header__wrap {
                 position: relative;
+                height: 100%;
             }
                 .header__mobile-panel {
 
@@ -108,18 +103,18 @@
                     }
 
                 .header__mobile-dropdown {
-                    padding-top: 26px;
-                    padding-bottom: 26px;
-                    flex-grow: 1;
-                    display: flex;
-                    flex-direction: column;
+
                 }
                     .header__navigation {
-
+                        position: absolute;
+                        right: 0;
+                        bottom: 22px;
                     }
 
                     .header__data {
-                        order: -1;
+                        position: absolute;
+                        right: 0;
+                        top: 26px;
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
@@ -140,6 +135,15 @@
                             margin-left: 20px;
                             margin-right: -4px;
                         }
+}
+
+
+
+.page-scrolled .header__desktop-panel::before {
+    /*background-color: rgb(39 38 64 / 80%);*/
+    background-color: rgb(20 19 30 / 60%);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
 }
 
 
@@ -169,21 +173,14 @@
                         }
 
                     .header__mobile-dropdown {
-                        padding-top: 36px;
-                        padding-bottom: 36px;
-                        /*flex-grow: 1;*/
-                        /*display: flex;*/
-                        /*flex-direction: column;*/
+
                     }
                         .header__navigation {
-
+                            bottom: 30px;
                         }
 
                         .header__data {
-                            /*order: -1;*/
-                            /*display: flex;*/
-                            /*align-items: center;*/
-                            /*justify-content: flex-end;*/
+                            top: 36px;
                         }
                             .header__info {
                                 /*display: flex;*/
