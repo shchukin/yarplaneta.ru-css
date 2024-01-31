@@ -15,7 +15,7 @@
                     vertical-align: top;
                 }
                     .header__emblem {
-
+                        vertical-align: top;
                     }
 
                 .header__burger {
@@ -55,17 +55,18 @@
         height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
     }
         .header__desktop-panel {
-            position: relative;
-            height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
-        }
-
-        .header__desktop-panel {
             position: fixed;
             z-index: 500;
             left: 0;
             top: 0;
             right: 0;
+            height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
         }
+
+        .page-scrolled .header__desktop-panel {
+            height: 96px;
+        }
+
             /* blur в выпадайках не работает, если завёрнуто в blur шапки. Делаем blur на отдельном слое: */
             .header__desktop-panel::before {
                 content: "";
@@ -90,13 +91,22 @@
                     .header__logo {
                         position: absolute;
                         left: 0;
-                        top: 26px;
+                        top: 27px;
+                        transition: top 500ms var(--ease-out-quint);
+                    }
+
+                    .page-scrolled .header__logo {
+                        top: 16px;
                     }
                         .header__emblem {
                             flex-shrink: 0;
-                            width: 240px;
-                            height: 82px;
+                            width: auto !important;
+                            /*height: 82px;*/
+                            transition: height 500ms var(--ease-out-quint);
                         }
+                            .page-scrolled .header__emblem {
+                                height: 64px;
+                            }
 
                     .header__burger {
                         display: none;
@@ -108,7 +118,12 @@
                     .header__navigation {
                         position: absolute;
                         right: 0;
-                        bottom: 22px;
+                        top: 70px;
+                        transition: top 800ms var(--ease-out-quint);
+                    }
+
+                    .page-scrolled .header__navigation {
+                        top: 22px
                     }
 
                     .header__data {
@@ -118,7 +133,13 @@
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
+                        transition: top 800ms var(--ease-out-quint);
                     }
+
+                    .page-scrolled .header__data {
+                        top: -100px;
+                    }
+
                         .header__info {
                             display: flex;
                             align-items: center;
@@ -156,6 +177,10 @@
         .header__desktop-panel {
 
         }
+
+        .page-scrolled .header__desktop-panel {
+            height: 125px;
+        }
             .header__wrap {
 
             }
@@ -163,20 +188,30 @@
 
                 }
                     .header__logo {
+                        top: 36px;
+                    }
 
+                    .page-scrolled .header__logo {
+                        top: 25px;
                     }
                         .header__emblem {
                             /*flex-shrink: 0;*/
-                            margin-top: 15px;
                             width: 252px;
                             height: 86px;
                         }
+                            .page-scrolled .header__emblem {
+                                height: 75px;
+                            }
 
                     .header__mobile-dropdown {
 
                     }
                         .header__navigation {
-                            bottom: 30px;
+                            top: 84px;
+                        }
+
+                        .page-scrolled .header__navigation {
+                            top: 33px
                         }
 
                         .header__data {
