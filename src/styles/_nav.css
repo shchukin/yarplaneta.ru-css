@@ -288,6 +288,10 @@
             transition: text-decoration-color var(--transition-hover);
         }
 
+        .nav--footer .nav__item:has(.nav__menu) .nav__link-heading {
+            color: #A39BCD;
+        }
+
         .nav--footer .nav__item:not(:has(.nav__menu)) .nav__link-heading:hover {
             text-decoration-color: currentColor;
         }
