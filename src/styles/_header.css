@@ -55,7 +55,7 @@
         height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
     }
         .header__desktop-panel {
-
+            position: relative;
         }
 
         .header__desktop-panel {
@@ -64,17 +64,27 @@
             left: 0;
             top: 0;
             right: 0;
-            transition: background-color 300ms ease,
-                        backdrop-filter 300ms ease,
-                        box-shadow 300ms ease;
         }
+            /* blur в выпадайках не работает, если завёрнуто в blur шапки. Делаем blur на отдельном слое: */
+            .header__desktop-panel::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                transition: background-color 300ms ease,
+                            backdrop-filter 300ms ease,
+                            box-shadow 300ms ease;
+            }
 
-        .page-scrolled .header__desktop-panel {
-            /*background-color: rgb(39 38 64 / 80%);*/
-            background-color: rgb(20 19 30 / 60%);
-            backdrop-filter: blur(4px);
-            box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
-        }
+            .page-scrolled .header__desktop-panel::before {
+                /*background-color: rgb(39 38 64 / 80%);*/
+                background-color: rgb(20 19 30 / 60%);
+                backdrop-filter: blur(4px);
+                box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+            }
 
             .header__wrap {
                 position: relative;
@@ -222,7 +232,8 @@
                 }
 
                 .page-scrolled:not(.burger-expanded) .header__mobile-panel {
-                    background-color: rgb(39 38 64 / 80%);
+                    /*background-color: rgb(39 38 64 / 80%);*/
+                    background-color: rgb(20 19 30 / 60%);
                     backdrop-filter: blur(4px);
                     box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
                 }
