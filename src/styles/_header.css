@@ -91,7 +91,7 @@
                     .header__logo {
                         position: absolute;
                         left: 0;
-                        top: 27px;
+                        top: 28px;
                         transition: top 500ms var(--ease-out-quint);
                     }
 
@@ -105,7 +105,7 @@
                             transition: height 500ms var(--ease-out-quint);
                         }
                             .page-scrolled .header__emblem {
-                                height: 64px;
+                                height: 62px;
                             }
 
                     .header__burger {
@@ -188,7 +188,7 @@
 
                 }
                     .header__logo {
-                        top: 36px;
+                        top: 37px;
                     }
 
                     .page-scrolled .header__logo {
@@ -200,7 +200,7 @@
                             height: 86px;
                         }
                             .page-scrolled .header__emblem {
-                                height: 75px;
+                                height: 73px;
                             }
 
                     .header__mobile-dropdown {
