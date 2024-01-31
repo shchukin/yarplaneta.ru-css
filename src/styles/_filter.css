@@ -54,8 +54,8 @@
         opacity: 0;
         visibility: hidden;
         /* Конфликтует с blur: */
-        /*transition: opacity var(--transition-dropdown),*/
-        /*            visibility var(--transition-dropdown);*/
+        transition: opacity var(--transition-dropdown),
+                    visibility var(--transition-dropdown);
     }
         .filter__inner {
             padding-top: 6px;
@@ -63,7 +63,7 @@
             background-color: rgb(142 143 250 / 55%);
             border: 2px solid #8E8FFA;
             border-radius: 6px;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(8px);
         }
             .filter__option {
                 display: inline-block;
