@@ -98,20 +98,17 @@
         position: absolute;
         z-index: 500;
         left: 0;
-        padding-top: 20px;
+        margin-top: 20px;
         opacity: 0;
         visibility: hidden;
-        /* Конфликтует с blur: */
+        background-color: rgb(142 143 250 / 55%);
+        border: 2px solid #8E8FFA;
+        border-radius: 6px;
+        backdrop-filter: blur(8px);
         transition: opacity var(--transition-dropdown),
                     visibility var(--transition-dropdown);
     }
-        .date-picker__inner {
-            /*padding: 6px;*/
-            background-color: rgb(142 143 250 / 55%);
-            border: 2px solid #8E8FFA;
-            border-radius: 6px;
-            backdrop-filter: blur(8px);
-        }
+
 
 
 .date-picker--expanded {
@@ -182,16 +179,10 @@
                 }
 
         .date-picker__dropdown {
-            padding-top: 26px;
+            margin-top: 26px;
+            border-radius: 8px;
+            zoom: 1.1;
         }
-            .date-picker__inner {
-                zoom: 1.1;
-                /*padding: 9px;*/
-                /*background-color: rgb(142 143 250 / 55%);*/
-                /*border: 2px solid #8E8FFA;*/
-                border-radius: 8px;
-                /*backdrop-filter: blur(4px);*/
-            }
 }
 
 
@@ -283,14 +274,11 @@
             opacity: 1;
             visibility: visible;
             display: none;
+            zoom: 1.1;
         }
-            .date-picker__inner {
-
+            .date-picker__dropdown .air-datepicker {
+                width: 100%;
             }
-                .date-picker__inner .air-datepicker {
-                    width: 100%;
-                    zoom: 1.1;
-                }
 
     .date-picker--expanded {
 

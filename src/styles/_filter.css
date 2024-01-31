@@ -50,44 +50,42 @@
         z-index: 500;
         left: 0;
         min-width: 100%;
-        padding-top: 20px;
+        margin-top: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background-color: rgb(142 143 250 / 55%);
+        border: 2px solid #8E8FFA;
+        border-radius: 6px;
+        backdrop-filter: blur(8px);
         opacity: 0;
         visibility: hidden;
         /* Конфликтует с blur: */
         transition: opacity var(--transition-dropdown),
                     visibility var(--transition-dropdown);
     }
-        .filter__inner {
-            padding-top: 6px;
-            padding-bottom: 6px;
-            background-color: rgb(142 143 250 / 55%);
-            border: 2px solid #8E8FFA;
-            border-radius: 6px;
-            backdrop-filter: blur(8px);
+        .filter__option {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            border: none;
+            padding: 7px 13px;
+            background-color: transparent;
+            font-family: var(--font-headings);
+            font-size: 18px;
+            line-height: 20px;
+            text-align: left;
+            color: #FFFFFF;
+            white-space: nowrap;
+            cursor: pointer;
         }
-            .filter__option {
-                display: inline-block;
-                vertical-align: top;
-                width: 100%;
-                border: none;
-                padding: 7px 13px;
-                background-color: transparent;
-                font-family: var(--font-headings);
-                font-size: 18px;
-                line-height: 20px;
-                text-align: left;
-                color: #FFFFFF;
-                white-space: nowrap;
-                cursor: pointer;
-            }
 
-            .filter__option:hover {
-                background-color: #8E8FFA;
-            }
+        .filter__option:hover {
+            background-color: #8E8FFA;
+        }
 
-            .filter__option--selected {
-                background-color: #8E8FFA;
-            }
+        .filter__option--selected {
+            background-color: #8E8FFA;
+        }
 
 
 .filter--expanded {
@@ -152,38 +150,29 @@
             }
 
         .filter__dropdown {
-            padding-top: 26px;
+            margin-top: 26px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            border-radius: 8px;
             /*opacity: 0;*/
             /*visibility: hidden;*/
             /*transition: opacity var(--transition-dropdown),*/
             /*            visibility var(--transition-dropdown);*/
         }
-            .filter__inner {
-                /*position: absolute;*/
-                /*right: 0;*/
-                /*top: 100%;*/
-                padding-top: 9px;
-                padding-bottom: 9px;
-                /*background-color: rgb(142 143 250 / 55%);*/
-                /*border: 2px solid #8E8FFA;*/
-                border-radius: 8px;
-                /*backdrop-filter: blur(4px);*/
+            .filter__option {
+                /*display: inline-block;*/
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                /*border: none;*/
+                padding: 8px 17px;
+                /*background-color: transparent;*/
+                /*font-family: inherit;*/
+                font-size: 20px;
+                line-height: 23px;
+                /*text-align: left;*/
+                /*white-space: nowrap;*/
+                /*cursor: pointer;*/
             }
-                .filter__option {
-                    /*display: inline-block;*/
-                    /*vertical-align: top;*/
-                    /*width: 100%;*/
-                    /*border: none;*/
-                    padding: 8px 17px;
-                    /*background-color: transparent;*/
-                    /*font-family: inherit;*/
-                    font-size: 20px;
-                    line-height: 23px;
-                    /*text-align: left;*/
-                    /*white-space: nowrap;*/
-                    /*cursor: pointer;*/
-                }
-
 }
 
 
@@ -246,36 +235,28 @@
             visibility: visible;
             display: none;
         }
-            .filter__inner {
-                /*padding-top: 6px;*/
-                /*padding-bottom: 6px;*/
-                /*background-color: rgb(142 143 250 / 55%);*/
-                /*border: 2px solid #8E8FFA;*/
-                /*border-radius: 6px;*/
-                /*backdrop-filter: blur(4px);*/
+            .filter__option {
+                /*display: inline-block;*/
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                /*border: none;*/
+                /*padding: 7px 13px;*/
+                /*background-color: transparent;*/
+                /*font-family: var(--font-headings);*/
+                /*font-size: 18px;*/
+                /*line-height: 20px;*/
+                /*text-align: left;*/
+                /*white-space: nowrap;*/
+                /*cursor: pointer;*/
             }
-                .filter__option {
-                    /*display: inline-block;*/
-                    /*vertical-align: top;*/
-                    /*width: 100%;*/
-                    /*border: none;*/
-                    /*padding: 7px 13px;*/
-                    /*background-color: transparent;*/
-                    /*font-family: var(--font-headings);*/
-                    /*font-size: 18px;*/
-                    /*line-height: 20px;*/
-                    /*text-align: left;*/
-                    /*white-space: nowrap;*/
-                    /*cursor: pointer;*/
-                }
 
-                .filter__option:hover {
-                    /*background-color: #8E8FFA;*/
-                }
+            .filter__option:hover {
+                /*background-color: #8E8FFA;*/
+            }
 
-                .filter__option--selected {
-                    /*background-color: #8E8FFA;*/
-                }
+            .filter__option--selected {
+                /*background-color: #8E8FFA;*/
+            }
 
 
     .filter--expanded {

@@ -33,7 +33,7 @@
 
     /* Инициализируем AirDatepicker */
 
-    new AirDatepicker('.date-picker__inner', {
+    new AirDatepicker('.date-picker__dropdown', {
         'inline': true,
         'onSelect': function (element) {
             $(element.datepicker.$el).parents('.date-picker').removeClass('date-picker--expanded').addClass('date-picker--selected');
