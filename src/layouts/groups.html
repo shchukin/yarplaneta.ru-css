@@ -518,9 +518,9 @@
                                     </div>
                                 </div>
                                 <div class="request__field">
-                                    <div class="input">
+                                    <div class="input input--placeholder-is-chosen">
                                         <select class="input__widget">
-                                            <option value="placeholder" selected>Желаемая дата*</option>
+                                            <option value="placeholder" selected="">Желаемая дата*</option>
                                             <option>Foo</option>
                                             <option>Bar</option>
                                             <option>...</option>
@@ -532,16 +532,16 @@
                                     </div>
                                 </div>
                                 <div class="request__submit">
-                                    <button class="button button--primary submitting-handler polygon polygon--trapezoid" type="button">
+                                    <button class="button button--primary submitting-handler">
                                         <span class="button__label">Оставить заявку</span>
                                     </button>
                                 </div>
                             </form>
                         </div>
                         <div class="submitting__response" style="display: none;">
-                            <div class="inner-alert inner-alert--success">
+                            <div class="inner-alert inner-alert--in-popup inner-alert--success">
                                 <div class="inner-alert__heading">
-                                    Ваша вопрос отправлен!
+                                    Ваша заявка принята!
                                 </div>
                                 <div class="inner-alert__description">
                                     В скором времени с вами свяжется менеджер для уточнения
@@ -552,9 +552,9 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="inner-alert inner-alert--danger">
+                            <div class="inner-alert inner-alert--in-popup inner-alert--danger">
                                 <div class="inner-alert__heading">
-                                    Вопрос не был отправлен
+                                    Заявка не была отправлен
                                 </div>
                                 <div class="inner-alert__description">
                                     Пожалуйста, проверьте соединение и попробуйте ещё&nbsp;раз
