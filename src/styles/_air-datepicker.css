@@ -15,10 +15,10 @@
     /*--adp-background-color-in-range-focused: rgba(92, 196, 239, .2);*/
     /*--adp-background-color-selected-other-month-focused: #8ad5f4;*/
     /*--adp-background-color-selected-other-month: #a2ddf6;*/
-    --adp-color: #000000;
-    --adp-color-secondary: #000000;
+    --adp-color: #FFFFFF;
+    --adp-color-secondary: #FFFFFF;
     --adp-accent-color: #190482;
-    /*--adp-color-current-date: var(--adp-accent-color);*/
+    --adp-color-current-date: #7951EE;
     --adp-color-other-month: #C2D9FF;
     /*--adp-color-disabled: #aeaeae;*/
     /*--adp-color-disabled-in-range: #939393;*/
@@ -31,7 +31,7 @@
     /*--adp-nav-arrow-color: var(--adp-color-secondary);*/
     /*--adp-nav-action-size: 32px;*/
     /*--adp-nav-color-secondary: var(--adp-color-secondary);*/
-    --adp-day-name-color: #000000;
+    --adp-day-name-color: #FFFFFF;
     /*--adp-day-name-color-hover: #8ad5f4;*/
     /*--adp-day-cell-width: 1fr;*/
     /*--adp-day-cell-height: 32px;*/
@@ -83,7 +83,7 @@
 
 .air-datepicker-cell {
     font-weight: 600;
-    color: #191825;
+    color: #FFFFFF;
 }
 
 .air-datepicker-cell.-focus- {

@@ -101,7 +101,7 @@
         margin-top: 20px;
         opacity: 0;
         visibility: hidden;
-        background-color: rgb(142 143 250 / 55%);
+        background-color: rgb(142 143 250 / 80%);
         border: 2px solid #8E8FFA;
         border-radius: 6px;
         backdrop-filter: blur(20px);
