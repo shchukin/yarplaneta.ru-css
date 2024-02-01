@@ -44,7 +44,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css?1706694560">
+        <link rel="stylesheet" href="../styles/style.css?1706772847">
 
     </head>
     <body class="background background--landing">
@@ -69,7 +69,10 @@
                     <div class="header__mobile-panel">
                         <div class="header__mobile-wrap container">
                             <a class="header__logo" href="landing.html">
-                                <img class="header__emblem" src="../content/header-logo.svg" width="252" height="86" alt="">
+                                <img class="header__emblem" src="../content/header-logo.svg" width="252" height="87" alt="">
+                            </a>
+                            <a class="header__accessibility" href="#">
+                                Версия для слабовидящих
                             </a>
                             <button class="header__burger">
                                 Открыть меню
@@ -1032,7 +1035,7 @@
                                             <path d="M13.5965 5.64706H9.83176V0H4.18471V5.64706H0.42L7.00824 12.2353L13.5965 5.64706ZM0.42 14.1176V16H13.5965V14.1176H0.42Z"/>
                                         </svg>
                                     </a>
-                                    <a class="button button--secondary polygon polygon--trapezoid" href="#">
+                                    <a class="button button--secondary polygon polygon--trapezoid mfp-handler" href="#request">
                                         <span class="button__label">Оставить заявку</span>
                                     </a>
                                 </div>
@@ -1055,7 +1058,7 @@
                 <div class="footer__wrap container">
                     <div class="footer__primary-section">
                         <a class="footer__logo" href="landing.html">
-                            <img class="footer__emblem" src="../content/footer-logo.svg" alt="">
+                            <img class="footer__emblem" src="../content/footer-logo.svg" width="213" height="74" alt="">
                         </a>
                         <div class="footer__navigation">
                             <div class="nav nav--footer">
@@ -1157,27 +1160,104 @@
             </footer>
         </div>
 
+        <div class="window mfp-hide" id="request">
+            <button class="window__close mfp-close" type="button">
+                Закрыть
+            </button>
+            <div class="submitting">
+                <div class="submitting__form">
+                    <form class="request">
+                        <h2 class="request__heading">
+                            Заявка на групповое посещение
+                        </h2>
+                        <div class="request__field">
+                            <div class="input">
+                                <input class="input__widget" type="text" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="request__field">
+                            <div class="input">
+                                <input class="input__widget" type="tel" placeholder="Телефон*">
+                            </div>
+                        </div>
+                        <div class="request__field">
+                            <div class="input">
+                                <input class="input__widget" type="number" min="1" placeholder="Количество человек">
+                            </div>
+                        </div>
+                        <div class="request__field">
+                            <div class="input input--placeholder-is-chosen">
+                                <select class="input__widget">
+                                    <option value="placeholder" selected="">Желаемая дата*</option>
+                                    <option>Foo</option>
+                                    <option>Bar</option>
+                                    <option>...</option>
+                                    <option>Baz</option>
+                                </select>
+                            </div>
+                            <div class="helper helper--with-icon">
+                                в скором времени с вами свяжется менеджер для уточнения
+                            </div>
+                        </div>
+                        <div class="request__submit">
+                            <button class="button button--primary submitting-handler">
+                                <span class="button__label">Оставить заявку</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="submitting__response" style="display: none;">
+                    <div class="inner-alert inner-alert--in-popup inner-alert--success">
+                        <div class="inner-alert__heading">
+                            Ваша заявка принята!
+                        </div>
+                        <div class="inner-alert__description">
+                            В скором времени с вами свяжется менеджер для уточнения
+                        </div>
+                        <div class="inner-alert__action">
+                            <button class="button button--primary" type="button">
+                                Отправить ещё заявку
+                            </button>
+                        </div>
+                    </div>
+                    <div class="inner-alert inner-alert--in-popup inner-alert--danger">
+                        <div class="inner-alert__heading">
+                            Заявка не была отправлен
+                        </div>
+                        <div class="inner-alert__description">
+                            Пожалуйста, проверьте соединение и попробуйте ещё&nbsp;раз
+                        </div>
+                        <div class="inner-alert__action">
+                            <button class="button button--primary" type="button">
+                                Попробовать ещё
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <script src="../vendors/jquery/jquery-3.7.1.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/swiper/swiper-bundle.min.js"></script>
         <script src="../vendors/air-datepicker/air-datepicker.js"></script>
         <script src="../vendors/hammer.js/hammer.min.js"></script>
-        <script src="../scripts/_mfp.js?1706694560"></script>
-        <script src="../scripts/_input.js?1706694560"></script>
-        <script src="../scripts/_polygon.js?1706694560"></script>
-        <script src="../scripts/_sticky.js?1706694560"></script>
-        <script src="../scripts/_sub-nav.js?1706694560"></script>
-        <script src="../scripts/_header.js?1706694560"></script>
-        <script src="../scripts/_nav.js?1706694560"></script>
-        <script src="../scripts/_page-scrolled.js?1706694560"></script>
-        <script src="../scripts/_areas.js?1706694560"></script>
-        <script src="../scripts/_submitting.js?1706694560"></script>
-        <script src="../scripts/_slideshow.js?1706694560"></script>
-        <script src="../scripts/_filter.js?1706694560"></script>
-        <script src="../scripts/_day.js?1706694560"></script>
-        <script src="../scripts/_pushkin-card.js?1706694560"></script>
-        <script src="../scripts/_date-picker.js?1706694560"></script>
+        <script src="../scripts/_mfp.js?1706772847"></script>
+        <script src="../scripts/_input.js?1706772847"></script>
+        <script src="../scripts/_polygon.js?1706772847"></script>
+        <script src="../scripts/_sticky.js?1706772847"></script>
+        <script src="../scripts/_sub-nav.js?1706772847"></script>
+        <script src="../scripts/_header.js?1706772847"></script>
+        <script src="../scripts/_nav.js?1706772847"></script>
+        <script src="../scripts/_page-scrolled.js?1706772847"></script>
+        <script src="../scripts/_areas.js?1706772847"></script>
+        <script src="../scripts/_submitting.js?1706772847"></script>
+        <script src="../scripts/_slideshow.js?1706772847"></script>
+        <script src="../scripts/_filter.js?1706772847"></script>
+        <script src="../scripts/_day.js?1706772847"></script>
+        <script src="../scripts/_pushkin-card.js?1706772847"></script>
+        <script src="../scripts/_date-picker.js?1706772847"></script>
 
     </body>
 </html>
