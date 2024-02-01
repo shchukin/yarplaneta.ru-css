@@ -6,8 +6,7 @@
 
 .wysiwyg p,
 .wysiwyg ul,
-.wysiwyg ol,
-.wysiwyg figure {
+.wysiwyg ol{
     margin-top: calc(var(--body-line-height) / 2);
     margin-bottom: calc(var(--body-line-height) / 2);
 }
@@ -74,6 +73,15 @@
 
 
 
+
+.wysiwyg figure {
+    margin: var(--body-line-height) 0;
+}
+    .wysiwyg figcaption {
+        margin-top: 0.5em;
+        font-family: var(--font-headings);
+        font-weight: bold;
+    }
 
 .wysiwyg img {
     vertical-align: top;
