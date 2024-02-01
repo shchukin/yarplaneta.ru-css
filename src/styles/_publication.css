@@ -80,7 +80,7 @@
             position: absolute;
             left: 18px;
             top: 100%;
-            margin-top: 13px;
+            margin-top: 8px;
             font-weight: 500;
             font-size: 15px;
             line-height: 22px;
@@ -135,6 +135,7 @@
                 }
 
             .publication__time {
+                margin-top: 5px;
                 left: 24px;
                 font-size: 16px;
                 line-height: 24px;
