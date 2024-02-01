@@ -7,7 +7,7 @@
     padding: 29px 30px 33px;
     box-shadow: inset 0 0 0 3px #C2D9FF;
     background-color: rgb(142 143 250 / 10%);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     border-radius: 6px;
     overflow: hidden; /* Обрезаем уголки внутри */
     font-family: var(--font-headings);
@@ -82,7 +82,7 @@
         padding: 18px 30px 22px;
         /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
         /*background-color: rgb(142 143 250 / 10%);*/
-        /*backdrop-filter: blur(4px);*/
+        /*backdrop-filter: blur(10px);*/
         border-radius: 10px;
         /*overflow: hidden; !* Обрезаем уголки внутри *!*/
         /*font-family: var(--font-headings);*/
@@ -122,7 +122,7 @@
         padding: 15px 16px 19px;
         /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
         /*background-color: rgb(142 143 250 / 10%);*/
-        /*backdrop-filter: blur(4px);*/
+        /*backdrop-filter: blur(10px);*/
         /*border-radius: 8px;*/
         /*overflow: hidden; !* Обрезаем уголки внутри *!*/
         /*font-family: var(--font-headings);*/

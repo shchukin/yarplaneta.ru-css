@@ -6,7 +6,7 @@
     background-size: 128px 105px;
     background-repeat: no-repeat;
     background-position: center 36px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     transition: background-color var(--transition-hover);
     text-decoration: none;
