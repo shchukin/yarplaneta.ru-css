@@ -2,13 +2,13 @@
 
 .background {
     background-image: url("../images/backgrounds/default-background.svg");
-    background-size: 4233px 4355px;
+    background-size: 4233px 6240px;
     background-repeat: no-repeat;
     background-position: center top;
 }
     @media (1500px <= width) {
         .background {
-            background-size: 5644px 5807px;
+            background-size: 5644px 8320px;
         }
     }
 
