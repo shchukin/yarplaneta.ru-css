@@ -60,7 +60,7 @@
             }
 
             if ($this.hasClass('button')) {
-                angleWidth = (userScreen === 'smartphone') ? 15 : (userScreen === 'monitor') ? 21 : 18; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleWidth = (userScreen === 'smartphone') ? 16 : (userScreen === 'monitor') ? 22 : 19; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 angleHeight = (userScreen === 'smartphone') ? 20 : (userScreen === 'monitor') ? 26 : 23; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 0;
             }
