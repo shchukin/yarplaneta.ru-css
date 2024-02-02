@@ -121,8 +121,8 @@
                     C ${0} ${radius / 2}   ${radius / 2} ${0}   ${radius} ${0}
                     L ${width - angleWidth} ${0}
                     C ${width - angleWidth + 1}  ${0}   ${width - angleWidth + 2}  ${1} ${width - angleWidth + 3} ${2}
-                    L ${width - 1}  ${angleHeight - 3}
-                    C ${width - 1}  ${angleHeight - 3}      ${width - 0.5}  ${angleHeight - 2}      ${width}   ${angleHeight - 1}
+                    L ${width - 1.25}  ${angleHeight - 5}
+                    C ${width - 0.5}  ${angleHeight - 3}      ${width}  ${angleHeight - 1.5}      ${width}   ${angleHeight}
                     L ${width} ${height - radius}
                     C ${width} ${height - radius / 2}   ${width - radius / 2} ${height}   ${width - radius} ${height}
                     L ${radius} ${height}
