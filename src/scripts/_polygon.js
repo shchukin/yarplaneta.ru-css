@@ -114,13 +114,15 @@
             // Z
 
 
-
+            /*
+            *  Строчки
+            * */
             if ($this.hasClass('polygon--trapezoid')) {
                 path = `
                     M ${0} ${radius}
                     C ${0} ${radius / 2}   ${radius / 2} ${0}   ${radius} ${0}
                     L ${width - angleWidth} ${0}
-                    C ${width - angleWidth + 1}  ${0}   ${width - angleWidth + 2}  ${1} ${width - angleWidth + 3} ${2}
+                    C ${width - angleWidth + 3}  ${0}   ${width - angleWidth + 5}  ${1} ${width - angleWidth + 6} ${2}
                     L ${width - 1.25}  ${angleHeight - 5}
                     C ${width - 0.5}  ${angleHeight - 3}      ${width}  ${angleHeight - 1.5}      ${width}   ${angleHeight}
                     L ${width} ${height - radius}
