@@ -99,12 +99,30 @@
 
             let path = '';
 
+            // M 0,7.5
+            // C0 3.35787 3.35786,0 7.5,0
+            // L115.43,0
+            // C117.955,0 120.311,1.27115 121.698,3.38199
+            // L132.768,20.2331
+            // C133.572,21.4562 134,22.8876 134,24.3511
+            // L134,46.5
+            // C134,50.6421 130.642,54 126.5,54
+            // L7.5,54
+            // C3.35786,54 0,50.6421 0,46.5
+            // L0,39.375
+            // L0,7.5
+            // Z
+
+
+
             if ($this.hasClass('polygon--trapezoid')) {
                 path = `
                     M ${0} ${radius}
                     C ${0} ${radius / 2}   ${radius / 2} ${0}   ${radius} ${0}
                     L ${width - angleWidth} ${0}
-                    L ${width} ${angleHeight}
+                    C ${width - angleWidth + 1}  ${0}   ${width - angleWidth + 2}  ${1} ${width - angleWidth + 3} ${2}
+                    L ${width - 1}  ${angleHeight - 3}
+                    C ${width - 1}  ${angleHeight - 3}      ${width - 0.5}  ${angleHeight - 2}      ${width}   ${angleHeight - 1}
                     L ${width} ${height - radius}
                     C ${width} ${height - radius / 2}   ${width - radius / 2} ${height}   ${width - radius} ${height}
                     L ${radius} ${height}
