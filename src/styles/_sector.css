@@ -1,32 +1,100 @@
 .sector {
+    --radius: 12px;
+}
+
+.sector {
+    position: relative;
     display: block;
-    padding: 148px 12px 14px;
-    box-shadow: inset 0 0 0 2px #8E8FFA;
-    background-color: rgb(142 143 250 / 45%);
-    background-size: 128px 105px;
-    background-repeat: no-repeat;
-    background-position: center 36px;
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
+    height: 226px;
+    border-radius: var(--radius);
+    overflow: hidden; /* Обрезаем уезжающую иконку */
     transition: background-color var(--transition-hover);
     text-decoration: none;
     color: inherit;
+    background-color: rgb(142 143 250 / 45%);
+    backdrop-filter: blur(10px);
 }
+    .sector__background {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity var(--transition-hover);
+    }
 
-.sector:hover {
-    background-color: rgb(142 143 250 / 80%);
-}
+    .sector:hover .sector__background {
+        opacity: 100%;
+    }
+        .sector__illustration {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--radius);
+        }
 
-/* stylelint-disable */
-.sector__link--star-hall             { background-image: url("../vectors/area-star-hall.svg"); }
-.sector__link--interactive-classroom { background-image: url("../vectors/area-interactive-classroom.svg"); }
-.sector__link--museum                { background-image: url("../vectors/area-museum.svg"); }
-.sector__link--observatory           { background-image: url("../vectors/area-observatory.svg"); }
-.sector__link--interactive-gallery   { background-image: url("../vectors/area-interactive-gallery.svg"); }
-.sector__link--shuttle-5d            { background-image: url("../vectors/area-shuttle-5d.svg"); }
-/* stylelint-enable */
+        .sector__background::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            background-image: linear-gradient(rgb(142 143 250 / 70%), rgb(142 143 250 / 0) 100%);
+            border-radius: var(--radius);
+        }
+
+    .sector::after {
+        content: "";
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 0 3px #8E8FFA;
+        border-radius: var(--radius);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 148px 12px 14px;
+        transition: opacity 300ms ease;
+    }
+
+    .sector:hover::after {
+        opacity: 0;
+    }
+
+    .sector__icon {
+        position: absolute;
+        z-index: 30;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 31px;
+        width: 128px;
+        height: auto;
+        transition: opacity 100ms var(--transition-hover),
+                    top 600ms var(--ease-out-quint);
+    }
+
+    .sector:hover .sector__icon {
+        opacity: 0;
+        top: 24px;
+    }
 
     .sector__label {
+        position: absolute;
+        z-index: 40;
+        left: 0;
+        right: 0;
+        top: 142px;
         min-height: 64px;
         display: flex;
         align-items: center;
@@ -36,6 +104,11 @@
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
+        transition: top 600ms var(--ease-out-quint);
+    }
+
+    .sector:hover .sector__label {
+        top: 6px;
     }
 
     .sector__link--interactive-gallery .sector__label {
@@ -54,39 +127,138 @@
     }
 
 
+
+
 @media (1500px <= width) {
 
+
     .sector {
-        padding: 171px 8px 18px;
-        box-shadow: inset 0 0 0 3px #8E8FFA;
-        background-size: 153px 125px;
-        border-radius: 15px;
+        --radius: 15px;
     }
 
-    .sector:hover {
-
+    .sector {
+        /*position: relative;*/
+        /*display: block;*/
+        height: 262px;
+        /*border-radius: var(--radius);*/
+        /*overflow: hidden; !* Обрезаем уезжающую иконку *!*/
+        /*transition: background-color var(--transition-hover);*/
+        /*text-decoration: none;*/
+        /*color: inherit;*/
     }
+        .sector__background {
+            /*position: absolute;*/
+            /*z-index: 10;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            /*vertical-align: top;*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*opacity: 0;*/
+            /*transition: opacity var(--transition-hover);*/
+        }
+
+        .sector:hover .sector__background {
+            /*opacity: 100%;*/
+        }
+            .sector__illustration {
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                /*height: 100%;*/
+                /*object-fit: cover;*/
+                /*border-radius: var(--radius);*/
+            }
+
+            .sector__background::after {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+                /*right: 0;*/
+                /*bottom: 0;*/
+                /*display: block;*/
+                /*background-image: linear-gradient(rgb(142 143 250 / 70%), rgb(142 143 250 / 0) 100%);*/
+                /*border-radius: var(--radius);*/
+            }
+
+        .sector::after {
+            /*content: "";*/
+            /*position: absolute;*/
+            /*z-index: 20;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+            /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
+            /*background-color: rgb(142 143 250 / 45%);*/
+            /*border-radius: var(--radius);*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*align-items: center;*/
+            /*padding: 148px 12px 14px;*/
+            /*transition: opacity 300ms ease;*/
+        }
+
+        .sector:hover::after {
+            /*opacity: 0;*/
+        }
+
+        .sector__icon {
+            /*position: absolute;*/
+            /*z-index: 30;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            top: 38px;
+            width: 142px;
+            /*height: auto;*/
+            /*transition: opacity 100ms var(--transition-hover),*/
+            /*            top 600ms var(--ease-out-quint);*/
+        }
+
+        .sector:hover .sector__icon {
+            /*opacity: 0;*/
+            /*top: 24px;*/
+        }
+
         .sector__label {
+            /*position: absolute;*/
+            /*z-index: 40;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            top: 176px;
             min-height: 74px;
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            /*font-family: var(--font-headings);*/
             font-size: 32px;
             line-height: 37px;
+            /*text-transform: uppercase;*/
+            /*text-align: center;*/
+            /*transition: top 600ms var(--ease-out-quint);*/
         }
-            .sector__link--interactive-gallery .sector__label {
-                font-size: 31px;
-                line-height: 37px;
-            }
 
-            .sector__link--museum .sector__label {
-                font-size: 21px;
-                line-height: 25px;
-            }
+        .sector:hover .sector__label {
+            /*top: 6px;*/
+        }
 
-            .sector__link--shuttle-5d .min-height {
-                font-size: 31px;
-                line-height: 37px;
-            }
+        .sector__link--interactive-gallery .sector__label {
+            font-size: 31px;
+            line-height: 37px;
+        }
+
+        .sector__link--museum .sector__label {
+            font-size: 21px;
+            line-height: 25px;
+        }
+
+        .sector__link--shuttle-5d .min-height {
+            font-size: 31px;
+            line-height: 37px;
+        }
 }
-
 
 
 
