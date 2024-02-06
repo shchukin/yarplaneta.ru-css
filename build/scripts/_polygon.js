@@ -1,6 +1,6 @@
 (function ($) {
 
-    $(window).on('load', drawPolygons);
+    $(document).ready(drawPolygons);
     $(window).on('resize', drawPolygons);
 
     function drawPolygons() {
@@ -48,8 +48,8 @@
             }
 
             if ($this.hasClass('pagination__item')) {
-                angleWidth = (userScreen === 'smartphone') ? 6 : (userScreen === 'monitor') ? 10 : 9; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                angleHeight = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 13 : 12; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleWidth = (userScreen === 'smartphone') ? 8 : (userScreen === 'monitor') ? 12 : 11; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 12 : (userScreen === 'monitor') ? 14 : 13; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 1;
             }
 
