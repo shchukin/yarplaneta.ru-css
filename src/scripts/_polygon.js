@@ -1,6 +1,6 @@
 (function ($) {
 
-    $(window).on('load', drawPolygons);
+    $(document).ready(drawPolygons);
     $(window).on('resize', drawPolygons);
 
     function drawPolygons() {
