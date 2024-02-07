@@ -387,19 +387,8 @@
     .related__carousel .swiper__control-panel {
         margin-top: 24px;
     }
-        .related__carousel .swiper__control {
-            /*width: 62px;*/
-            /*height: 58px;*/
-        }
-
-        .related__carousel .swiper-pagination-bullet {
-            /*width: 30px;*/
-            /*height: 30px;*/
-        }
-
-        .related__carousel .swiper-pagination-bullet::after {
-            /*width: 16px;*/
-            /*height: 16px;*/
+        .related__carousel .swiper__pagination {
+            display: none;
         }
 }
 
