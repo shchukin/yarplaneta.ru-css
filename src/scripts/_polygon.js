@@ -1,7 +1,10 @@
 (function ($) {
 
     $(document).ready(drawPolygons);
-    $(window).on('resize', drawPolygons);
+    $(window).on('resize', function (){
+        drawPolygons(); /* По ходу ресайза сразу применяем полигон. Сработает в большинстве кейсов. */
+        setTimeout(drawPolygons, 1500); /* Сработает в каруселях, которые пересоздаются через 1000ms. */
+    });
 
     function drawPolygons() {
 
