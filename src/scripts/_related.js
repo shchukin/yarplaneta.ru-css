@@ -2,37 +2,50 @@
 
     /* Инициализируем Swiper */
 
-    let relatedCarousel;
+    let relatedCarousel = [];
 
     function initRelatedCarousel() {
 
-        if(relatedCarousel) { /* Если это не первая инициализация */
+        if(relatedCarousel.length) { /* Если это не первая инициализация */
             relatedCarousel.destroy();
         }
 
-        relatedCarousel = new Swiper(".related__carousel .swiper", {
-            navigation: {
-                prevEl: '.swiper__control--prev',
-                nextEl: '.swiper__control--next',
-            },
-            mousewheel: {
-                forceToAxis: true,
-            },
-            pagination: {
-                el: '.swiper__pagination',
-                clickable: true,
-            },
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 16,
-            breakpoints: {
-                740: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    spaceBetween: 24,
+        $('.related__carousel .swiper').each(function () {
+
+            const amountOfSlides = $(this).data('slides') ? $(this).data('slides') : 3;
+
+            const swiperInstance = new Swiper($(this)[0], {
+                navigation: {
+                    prevEl: '.swiper__control--prev',
+                    nextEl: '.swiper__control--next',
                 },
-            }
+                mousewheel: {
+                    forceToAxis: true,
+                },
+                pagination: {
+                    el: '.swiper__pagination',
+                    clickable: true,
+                },
+
+                /* Смартфоны: */
+                slidesPerView: 1, /* на смартфонах всегда один слайд */
+                slidesPerGroup: 1,
+                spaceBetween: 16,
+
+                /* Десктопы: */
+                breakpoints: {
+                    740: {
+                        slidesPerView: amountOfSlides, /* на десктопах столько, сколько передали */
+                        slidesPerGroup: amountOfSlides,
+                        spaceBetween: 24,
+                    },
+                }
+            });
+
+            relatedCarousel.push(swiperInstance);
+
         });
+
     }
 
 
