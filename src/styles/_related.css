@@ -308,7 +308,7 @@
         }
 
         .related__carousel .swiper__control.swiper-button-disabled {
-            opacity: 50%;
+            opacity: 30%;
             cursor: default;
         }
             .related__carousel .swiper__arrow {

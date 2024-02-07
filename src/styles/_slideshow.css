@@ -27,7 +27,7 @@
     }
 
     .slideshow__control:disabled {
-        opacity: 50%;
+        opacity: 30%;
         cursor: default;
     }
 
