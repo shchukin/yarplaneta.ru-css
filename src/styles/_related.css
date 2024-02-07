@@ -283,7 +283,7 @@
             position: relative;
             width: 58px;
             height: 50px;
-            background-color: #BCD1FE;
+            box-shadow: inset 0 0 0 1px #BCD1FE;
             border-radius: 4px;
             padding: 0;
             border: none;
@@ -294,6 +294,13 @@
             transition: opacity var(--transition-show),
                         background-color var(--transition-show);
         }
+
+        .related__carousel .swiper__control.polygon--applied {
+            box-shadow: none;
+        }
+            .related__carousel .swiper__control.polygon--applied .polygon__border {
+                stroke: #BCD1FE;
+            }
 
         .related__carousel .swiper__control--prev {
             left: 0;
@@ -312,7 +319,7 @@
                 right: 0;
                 bottom: 0;
                 margin: auto;
-                fill: #191825;
+                fill: #BACFFE;
             }
 
 
@@ -358,6 +365,22 @@
                 }
 
 
+/* На десктопах стрелочки с фоном */
+@media (740px <= width) {
+
+    .related__carousel .swiper__control  {
+        background-color: #BCD1FE;
+    }
+        .related__carousel .swiper__control .polygon__border {
+            display: none;
+        }
+
+        .related__carousel .swiper__arrow {
+            fill: #191825;
+        }
+}
+
+
 
 @media (1500px <= width) {
 
@@ -392,4 +415,31 @@
         }
 }
 
+
+
+
+
+/* В зонах планетария выключаем карусель на смартфонах. Стилям проще */
+
+@media (width < 740px) {
+
+    .related--areas {
+
+    }
+        .related--areas .swiper-wrapper {
+            display: block !important;
+            transform: none !important;
+        }
+            .related--areas .swiper-wrapper .swiper-slide {
+                margin: 24px 0 0 !important;
+            }
+
+            .related--areas .swiper-wrapper .swiper-slide:first-child {
+                margin-top: 0 !important;
+            }
+
+            .related--areas .swiper__control-panel {
+                display: none;
+            }
+}
 
