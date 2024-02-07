@@ -12,7 +12,7 @@
 
     /* Закрытие выпадайки  */
 
-    /* hide popup by overlay click ( goo.gl/SJG2Hw ) */
+    /* Закрытие по клику вне */
 
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.date-picker__handler, .date-picker__dropdown, i').length) { /* Здесь тег <i> как часть датапикера внутри .air-datepicker-nav--title -- почему-то не регистрирует клик как часть .date-picker__dropdown */
@@ -21,7 +21,7 @@
     });
 
 
-    /* hide popup by Esc press */
+    /* Закрытие по Esc */
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
@@ -52,7 +52,7 @@
         }
 
         if( window.matchMedia('(min-width: 740px)').matches ) { /* Только на десктопах */
-            scheduleDayList = new Swiper(".swiper", {
+            scheduleDayList = new Swiper(".date-picker__carousel .swiper", {
                 navigation: {
                     prevEl: '.date-picker__control--prev',
                     nextEl: '.date-picker__control--next',

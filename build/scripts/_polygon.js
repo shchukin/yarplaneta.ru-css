@@ -1,7 +1,10 @@
 (function ($) {
 
     $(document).ready(drawPolygons);
-    $(window).on('resize', drawPolygons);
+    $(window).on('resize', function (){
+        drawPolygons(); /* По ходу ресайза сразу применяем полигон. Сработает в большинстве кейсов. */
+        setTimeout(drawPolygons, 1500); /* Сработает в каруселях, которые пересоздаются через 1000ms. */
+    });
 
     function drawPolygons() {
 
@@ -48,8 +51,8 @@
             }
 
             if ($this.hasClass('pagination__item')) {
-                angleWidth = (userScreen === 'smartphone') ? 8 : (userScreen === 'monitor') ? 12 : 11; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
-                angleHeight = (userScreen === 'smartphone') ? 12 : (userScreen === 'monitor') ? 14 : 13; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 12 : 11; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 16 : (userScreen === 'monitor') ? 14 : 13; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 1;
             }
 
@@ -70,7 +73,13 @@
             }
 
             if ($this.hasClass('slideshow__control')) {
-                angleWidth = (userScreen === 'smartphone') ? 9 : (userScreen === 'monitor') ? 10 : 9; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 12 : 11; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                angleHeight = (userScreen === 'smartphone') ? 14 : (userScreen === 'monitor') ? 15 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
+                stroke = 1;
+            }
+
+            if ($this.hasClass('swiper__control')) {
+                angleWidth = (userScreen === 'smartphone') ? 11 : (userScreen === 'monitor') ? 12 : 11; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 angleHeight = (userScreen === 'smartphone') ? 14 : (userScreen === 'monitor') ? 15 : 14; /* Читать справа-налево, чтобы было laptop first (как в стилях) */
                 stroke = 1;
             }

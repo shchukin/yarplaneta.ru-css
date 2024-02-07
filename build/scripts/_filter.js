@@ -28,7 +28,7 @@
     });
 
 
-    /* hide popup by overlay click ( goo.gl/SJG2Hw ) */
+    /* Закрытие по клику вне */
 
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.filter').length) {
@@ -37,7 +37,7 @@
     });
 
 
-    /* hide popup by Esc press */
+    /* Закрытие по Esc */
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
