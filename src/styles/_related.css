@@ -333,10 +333,10 @@
                 align-items: center;
                 justify-content: center;
                 width: 26px;
-                height: 80%;
+                height: 100%;
                 background-color: transparent;
                 cursor: pointer;
-                margin: 10% 0 !important;
+                margin: 0 !important;
                 opacity: 100%;
             }
                 .related__carousel .swiper-pagination-bullet::after {
