@@ -380,7 +380,7 @@
         /*gap: 32px;*/
     }
         .nav--footer .nav__item {
-
+            break-inside: avoid;
         }
             .nav--footer .nav__link-heading {
                 display: flex;
