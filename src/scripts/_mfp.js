@@ -3,7 +3,6 @@
     const $fixedHeader = $('.header__desktop-panel, .header__mobile-panel');
     const scrollWidth = $(window).outerWidth() - $(window).width();
 
-
     $('.mfp-handler').magnificPopup({
         type: 'inline',
         removalDelay: 200,
