@@ -63,7 +63,7 @@
             z-index: 500;
             left: 0;
             top: 0;
-            right: 0;
+            width: 100%;
             height: var(--desktop-header-height); /* фиксируем высоту, чтобы кода .header__desktop-panel залипло страница не дёргалась  */
         }
 
@@ -290,7 +290,7 @@
                     z-index: 1000;
                     left: 0;
                     top: 0;
-                    right: 0;
+                    width: 100%;
                     height: var(--mobile-header-height);
                     display: flex;
                     align-items: center;
