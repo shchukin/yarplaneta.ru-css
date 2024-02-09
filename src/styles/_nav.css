@@ -282,17 +282,17 @@
             text-transform: lowercase;
             text-decoration: underline;
             text-decoration-thickness: 1.5px;
-            text-decoration-color: transparent;
+            text-decoration-color: currentColor;
             text-underline-offset: 6px;
             transition: text-decoration-color var(--transition-hover);
         }
 
         .nav--footer .nav__item:has(.nav__menu) .nav__link-heading {
-            color: #A39BCD;
+            text-decoration: none;
         }
 
         .nav--footer .nav__item:not(:has(.nav__menu)) .nav__link-heading:hover {
-            text-decoration-color: currentColor;
+            text-decoration-color: transparent;
         }
             .nav--footer .nav__chevron {
                 display: none;
@@ -394,6 +394,7 @@
                 line-height: 20px;
                 /*color: inherit;*/
                 /*text-decoration: none;*/
+                text-underline-offset: 5px;
             }
 
             .nav--footer .nav__menu {
@@ -402,6 +403,7 @@
                 .nav--footer .nav__sub-link {
                     font-size: 16px;
                     line-height: 19px;
+                    text-underline-offset: 4px
                 }
 }
 
