@@ -3,6 +3,7 @@ html {
     overflow-y: scroll;
     scrollbar-gutter: stable; /* Резервируем ~15px пустого пространства под скроллбаром, когда активен попап. Современный вариант. */
     margin: 0 !important; /* Отменяем подобный фикс, который делает Magnific Popup более старым вариантом. Современный scrollbar-gutter лучше, потому что не конфликтует с position: fixed элементами типа шапки. */
+    color-scheme: dark;
 }
 
 
