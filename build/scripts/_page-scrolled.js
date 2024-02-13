@@ -2,7 +2,7 @@
 
     const $html = $('html');
 
-    $(window).on('scroll', isPageScrolled);
+    $(window).on('scroll', $.throttle(250, isPageScrolled));
     $(document).ready(isPageScrolled);
 
     function isPageScrolled() {
