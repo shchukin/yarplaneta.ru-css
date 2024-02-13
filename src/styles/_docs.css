@@ -41,6 +41,7 @@
                 background-repeat: no-repeat;
                 background-position: 21px center;
                 backdrop-filter: blur(10px);
+                transform: translate3d(0, 0, 0); /* форсируем 3d acceleration */
                 border-radius: 6px;
                 font-size: 17px;
                 line-height: 22px;

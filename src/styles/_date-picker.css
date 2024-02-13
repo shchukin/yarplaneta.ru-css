@@ -106,6 +106,7 @@
         border: 2px solid #8E8FFA;
         border-radius: 6px;
         backdrop-filter: blur(20px);
+        transform: translate3d(0, 0, 0); /* форсируем 3d acceleration */
         transition: opacity var(--transition-dropdown),
                     visibility var(--transition-dropdown);
     }

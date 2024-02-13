@@ -13,6 +13,7 @@
     color: inherit;
     background-color: rgb(142 143 250 / 45%);
     backdrop-filter: blur(10px);
+    transform: translate3d(0, 0, 0); /* форсируем 3d acceleration */
 }
     .sector__background {
         position: absolute;

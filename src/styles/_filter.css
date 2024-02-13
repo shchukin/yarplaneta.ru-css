@@ -58,6 +58,7 @@
         border: 2px solid #8E8FFA;
         border-radius: 6px;
         backdrop-filter: blur(20px);
+        transform: translate3d(0, 0, 0); /* форсируем 3d acceleration */
         opacity: 0;
         visibility: hidden;
         /* Конфликтует с blur: */
