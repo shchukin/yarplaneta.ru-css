@@ -69,12 +69,23 @@
     background-image: linear-gradient(261deg, #190482 20.75%, #8E8FFA 84.56%);
     color: #FFFFFF;
 }
+    .button--primary::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #190482;
+        opacity: 0;
+        transition: opacity var(--transition-hover);
+    }
 
-.button--primary:hover {
-    background-image: none;
-    background-color: #190482;
-    color: #FFFFFF;
-}
+    .button--primary:hover::before {
+        opacity: 100%;
+    }
+
+
 
 .button--primary:active {
     background-image: none;
@@ -89,7 +100,9 @@
     background-color: #D9D9D9;
     color: #8E8E8E;
 }
-
+    .button--primary:disabled::before {
+        display: none;
+    }
 
 
 .button--secondary {
