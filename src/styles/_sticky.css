@@ -1,8 +1,11 @@
-.sticky {
-    top: 48px; /* See scripts/_sticky.js */
-}
+@media (740px <= width) {
 
-.sticky--possible {
-    position: sticky;
+    .sticky {
+        top: var(--desktop-header-height); /* See scripts/_sticky.js */
+    }
+
+    .sticky--possible {
+        position: sticky;
+    }
 }
 
