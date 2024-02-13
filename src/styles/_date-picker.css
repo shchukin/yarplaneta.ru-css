@@ -107,6 +107,7 @@
         border-radius: 6px;
         backdrop-filter: blur(20px);
         transform: translate3d(0, 0, 0); /* форсируем 3d acceleration */
+        backface-visibility: hidden; /* улучшаем производительность */
         transition: opacity var(--transition-dropdown),
                     visibility var(--transition-dropdown);
     }
