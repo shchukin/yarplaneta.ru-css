@@ -148,6 +148,7 @@
             font-weight: 600;
             font-size: 15px;
             line-height: 20px;
+            color: inherit;
             white-space: nowrap;
             text-align: left;
             cursor: pointer;
