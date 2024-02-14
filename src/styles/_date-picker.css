@@ -278,6 +278,8 @@
             visibility: visible;
             display: none;
             zoom: 1.1;
+            background-color: transparent;
+            border: 1px solid currentColor;
         }
             .date-picker__dropdown .air-datepicker {
                 width: 100%;
