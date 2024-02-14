@@ -133,7 +133,7 @@
         flex-direction: column;
     }
 
-    @media (400px<= width) {
+    @media (400px <= width) {
         .sub-nav {
             grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         }
@@ -266,7 +266,6 @@
         .sub-nav--horizontal .sub-nav__list {
             gap: 24px;
         }
-
     }
 
 
@@ -316,5 +315,4 @@
                     text-decoration: underline 2px #BECAFE;
                     text-underline-offset: 10px;
                 }
-
 }

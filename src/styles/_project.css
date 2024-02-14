@@ -262,13 +262,13 @@
                 /* Подбираем ширины так, чтобы всегда был один обрезанный айтем.
                  * чтобы понятно было, что есть скроллбар:
                  */
-                @media ( 350px <= width < 374px) {
+                @media (350px <= width < 374px) {
                     .project__calendar .swiper-slide {
                         flex-basis: 140px;
                     }
                 }
 
-                @media ( width < 350px) {
+                @media (width < 350px) {
                     .project__calendar .swiper-slide {
                         flex-basis: 130px;
                     }

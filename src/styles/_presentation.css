@@ -4,7 +4,7 @@
     flex-direction: column;
 
     /* Картинка 288x272 плюс 20px отступа между колонками: */
-    min-height: 272px; /**/
+    min-height: 272px;
     padding-left: 308px;
 }
     .presentation__stage {
@@ -371,7 +371,6 @@
     .presentation--highlighted-schedule .stat::before {
         filter: none;
     }
-
 }
 
 

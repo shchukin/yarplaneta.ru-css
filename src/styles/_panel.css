@@ -25,7 +25,7 @@
         }
 
         .panel__body #polygon__path {
-            stroke: url(#sky-gradient);
+            stroke: url("#sky-gradient");
         }
             .panel__slot {
                 position: relative; /* выше чем .polygon__border */

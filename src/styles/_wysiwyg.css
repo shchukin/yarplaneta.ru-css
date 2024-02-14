@@ -6,7 +6,7 @@
 
 .wysiwyg p,
 .wysiwyg ul,
-.wysiwyg ol{
+.wysiwyg ol {
     margin-top: calc(var(--body-line-height) / 2);
     margin-bottom: calc(var(--body-line-height) / 2);
 }
@@ -119,8 +119,7 @@
 .wysiwyg h2:first-child,
 .wysiwyg h3:first-child,
 .wysiwyg h4:first-child,
-.wysiwyg .info-panel:first-child
-{
+.wysiwyg .info-panel:first-child {
     margin-top: 0;
 }
 
@@ -129,12 +128,11 @@
 .wysiwyg ol:last-child,
 .wysiwyg hr:last-child,
 .wysiwyg figure:last-child,
-.wysiwyg blockquote:last-child ,
+.wysiwyg blockquote:last-child,
 .wysiwyg h2:last-child,
 .wysiwyg h3:last-child,
 .wysiwyg h4:last-child,
-.wysiwyg .info-panel:last-child
-{
+.wysiwyg .info-panel:last-child {
     margin-bottom: 0;
 }
 

@@ -370,7 +370,7 @@
 /* На десктопах стрелочки с фоном */
 @media (740px <= width) {
 
-    .related__carousel .swiper__control  {
+    .related__carousel .swiper__control {
         background-color: #BCD1FE;
     }
         .related__carousel .swiper__control .polygon__border {

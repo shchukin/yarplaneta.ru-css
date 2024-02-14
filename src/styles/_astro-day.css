@@ -26,11 +26,12 @@
         background-position: left center;
     }
 
+    /* stylelint-disable */
     .astro-day__stat--sunrise::before           { background-image: url("../vectors/day-stat-sunrise.svg") }
     .astro-day__stat--sunset::before            { background-image: url("../vectors/day-stat-sunset.svg") }
     .astro-day__stat--daylight-duration::before { background-image: url("../vectors/day-stat-daylight-duration.svg") }
     .astro-day__stat--night-duration::before    { background-image: url("../vectors/day-stat-night-duration.svg") }
-
+    /* stylelint-enable */
 
 
 @media (1500px <= width) {

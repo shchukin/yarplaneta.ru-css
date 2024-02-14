@@ -39,8 +39,7 @@
 .link--no-hover:active,
 .wysiwyg .link--no-hover,
 .wysiwyg .link--no-hover:hover,
-.wysiwyg .link--no-hover:active
-{
+.wysiwyg .link--no-hover:active {
     text-decoration: none;
     color: inherit;
 }

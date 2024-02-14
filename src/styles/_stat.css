@@ -94,7 +94,6 @@
         .stat--larger.stat--restriction::before  { width: 31px; }
         .stat--larger.stat--pushkin-card::before { width: 38px; }
         /* stylelint-enable */
-
 }
 
 @media (width < 740px) {

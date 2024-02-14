@@ -41,8 +41,7 @@
 }
 
 
-
-.moon__pic--phase-1::after  {
+.moon__pic--phase-1::after {
     left: 0;
 }
 
@@ -74,7 +73,7 @@
     background-image: url("../vectors/moon-pic-phase-6.svg"); /* Используй картинку, а не clip-path, потому что она масштабируется */
 }
 
-.moon__pic--phase-7::after  {
+.moon__pic--phase-7::after {
     left: 50%;
     width: 50%;
 }
