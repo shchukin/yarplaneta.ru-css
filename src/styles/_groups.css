@@ -55,7 +55,7 @@
 @media (width < 740px) {
 
     .groups {
-        /*position: relative;*/
+
     }
         .groups__nav {
 
@@ -67,14 +67,10 @@
 
         .groups__note {
             margin-top: 30px;
-            /*font-size: 16px;*/
-            /*line-height: 20px;*/
         }
 
         .groups__download {
             position: static;
-            /*right: 0;*/
-            /*top: 100%;*/
             margin-top: 64px;
             width: fit-content;
             margin-left: auto;

@@ -138,18 +138,11 @@
             }
 
             .presentation__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 28px;
                 line-height: 34px;
-                /*text-transform: uppercase;*/
             }
 
             .presentation__category {
-                /*margin-top: 5px;*/
-                /*font-family: var(--font-headings);*/
                 font-size: 18px;
                 line-height: 22px;
             }
@@ -159,13 +152,9 @@
             }
 
         .presentation__footer {
-            /*margin-top: auto;*/
             padding-top: 20px;
-            /*display: flex;*/
-            /*align-items: flex-end;*/
         }
             .presentation__stats {
-                /*flex-grow: 1;*/
                 display: flex;
                 align-items: flex-start;
                 gap: 20px 40px;
@@ -177,13 +166,10 @@
 
                 .presentation__remaining-stats {
                     margin-top: 0;
-                    /*display: flex;*/
-                    /*align-items: flex-start;*/
-                    /*gap: 20px 40px;*/
                 }
 
             .presentation__actions {
-                /*flex-shrink: 0;*/
+
             }
 }
 
@@ -208,7 +194,7 @@
                 border-radius: 15px;
             }
                 .presentation .presentation__stage .preview__image {
-                    /*aspect-ratio: 450 / 424;*/
+
                 }
 
         .presentation .presentation__summary {
@@ -224,35 +210,27 @@
 
             .presentation .presentation__heading {
                 margin-top: 7px;
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 20px;
                 line-height: 23px;
-                /*text-transform: uppercase;*/
             }
 
             .presentation .presentation__category {
                 order: -1;
                 margin-top: 0;
-                /*font-family: var(--font-headings);*/
                 font-size: 15px;
                 line-height: 20px;
             }
 
             .presentation .presentation__text {
-                /*margin-top: 16px;*/
                 display: none;
             }
 
         .presentation .presentation__footer {
-            /*margin-top: auto;*/
             padding-top: 24px;
             display: block;
-            /*align-items: flex-end;*/
         }
             .presentation .presentation__stats {
-                /*flex-grow: 1;*/
+
             }
                 .presentation .presentation__location {
 
@@ -260,8 +238,6 @@
 
                 .presentation .presentation__remaining-stats {
                     margin-top: 10px;
-                    /*display: block;*/
-                    /*align-items: flex-start;*/
                     flex-wrap: wrap;
                     gap: 14px 22px;
                 }
@@ -415,7 +391,6 @@
         grid-template-areas: "left-top right-top" "bottom bottom";
         padding-left: 0;
         min-height: 0;
-        /*flex-direction: column;*/
     }
         .presentation--summarized-schedule .presentation__stage {
             grid-area: left-top;
@@ -424,16 +399,15 @@
             padding-right: 16px;
         }
             .presentation--summarized-schedule .presentation__stage .preview {
-                /*border-radius: 12px;*/
+
             }
                 .presentation--summarized-schedule .presentation__stage .preview__image {
-                    /*aspect-ratio: 450 / 424;*/
+
                 }
 
         .presentation--summarized-schedule .presentation__summary {
             grid-area: right-top;
             padding-right: 0;
-            /*margin-top: 24px;*/
         }
             .presentation--summarized-schedule .presentation__time {
 

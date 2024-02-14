@@ -75,23 +75,18 @@
         }
 
         .request__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-headings);*/
-            /*font-weight: bold;*/
-            /*font-size: 32px;*/
-            /*line-height: 32px;*/
+
         }
 
         .request__body {
 
         }
             .request__field {
-                /*margin-top: 12px;*/
+
             }
 
             .request__field:first-child {
-                /*margin-top: 0;*/
+
             }
 
             .request__submit {

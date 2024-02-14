@@ -31,16 +31,12 @@
         padding: 24px 24px 17px;
     }
         .teaser__time {
-            /*display: block;*/
             font-size: 18px;
             line-height: 24px;
         }
 
         .teaser__heading {
             margin-top: 15px;
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-headings);*/
-            /*font-weight: bold;*/
             font-size: 28px;
             line-height: 34px;
         }
@@ -57,28 +53,19 @@
 @media (width < 740px) {
 
     .teaser {
-        /*padding: 22px 22px 14px;*/
+
     }
         .teaser__time {
-            /*display: block;*/
-            /*font-weight: 600;*/
-            /*font-size: 16px;*/
-            /*line-height: 22px;*/
+
         }
 
         .teaser__heading {
-            /*margin-top: 10px;*/
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-headings);*/
-            /*font-weight: bold;*/
             font-size: 20px;
             line-height: 24px;
         }
 
         .teaser__text {
-            /*margin-top: 14px;*/
-            /*font-size: 16px;*/
-            /*line-height: 22px;*/
+
         }
 }
 

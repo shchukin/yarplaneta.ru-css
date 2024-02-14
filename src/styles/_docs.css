@@ -94,23 +94,14 @@
                 gap: 20px;
             }
                 .docs__link {
-                    /*position: relative;*/
-                    /*display: flex;*/
-                    /*align-items: center;*/
                     padding: 25px 55px 25px 74px;
-                    /*box-shadow: inset 0 0 0 2px #8E8FFA;*/
-                    /*background-color: rgb(142 143 250 / 45%);*/
                     background-size: 32px 40px;
                     background-position: 24px center;
-                    /*backdrop-filter: blur(10px);*/
-                    /*border-radius: 5px;*/
                     font-size: 20px;
                     line-height: 24px;
-                    /*color: inherit;*/
-                    /*text-decoration: none;*/
                 }
                     .docs__label {
-                        /*position: relative; !* Выше .polygon__border *!*/
+
                     }
 }
 
@@ -122,10 +113,6 @@
 
     }
         .docs__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-headings);*/
-            /*font-weight: bold;*/
             font-size: 28px;
             line-height: 34px;
         }
@@ -134,13 +121,7 @@
 
         }
             .docs__sub-heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
-                /*font-size: 24px;*/
-                /*line-height: 32px;*/
-                /*color: #C2D9FF;*/
+
             }
 
             .docs__list {
@@ -148,28 +129,19 @@
             }
                 .docs__link {
                     margin-top: 24px;
-                    /*position: relative;*/
-                    /*display: flex;*/
                     min-height: 92px;
-                    /*align-items: center;*/
                     padding: 13px 20px 13px 64px;
                     background-size: 24px 30px;
                     background-position: 22px center;
-                    /*box-shadow: inset 0 0 0 2px #8E8FFA;*/
-                    /*background-color: rgb(142 143 250 / 45%);*/
-                    /*backdrop-filter: blur(10px);*/
-                    /*border-radius: 5px;*/
                     font-size: 16px;
                     line-height: 20px;
-                    /*color: inherit;*/
-                    /*text-decoration: none;*/
                 }
 
                 .docs__link:first-child {
                     margin-top: 0;
                 }
                     .docs__label {
-                        /*position: relative; !* Выше .polygon__border *!*/
+
                     }
 }
 

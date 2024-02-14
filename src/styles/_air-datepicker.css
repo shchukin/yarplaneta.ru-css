@@ -119,19 +119,12 @@
 /* Белый фон на лендинге  */
 @media (width < 740px) {
     .schedule--on-landing .air-datepicker {
-        /*--adp-background-color: transparent;*/
-        /*--adp-background-color-hover: #8E8FFA;*/
-        /*--adp-background-color-active: #8E8FFA;*/
         --adp-color: #14131E;
         --adp-color-secondary: #14131E;
-        /*--adp-accent-color: #190482;*/
         --adp-color-current-date: #8E8FFA;
         --adp-color-other-month: #8E8FFA;
         --adp-border-color-inner: #FFFFFF;
-        /*--adp-border-color-inline: #FFFFFF;*/
         --adp-day-name-color: #14131E;
-        /*--adp-cell-background-color-selected: #8E8FFA;*/
-        /*--adp-cell-background-color-selected-hover: #8E8FFA;*/
     }
 
     .schedule--on-landing .air-datepicker-nav--title:hover {
@@ -141,18 +134,7 @@
             color: inherit;
         }
 
-    .schedule--on-landing .air-datepicker-overlay {
-
-    }
-
-
-    .schedule--on-landing .air-datepicker {
-        /*border: none;*/
-    }
-
-
     .schedule--on-landing .air-datepicker-cell {
-        /*font-weight: 600;*/
         color: #14131E;
     }
 
@@ -160,25 +142,9 @@
         color: #FFFFFF !important; /* для всех одинаковый ховер */
     }
 
-    .schedule--on-landing .air-datepicker-cell.-focus- {
-        /*color: #FFFFFF;*/
-    }
-
     .schedule--on-landing .air-datepicker-cell.-current- {
-        /*text-decoration: underline;*/
         color: #1A0482;
     }
 
-    .schedule--on-landing .air-datepicker-body--day-names {
-        /*font-weight: normal;*/
-    }
-
-    .schedule--on-landing .air-datepicker-nav--title {
-
-    }
-
-    .schedule--on-landing .air-datepicker-nav--action:hover path {
-        /*stroke: #FFFFFF;*/
-    }
 
 }

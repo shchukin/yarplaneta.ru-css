@@ -101,20 +101,12 @@
 @media (width < 740px) {
 
     .groups-card {
-        /*display: block;*/
         padding: 2px;
-        /*background-image: var(--sky-gradient);*/
         border-radius: 6px;
-        /*text-decoration: none;*/
-        /*color: inherit;*/
     }
         .groups-card__inner {
-            /*position: relative;*/
             padding: 18px 14px 192px;
-            /*background-color: #576AC9;*/
             background-image: url("../images/groups-card-smartphone@1x.jpg");
-            /*background-size: cover;*/
-            /*background-repeat: no-repeat;*/
             background-position: center bottom;
             border-radius: 4px;
         }
@@ -137,27 +129,19 @@
             }
         }
             .groups-card__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
                 max-width: 200px;
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 28px;
                 line-height: 31px;
             }
 
             .groups-card__description {
-                /*max-width: 574px;*/
                 margin-top: 16px;
-                /*margin-bottom: 0;*/
                 font-size: 16px;
                 line-height: 20px;
             }
 
             .groups-card__actions {
                 margin-top: 24px;
-                /*display: flex;*/
-                /*align-items: flex-start;*/
                 gap: 16px;
             }
                 .groups-card__actions .button {

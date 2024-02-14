@@ -84,10 +84,6 @@
 
         }
             .schedule__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 50px;
                 line-height: 66px;
             }
@@ -97,11 +93,7 @@
             }
 
         .schedule__body {
-            /*position: relative;*/
             margin-top: 58px;
-            /*background-color: #FFFFFF;*/
-            /*color: #14131E;*/
-            /*color-scheme: light;*/
         }
             .schedule__body-wrap {
                 padding-top: 40px;
@@ -112,13 +104,9 @@
                 }
 
                 .schedule__section:first-child {
-                    /*margin-top: 0;*/
+
                 }
                     .schedule__sub-heading {
-                        /*margin-top: 0;*/
-                        /*margin-bottom: 0;*/
-                        /*font-family: var(--font-headings);*/
-                        /*font-weight: bold;*/
                         font-size: 32px;
                         line-height: 38px;
                     }
@@ -131,7 +119,7 @@
                         }
 
                         .schedule__item:first-child {
-                            /*margin-top: 0;*/
+
                         }
 
     .schedule--on-landing {
@@ -154,10 +142,6 @@
 
         }
             .schedule__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 28px;
                 line-height: 34px;
             }
@@ -167,13 +151,8 @@
             }
 
         .schedule__body {
-            /*position: relative;*/
             margin-top: 24px;
-            /*background-color: #FFFFFF;*/
             border-radius: 0;
-            /*color: #14131E;*/
-            /*color-scheme: light;*/
-            /*border-radius: 21px;*/
         }
             .schedule__body-wrap {
                 padding-top: 24px;
@@ -184,13 +163,9 @@
                 }
 
                 .schedule__section:first-child {
-                    /*margin-top: 0;*/
+
                 }
                     .schedule__sub-heading {
-                        /*margin-top: 0;*/
-                        /*margin-bottom: 0;*/
-                        /*font-family: var(--font-headings);*/
-                        /*font-weight: bold;*/
                         font-size: 24px;
                         line-height: 28px;
                     }
@@ -213,9 +188,6 @@
 
     .schedule--on-landing {
         padding-top: 40px;
-        /*background-color: #FFFFFF;*/
-        /*color: #14131E;*/
-        /*color-scheme: light;*/
         border-radius: 0;
     }
         .schedule--on-landing .schedule__body {

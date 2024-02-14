@@ -89,7 +89,6 @@
 
             .page-scrolled .header__desktop-panel::before {
                 height: 96px;
-                /*background-color: rgb(39 38 64 / 60%);*/
                 background-color: rgb(20 19 30 / 60%);
                 backdrop-filter: blur(10px);
                 box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
@@ -116,7 +115,6 @@
                         .header__emblem {
                             flex-shrink: 0;
                             width: auto !important;
-                            /*height: 82px;*/
                             transition: height 500ms var(--ease-out-quint);
                         }
                             .page-scrolled .header__emblem {
@@ -227,7 +225,6 @@
                         top: 25px;
                     }
                         .header__emblem {
-                            /*flex-shrink: 0;*/
                             width: 252px;
                             height: 86px;
                         }
@@ -255,8 +252,7 @@
                             top: 36px;
                         }
                             .header__info {
-                                /*display: flex;*/
-                                /*align-items: center;*/
+
                             }
                                 .header__day-phases {
 
@@ -268,7 +264,6 @@
 
                             .header__languages {
                                 margin-left: 40px;
-                                /*margin-right: -4px;*/
                             }
 }
 
@@ -301,7 +296,6 @@
                 }
 
                 .page-scrolled:not(.burger-expanded) .header__mobile-panel {
-                    /*background-color: rgb(39 38 64 / 60%);*/
                     background-color: rgb(20 19 30 / 60%);
                     backdrop-filter: blur(10px);
                     box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
@@ -324,7 +318,6 @@
                             display: none;
                         }
                             .header__emblem {
-                                /*flex-shrink: 0;*/
                                 vertical-align: top;
                                 width: 147px;
                                 height: 50px;
@@ -347,7 +340,6 @@
                         }
 
                         .header__burger {
-                            /*display: none;*/
                             border: none;
                             margin-right: -11px;
                             width: 60px;
@@ -374,9 +366,6 @@
                             display: none;
                             padding-top: var(--mobile-header-height);
                             padding-bottom: var(--mobile-header-height);
-                            /*flex-grow: 1;*/
-                            /*display: flex;*/
-                            /*flex-direction: column;*/
                         }
 
                         .burger-expanded .header__mobile-dropdown {
@@ -391,27 +380,19 @@
                                 margin-top: 32px;
                                 border-top: 1px solid #C2D9FF;
                                 padding-top: 32px;
-                                /*order: -1;*/
-                                /*display: flex;*/
-                                /*align-items: center;*/
-                                /*justify-content: flex-end;*/
                             }
                                 .header__info {
-                                    /*display: flex;*/
-                                    /*align-items: center;*/
+
                                 }
                                     .header__day-phases {
 
                                     }
 
                                     .header__moon-phases {
-                                        /*margin-left: 18px;*/
                                         margin-top: 24px;
                                     }
 
                                 .header__languages {
-                                    /*margin-left: 20px;*/
-                                    /*margin-right: -4px;*/
                                     margin-top: 32px;
                                     border-top: 1px solid #C2D9FF;
                                     padding-top: 32px;

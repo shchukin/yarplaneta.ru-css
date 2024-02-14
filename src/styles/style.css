@@ -2,9 +2,7 @@
 @import url("../vendors/magnific-popup/magnific-popup.css");
 @import url("../vendors/swiper/swiper-bundle.min.css");
 @import url("../vendors/air-datepicker/air-datepicker.css");
-
 @import url("_air-datepicker.css");
-
 @import url("_fonts.css");
 @import url("_box-sizing.css");
 @import url("_visuallyhidden.css");
@@ -13,15 +11,12 @@
 @import url("_nobr.css");
 @import url("_container.css");
 @import url("_sticky.css");
-
 @import url("_input.css");
 @import url("_label.css");
 @import url("_helper.css");
-
 @import url("_mfp.css");
 @import url("_window.css");
 @import url("_question.css");
-
 @import url("_membership.css");
 @import url("_html.css");
 @import url("_body.css");

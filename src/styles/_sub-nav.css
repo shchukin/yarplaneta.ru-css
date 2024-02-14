@@ -110,7 +110,7 @@
                 }
 
                 .sub-nav__list {
-                    /*margin-top: 24px;*/
+
                 }
                     .sub-nav__link {
                         margin-top: 24px;
@@ -281,7 +281,6 @@
         }
 
         .sub-nav--tabs-on-smartphone .sub-nav__dropdown {
-            /*grid-area: bottom;*/
             background-color: transparent;
             backdrop-filter: none;
             margin-top: 0;

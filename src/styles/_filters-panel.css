@@ -19,21 +19,14 @@
 @media (1500px <= width) {
 
     .filters-panel {
-        /*display: flex;*/
-        /*align-items: flex-start;*/
         gap: 32px;
     }
         .filters-panel__primary {
-            /*flex-shrink: 0;*/
-            /*display: flex;*/
-            /*align-items: flex-start;*/
             gap: 32px;
         }
 
         .date-picker__panel {
-            /*flex-grow: 1;*/
-            /*display: flex;*/
-            /*align-items: flex-start;*/
+
         }
 }
 
@@ -43,11 +36,8 @@
 
     .filters-panel {
         display: block;
-        /*align-items: flex-start;*/
-        /*gap: 24px;*/
     }
         .filters-panel__primary {
-            /*flex-shrink: 0;*/
             display: flex;
             flex-direction: column;
             align-items: stretch;

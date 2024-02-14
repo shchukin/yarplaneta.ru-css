@@ -146,29 +146,18 @@
                 }
 
                 .project__summary {
-                    /*margin-top: 40px;*/
-                    /*display: flex;*/
-                    /*align-items: flex-start;*/
-                    /*gap: 20px 40px;*/
+
                 }
 
         .project__schedule {
             margin-top: 100px;
         }
             .project__sub-heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
-                /*font-size: 32px;*/
-                /*line-height: 40px;*/
+
             }
 
             .project__calendar {
                 margin-top: 42px;
-                /*display: grid;*/
-                /*grid-template-columns: repeat(6, 1fr);*/
-                /*gap: 20px;*/
             }
 }
 
@@ -184,16 +173,11 @@
         }
 
         .project__category {
-            /*font-family: var(--font-headings);*/
-            /*font-size: 15px;*/
-            /*line-height: 22px;*/
+
         }
 
         .project__heading {
             margin-top: 8px;
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-headings);*/
-            /*font-weight: bold;*/
             font-size: 28px;
             line-height: 32px;
         }
@@ -201,14 +185,12 @@
         .project__body {
             margin-top: 24px;
             display: block;
-            /*grid-template-columns: 722fr 379fr;*/
-            /*gap: 77px;*/
         }
             .project__stage {
 
             }
                 .project__stage .preview {
-                    /*border-radius: 8px;*/
+
                 }
                     .project__stage .preview__image {
 
@@ -225,7 +207,6 @@
                     margin-top: 20px;
                     display: flex;
                     flex-direction: column;
-                    /*align-items: flex-start;*/
                     gap: 24px;
                 }
 
@@ -234,10 +215,6 @@
             margin-top: 40px;
         }
             .project__sub-heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-family: var(--font-headings);*/
-                /*font-weight: bold;*/
                 font-size: 20px;
                 line-height: 24px;
             }
@@ -250,7 +227,6 @@
                 -webkit-overflow-scrolling: touch;
             }
                 .project__calendar .swiper-wrapper {
-                    /*margin-top: 23px;*/
                     display: inline-flex;
                     align-items: stretch;
                     box-sizing: border-box !important;

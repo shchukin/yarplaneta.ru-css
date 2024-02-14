@@ -78,28 +78,14 @@
 
     .panel-alike-button {
         min-height: 130px;
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*justify-content: center;*/
         padding: 18px 30px 22px;
-        /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
-        /*background-color: rgb(142 143 250 / 10%);*/
-        /*backdrop-filter: blur(10px);*/
         border-radius: 10px;
-        /*overflow: hidden; !* Обрезаем уголки внутри *!*/
-        /*font-family: var(--font-headings);*/
-        /*font-weight: bold;*/
         font-size: 24px;
         line-height: 30px;
-        /*text-align: center;*/
-        /*text-decoration: none;*/
-        /*color: #C2D9FF;*/
-        /*text-transform: lowercase;*/
-        /*transition: background-color var(--transition-hover);*/
     }
 
     .panel-alike-button:hover {
-        /*background-color: rgb(142 143 250 / 30%);*/
+
     }
         .panel-alike-button__top-trapezoid {
             left: 45px;
@@ -118,24 +104,9 @@
 
     .panel-alike-button {
         min-height: 100px;
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*justify-content: center;*/
         padding: 15px 16px 19px;
-        /*box-shadow: inset 0 0 0 3px #8E8FFA;*/
-        /*background-color: rgb(142 143 250 / 10%);*/
-        /*backdrop-filter: blur(10px);*/
-        /*border-radius: 8px;*/
-        /*overflow: hidden; !* Обрезаем уголки внутри *!*/
-        /*font-family: var(--font-headings);*/
-        /*font-weight: bold;*/
         font-size: 18px;
         line-height: 22px;
-        /*text-align: center;*/
-        /*text-decoration: none;*/
-        /*color: #C2D9FF;*/
-        /*text-transform: lowercase;*/
-        /*transition: background-color var(--transition-hover);*/
     }
 
     @media (width < 350px) {
@@ -145,39 +116,19 @@
     }
 
     .panel-alike-button:hover {
-        /*background-color: rgb(142 143 250 / 30%);*/
+
     }
 
         .panel-alike-button__left-trapezoid {
-            /*position: absolute;*/
-            /*left: 0;*/
-            /*top: 18px;*/
-            /*bottom: 24px;*/
-            /*width: 0;*/
-            /*border: 5px solid transparent;*/
-            /*border-left-color: #8E8FFA;*/
-            /*pointer-events: none;*/
+
         }
 
         .panel-alike-button__top-trapezoid {
-            /*position: absolute;*/
-            /*right: 26px;*/
-            /*top: 0;*/
-            /*width: 69px;*/
-            /*height: 0;*/
-            /*border: 6px solid transparent;*/
-            /*border-top-color: #8E8FFA;*/
-            /*pointer-events: none;*/
+
         }
 
         .panel-alike-button__bottom-angle {
-            /*position: absolute;*/
-            /*right: 0;*/
-            /*bottom: 0;*/
-            /*border: 9px solid transparent;*/
-            /*border-bottom-color: #8E8FFA;*/
-            /*border-right-color: #8E8FFA;*/
-            /*pointer-events: none;*/
+
         }
 
     /* Правый уголок превращается в левый: */

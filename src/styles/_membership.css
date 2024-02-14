@@ -36,17 +36,11 @@
 @media (1500px <= width) {
 
     .membership {
-        /*position: relative;*/
-        /*padding: 24px 24px 20px;*/
+
     }
         .membership__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-headings);*/
-            /*font-weight: bold;*/
             font-size: 28px;
             line-height: 34px;
-            /*text-wrap: balance;*/
         }
 
         .membership__text {
@@ -57,13 +51,9 @@
 
         .membership__list {
             margin-top: 26px;
-            /*margin-bottom: 0;*/
         }
 
         .membership__total {
-            /*position: absolute;*/
-            /*left: 24px;*/
-            /*top: 100%;*/
             margin-top: 14px;
         }
 }
