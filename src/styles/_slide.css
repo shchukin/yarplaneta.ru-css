@@ -6,6 +6,8 @@
     width: 100%;
     height: 390px;
     padding: 50px;
+    color: inherit;
+    text-decoration: none;
 }
     .slide__background {
         position: absolute;
