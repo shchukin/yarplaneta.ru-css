@@ -30,8 +30,16 @@
         left: 0;
         top: 0;
         bottom: 0;
-        width: 50%;
+        width: 56%;
     }
+
+
+    .slide--type-a::after { background-image: linear-gradient(to right, #8B99CC, rgb(177 193 253 / 100%) 50%, rgb(177 193 253 / 0%) 100%); }
+    .slide--type-b::after { background-image: linear-gradient(to right, #5B73CD, rgb(109 140 255 / 100%) 50%, rgb(109 140 255 / 0%) 100%); }
+    .slide--type-c::after { background-image: linear-gradient(to right, #435BB4, rgb(75 106 219 / 100%) 50%, rgb(38 55 117 / 0%) 100%); }
+    .slide--type-d::after { background-image: linear-gradient(to right, #3D519B, rgb(67 92 185 / 100%) 50%, rgb(67 92 185 / 0%) 100%); }
+    .slide--type-e::after { background-image: linear-gradient(to right, #273568, rgb(38 55 117 / 100%) 50%, rgb(38 55 117 / 0%) 100%); }
+
 
     .slide__content {
         position: relative;
@@ -71,15 +79,6 @@
 
 
 
-.slide--type-a::after { background-image: linear-gradient(to right, #8B99CC, rgb(177 193 253 / 100%) 50%, rgb(177 193 253 / 0%) 100%); }
-.slide--type-b::after { background-image: linear-gradient(to right, #5B73CD, rgb(109 140 255 / 100%) 50%, rgb(109 140 255 / 0%) 100%); }
-.slide--type-c::after { background-image: linear-gradient(to right, #435BB4, rgb(75 106 219 / 100%) 50%, rgb(38 55 117 / 0%) 100%); }
-.slide--type-d::after { background-image: linear-gradient(to right, #3D519B, rgb(67 92 185 / 100%) 50%, rgb(67 92 185 / 0%) 100%); }
-.slide--type-e::after { background-image: linear-gradient(to right, #273568, rgb(38 55 117 / 100%) 50%, rgb(38 55 117 / 0%) 100%); }
-
-
-
-
 @media (1500px <= width) {
 
     .slide {
@@ -89,6 +88,11 @@
     }
         .slide__background {
 
+        }
+
+        /* Градиент: */
+        .slide::after {
+            width: 50%;
         }
 
         .slide__content {
@@ -131,8 +135,35 @@
         border-radius: 5px;
     }
         .slide__background {
-
+            /*position: absolute;*/
+            /*right: 0;*/
+            /*top: 0;*/
+            width: 100%;
+            height: auto;
+            /*object-fit: cover;*/
+            /*vertical-align: top;*/
+            /*background-color: var(--image-fallback);*/
+            /*pointer-events: none; !* Свайпы в hammer.js не срабатывают на картинках -- свайпаем сквозь *!*/
         }
+
+
+        /* Градиент: */
+        .slide::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 15%;
+            bottom: 0;
+            width: auto;
+        }
+
+        .slide--type-a::after { background-image: linear-gradient(to top, #8B99CC, rgb(177 193 253 / 100%) 62%, rgb(177 193 253 / 0%) 100%); }
+        .slide--type-b::after { background-image: linear-gradient(to top, #5B73CD, rgb(109 140 255 / 100%) 62%, rgb(109 140 255 / 0%) 100%); }
+        .slide--type-c::after { background-image: linear-gradient(to top, #435BB4, rgb(75 106 219 / 100%) 62%, rgb(38 55 117 / 0%) 100%); }
+        .slide--type-d::after { background-image: linear-gradient(to top, #3D519B, rgb(67 92 185 / 100%) 62%, rgb(67 92 185 / 0%) 100%); }
+        .slide--type-e::after { background-image: linear-gradient(to top, #273568, rgb(38 55 117 / 100%) 62%, rgb(38 55 117 / 0%) 100%); }
+
 
         .slide__content {
             margin-top: auto;
