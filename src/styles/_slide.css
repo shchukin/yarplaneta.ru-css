@@ -6,24 +6,36 @@
     width: 100%;
     height: 390px;
     padding: 50px;
+    border-radius: 10px;
+    overflow: hidden; /* обрезаем уголки */
     color: inherit;
     text-decoration: none;
 }
     .slide__background {
         position: absolute;
-        left: 0;
+        right: 0;
         top: 0;
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: cover;
         vertical-align: top;
-        border-radius: 10px;
         background-color: var(--image-fallback);
         pointer-events: none; /* Свайпы в hammer.js не срабатывают на картинках -- свайпаем сквозь */
     }
 
+    /* Градиент: */
+    .slide::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+    }
+
     .slide__content {
         position: relative;
+        z-index: 10;
         max-width: 50%;
     }
         .slide__category {
@@ -58,14 +70,25 @@
 
 
 
+
+.slide--type-a::after { background-image: linear-gradient(to right, #8B99CC, rgb(177 193 253 / 100%) 50%, rgb(177 193 253 / 0%) 100%); }
+.slide--type-b::after { background-image: linear-gradient(to right, #5B73CD, rgb(109 140 255 / 100%) 50%, rgb(109 140 255 / 0%) 100%); }
+.slide--type-c::after { background-image: linear-gradient(to right, #435BB4, rgb(75 106 219 / 100%) 50%, rgb(38 55 117 / 0%) 100%); }
+.slide--type-d::after { background-image: linear-gradient(to right, #3D519B, rgb(67 92 185 / 100%) 50%, rgb(67 92 185 / 0%) 100%); }
+.slide--type-e::after { background-image: linear-gradient(to right, #273568, rgb(38 55 117 / 100%) 50%, rgb(38 55 117 / 0%) 100%); }
+
+
+
+
 @media (1500px <= width) {
 
     .slide {
         height: 486px;
         padding: 60px;
+        border-radius: 15px;
     }
         .slide__background {
-            border-radius: 15px;
+
         }
 
         .slide__content {
@@ -105,6 +128,7 @@
         flex-direction: column;
         height: 320px;
         padding: 20px 20px 40px;
+        border-radius: 5px;
     }
         .slide__background {
 
