@@ -329,21 +329,40 @@
                                         </a>
                                     </div>
                                     <div class="slideshow__item">
-                                        <a class="slide" href="#" style="background-color: #242627;">
-                                            <img class="slide__background"
-                                                 srcset="
-                                                     ../temp/slideshow/main/slideshow-main-f@3x.jpg 3x,
-                                                     ../temp/slideshow/main/slideshow-main-f@2x.jpg 2x,
-                                                     ../temp/slideshow/main/slideshow-main-f@1.5x.jpg 1.5x,
-                                                     ../temp/slideshow/main/slideshow-main-f@1x.jpg 1x
-                                                 "
-                                                 src="../temp/slideshow/main/slideshow-main-f@1x.jpg"
-                                                 width="1050"
-                                                 height="486"
-                                                 alt=""
-                                            >
+                                        <a class="slide slide--pushkin" href="#" style="background-color: #242627;">
+                                            <picture>
+                                                <source srcset="
+                                                    ../content/pushkin-slide/pushkin-slide-smartphone@3x.jpg 3x,
+                                                    ../content/pushkin-slide/pushkin-slide-smartphone@2x.jpg 2x,
+                                                    ../content/pushkin-slide/pushkin-slide-smartphone@1.5x.jpg 1.5x,
+                                                    ../content/pushkin-slide/pushkin-slide-smartphone@1x.jpg 1x
+                                                "
+                                                        media="(max-width: 739px)"
+                                                />
+                                                <source srcset="
+                                                    ../content/pushkin-slide/pushkin-slide-laptop@3x.jpg 3x,
+                                                    ../content/pushkin-slide/pushkin-slide-laptop@2x.jpg 2x,
+                                                    ../content/pushkin-slide/pushkin-slide-laptop@1.5x.jpg 1.5x,
+                                                    ../content/pushkin-slide/pushkin-slide-laptop@1x.jpg 1x
+                                                "
+                                                        media="(min-width: 740px) and (max-width: 1499px)"
+                                                />
+                                                <source srcset="
+                                                    ../content/pushkin-slide/pushkin-slide-monitor@3x.jpg 3x,
+                                                    ../content/pushkin-slide/pushkin-slide-monitor@2x.jpg 2x,
+                                                    ../content/pushkin-slide/pushkin-slide-monitor@1.5x.jpg 1.5x,
+                                                    ../content/pushkin-slide/pushkin-slide-monitor@1x.jpg 1x
+                                                "
+                                                        media="(min-width: 1500px)"
+                                                />
+                                                <img class="slide__background"
+                                                     src="../content/pushkin-slide/pushkin-slide-laptop@1x.jpg"
+                                                     width="1170"
+                                                     height="390"
+                                                     alt=""
+                                                >
+                                            </picture>
                                             <div class="slide__content">
-                                                <div class="slide__heading">Веди себя<br> культурно</div>
                                                 <div class="slide__action">
                                                     <div class="button button--secondary polygon polygon--trapezoid">
                                                         <span class="button__label">Подробнее</span>

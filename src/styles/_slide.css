@@ -193,3 +193,33 @@
                 }
 }
 
+
+.slide--pushkin {
+
+}
+    .slide--pushkin .slide__background{
+        width: 100%;
+    }
+
+    .slide--pushkin .slide__content {
+        position: absolute;
+        left: 50px;
+        top: 216px;
+    }
+
+    @media (1500px < width) {
+        .slide--pushkin .slide__content {
+            left: 60px;
+            top: 260px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
