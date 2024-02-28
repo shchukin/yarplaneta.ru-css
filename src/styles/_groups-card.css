@@ -64,6 +64,9 @@
             top: 22px;
         }
 
+        .groups-card__details .button:hover {
+            color: #FFFFFF;
+        }
 
 
 @media (1500px <= width) {
