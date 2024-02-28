@@ -191,7 +191,7 @@
 
 .button--link-alike:hover {
     background-color: transparent;
-    color: #190482;
+    /*color: #190482;*/
 }
 
 .button--link-alike:active {

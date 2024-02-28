@@ -1,4 +1,5 @@
 .related {
+    position: relative;
     margin-top: 80px;
 }
 
@@ -12,6 +13,12 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 36px;
+    }
+
+    .related__more {
+        position: absolute;
+        right: 0;
+        top: -8px;
     }
 
     .related__list {
@@ -44,6 +51,10 @@
             line-height: 50px;
         }
 
+        .related__more {
+            margin-top: 4px;
+        }
+
         .related__list {
             gap: 24px;
         }
@@ -67,6 +78,13 @@
             font-size: 24px;
             line-height: 28px;
         }
+
+        .related__more {
+            top: -4px;
+        }
+            .related__more .button__label {
+                display: none;
+            }
 
         .related__list {
             margin-top: 24px;
@@ -213,6 +231,12 @@
                 }
 
 
+    .related__background .related__more {
+        margin-top: 51px;
+        margin-right: 41px;
+    }
+
+
 
     @media (1500px <= width) {
 
@@ -261,6 +285,10 @@
                     .related__right-angle {
                         border-width: 20px;
                     }
+
+        .related__background .related__more {
+            margin-top: 72px;
+        }
     }
 }
 
