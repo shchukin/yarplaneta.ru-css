@@ -1,0 +1,16 @@
+.red-star {
+    display: block;
+    width: fit-content;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+    .red-star__icon {
+        display: block;
+    }
+        .red-star__icon #red-star__logo {
+            transition: opacity var(--transition-hover);
+        }
+
+        .red-star:hover #red-star__logo {
+            opacity: 0;
+        }

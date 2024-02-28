@@ -94,14 +94,14 @@
                 .footer__developer {
                     position: absolute;
                     right: 0;
-                    top: 14px;
+                    top: 3px;
                     font-size: 14px;
+                    display: flex;
+                    align-items: center;
                 }
-                    .footer__red-star {
-                        position: relative;
-                        top: 2px;
-                        vertical-align: baseline;
+                    .footer__developer-logo {
                         margin-left: 6px;
+                        margin-top: 2px;
                     }
 
 
@@ -165,9 +165,11 @@
 
                     .footer__developer {
                         position: static;
+                        margin-top: -15px;
+                        margin-bottom: -9px;
                     }
-                        .footer__red-star {
-
+                        .footer__developer-logo {
+                            margin-left: 8px;
                         }
 }
 
@@ -176,7 +178,7 @@
 
     .footer {
         padding-top: 14px;
-        padding-bottom: 28px;
+        padding-bottom: 25px;
         background-image: none;
     }
         .footer__wrap {
@@ -241,12 +243,12 @@
 
                     .footer__developer {
                         order: 3;
-                        margin-top: 50px;
+                        margin-top: 38px;
                         align-self: flex-end;
                         position: static;
                         font-size: 12px;
                     }
-                        .footer__red-star {
+                        .footer__developer-logo {
 
                         }
 }
