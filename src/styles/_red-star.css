@@ -1,87 +1,104 @@
 .red-star {
-    position: relative;
-    display: block;
-    width: 74px;
-    height: 39px;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
-    .red-star__logo {
-        position: absolute;
-        left: 20px;
-        top: 0;
-        transition: opacity var(--transition-hover);
+
+    .red-star__heading {
+        font-size: 14px;
+        line-height: 15px;
     }
 
-    .red-star__emblem {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: opacity var(--transition-hover);
-    }
-
-    .red-star__death-star {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: opacity var(--transition-hover);
-    }
-
-    .red-star__cannon-layer {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 15px;
+    .red-star__body {
+        position: relative;
+        display: block;
+        width: 74px;
         height: 15px;
-        border-radius: 50%;
-        overflow: hidden;
-        transition: opacity var(--transition-hover);
+        margin-left: 8px;
+        margin-top: 2px;
     }
+        .red-star__logo {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            transition: opacity var(--transition-hover);
+        }
 
-    @keyframes red-star-cannon {
-        0%   { left: -3px; }
-        4%   { left: -2px; }
-        8%   { left: -1px; }
-        12%  { left: 0; }
-        16%  { left: 1px; }
-        20%  { left: 2px; }
-        24%  { left: 3px; }
-        28%  { left: 4px; }
-        32%  { left: 5px; }
-        36%  { left: 6px; }
-        40%  { left: 7px; }
-        44%  { left: 8px; }
-        48%  { left: 9px; }
-        52%  { left: 10px; }
-        56%  { left: 11px; }
-        60%  { left: 12px; }
-        64%  { left: 13px; }
-        68%  { left: 14px; }
-        72%  { left: 15px; }
-        76%  { left: 16px; }
-        80%  { left: 17px; }
-        84%  { left: 17px; }
-        88%  { left: 17px; }
-        92%  { left: 17px; }
-        94%  { left: 17px; }
-        100% { left: 17px; }
-    }
+        .red-star__emblem {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: opacity var(--transition-hover);
+        }
 
-    .red-star__cannon {
-        position: absolute;
-        left: 3px;
-        top: 3px;
-        animation: red-star-cannon 3s steps(26) infinite;
-    }
+        .red-star__death-star {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: opacity var(--transition-hover);
+        }
 
-    .red-star:hover .red-star__emblem {
-        opacity: 0;
-    }
+        .red-star__cannon-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: opacity var(--transition-hover);
+        }
 
-    .red-star:hover .red-star__death-star {
-        opacity: 1;
-    }
+        /* stylelint-disable */
+        @keyframes red-star-cannon {
+            0%   { left: -3px; }
+            4%   { left: -2px; }
+            8%   { left: -1px; }
+            12%  { left: 0; }
+            16%  { left: 1px; }
+            20%  { left: 2px; }
+            24%  { left: 3px; }
+            28%  { left: 4px; }
+            32%  { left: 5px; }
+            36%  { left: 6px; }
+            40%  { left: 7px; }
+            44%  { left: 8px; }
+            48%  { left: 9px; }
+            52%  { left: 10px; }
+            56%  { left: 11px; }
+            60%  { left: 12px; }
+            64%  { left: 13px; }
+            68%  { left: 14px; }
+            72%  { left: 15px; }
+            76%  { left: 16px; }
+            80%  { left: 17px; }
+            /* задержка анимации, типа на обратной стороне: */
+            84%  { left: 17px; }
+            88%  { left: 17px; }
+            92%  { left: 17px; }
+            94%  { left: 17px; }
+            100% { left: 17px; }
+        }
+        /* stylelint-enable */
 
-    .red-star:hover .red-star__cannon-layer {
-        opacity: 1;
-    }
+        .red-star__cannon {
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            animation: red-star-cannon 3s steps(26) infinite;
+        }
+
+        .red-star__body:hover .red-star__emblem {
+            opacity: 0;
+        }
+
+        .red-star__body:hover .red-star__death-star {
+            opacity: 1;
+        }
+
+        .red-star__body:hover .red-star__cannon-layer {
+            opacity: 1;
+        }
