@@ -160,9 +160,9 @@
 
             .groups-card__details {
                 position: absolute;
-                left: auto;
-                right: 0;
-                bottom: 8px;
+                left: 10px;
+                right: auto;
+                bottom: 11px;
                 top: auto;
                 margin-top: 10px;
                 margin-left: -14px;
