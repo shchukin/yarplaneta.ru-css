@@ -1,16 +1,78 @@
 .red-star {
+    position: relative;
     display: block;
-    width: fit-content;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 74px;
+    height: 39px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
 }
-    .red-star__icon {
-        display: block;
+    .red-star__logo {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        transition: opacity var(--transition-hover);
     }
-        .red-star__icon #red-star__logo {
-            transition: opacity var(--transition-hover);
-        }
 
-        .red-star:hover #red-star__logo {
-            opacity: 0;
-        }
+    .red-star__emblem {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: opacity var(--transition-hover);
+    }
+
+    .red-star__death-star {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: opacity var(--transition-hover);
+    }
+
+    .red-star__cannon-layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: opacity var(--transition-hover);
+    }
+
+    @keyframes red-star-cannon {
+        0%     { left: -1px; }
+        6.25%  { left: 0; }
+        12.5%  { left: 1px; }
+        18.75% { left: 2px; }
+        25%    { left: 3px; }
+        31.25% { left: 4px; }
+        37.5%  { left: 5px; }
+        43.75% { left: 6px; }
+        50%    { left: 7px; }
+        56.25% { left: 8px; }
+        62.5%  { left: 9px; }
+        68.75% { left: 10px; }
+        75%    { left: 11px; }
+        81.25% { left: 12px; }
+        87.5%  { left: 13px; }
+        93.75% { left: 14px; }
+        100%   { left: 15px; }
+    }
+
+    .red-star__cannon {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        animation: red-star-cannon 3s steps(9) infinite;
+    }
+
+    .red-star:hover .red-star__emblem {
+        opacity: 0;
+    }
+
+    .red-star:hover .red-star__death-star {
+        opacity: 1;
+    }
+
+    .red-star:hover .red-star__cannon-layer {
+        opacity: 1;
+    }
