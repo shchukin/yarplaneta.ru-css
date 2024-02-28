@@ -39,30 +39,39 @@
     }
 
     @keyframes red-star-cannon {
-        0%     { left: -1px; }
-        6.25%  { left: 0; }
-        12.5%  { left: 1px; }
-        18.75% { left: 2px; }
-        25%    { left: 3px; }
-        31.25% { left: 4px; }
-        37.5%  { left: 5px; }
-        43.75% { left: 6px; }
-        50%    { left: 7px; }
-        56.25% { left: 8px; }
-        62.5%  { left: 9px; }
-        68.75% { left: 10px; }
-        75%    { left: 11px; }
-        81.25% { left: 12px; }
-        87.5%  { left: 13px; }
-        93.75% { left: 14px; }
-        100%   { left: 15px; }
+        0%   { left: -3px; }
+        4%   { left: -2px; }
+        8%   { left: -1px; }
+        12%  { left: 0; }
+        16%  { left: 1px; }
+        20%  { left: 2px; }
+        24%  { left: 3px; }
+        28%  { left: 4px; }
+        32%  { left: 5px; }
+        36%  { left: 6px; }
+        40%  { left: 7px; }
+        44%  { left: 8px; }
+        48%  { left: 9px; }
+        52%  { left: 10px; }
+        56%  { left: 11px; }
+        60%  { left: 12px; }
+        64%  { left: 13px; }
+        68%  { left: 14px; }
+        72%  { left: 15px; }
+        76%  { left: 16px; }
+        80%  { left: 17px; }
+        84%  { left: 17px; }
+        88%  { left: 17px; }
+        92%  { left: 17px; }
+        94%  { left: 17px; }
+        100% { left: 17px; }
     }
 
     .red-star__cannon {
         position: absolute;
         left: 3px;
         top: 3px;
-        animation: red-star-cannon 3s steps(9) infinite;
+        animation: red-star-cannon 3s steps(26) infinite;
     }
 
     .red-star:hover .red-star__emblem {
