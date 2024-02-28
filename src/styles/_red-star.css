@@ -91,14 +91,14 @@
             animation: red-star-cannon 3s steps(26) infinite;
         }
 
-        .red-star__body:hover .red-star__emblem {
+        .red-star:hover .red-star__emblem {
             opacity: 0;
         }
 
-        .red-star__body:hover .red-star__death-star {
+        .red-star:hover .red-star__death-star {
             opacity: 1;
         }
 
-        .red-star__body:hover .red-star__cannon-layer {
+        .red-star:hover .red-star__cannon-layer {
             opacity: 1;
         }
